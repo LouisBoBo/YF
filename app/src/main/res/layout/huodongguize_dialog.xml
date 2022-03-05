@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="活动规则"
+            android:textColor="#FDCC21"
+            android:textSize="@dimen/tv_size18" />
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FD215A"
+        android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.分享集赞任务页到朋友圈或微信好友，即可让好友来帮助集赞"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2.好友未注册衣蝠，首次为你点赞，你可获得平台1元提现奖励"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3.好友已注册衣蝠，每次为你点赞，你可获得平台0.1元提现奖励"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_size14" />
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4.每月平台集赞数排名前5的同学即可获得当月大奖"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_size14" />
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5.每个用户每天仅有一次免费点赞的机会，可以使用5个衣豆兑换一次点赞机会哦"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_size14" />
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="6.衣蝠是女装平台，仅限女性好友点赞。只能为他人点赞，不能为自己点赞哦"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_size14" />
+
+    </LinearLayout>
+
+</LinearLayout>

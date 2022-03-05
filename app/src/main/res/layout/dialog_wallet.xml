@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="支付"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_size17" />
+
+    <EditText
+        android:id="@+id/et_paypwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_login_bn"
+        android:hint="请输入支付密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_size15" />
+
+    <TextView
+        android:id="@+id/tv_pay_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bn_select_orders"
+        android:gravity="center"
+        android:text="确定"
+        android:textSize="@dimen/tv_size17" />
+
+</LinearLayout>

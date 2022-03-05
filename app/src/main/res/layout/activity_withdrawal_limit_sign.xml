@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheelSurfView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center">
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="每日领现金"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/horizontal_line" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_title"
+        android:background="#ffffff"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/scoll_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E782FC"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/scoll_top_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_choujiang_bg_new2"
+                android:orientation="vertical">
+                <com.cretin.www.wheelsruflibrary.view.WheelSurfView
+                    android:id="@+id/wheelSurfView"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginBottom="@dimen/margin15"
+                    wheelSurfView:mainImg="@drawable/newest_luck_zhuanpan"
+                    wheelSurfView:minTimes="4"
+                    wheelSurfView:type="2"
+                    wheelSurfView:typenum="6"
+                    wheelSurfView:vartime="120">
+
+                </com.cretin.www.wheelsruflibrary.view.WheelSurfView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_litmit_jiangli_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/withdrawal_edu_new_bg" />
+
+                <ListView
+                    android:id="@+id/list_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginBottom="10dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

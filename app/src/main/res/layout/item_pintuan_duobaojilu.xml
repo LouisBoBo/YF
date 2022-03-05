@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <View 
+        android:id="@+id/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f0f0f0"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_top"
+        android:layout_below="@id/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+        
+        <TextView 
+            android:id="@+id/tv_number_qi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是夺宝记录中的参与"
+            android:textSize="14sp"
+            android:textColor="#3E3E3E"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        
+        <!-- 右边时间 -->
+        <TextView 
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:10:15"
+            android:textSize="12sp"
+            android:textColor="#A8A8A8"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+        
+     <!--    <TextView 
+            android:id="@+id/tv_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016.5.29"
+            android:textSize="12sp"
+            android:textColor="#A8A8A8"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_time"/> -->
+        
+        <TextView 
+            android:id="@+id/tv_time_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="揭晓时间"
+             android:textSize="12sp"
+            android:textColor="#A8A8A8"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_time"/>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#33A8A8A8"/>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/rl_center"
+        android:layout_below="@id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="87dp">
+        
+        <ImageView 
+             android:id="@+id/img_treasure"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/img_goto"
+            android:layout_width="16dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@id/img_treasure"
+            android:src="@drawable/icon_more"/>
+        
+		<TextView 
+		    android:layout_toLeftOf="@id/img_goto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="查看详情"
+			android:textSize="12sp"
+            android:textColor="#A8A8A8"
+          
+            android:layout_alignTop="@id/img_treasure"/>
+		
+		
+		<TextView 
+		    android:id="@+id/tv_name_treasure"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="iPhone6S 64G"
+		    android:layout_toRightOf="@id/img_treasure"
+		    android:layout_marginTop="22dp"
+		    android:singleLine="true"
+		    android:textSize="14sp"
+		    android:textColor="#3E3E3E"/>
+		
+		
+		<TextView 
+		    android:id="@+id/tv_participant"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="本期开团:"
+		    android:textSize="12sp"
+		    android:textColor="#A8A8A8"
+		    android:layout_alignBottom="@id/img_treasure"
+		    android:layout_marginBottom="18dp"
+		    android:layout_toRightOf="@id/img_treasure"/>
+		
+		<TextView 
+		    android:id="@+id/tv_count"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text=" "
+		    android:textSize="12sp"
+		    android:textColor="#ff3f8b"
+		    android:layout_alignBottom="@id/tv_participant"
+		    android:layout_toRightOf="@id/tv_participant"/>
+		
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="团次"
+		    android:textSize="12sp"
+		    android:textColor="#A8A8A8"
+		    android:layout_alignBottom="@id/tv_participant"
+		    android:layout_toRightOf="@id/tv_count"/>
+		
+		<!-- 中奖啦情况 -->
+		<ImageView 
+		    android:id="@+id/img_zhongjiang"
+		    android:layout_width="53dp"
+		    android:layout_height="32dp"
+		   
+		    android:src="@drawable/congratulation_zj"
+		    android:layout_alignBottom="@id/img_treasure"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:visibility="gone"/>
+		
+		<TextView 
+		    android:id="@+id/tv_tuikuan"
+		    android:layout_width="48dp"
+		    android:layout_height="19dp"
+		    android:gravity="center"
+		    android:background="@drawable/zhuangtai"
+		    android:text="已退款"
+		    android:textSize="12sp"
+		    android:textColor="#FF3F5A"
+		     android:layout_alignBottom="@id/img_treasure"
+		     android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:visibility="gone"/>
+		
+		<TextView 
+		    android:id="@+id/tv_ing"
+		    android:layout_width="48dp"
+		    android:layout_height="19dp"
+		    android:gravity="center"
+		    android:background="@drawable/zhuangtai_two"
+		    android:text="进行中"
+		    android:textSize="12sp"
+		    android:textColor="#6DC264"
+		     android:layout_alignBottom="@id/img_treasure"
+		     android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:visibility="gone"/>
+		
+		
+		<TextView 
+		    android:id="@+id/tv_yjx"
+		    android:layout_width="48dp"
+		    android:layout_height="19dp"
+		    android:gravity="center"
+		    android:background="@drawable/zhuangtai_three"
+		    android:text="已揭晓"
+		    android:textSize="12sp"
+		    android:textColor="#FF3F8B"
+		     android:layout_alignBottom="@id/img_treasure"
+		     android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:visibility="gone"/>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/rl_bootom"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#FDF6EB"
+		android:layout_below="@+id/rl_center"
+		android:layout_centerHorizontal="true">
+        
+        <TextView 
+            android:id="@+id/tv_huojiangzhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获奖者:"
+            android:textSize="14sp"
+            android:textColor="#FF4B90"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        
+        <TextView 
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+			android:maxLength="10"
+            android:textSize="14sp"
+            android:textColor="#3E3E3E"
+            android:layout_toRightOf="@id/tv_huojiangzhe"
+            android:layout_centerVertical="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中奖号码:"
+               android:textSize="12sp"
+            android:textColor="#A8A8A8"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_winner_number"/>
+        
+        <TextView 
+            android:id="@+id/tv_winner_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+             android:textSize="12sp"
+            android:textColor="#A8A8A8"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+        
+       
+    </RelativeLayout>
+
+      <View 
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/rl_bootom"/>
+   
+</RelativeLayout>

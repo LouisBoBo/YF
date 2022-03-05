@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/meal_size"
+        android:minHeight="60dp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色分类"
+            android:textColor="@color/black"
+            android:id="@+id/title"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:paddingLeft="11dp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮珊瑚色,热带橙,海贝色"
+            android:textColor="@color/text1_color"
+            android:id="@+id/content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/title"
+             android:textSize="20dp"
+            />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/divider_color"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="21dp"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

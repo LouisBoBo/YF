@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff">
+
+    <ImageView 
+        android:id="@+id/iv_no_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_no_data"/>
+    
+    <TextView 
+        android:id="@+id/tv_qin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tv_size18"
+        android:layout_marginTop="53dp"
+        android:text="O(∩_∩)O~亲~"
+        android:gravity="center"
+        android:textColor="#989898"/>
+    <TextView 
+        android:id="@+id/tv_no_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tv_size18"
+        android:layout_marginTop="@dimen/margin10"
+        android:gravity="center"
+        android:text="您还没有加入任何圈子"
+        android:textColor="#989898"/>
+    <Button 
+        android:id="@+id/btn_view_allcircle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="查看所有圈子"
+        android:textColor="#222222"
+        android:textSize="@dimen/tv_size18"
+        android:layout_marginTop="83dp"
+        android:background="@drawable/btn_goto_shop"
+        android:gravity="center"/>
+
+</LinearLayout>

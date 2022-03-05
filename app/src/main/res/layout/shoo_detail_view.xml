@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/one"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:src="@drawable/testperson"
+            android:tag="0"
+            />
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/two"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:src="@drawable/testperson"
+             android:tag="0"
+            />
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/three"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:src="@drawable/testperson"
+             android:tag="0"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="20dp"
+        android:layout_marginTop="2dp"
+        >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/four"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:src="@drawable/testperson"
+            />
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/five"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:src="@drawable/testperson"
+            />
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/six"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:src="@drawable/testperson"
+            />
+        
+    </LinearLayout>
+	
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="20dp"
+        android:layout_marginTop="2dp"
+        >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seven"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:src="@drawable/testperson"
+            />
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eight"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:src="@drawable/testperson"
+            />
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nine"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:src="@drawable/testperson"
+            />
+        
+    </LinearLayout>
+</LinearLayout>

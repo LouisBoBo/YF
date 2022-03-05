@@ -1,0 +1,381 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rel_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <CheckBox 
+            android:id="@+id/cb_check"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@null"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/checkbox_selector"
+            android:padding="@dimen/margin"
+            android:focusable="false"/>
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="我的店"
+            android:textSize="15sp" 
+            android:textColor="@color/text1_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:gravity="center|right"
+            android:textColor="@color/pink_color"
+            android:text="卖家已发货"
+            android:visibility="gone"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginTop="5dp"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:id="@+id/container_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="共1件商品"
+            android:textColor="@color/title_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_zprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|right"
+            android:text="实付：￥710.00"
+            android:textColor="@color/title_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_Contact_seller"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:focusable="false"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="联系卖家"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_Cancel_Order"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:focusable="false"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="取消订单"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_Payment"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="付款"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_Remind_shipments"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:focusable="false"
+            android:text="提醒发货"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_Extend_Receipt"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:focusable="false"
+            android:text="延长收货"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_See_Logistics"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="查看物流"
+            android:focusable="false"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_Confirm_receipt"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="确认收货"
+            android:focusable="false"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay4"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_Delete_Orders"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:focusable="false"
+            android:text="删除订单"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_Evaluation_Order"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="评价订单"
+            android:focusable="false"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay5"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_Refund"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:text="退款中"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay6"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_end"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="已完结"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_deleteorders"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:text="删除订单"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay7"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnExtend_Receipt"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:focusable="false"
+            android:text="延长收货"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_Confirm_receipt1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:text="确认收货"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay9"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_CancelOrder"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:focusable="false"
+            android:text="取消订单"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    android:id="@+id/root"
+ >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageButton
+                    android:layout_centerVertical="true"
+            android:id="@+id/shopbeauty_iv_back"
+            android:layout_width="13dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/u122"
+     />
+
+        <TextView
+            android:id="@+id/shopbeauty_tv_title"
+         android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="店铺美衣"
+            android:textColor="#000000" />
+    </RelativeLayout>
+        <com.yssj.custom.view.MyTitleView
+            android:id="@+id/shopbeauty_mytitleview_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <android.support.v4.view.ViewPager 
+            android:id="@+id/shopbeauty_content_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+</LinearLayout>

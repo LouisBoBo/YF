@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:id="@+id/jilu"
+    >
+    
+     <include layout="@layout/base_head" />
+     
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/line_color" 
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        />
+    
+     <com.yssj.custom.view.XListView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/log_data"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:divider="@null"
+            android:listSelector="@color/transparenct"
+            ></com.yssj.custom.view.XListView >
+      
+        <Button 
+            android:id="@+id/bt_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我要提现"
+            android:gravity="center"
+            android:background="#ff8dba"
+            android:layout_alignParentBottom="true"
+            />
+     
+</RelativeLayout>

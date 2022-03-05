@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/pb_filter_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/update_loading_progressbar_anim"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:gravity="center|left" >
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_search"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle_base"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size20" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/img_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/no_warn"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/img_right_icon"
+                android:background="@color/transparenct"
+                android:text="..."
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size20"
+                android:visibility="gone" />
+
+            
+            <RelativeLayout 
+                android:id="@+id/img_most_right_icon"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@id/img_right_icon"
+                android:layout_centerVertical="true">
+                
+                
+            <ImageView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_search_close"
+                android:contentDescription="@string/no_warn"
+                android:padding="10dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/mHsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/rg_nav_content"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#F2F2F2"
+            android:orientation="horizontal" >
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/tv_commit"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/margin"
+        android:background="#000"
+        android:text="提交"
+        android:textColor="#fff" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tv_commit"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/mHsv" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+           <!-- <com.yssj.custom.view.FilterTitleView
+                android:id="@+id/filter_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50" />  -->
+                <TextView 
+                    android:id="@+id/tv_fc_word"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color"/>
+                <View android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dash_line1"/>
+
+            <LinearLayout
+                android:id="@+id/container_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--
+         <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tv_commit"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/container"
+        android:cacheColorHint="#00000000"
+        android:focusable="false" />
+    -->
+
+</RelativeLayout>

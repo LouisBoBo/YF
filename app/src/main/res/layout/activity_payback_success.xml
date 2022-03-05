@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payback_success"
+            android:textColor="#F28BB4"
+            android:textSize="@dimen/tv_size20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:text="@string/payback_desc"
+            android:textColor="@color/payback_color"
+            android:textSize="@dimen/tv_size15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#F4F4F4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_seller"
+                android:textColor="@color/payback_color"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/payback_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_seller"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_seller_name"
+                android:textColor="@color/payback_color"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/payback_seller_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吴上华"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#F4F4F4"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_category"
+                android:textColor="@color/payback_color"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/payback_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卖家已发货，买家未收到货，全额退款"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_state"
+                android:textColor="@color/payback_color"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/payback_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退款成功"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size15" />
+        </LinearLayout>
+        
+               <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_sum"
+                android:textColor="@color/payback_color"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/payback_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.00元"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_reason"
+                android:textColor="@color/payback_color"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/payback_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size15" />
+        </LinearLayout>
+
+ 
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_explain"
+                android:textColor="@color/payback_color"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/payback_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退款由系统自动生成"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_num"
+                android:textColor="@color/payback_color"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/payback_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="41162366415559"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size15" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payback_apply_date"
+                android:textColor="@color/payback_color"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/payback_apply_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-05-15 15:35"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size15" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

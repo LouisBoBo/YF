@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.yssj.custom.view.RoundImageButton
+        android:id="@+id/img_circle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:background="@color/transparenct"
+        android:layout_marginLeft="@dimen/margin24"
+        android:layout_marginTop="@dimen/margin19" />
+
+    <TextView
+        android:id="@+id/tv_circle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin13"
+        android:layout_marginTop="@dimen/margin33"
+        android:layout_toRightOf="@id/img_circle"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" />
+
+    <TextView
+        android:id="@+id/tv_pub_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin33"
+        android:textColor="#989898" />
+
+    <LinearLayout
+        android:id="@+id/lin_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_circle_name"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/img_circle"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size16" />
+
+        <TextView
+            android:id="@+id/tv_content_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin8"
+            android:maxLines="3"
+			android:layout_marginBottom="2dp"
+            android:textColor="#989898" />
+
+<!--         <ImageView -->
+<!--             android:id="@+id/img_content_pic" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_marginRight="@dimen/margin" -->
+<!--             android:scaleType="fitXY" -->
+<!--             android:adjustViewBounds="true" /> -->
+        <!-- 图片存放位置-->
+        <LinearLayout 
+            android:id="@+id/ll_contain"
+           	android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/margin"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" 
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text1_color" />
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/circle_comment_icon"
+                android:layout_marginRight="@dimen/margin15"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text1_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/line_color"
+        android:layout_below="@id/lin_content"
+        />
+    
+</RelativeLayout>

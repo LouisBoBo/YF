@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <ImageView
+        android:id="@+id/img_bigger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/image_default" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#7f000000"
+        android:gravity="center"
+        android:text="3/5"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7f000000" >
+
+        <!-- 话题帖子内容 ，精选推荐没有帖子内容 -->
+
+        <TextView
+            android:id="@+id/tv_tiezineirong_huati"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:maxLines="2"
+             android:textSize="14sp"
+            android:text="查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情"
+            android:textColor="#ffffff"
+            android:visibility="gone" >
+        </TextView>
+        <!-- 穿搭帖子内容 ，精选推荐没有帖子内容 -->
+
+        <TextView
+            android:id="@+id/tv_chuanda_title"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="穿搭标题"
+            android:textColor="@color/common_red"
+            android:textSize="14sp"
+            android:visibility="visible" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_tiezineirong_chuanda"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情查看详情"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="visible" >
+        </TextView>
+        <!-- 精选推荐专用 -->
+
+        <LinearLayout
+            android:id="@+id/ll_jingxuan"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_marginTop="3.5dp"
+                android:id="@+id/tv_shop_name"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                 android:textSize="14sp"
+                android:text="商品名称"
+                android:textColor="#ffffff"
+                android:visibility="visible" >
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" >
+
+                <TextView
+                    android:id="@+id/tv_real_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="¥108.88"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:visibility="visible" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_yuanlai_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/tv_real_price"
+                    android:maxLines="1"
+                    android:text="¥108.88"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:visibility="visible" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_look_detail"
+            android:layout_width="87dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_red_ok"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textColor="#ffffff"
+            android:textSize="14sp" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

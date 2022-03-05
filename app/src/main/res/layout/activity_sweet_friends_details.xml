@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/issue_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_fanzao"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ray_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/sweet_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center|left" >
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="24dp"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详情"
+            android:textColor="#3e3e3e"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/sweet_rl_more"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" >
+
+            <ImageView
+                android:id="@+id/sweet_iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/no_warn"
+                android:src="@drawable/sweet_more_top" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.yssj.pubu.XListView
+                    android:id="@+id/sweet_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@android:color/transparent" >
+                </com.yssj.pubu.XListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#c5c5c5" />
+
+                <LinearLayout
+                    android:id="@+id/edittext_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/sweet_et_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/sweet_shape_et"
+                        android:gravity="center_vertical"
+                        android:hint="说一下你的看法吧~"
+                        android:maxLines="3"
+                        android:minHeight="40dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="2dp"
+                        android:textColor="#222222"
+                        android:textColorHint="#c5c5c5"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/sweet_tv_send"
+                        android:layout_width="58dp"
+                        android:layout_height="29dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/sweet_shape_send"
+                        android:gravity="center"
+                        android:text="发送"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/scoll_xunbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/hover_xunbao"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

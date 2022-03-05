@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/dialog_kajuan_title_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FF458E"
+        android:textSize="@dimen/tv_size13"
+        />
+     <TextView 
+        android:id="@+id/dialog_kajuan_content_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:lineSpacingExtra="10dp"
+        android:textColor="#7D7D7D"
+        android:textSize="@dimen/tv_size11"
+        />
+
+</LinearLayout>

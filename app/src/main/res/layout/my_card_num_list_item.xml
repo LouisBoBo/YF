@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:background="@color/white" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/tv_card_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin10"
+        android:text="卡号：8888888"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size14" />
+    <TextView
+        android:id="@+id/tv_card_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_below="@id/tv_card_num"
+        android:text="状态:"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size14" />
+    <TextView 
+        android:id="@+id/tv_card_status_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_card_status"
+        android:layout_alignTop="@id/tv_card_status"
+        android:text="未激活"
+        android:textColor="#d6d6d6"
+        android:textSize="@dimen/tv_size14"/>
+    <TextView 
+        android:id="@+id/tv_card_activation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_card_num"
+        android:layout_alignTop="@id/tv_card_num"
+        android:layout_marginLeft="@dimen/margin20"
+        android:text="激活码：2222222"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size14"/>
+<ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/margin20"
+    android:id="@+id/iv_activation_status"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:src="@drawable/img_activation_status"
+    />
+
+
+
+<TextView
+    android:id="@+id/tv_card_activation_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/tv_card_status_z"
+    android:layout_alignBottom="@+id/tv_card_status_z"
+    android:layout_alignLeft="@+id/tv_card_activation"
+    android:text="激活ID：无"
+    android:textColor="@color/title_color"
+    android:textSize="@dimen/tv_size14" />
+<View 
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_below="@id/tv_card_activation_id"
+   
+    android:layout_marginTop="10dp"
+    android:background="#f4f4f4"/>
+
+</RelativeLayout>

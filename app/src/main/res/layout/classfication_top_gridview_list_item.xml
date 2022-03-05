@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <com.yssj.custom.view.YuanJiaoImageView
+            android:id="@+id/manufacture_bg_iv"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"/>
+
+        <TextView
+	         android:id="@+id/manufacture_title"
+	         android:layout_width="77dp"
+	         android:layout_height="77dp"
+	         android:layout_centerInParent="true"
+	         android:text="MORE >"
+	         android:visibility="gone"
+	         android:gravity="center"
+	         android:textColor="#3E3E3E"
+	         android:background="@drawable/sub_bg_shape"
+	         android:layout_gravity="center_horizontal"
+	         android:textSize="@dimen/tv_size14"/>
+    </RelativeLayout>
+
+</LinearLayout>

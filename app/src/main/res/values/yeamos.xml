@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="yeamo_text">
+        <item>[认真]</item>
+        <item>[难受]</item>
+        <item>[色]</item>
+        <item>[发呆]</item>
+        <item>[酷]</item>
+        <item>[哭]</item>
+        <item>[害羞]</item>
+        <item>[可怜]</item>
+        <item>[发怒]</item>
+        <item>[笑]</item>
+        <item>[快哭了]</item>
+        <item>[邪恶]</item>
+        <item>[抠鼻]</item>
+        <item>[亲]</item>
+        <item>[汗]</item>
+        <item>[晕]</item>
+        <item>[悲剧]</item>
+        <item>[爱心]</item>
+        <item>[心碎]</item>
+        <item>[Hello]</item>
+        <item>[Bye]</item>
+    </string-array>
+    
+    <string-array name="yeamo_file_name">
+        <item>face_renzhen</item>
+        <item>face_nanshou</item>
+        <item>face_se</item>
+        <item>face_fadai</item>
+        <item>face_cool</item>
+        <item>face_ku</item>
+        <item>face_haixiu</item>
+        <item>face_kelian</item>
+        <item>face_fanu</item>
+        <item>face_xiao</item>
+        <item>face_kuaikule</item>
+        <item>face_xiee</item>
+        <item>face_koubi</item>
+        <item>face_qin</item>
+        <item>face_han</item>
+        <item>face_yun</item>
+        <item>face_beiju</item>
+        <item>face_aixin</item>
+        <item>face_xinsui</item>
+        <item>face_hello</item>
+        <item>face_bye</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:orientation="vertical">
+
+            <include layout="@layout/base_head_chanal" />
+
+            <RelativeLayout
+                android:id="@+id/rel_phone_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@drawable/common_edittext_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center_vertical"
+                    android:text="手机号码"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <EditText
+                    android:id="@+id/et_phone_num"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_toRightOf="@id/tv_phone_num"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="输入您要绑定的手机号"
+                    android:padding="@dimen/margin"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="5dp"
+                    android:textColor="#222222"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/common_edittext_bg"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_login_height"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <EditText
+                        android:background="@null"
+
+
+                        android:id="@+id/et_auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/tv_email"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        android:inputType="text"
+                        android:maxLength="11"
+                        android:textColorHint="@color/text1_color"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/tv_size16" />
+
+                    <ImageView
+                        android:id="@+id/et_auto_xx"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/xxxx"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_gif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.8"
+                    android:clickable="true" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:text="为了衣蝠能精准推荐美衣，您还需选择以下内容"
+                android:textColor="#000000"
+                android:textSize="15.2sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/num_one"
+                android:drawablePadding="5dp"
+                android:text="最爱"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_love"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:gravity="center"
+                android:numColumns="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_han"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="韩系"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_ou"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="欧系"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_ri"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="日系"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/num_two"
+                android:drawablePadding="5dp"
+                android:text="年龄段"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:gravity="center"
+                android:numColumns="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_age1"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="18岁以下"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_age2"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="18-23岁"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_age3"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="23-28岁"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_age4"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="28岁以上"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/numb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/num_three"
+                android:drawablePadding="5dp"
+                android:text="定价"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_dingjia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:gravity="center"
+                android:numColumns="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_shihui"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="实惠"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_xiaozi"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="小资"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_qinshe"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="轻奢"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/num_four"
+                android:drawablePadding="5dp"
+                android:text="您的职业"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:gravity="center"
+                android:numColumns="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_skirt1"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="我是学生"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_skirt2"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="职场新人 "
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_skirt3"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="时尚宝妈"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_skirt4"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="丽质白领"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/num_five"
+                android:drawablePadding="5dp"
+                android:text="每月买衣服会花多少钱"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:gravity="center"
+                android:numColumns="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_money1"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="0-200元 "
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_money2"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="200-500元 "
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/button_money3"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="500-1000元"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_money4"
+                        android:layout_width="82dip"
+                        android:layout_height="32dip"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/selector_category_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="1000元以上"
+                        android:textColor="@color/selector_category_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

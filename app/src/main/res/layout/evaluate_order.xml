@@ -1,0 +1,334 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bao="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/base_head" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="评价商品"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <!-- <com.yssj.custom.view.HorizontalListView2 -->
+        <!-- android:id="@+id/hv_content" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="100dp" -->
+        <!-- android:layout_marginBottom="20dp" -->
+        <!-- android:layout_marginLeft="@dimen/margin" -->
+        <!-- android:layout_marginRight="@dimen/margin" -->
+        <!-- android:layout_marginTop="20dp" /> -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/content_pager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="20dp" 
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/tv_sum_evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总评价"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <com.yssj.custom.view.RatingBarView
+                android:id="@+id/starView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:layout_toRightOf="@id/tv_sum_evaluate"
+                bao:starCount="5"
+                bao:starEmpty="@drawable/evaluate_score_normal"
+                bao:starFill="@drawable/evaluate_score_select"
+                bao:starImageSize="25dp" >
+            </com.yssj.custom.view.RatingBarView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/tv_no_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有色差"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <RadioGroup
+                android:id="@+id/rg_no_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_no_color"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_no_color_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/evaluate_choose_selector"
+                    android:drawablePadding="@dimen/margin"
+                    android:gravity="center"
+                    android:text="是"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <RadioButton
+                    android:id="@+id/rb_no_color_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/evaluate_choose_selector"
+                    android:drawablePadding="@dimen/margin"
+                    android:gravity="center"
+                    android:text="否"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin" >
+
+            <TextView
+                android:id="@+id/tv_bx_beautify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版型漂亮"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <RadioGroup
+                android:id="@+id/rg_bx_beautify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_bx_beautify"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_bx_beautify_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/evaluate_choose_selector"
+                    android:drawablePadding="@dimen/margin"
+                    android:gravity="center"
+                    android:text="是"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <RadioButton
+                    android:id="@+id/rb_bx_beautify_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/evaluate_choose_selector"
+                    android:drawablePadding="@dimen/margin"
+                    android:gravity="center"
+                    android:text="否"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/tv_zg_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="做工不错"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <RadioGroup
+                android:id="@+id/rg_zg_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_zg_ok"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_zg_ok_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/evaluate_choose_selector"
+                    android:drawablePadding="@dimen/margin"
+                    android:gravity="center"
+                    android:text="是"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <RadioButton
+                    android:id="@+id/rb_zg_ok_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/evaluate_choose_selector"
+                    android:drawablePadding="@dimen/margin"
+                    android:gravity="center"
+                    android:text="否"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/tv_xjb_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性价比高"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <RadioGroup
+                android:id="@+id/rg_xjb_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_xjb_good"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_xjb_good_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/evaluate_choose_selector"
+                    android:drawablePadding="@dimen/margin"
+                    android:gravity="center"
+                    android:text="是"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <RadioButton
+                    android:id="@+id/rb_xjb_good_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/evaluate_choose_selector"
+                    android:drawablePadding="@dimen/margin"
+                    android:gravity="center"
+                    android:text="否"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/evaluate_content_bg"
+            android:gravity="top"
+            android:hint="亲，写点评价吧"
+            android:padding="5dp"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size16" />
+
+        <Button
+            android:id="@+id/choose_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/evaluate_upload_img"
+            android:drawablePadding="@dimen/margin"
+            android:text="上传图片晒单哦"
+            android:textColor="@color/text1_color"
+            android:textSize="@dimen/tv_size16" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/evaluate_publish_evaluate"
+            android:gravity="center"
+            android:text="发表评价"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size16" />
+    </LinearLayout>
+
+</ScrollView>

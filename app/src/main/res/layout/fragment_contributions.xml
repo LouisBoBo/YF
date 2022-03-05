@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contributions"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="供款的样衣审核通过后\n可直接上线平台进行销售\n每卖出一件您可得3~5元佣金"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin30"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="你也可选择私密供款\n样衣审核通过后不会上线销售\n会按照您要求的数量生产\n并以成本价为你供货"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin20"
+        app:layout_constraintTop_toBottomOf="@+id/content_view"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/apply_contribution"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/bg_choice_btn_checked"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="申请供款"/>
+        <TextView
+            android:id="@+id/private_contribution"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin20"
+            android:gravity="center"
+            android:background="@drawable/bg_choice_btn_checked"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="私密供款"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

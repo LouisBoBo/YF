@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="273dp"
+        android:layout_height="265dp" >
+
+        <FrameLayout
+            android:layout_width="273dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" >
+
+            <LinearLayout
+                android:layout_width="273dp"
+                android:layout_height="match_parent"
+                 android:layout_marginTop="35dp"
+                android:background="@drawable/qiandaoshuoming_dialog_back"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:background="@drawable/baoyoutou2"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp" >
+
+                    <ImageView
+                        android:id="@+id/baoyou2"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_marginRight="18dp"
+                         />
+
+                    <ImageView
+                        android:id="@+id/duobao2"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@id/baoyou2"
+                       />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/goshop"
+                        android:layout_width="110dp"
+                        android:layout_height="42dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/bg_red_ok"
+                        android:text="去抢购"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/goduobao"
+                        android:layout_width="110dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bg_red_ok"
+                        android:text="去夺宝"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingTop="-19dp"
+                android:src="@drawable/icon_close" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!-- bg_singn_dialog_shape -->
+
+</LinearLayout>

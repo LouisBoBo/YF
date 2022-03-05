@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/rel_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:padding="@dimen/margin10" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:src="@drawable/back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size20" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:src="@drawable/img_search"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ray_bm_height"
+        android:layout_alignParentBottom="true"
+        android:background="#f4f4f4"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_allchoose"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:drawableLeft="@drawable/tvchooseno_normal"
+            android:drawablePadding="3dp"
+            android:gravity="center|left"
+            android:text="@string/tv_choose_all"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size15" />
+
+        <LinearLayout
+            android:id="@+id/lay_cartpay"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ray_bm_height"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.3"
+                android:text="@string/tv_price"
+                android:gravity="bottom|center_horizontal"
+                android:textColor="#ff3f8b"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:id="@+id/tv_no_freight"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="为您节省0.00元"
+                android:gravity="top|left"
+                android:textColor="@color/gray_normal"
+                android:textSize="@dimen/tv_size12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="@dimen/tv_pay_width"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bg_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:text="@string/tv_pay_money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_above="@+id/lay_bottom"
+        android:background="@drawable/vertical_line" />
+    <!--
+        <LinearLayout
+            android:id="@+id/lay_cartremove"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ray_bm_height"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_remove"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@color/tv_remove"
+                android:gravity="center"
+                android:text="@string/tv_remove_shou"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/tv_delete_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_pay_money"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/tv_delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size13" />
+        </LinearLayout>    -->
+
+    <include
+        android:id="@+id/layout_nodata_shopcar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lay_bottom"
+        android:layout_below="@id/rel_bar"
+        layout="@layout/layout_nodata_shopcart"
+        android:visibility="gone" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listview_shopcart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lay_bottom"
+        android:layout_below="@id/rel_bar"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="10dp"
+        android:divider="@null"
+        android:fadingEdge="none"
+         android:listSelector="@null"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrListViewExtrasEnabled="false"
+        android:background="#fff"
+        ptr:ptrMode="both"
+        ptr:ptrScrollingWhileRefreshingEnabled="true" />
+
+</RelativeLayout>

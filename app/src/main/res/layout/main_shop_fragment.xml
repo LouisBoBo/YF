@@ -1,0 +1,266 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height" 
+        android:background="#fff">
+
+        <ImageButton
+            android:id="@+id/img_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="@dimen/margin10"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ff3f8b"
+            android:textSize="@dimen/tv_size20" />
+
+        <ImageButton
+            android:id="@+id/img_btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:padding="@dimen/margin10"
+            android:src="@drawable/img_btn_filter" />
+    </RelativeLayout>
+
+    <com.yssj.custom.view.MyScrollView
+        android:id="@+id/lazy_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rel_title"
+        android:fillViewport="true" 
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.yssj.custom.view.SlideShowView
+                android:id="@+id/ad_pager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/sc_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:scrollbars="none"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:id="@+id/img_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                  
+                    <!-- <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/img_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/img_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY" /> -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rl_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F2F2"
+                android:tag="sticky" >
+
+                <HorizontalScrollView
+                    android:id="@+id/mHsv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="none"
+                    android:scrollbars="none" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_nav"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="#5AB0EB" >
+
+                        <RadioGroup
+                            android:id="@+id/rg_nav_content"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentTop="true"
+                            android:background="#F2F2F2"
+                            android:orientation="horizontal" >
+                        </RadioGroup>
+
+                        <ImageView
+                            android:id="@+id/iv_nav_indicator"
+                            android:layout_width="1dip"
+                            android:layout_height="5dip"
+                            android:layout_alignParentBottom="true"
+                            android:background="#5AB0EB"
+                            android:scaleType="matrix"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/iv_nav_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="1dip"
+                    android:visibility="gone" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_nav_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="1dip"
+                    android:visibility="visible" >
+                </ImageView>
+            </RelativeLayout>
+            <!-- <LinearLayout 
+                android:id="@+id/containt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/first_colum"></LinearLayout>
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/second_colum"></LinearLayout>
+                
+            </LinearLayout> -->
+
+           <FrameLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+
+            <!--
+            <LinearLayout 
+                android:id="@+id/containerLayout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                
+            </LinearLayout>
+            -->
+
+
+            <!--
+             <com.yssj.custom.view.AutoHeightViewPager
+                android:id="@+id/mViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />            -->
+
+        </LinearLayout>
+    </com.yssj.custom.view.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_main_foot"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/mlv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:divider="@color/black"
+            android:dividerHeight="5dp"
+            android:padding="3dp"
+            android:scrollbars="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ibtn_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@color/black"
+            android:src="@drawable/img_btn_foot" />
+    </LinearLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView 
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:id="@+id/myDataList"
+		android:layout_below="@id/rel_title"
+		android:cacheColorHint="#00000000"
+		android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrListViewExtrasEnabled="false"
+        ptr:ptrMode="both"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        />
+    <com.yssj.custom.view.MyHorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/image_title"
+        android:visibility="invisible"
+        android:background="@android:color/white"
+        android:layout_below="@id/rel_title"
+        ></com.yssj.custom.view.MyHorizontalScrollView>
+    
+</RelativeLayout>

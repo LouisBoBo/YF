@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+	  <HorizontalScrollView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >  
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+          
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+         
+            <ImageButton
+                android:id="@+id/imgbtn_capture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img_photo" />
+		</LinearLayout>
+        </HorizontalScrollView>  
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin5" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="标题: "
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <EditText
+                        android:id="@+id/et_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="诱人的会有更多人看哦"
+                        android:maxLength="30"
+                        android:textColor="@color/title_color"
+                        android:textColorHint="#989898"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/tv_size18" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin15"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin5" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="内容: "
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="好内容上衣蝠头条赢金币奖励哦"
+                        android:maxLength="5000"
+                       
+                        android:textColor="@color/title_color"
+                        android:textColorHint="#989898"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/tv_size18" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_choice_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="118dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/img_right_arrow"
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/btn_right_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin"
+                    android:padding="@dimen/margin5"
+                    android:text="选择标签（必选）"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" />
+
+            <Button
+                android:id="@+id/btn_publish"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_login_height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="78dp"
+                android:background="@drawable/u17"
+                android:text="发表"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

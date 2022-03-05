@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/myka"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/base_head"/>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#f4f4f4"/>
+    
+    <include 
+        android:id="@+id/layout_nodata"
+        layout="@layout/layout_nodata"
+        android:visibility="gone"/>
+    
+    <include 
+        android:id="@+id/account_nodata"
+        layout="@layout/circle_nodata"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/ll_null"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        />
+     <com.yssj.custom.view.EditTextWithDel
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/bg_square_search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/margin"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="@dimen/margin5"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:textColorHint="#9e9e9e"
+            android:textCursorDrawable="@null"
+            android:textColor="#000"
+            android:textSize="13sp" />
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv_common"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none"
+        android:divider="#19000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrListViewExtrasEnabled="false"
+        ptr:ptrMode="both"
+        ptr:ptrScrollingWhileRefreshingEnabled="true" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+
+</LinearLayout>

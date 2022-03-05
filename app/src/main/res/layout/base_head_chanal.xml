@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_head"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" >
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:layout_width="23dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle_base"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="绑定手机"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size20" />
+
+        <RelativeLayout
+            android:id="@+id/rel_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/img_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/no_warn"
+                android:padding="5dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/img_right_icon"
+                android:background="@color/transparenct"
+                android:text="..."
+                android:textColor="#a8a8a8"
+                android:textSize="@dimen/tv_size18"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_most_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/img_right_icon"
+                android:contentDescription="@string/no_warn"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="特权说明"
+                android:textColor="#7d7d7d"
+                android:textSize="@dimen/tv_size18"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="20dp"
+            android:text="下一步"
+            android:textColor="@color/title_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

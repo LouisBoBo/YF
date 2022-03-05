@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao" >
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" >
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="你时尚我买单"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size20" />
+         <View
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp" 
+	        android:background="@drawable/horizontal_line"
+	        android:layout_alignParentBottom="true"/>  
+    </RelativeLayout>
+
+    <!-- 去免单 -->
+    <LinearLayout
+        android:id="@+id/id_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_fanzao"
+        android:orientation="vertical" >
+
+        <View  
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c5c5c5"/>
+
+        <TextView
+            android:id="@+id/buy_free_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_back_red"
+            android:gravity="center"
+            android:text="去免单"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_bottom"
+        android:layout_below="@id/ll_title"
+        android:background="#AA07F6"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA07F6"
+            android:orientation="vertical" >
+            
+         <!-- ！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！ -->	
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_dianzhui"
+            android:orientation="vertical" >	   
+	             <!-- 剩余一次资格 -->
+	            <TextView
+	                android:id="@+id/buy_free_qualifications"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="50dp"
+	                android:layout_marginLeft="28dp"
+	                android:layout_marginRight="28dp"
+	                android:layout_gravity="center_horizontal"
+	                android:gravity="center"
+	                android:text="剩余1次资格"
+	                android:textStyle="bold"
+	                android:textColor="#fc0034"
+	                android:background="@drawable/qualification"
+	                android:visibility="gone"
+	                android:textSize="@dimen/tv_size23" />
+	            <!--  或者资格已经使用-->
+				<LinearLayout 
+				    android:id="@+id/buy_free_qualifications_used"
+				   	android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/qualification_used"
+		            android:visibility="visible"
+		            android:orientation="vertical"
+	                android:layout_marginLeft="28dp"
+	                android:layout_marginRight="28dp"
+	                android:layout_marginTop="50dp"
+	                android:paddingLeft="18dp" >
+		            <TextView
+		                android:id="@+id/buy_free_qualifications_used_tv"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="资格已使用"
+		                android:textStyle="bold"
+		                android:textColor="#7D7D7D"
+		                android:layout_marginTop="23dp"
+		                android:textSize="@dimen/tv_size20" />
+		            <TextView
+		                android:id="@+id/buy_free_used_order_tv"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="订单："
+		                android:layout_marginTop="5dp"
+		                android:textColor="#7D7D7D"
+		                android:textSize="@dimen/tv_size14" />
+				</LinearLayout>
+			</LinearLayout>
+	<!-- ！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！ -->		
+			<LinearLayout 
+			   	android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="20dp"
+	            android:orientation="horizontal">
+	            <View 
+	                android:layout_width="0dp"
+	           		android:layout_height="1dp"
+	                android:layout_weight="1"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="6dp"
+	                android:layout_gravity="center_vertical"
+	                android:background="@drawable/line_free_quali"/>
+	           <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="免单资格说明"
+	                android:textColor="#F2DAFD"
+	                android:textStyle="bold"
+	                android:textSize="@dimen/tv_size18" />
+	            <View 
+	                android:layout_width="0dp"
+	           		android:layout_height="1dp"
+	                android:layout_weight="1"
+	                android:layout_marginLeft="6dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_gravity="center_vertical"
+	                android:background="@drawable/line_free_quali"/>
+			</LinearLayout>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+            <TextView
+                android:id="@+id/bu_free_exp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="1.免单资格是衣蝠为了答谢新老用户赠送的一次超级福利；"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14" />
+
+
+            <TextView
+                android:id="@+id/bu_free_exp2_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="2.免单只适用于购买衣蝠平台所有实付金额50元以上或100元以上的商品（扣除积分、抵用券、优惠券、金币、金券后），支付订单包含多件商品时，单件商品价格不低于30元，且系统会根据供应商的不同进行拆单，只有拆单后金额满足条件才可参与免单；"
+                android:textColor="#F2DAFD"
+                android:visibility="gone"
+                android:textSize="@dimen/tv_size14" />
+            <TextView
+                android:id="@+id/bu_free_exp2_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="2.免单只适用于购买衣蝠平台所有实付金额50元以上的商品（扣除积分、抵用券、优惠券、金币、金券后），支付订单包含多件商品时，单件商品价格不低于30元，且系统会根据供应商的不同进行拆单，只有拆单后金额满足条件才可参与免单；"
+                android:textColor="#F2DAFD"
+                android:visibility="visible"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:id="@+id/bu_free_exp3_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="3.下单后平台将分5个月返还50元或者是100元现金，具体返还时间节点如下图："
+                android:textColor="#F2DAFD"
+                android:visibility="gone"
+                android:textSize="@dimen/tv_size14" />
+            <TextView
+                android:id="@+id/bu_free_exp3_50" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="3.下单后平台将分5个月返还50元现金，具体返还时间节点如下图："
+                android:textColor="#F2DAFD"
+                android:visibility="visible"
+                android:textSize="@dimen/tv_size14" />
+			<ImageView
+			    android:id="@+id/buy_free_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_qualification_bottom" />
+
+            <TextView
+                android:id="@+id/bu_free_exp4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="4.本次活动名额有限，所以请及时选购心仪美衣下单，以免浪费免单资格；"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14" />
+            <TextView
+                android:id="@+id/bu_free_exp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="5.退货退款处理：用户在使用免单资格后，发生退货退款，默认已使用该免单资格，将不再重新赠送；"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14" />
+            <TextView
+                android:id="@+id/bu_free_exp6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="6.本次活动解释权归衣蝠所有。"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14" />
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_qualification_bottom" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff">
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shopcar_nodata"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tv_size18"
+        android:layout_marginTop="35dp"
+        android:text="购物车还是空的"
+        android:gravity="center"
+        android:textColor="#989898"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tv_size18"
+        android:layout_marginTop="@dimen/margin5"
+        android:gravity="center"
+        android:text="快去挑几件喜欢的宝贝吧~"
+        android:textColor="#989898"/>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_to_shop"
+        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:text="去逛逛"
+        android:textColor="#ff3f8b"
+        android:textSize="@dimen/tv_size18"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape_corners_public_use"
+        android:gravity="center"/>
+
+</LinearLayout>

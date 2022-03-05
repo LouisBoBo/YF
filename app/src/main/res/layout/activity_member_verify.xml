@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/menb"
+    android:orientation="vertical" >
+    <include layout="@layout/base_head"/>
+    <com.yssj.custom.view.LineEditText
+            android:id="@+id/et_member_verify_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:background="@null"
+            android:hint="至尊会员卡号"
+            android:inputType="text"
+            android:maxLength="25"
+            android:paddingLeft="5dp"
+            android:textColor="#000"
+            android:textColorHint="@color/text1_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/tv_size16" />
+
+        <com.yssj.custom.view.LineEditText
+            android:id="@+id/et_member_verify_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="5dp"
+            android:textColor="#000"
+            android:textColorHint="@color/text1_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/tv_size16" />
+        <TextView
+            android:id="@+id/tv_member_verify_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginTop="35dp"
+            android:background="@color/black"
+            
+            android:clickable="true"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size18" />
+    "
+    
+
+</LinearLayout>

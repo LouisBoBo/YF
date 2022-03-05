@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qiandaoshuoming_dialog_back"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/dialog_tv_dialog_colse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/weixintixian_close_icon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="衣豆说明"
+                android:textColor="#3e3e3e"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dialog_sucess_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="1.衣豆可以通过平台购买下单获得平台消费1元（夺宝除外，不足1元将按1元计算）可获得1个衣豆"
+                android:textColor="#7d7d7d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="2.用户下单成功后，相应衣豆将会冻结在衣豆账户中，订单签收7天后（订单完结），订单产生的衣豆将会解冻；如果发生退货，冻结衣豆将会被扣除"
+                android:textColor="#7d7d7d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="3.参与送衣豆任务，也可获得相应衣豆奖励"
+                android:textColor="#7d7d7d"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="273dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/balance_dialog_tv3"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/tv_go_on"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:background="@drawable/shape_corners_public_use"
+                android:gravity="center"
+                android:text="知道了"
+                android:textColor="#ff3f8b"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/start_balance"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/indiana_shape_shaidan"
+                android:gravity="center"
+                android:text="抽取提现额度"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

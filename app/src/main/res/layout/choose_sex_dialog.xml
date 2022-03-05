@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:background="#fff"
+    android:orientation="vertical" >
+ <!-- android:background="@drawable/payback_esc_apply_bg" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:id="@+id/lin_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView 
+                android:layout_height="37.5dp"
+                android:layout_width="29dp"
+                android:background="#00000000"
+                android:layout_marginRight="@dimen/margin"
+                android:src="@drawable/img_male"/>
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="男"
+                android:textSize="@dimen/tv_size16"
+                android:textColor="#222222"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/lin_famale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView 
+                android:layout_height="37.5dp"
+                android:layout_width="29dp"
+                android:background="#00000000"
+                android:layout_marginRight="@dimen/margin"
+                android:src="@drawable/img_famale"/>
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="女"
+                android:textSize="@dimen/tv_size16"
+                android:textColor="#222222"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+       <LinearLayout 
+           android:id="@+id/ll_select"
+           android:layout_width="wrap_content"
+           android:layout_height="@dimen/img_goods_height"
+           >
+           <ImageView
+               android:id="@+id/iv_select"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/select_selector"
+              android:layout_gravity="center"
+              android:padding="@dimen/margin"
+               />
+       </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_pro_pic"
+            android:layout_width="@dimen/img_goods_width"
+            android:layout_height="@dimen/img_goods_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_toRightOf="@+id/ll_select"
+            android:layout_margin="@dimen/margin"
+            android:src="@drawable/testtoux" />
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/img_pro_pic"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/gray_color"
+            android:gravity="right"
+            android:text="x1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_pro_pic"
+            android:layout_toLeftOf="@id/tv_sum"
+            android:layout_toRightOf="@id/img_pro_pic"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_pro_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="2015夏款欧美真丝镂空"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/tv_pro_descri"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="颜色:黑白  尺寸:XL"
+                android:textColor="@color/gray_color"
+                android:textSize="@dimen/tv_size13" />
+
+            <TextView
+                android:id="@+id/tv_pro_discount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text="￥195.00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size13" />
+
+            <TextView
+                android:id="@+id/tv_pro_price"
+                android:layout_width="fill_parent"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text="￥469.00"
+                android:textColor="@color/gray_color"
+                android:textSize="@dimen/tv_size13" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+
+</LinearLayout>

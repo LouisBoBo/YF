@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dp"
+    android:layout_height="327dp"
+   
+    android:background="@drawable/qiandaoshuoming_dialog_back"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+         android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:background="@drawable/dialog_shape_message"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="分享商品成功后，来围观并成功加入衣蝠的小伙伴将会成为你的粉丝"
+                android:textColor="#7d7d7d"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:background="@drawable/dialog_shape_message"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="粉丝每次在衣蝠购买美衣，你将可以从平台得到商品售价10%的现金奖励"
+                android:textColor="#7d7d7d"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="例如:"
+            android:textColor="#ff3f8b"
+            android:textSize="14sp" />
+
+        <TextView
+              android:layout_marginLeft="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="朋友圈里有20个小伙伴在衣蝠消费500元，你就能得到1000元的现金奖励，小伙伴们同时也能得到相应的优惠。快号召小伙伴们下载衣蝠APP吧。"
+            android:textColor="#ff3f8b"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

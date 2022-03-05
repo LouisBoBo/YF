@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+    }
+    dependencies {
+//        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.0.1'
+
+//        classpath 'com.android.tools.build:gradle:3.2.1'
+
+//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8' // 添加这行
+
+        // tinkersupport插件, 其中lastest.release指拉取最新版本，也可以指定明确版本号，例如1.0.4
+//        classpath "com.tencent.bugly:tinker-support:+"
+//        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.2'
+
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url "http://lib.gcssloop.com:8081/repository/gcssloop-central/" }
+        maven { url 'https://jitpack.io' }		//添加这一行
+    }
+
+
+}

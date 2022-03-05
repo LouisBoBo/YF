@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/ranking_head_iv"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_toRightOf="@id/ranking_ll"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="@dimen/margin10"
+        android:background="@color/transparenct"
+        android:clickable="false"
+        android:src="@drawable/head_pic_04" />
+<!--
+    <TextView
+        android:id="@+id/tv_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="8dp"
+        android:text="个赞"
+        android:textColor="#FF3F8B"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ranking_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@id/tv_zan"
+        android:maxLines="1"
+        android:text="112"
+        android:textColor="#FF3F8B"
+        android:textSize="20sp"
+        android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/ranking_ninckname"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ranking_head_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/ranking_head_iv"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="昵称"
+        android:textColor="#3E3E3E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ranking_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ranking_head_iv"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ranking_head_iv"
+        android:maxLines="1"
+        android:text="深圳"
+        android:textColor="#7D7D7D"
+        android:textSize="12sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/voice_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin8"
+        android:layout_alignBottom="@id/ranking_head_iv"
+        android:layout_toRightOf="@id/ranking_ninckname"
+        android:layout_toEndOf="@id/ranking_ninckname">
+        <LinearLayout
+            android:id="@+id/voice_ll"
+            android:layout_width="130dp"
+            android:layout_height="38dp"
+            android:background="@drawable/voice_bg"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/id_recorder_anim"
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical|left"
+                android:background="@drawable/voice_anim"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/voice_ll"
+            android:maxLines="1"
+            android:text="1″"
+            android:textColor="#FF3F8B"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/awards_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/margin10"
+        android:layout_alignLeft="@id/ranking_head_iv"
+        android:layout_below="@id/ranking_head_iv"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="#FF3F8B"
+        android:textSize="@dimen/tv_size16" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/base_head"
+        android:background="@drawable/white_fanzao" />
+
+    <View
+        android:id="@+id/v_v"
+        android:visibility="gone"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#C5C5C5" />
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvlogin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_back_red"
+            android:gravity="center"
+            android:text="@string/tv_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size18" />
+
+        <TextView
+            android:id="@+id/tvregster"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_back_white"
+            android:gravity="center"
+            android:text="@string/tv_regster"
+            android:textColor="@color/common_red"
+            android:textSize="@dimen/tv_size18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/lin_bottom"
+        android:background="@color/background_gray" />
+
+    <FrameLayout
+        android:id="@+id/container_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lin_bottom"
+        android:layout_below="@id/v_v"
+        android:background="#f0f0f0"
+        android:paddingTop="20dp" />
+
+
+
+</RelativeLayout>

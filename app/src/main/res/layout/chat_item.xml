@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            android:id="@+id/my_dating_voerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_date"
+            android:text="13-7-8 18:21"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_warning" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@anim/rotate" 
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/my_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:text="5&apos;&apos;" />
+
+            <FrameLayout
+                android:id="@+id/my_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/msg_white_bg"
+                android:minWidth="60dp" >
+
+                <com.yeamo4.widget.rich.RichTextView
+                    android:id="@+id/my_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="老婆，我明天去上海出差，你帮我订个鸡嫖。晚上的！" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/my_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="120dp"
+                        android:minHeight="48dp"
+                        android:minWidth="48dp"
+                        android:src="@drawable/image_holder_color" />
+
+                    <com.yeamo4.widget.AnimImageView
+                        android:id="@+id/my_anim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="120dp"
+                        android:minHeight="48dp"
+                        android:minWidth="48dp"
+                        android:src="@drawable/image_holder_color" />
+
+                    <TextView
+                        android:id="@+id/my_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/my_image"
+                        android:layout_alignLeft="@id/my_image"
+                        android:layout_alignRight="@id/my_image"
+                        android:background="#000000"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="地理位置"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/my_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/mine_voice" />
+                
+                
+                	
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/my_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/image_holder_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/your"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" >
+
+        <ImageView
+            android:id="@+id/your_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/image_holder_color" />
+
+        <FrameLayout
+            android:id="@+id/your_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/msg_blue_bg"
+            android:minWidth="60dp" >
+
+            <com.yeamo4.widget.rich.RichTextView
+                android:id="@+id/your_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="嫖你妈B，今天别回来了！" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/your_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="120dp"
+                    android:minHeight="48dp"
+                    android:minWidth="48dp"
+                    android:src="@drawable/image_holder_color" />
+                
+                <com.yeamo4.utils.MyProgress
+		            android:id="@+id/your_progressbar"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_centerHorizontal="true"
+		            android:indeterminateDrawable="@anim/rotate" 
+		            style="?android:attr/progressBarStyle" />
+
+                <com.yeamo4.widget.AnimImageView
+                    android:id="@+id/your_anim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="120dp"
+                    android:minHeight="48dp"
+                    android:minWidth="48dp"
+                    android:src="@drawable/image_holder_color" />
+				
+				
+                <TextView
+                    android:id="@+id/your_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/your_image"
+                    android:layout_alignLeft="@id/your_image"
+                    android:layout_alignRight="@id/your_image"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="地理位置"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />    
+                
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/your_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/normal_voice" />
+            
+            
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/your_seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="5&apos;&apos;" />
+
+        <ImageView
+            android:id="@+id/unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_unread" />
+        
+    </LinearLayout>
+
+</LinearLayout>

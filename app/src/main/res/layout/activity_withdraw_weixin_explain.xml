@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/invite_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:gravity="center|left" >
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="23dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle_base"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="微信提现说明"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size20" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/invite_rl_title"
+        layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#ff3f8b"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/explain_name"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/wallet_withdraw_edit_bg"
+            android:gravity="center_vertical"
+            android:hint="姓名"
+            android:inputType="text"
+            android:padding="@dimen/margin15"
+            android:paddingLeft="@dimen/margin15"
+            android:textColor="#3e3e3e"
+            android:textColorHint="#a8a8a8"
+            android:textCursorDrawable="@null"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#ff3f8b"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:id="@+id/expalin_card"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/wallet_withdraw_edit_bg"
+            android:gravity="center_vertical"
+            android:hint="身份证"
+            android:padding="@dimen/margin15"
+            android:paddingLeft="@dimen/margin15"
+            android:textColor="#3e3e3e"
+            android:textColorHint="#a8a8a8"
+            android:textCursorDrawable="@null"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/invite_rl_title"
+        android:layout_marginTop="15dp"
+        layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/explain_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="请填写您微信授权登录的微信账号的真实姓名验证微信提现账号。"
+            android:textColor="#7d7d7d"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f3f3f3"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/explain_btn_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/submit_money_next_shape"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/base_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/receiver_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/common_edittext_bg"
+                    android:gravity="center_vertical"
+                    android:hint="收货人姓名"
+                    android:padding="@dimen/margin"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/title_color"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/tv_size18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/receiver_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/common_edittext_bg"
+                    android:gravity="center_vertical"
+                    android:hint="手机号码"
+                    android:inputType="phone"
+                    android:padding="@dimen/margin"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/title_color"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/tv_size18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/zip_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/common_edittext_bg"
+                    android:gravity="center_vertical"
+                    android:hint="邮政编码"
+                    android:inputType="number"
+                    android:padding="@dimen/margin"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/title_color"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/tv_size18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_tv_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/common_edittext_bg"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin"
+                    android:paddingLeft="5dp"
+                    android:text="省-市-区-街道"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/tv_size18" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:background="@drawable/line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/detail_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/comon_edittext_moreline_bg"
+                    android:gravity="top"
+                    android:hint="详细地址"
+                    android:lines="3"
+                    android:padding="@dimen/margin"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/title_color"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/tv_size18" />
+            </RelativeLayout>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_login_height"
+                android:layout_marginLeft="@dimen/margin60"
+                android:layout_marginRight="@dimen/margin60"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/u17"
+                android:text="保存"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

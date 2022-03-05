@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.yssj.entity.MyToggleButton
+        android:id="@+id/gridview_item_button"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:clickable="true"
+        android:textSize="@dimen/tv_size14"
+        android:button="@null"
+        android:singleLine="true"
+        android:background="@drawable/selector_category_bg"
+        android:textColor="@color/selector_category_text"/>
+
+<!--    android:focusable="false" 
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="-1"
+		android:focusableInTouchMode="true" 
+        									-->
+</LinearLayout>

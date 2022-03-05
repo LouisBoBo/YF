@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <RelativeLayout
+        android:id="@+id/rel_support_bank_card"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+       >
+
+        <TextView
+            android:id="@+id/tv_des_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin20"
+            android:text="支持银行卡"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:background="@drawable/line" />
+
+        <ListView
+            android:id="@+id/lv_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line"
+            android:divider="#DCDCDC"
+            android:dividerHeight="0.3dp"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/rel_add_bank_card"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:drawableLeft="@drawable/add_bank_card"
+            android:drawablePadding="@dimen/margin15"
+            android:text="添加银行卡"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:textColor="#a8a8a8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin20"
+        android:text="现金提现当日实时到账"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white" >
+
+        <ImageButton
+            android:id="@+id/img_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:paddingLeft="12dp"
+            android:src="@drawable/icon_search" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/match"
+            android:textColor="#3E3E3E"
+            android:textSize="@dimen/tv_size18" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_shopcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin" >
+
+            <ImageButton
+                android:id="@+id/img_shop_cart_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:padding="10dp"
+                android:src="@drawable/icon_shop"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/zero_shop_count_common"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_alignRight="@+id/img_shop_cart_common"
+                android:layout_alignTop="@+id/img_shop_cart_common"
+                android:background="@drawable/zero_shop_view"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:textSize="@dimen/tv_size8" />
+        </RelativeLayout>
+    </RelativeLayout>
+    -->
+    <!-- 余额翻倍提示 -->
+    <!--
+     <RelativeLayout
+            android:id="@+id/rl_yuefanbei"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/black" >
+
+            <TextView
+                android:id="@+id/haisheng"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="距离余额翻倍结束还剩： "
+                android:textColor="#CBC9C9" />
+
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/fanbei_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/haisheng"
+                android:textColor="#CBC9C9" />
+
+            <LinearLayout
+                android:id="@+id/lv_kaiqifanbei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_lijikaiqi"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/kaiqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFE718" />
+            </LinearLayout>
+     </RelativeLayout>
+    -->
+
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.yssj.custom.view.SnatchScrollList
+            android:id="@+id/matchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0" >
+
+            <RelativeLayout
+                android:id="@+id/zero_shop_refreshView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="-100dp"
+                android:background="#f0f0f0" >
+
+                <ImageView
+                    android:id="@+id/refreshAnim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@anim/header_loading"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lin_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/pull_to_refresh_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:textColor="#b2b2b2"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_arrow"
+                        android:layout_width="15dp"
+                        android:layout_height="40dp"
+                        android:background="#00000000" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.yssj.custom.view.XListViewMatch
+                android:id="@+id/match_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#F0F0F0"
+                android:dividerHeight="1dp"
+                android:layout_marginBottom="100dp"
+                android:scrollbars="none" />
+        </com.yssj.custom.view.SnatchScrollList>
+    </LinearLayout>
+    -->
+
+	<View
+	     android:layout_width="match_parent"
+	     android:layout_height="0.5dp"
+	     android:background="#e5e5e5" />
+	<FrameLayout
+        android:id="@+id/r_list_view_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+ 		<include 
+	        android:id="@+id/groups_nodata"
+	        layout="@layout/circle_nodata"
+	        android:visibility="gone"/>
+ 		<RelativeLayout
+ 		    android:id="@+id/to_login_view" 
+ 		    android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:visibility="gone">
+        	<LinearLayout 
+        	    android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_centerInParent="true"
+        	    android:orientation="vertical">
+        	    <TextView
+        	       android:layout_width="match_parent"
+        		   android:layout_height="wrap_content" 
+        		   android:text="立即登录，看蜜友们都分享了什么吧..."
+        		   android:gravity="center_horizontal"
+        		   android:textColor="#7D7D7D"
+        		   android:textSize="14sp"/>
+        	    <Button
+        	        android:id="@+id/to_login_btn"
+        	        android:layout_width="100dp"
+        		    android:layout_height="38dp"
+        		    android:layout_marginTop="10dp"
+        		    android:layout_gravity="center_horizontal"
+					android:background="@drawable/shape_corners_public_use" 
+					android:text="登录"
+					android:textSize="16sp"
+					android:textColor="#FF3F8B"/>
+        	    
+        	</LinearLayout>
+ 		    
+ 		</RelativeLayout>
+	    <com.yssj.custom.view.XListViewMatch
+	        android:id="@+id/dataList"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="#F0F0F0"
+	        android:dividerHeight="0dp"
+	        android:scrollbars="none" />
+    </FrameLayout>
+
+</LinearLayout>

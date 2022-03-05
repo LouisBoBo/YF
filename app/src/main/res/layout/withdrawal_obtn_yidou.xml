@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/icon_select_withdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_obtain_yidou" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="恭喜你"
+        android:textColor="#FDCC21"
+        android:textSize="@dimen/tv_size18" />
+
+    <TextView
+        android:id="@+id/obtain_yidou_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="获得0个衣豆"
+        android:textColor="#FDCC21"
+        android:textSize="@dimen/tv_size18" />
+
+    <TextView
+        android:id="@+id/obtain_choujiang_times_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="可以兑换0次抽奖机会"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/tv_size14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="本日抽奖最高可赢取1000元大奖"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/tv_size14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="#FD215A"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_twobt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_white"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_white"
+                android:text="暂不抽奖"
+                android:textColor="#FD215A"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_yellow"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_yellow"
+                android:text="立即抽奖"
+                android:textColor="#FD215A"
+                android:textSize="16sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" >
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon_sign"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:alpha="0.3"
+                android:background="@drawable/u122"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_forcelook_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="浏览有奖"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size20" />
+
+        <!--
+        <HorizontalScrollView
+            android:id="@+id/hsv_containt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+              android:layout_marginLeft="@dimen/margin10"
+              android:layout_marginRight="@dimen/margin10"
+            android:layout_weight="1" >
+            <LinearLayout 
+                android:id="@+id/ll_containt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+        </HorizontalScrollView>
+        -->
+
+
+        <!-- 如果是签到跳过来的 这个就显示 -->
+
+        <ImageButton
+            android:id="@+id/shop_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin8"
+            android:background="@null"
+            android:paddingRight="@dimen/margin"
+            android:scaleType="center"
+            android:src="@drawable/icon_gouwuche_black"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/img_btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin8"
+            android:background="@null"
+            android:paddingRight="@dimen/margin"
+            android:scaleType="center"
+            android:src="@drawable/icon_gouwuche_black" />
+
+        <TextView
+            android:id="@+id/tv_cart_count_Force"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignLeft="@id/img_btn_filter"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/red_point_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_size7"
+            android:visibility="invisible" />
+        
+        
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" 
+        android:background="@drawable/horizontal_line"
+        android:layout_alignParentBottom="true"/>    
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/ll_nodata"
+        layout="@layout/circle_nodata"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_yuefanbei"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/black" >
+
+        <ImageView
+            android:id="@+id/img_tongzhi"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_tongzhi" />
+
+        <TextView
+            android:id="@+id/haisheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img_tongzhi"
+            android:text="亲，任务奖励就藏在这些商品详情页里噢，快去领取吧~"
+            android:textColor="#CBC9C9"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/lv_kaiqifanbei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/daojishi_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/liulanTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:50 "
+                android:textColor="#FFE718" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shuoming"
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="#FF594F"
+            android:gravity="center"
+            android:text="任务说明"
+            android:textColor="#FFE718"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    
+<!--     <LinearLayout
+        android:id="@+id/horizontal_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+      >
+
+        <TextView
+            android:id="@+id/create_is_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="最新"
+            android:textSize="15sp"
+            android:textColor="@color/pink_color" />
+
+        <TextView
+            android:id="@+id/create_is_hot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="热销"
+            android:textSize="15sp"
+            android:textColor="#3E3E3E" />
+
+        <TextView
+            android:id="@+id/create_price_asc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="价格↑"
+            android:textSize="15sp"
+            android:textColor="#3E3E3E" />
+
+        <TextView
+            android:id="@+id/create_price_desc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="价格↓"
+            android:textSize="15sp"
+            android:textColor="#3E3E3E" />
+    </LinearLayout>-->
+    
+<!--    <FrameLayout
+        android:id="@+id/r_list_view_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/r_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            ptr:ptrAnimationStyle="flip" />
+    </FrameLayout>-->
+     <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/r_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="@null"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrListViewExtrasEnabled="false"
+        ptr:ptrMode="both"
+        ptr:ptrScrollingWhileRefreshingEnabled="true" />
+</LinearLayout>

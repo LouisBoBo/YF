@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparenct" >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/withdrawal_exp_dialog_red"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/icon_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_withdrawal_close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FD215A"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/obtain_mad_remaindtimes_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="温馨提示"
+                android:textColor="#FDCC21"
+                android:textSize="@dimen/tv_size18" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="本日购买商品成功后可立即参与抽奖，中奖率为50%，最高奖金1000元。"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_size14" />
+
+            <RelativeLayout
+                android:id="@+id/rl_twobt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="30dp"
+                android:visibility="visible" >
+
+                <Button
+                    android:id="@+id/btn_yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/shape_withdrawal_yellow"
+                    android:text="知道了"
+                    android:textColor="#FD215A"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/icon_top"
+        android:layout_width="95dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/shop_details_buy_tips_hongbao" />
+
+</RelativeLayout>

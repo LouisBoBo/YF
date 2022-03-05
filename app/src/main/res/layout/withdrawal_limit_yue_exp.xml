@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="如何获得余额？"
+            android:textColor="#FDCC21"
+            android:textSize="@dimen/tv_size18" />
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#FD215A"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1、余额很重要哦，不仅能用来抵扣购衣款，抽提现现金，并且余额不足就不能提现呢。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2、可通过完成每日必做任务及额外任务获得余额。记得每天都把全部任务完成哦。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3、可参加0元购美衣活动获得余额。购买美衣且交易成功后即全额返还购衣款至余额。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btn_white"
+                android:layout_width="115dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_white"
+                android:text="去做任务"
+                android:textColor="#FD215A"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_yellow"
+                android:layout_width="115dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_yellow"
+                android:text="去0元购美衣"
+                android:textColor="#FD215A"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

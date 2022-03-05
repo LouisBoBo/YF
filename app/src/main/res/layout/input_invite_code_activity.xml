@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:id="@+id/root"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height" >
+
+        <TextView
+            android:id="@+id/tvTitle_base"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="兑换邀请码"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size20" />
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:gravity="center|left" >
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="13dp"
+                android:layout_height="24dp"
+                android:clickable="false"
+                android:background="@drawable/u122"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin20"
+        android:text="请输入邀请码"
+        android:textColor="#222222"
+        android:textSize="@dimen/tv_size16" />
+
+    <EditText
+        android:id="@+id/et_input_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/wallet_withdraw_edit_bg"
+        android:hint="邀请码"
+        android:textColor="#222222"
+        android:paddingLeft="@dimen/margin"
+        android:textSize="@dimen/tv_size16"
+        android:textColorHint="#f4f4f4" />
+
+    <Button
+        android:id="@+id/btn_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:gravity="center"
+        android:text="兑换"
+        android:background="@drawable/payback_i_want_apply"
+        android:textSize="@dimen/tv_size16"
+        android:textColor="#fff" />
+
+</LinearLayout>

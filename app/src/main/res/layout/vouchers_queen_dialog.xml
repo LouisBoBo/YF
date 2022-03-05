@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@drawable/force_update_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_marginTop="28dp"
+        android:textColor="#3e3e3e"
+        android:id="@+id/voucachers_dialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="分享就能使用16元抵用券哦，"
+        android:textSize="16sp" />
+
+    <TextView
+         android:textColor="#3e3e3e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="确定不使用吗？"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            
+            android:textSize="14sp"
+            android:id="@+id/share_cancle"
+            android:textColor="#FF3F8B"
+            android:background="@drawable/vouchers_shape_cancle"
+            android:layout_width="115dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="暂不使用" />
+
+        <Button
+            android:textSize="14sp"
+            android:id="@+id/share_goon"
+            android:background="@drawable/vouchers_shape_share"
+            android:textColor="#fff"
+            android:layout_width="115dp"
+            android:layout_height="42dp"
+             android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="继续分享" />
+    </LinearLayout>
+<View android:layout_height="0.1dp"
+    android:layout_width="match_parent"
+    />
+</LinearLayout>

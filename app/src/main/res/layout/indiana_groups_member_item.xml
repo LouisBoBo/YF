@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<TextView
+		android:id="@+id/groups_num"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="@dimen/margin15"
+		android:layout_marginBottom="@dimen/margin10"
+		android:textSize="@dimen/tv_size16"
+		android:textColor="#3E3E3E"
+		android:includeFontPadding="false"
+		android:text="第1团 未满"/>
+	<TextView
+		android:id="@+id/groups_luck_number"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:textSize="@dimen/tv_size14"
+		android:textColor="#3E3E3E"
+		android:includeFontPadding="false"
+		android:layout_marginBottom="@dimen/margin10"
+		android:text="(幸运号码：123456789)"/>
+
+	<!--参团用户显示多行的时候容器布局-->
+	<LinearLayout
+		android:id="@+id/indiana_groups_member_container_v"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="@dimen/margin15"
+		android:orientation="vertical">
+
+	</LinearLayout>
+	<!--参团用户显示单行的时候容器布局-->
+	<LinearLayout
+		android:id="@+id/indiana_groups_member_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="@dimen/margin15"
+		android:layout_marginTop="@dimen/margin10"
+		android:orientation="horizontal">
+
+
+	</LinearLayout>
+
+
+</LinearLayout>

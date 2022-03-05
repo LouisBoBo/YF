@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp" >
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/wodexihao_fengge_rixi" />
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/item_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/wodexihao_fengge_icon_xuanzhong" />
+
+</RelativeLayout>

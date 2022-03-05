@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="如何获得衣豆？"
+            android:textColor="#FDCC21"
+            android:textSize="@dimen/tv_size18" />
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="#FD215A"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.衣豆可以通过平台购买下单获得平台消费1元(不足1元将按1元计算)可获得1个衣豆；"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2.用户下单成功后，相应衣豆将会冻结在衣豆账户中，订单签收7天后(订单完结)，订单产生的衣豆将会解冻；如果发生退款退货，冻结衣豆将会被扣除；"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3.参与送衣豆任务，也可获得相应衣豆奖励。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_twobt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="30dp"
+            android:visibility="visible" >
+            <Button
+                android:id="@+id/btn_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/shape_withdrawal_yellow"
+                android:text="买买买"
+                android:textColor="#FD215A"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

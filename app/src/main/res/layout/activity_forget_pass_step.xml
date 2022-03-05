@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/vertical_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:gravity="center|left"
+        android:text="@string/find_pwd"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/tv_size15" />
+
+    <EditText
+        android:id="@+id/et_input_auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="@string/input_auto"
+        android:textCursorDrawable="@null"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_size18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/vertical_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_autos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:hint="@string/tv_email"
+            android:textCursorDrawable="@null"
+            android:inputType="text"
+            android:maxLength="4"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size18" />
+
+        <com.yssj.custom.view.CheckView
+            android:id="@+id/ck_autos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.5"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_getcode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/black"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size18" />
+
+</LinearLayout>

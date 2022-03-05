@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <ScrollView
+        android:id="@+id/scroll_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rel_identify_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin15"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginTop="@dimen/margin15"
+                android:padding="@dimen/margin10"
+                android:orientation="horizontal" >
+
+               <EditText
+                    android:id="@+id/comment_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="亲，您遇到什么系统问题啦，或有什么功能建议吗？欢迎您提给我们，谢谢!"
+                    android:lines="5"
+                    android:lineSpacingExtra="@dimen/margin"
+                    android:gravity="left|top"
+                    android:padding="@dimen/margin"
+                    android:textColorHint="#989898"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size16" />
+            </RelativeLayout>
+
+            <!--
+                 <ImageView
+                android:id="@+id/iv_addpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/a" />-->
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_login_height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/u17"
+                android:text="发表"
+                android:textSize="@dimen/tv_size19"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

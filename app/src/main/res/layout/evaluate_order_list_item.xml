@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/item_ll"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_goods_icon"
+            android:layout_width="85dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin10"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/margin10"
+            android:layout_marginLeft="@dimen/margin15"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:lineSpacingExtra="5dp"
+                    android:ellipsize="end"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size14" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="@dimen/margin5"
+                 >
+
+                <TextView
+                    android:id="@+id/tv_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size13" />
+
+                <TextView
+                    android:id="@+id/tv_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_toRightOf="@id/tv_color"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size13" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</LinearLayout>

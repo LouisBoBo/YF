@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sign_explain"/> -->
+    
+    <RelativeLayout 
+        android:layout_width="274dp"
+        android:layout_height="170dp">
+        <!-- android:layout_height="254dp" -->
+        
+      <ImageView 
+          android:id="@+id/top"
+	      android:layout_width="274dp"
+	      android:layout_height="wrap_content"
+	      android:src="@drawable/sign_explain"
+	      
+	      />
+      
+      <RelativeLayout 
+          android:id="@+id/rl"
+          android:layout_width="274dp"
+          android:layout_height="match_parent"
+          android:layout_below="@id/top"
+          android:background="@drawable/sign_rl_back"
+          android:layout_alignLeft="@id/top"
+          android:layout_alignRight="@id/top">
+          
+          <ImageView 
+              android:id="@+id/img_one"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:src="@drawable/one"
+              android:layout_marginLeft="15dp"
+              android:layout_marginTop="28dp"
+              android:visibility="gone"/>
+          
+          
+          <TextView 
+              android:id="@+id/tv_one"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/img_one"
+              android:layout_marginRight="15dp"
+              android:layout_marginLeft="4dp"
+              android:layout_marginTop="30dp"
+              android:text="签到奖励就藏在商品里面噢~"
+              android:textSize="12sp"
+              android:textColor="#7D7D7D"
+              android:gravity="center_horizontal"/>
+            <!-- android:text="签到奖励随机藏在每日精选商品列表的商品详情页中，进入商品详情页浏览至底部，就有机会找到噢~" -->
+          
+          <ImageView 
+              android:id="@+id/img_two"
+              android:layout_below="@id/tv_one"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:src="@drawable/two"
+              android:layout_marginLeft="15dp"
+              android:layout_marginTop="22dp"
+              android:visibility="gone"/>
+          
+          
+          <TextView 
+              android:id="@+id/tv_two"
+             android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+               android:layout_below="@id/tv_one"
+               android:layout_marginRight="15dp"
+               android:layout_marginLeft="4dp"
+               android:layout_marginTop="24dp"
+               android:layout_toRightOf="@id/img_two"
+               android:text="在这些推荐商品中购买下单，即可直接完成签到任务获得奖励。"
+               android:textSize="12sp"
+              android:textColor="#7D7D7D"
+              android:visibility="gone"/>
+         
+          <TextView 
+              android:id="@+id/bt"
+              android:layout_width="244dp"
+              android:layout_height="38dp"
+              android:text="去寻宝啦~"
+              android:textSize="16sp"
+              android:textColor="#FFFFFF"
+              android:gravity="center"
+              android:layout_alignParentBottom="true"
+              android:layout_marginBottom="25dp"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+             android:background="@drawable/sign_back"/>
+          
+      </RelativeLayout>
+      
+        
+    </RelativeLayout>
+
+</LinearLayout>

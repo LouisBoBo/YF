@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/icon_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/icon_left"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qiandaoshuoming_dialog_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_200">
+
+
+            <ImageView
+                android:id="@+id/icon_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_close_red" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/sign_content_viewpager"
+            android:layout_width="274dp"
+            android:layout_height="322dp"
+            android:background="#ffffff"></android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/shop_container"
+            android:layout_width="274dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/go_share_to_sign"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/iv_qq_share"
+                    android:layout_width="210dp"
+                    android:layout_height="42dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_green_ok">
+                    <!--微信好友-->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/icon_wechat_touming"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点我分享到微信群"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                    <!-- 朋友圈-->
+                    <ImageView
+                        android:id="@+id/iv_wxin_share"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/invite_icon_pengyouquan"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/icon_right"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/icon_right"
+        android:visibility="invisible" />
+
+</LinearLayout>

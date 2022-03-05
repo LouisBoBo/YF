@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="390dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_singn_dialog_shape"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:paddingLeft="35dp"
+                    android:src="@drawable/yuanbaoyou2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="购买成功"
+                    android:textColor="#FF3B8D"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="您已获得1张补签卡"
+                    android:textColor="#919191"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="敬请期待明日的惊喜~"
+                    android:textColor="#919191"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                   
+
+                    <Button
+                        android:background="@drawable/bg_red_ok"
+                        android:id="@+id/bt"
+                        android:layout_width="250dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="50dp"
+                        android:text="知道了"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/congratulation" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!-- bg_singn_dialog_shape -->
+
+</LinearLayout>

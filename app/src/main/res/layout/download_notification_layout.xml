@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#808080"
+    android:orientation="horizontal"
+    android:paddingBottom="2dip"
+    android:paddingTop="5dip"
+    tools:ignore="DisableBaselineAlignment" >
+
+    <LinearLayout
+        android:layout_width="42dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="1dip"
+        android:layout_marginRight="12dip"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@+id/nd_img"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:contentDescription=""
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/nd_rate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="0%"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="4dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nd_filename"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="SelectableText" />
+
+        <ProgressBar
+            android:id="@+id/nd_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:progressDrawable="@drawable/progressbar"
+            android:max="100"
+            android:progress="0" />
+    </LinearLayout>
+
+</LinearLayout>

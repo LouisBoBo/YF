@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <TextView
+        android:id="@+id/apply_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="请耐心等待平台审核"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/apply_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/apply_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="你已成功提交申请"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/apply_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/apply_text1"
+        android:layout_centerInParent="true"
+        android:src="@drawable/apply_finish" />
+
+</RelativeLayout>

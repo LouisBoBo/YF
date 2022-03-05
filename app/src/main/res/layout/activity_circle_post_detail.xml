@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/base_head" />
+    <RelativeLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin"
+        android:background="#F4F4F4"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:text="回复" 
+           />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin"
+            android:layout_toLeftOf="@+id/btn_comment"
+            android:background="@drawable/et_resetpassword_bn"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+
+                android:gravity="center_vertical"
+                android:hint="输入回复内容"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:textColor="@color/title_color"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/tv_size16" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/postList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:layout_above="@id/ll_comment"
+        android:listSelector="@color/transparenct"
+        android:divider="@null"
+        ptr:ptrAnimationStyle="flip" 
+        android:layout_marginBottom="@dimen/margin"
+        />
+
+    <ScrollView
+        android:id="@+id/sl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_advice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="夏日美衣搭配你喜欢哪一种"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin" >
+
+                    <Button
+                        android:id="@+id/btn_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/btn_title_bg"
+                        android:gravity="center"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/tv_msg_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:drawableLeft="@drawable/img_comment_count"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/text1_color" />
+
+                    <TextView
+                        android:id="@+id/tv_rm_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp"
+                        android:layout_toLeftOf="@+id/tv_msg_count"
+                        android:drawableLeft="@drawable/img_check_count"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="50"
+                        android:textColor="@color/text1_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin" >
+
+                    <com.yssj.custom.view.RoundImageButton
+                        android:id="@+id/img_post_user"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true" 
+                        android:background="@color/transparenct" />
+
+                    <TextView
+                        android:id="@+id/tv_post_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/img_post_user"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <TextView
+                        android:id="@+id/tv_post_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_post_type"
+                        android:layout_marginRight="@dimen/margin"
+                        android:layout_marginTop="15dp"
+                        android:text="55分钟前"
+                        android:textColor="@color/text1_color"
+                        android:textSize="@dimen/tv_size13" />
+
+                    <TextView
+                        android:id="@+id/tv_post_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:text="楼主"
+                        android:textColor="@color/gray_color"
+                        android:textSize="@dimen/tv_size13" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="@dimen/margin"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <!-- <ListView -->
+                    <!-- android:id="@+id/lv_imglist" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" > -->
+                    <!-- </ListView> -->
+
+                    <LinearLayout
+                        android:id="@+id/ll_imglist_contain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin" >
+
+                        <Button
+                            android:id="@+id/btn_reply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/transparenct"
+                            android:drawableLeft="@drawable/img_btn_reply"
+                            android:text="回复"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/tv_size15" 
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/horizontal_line" />
+
+            <!-- <ListView -->
+            <!-- android:id="@+id/lv_comment" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_marginLeft="30dp" > -->
+            <!-- </ListView> -->
+
+            <LinearLayout
+                android:id="@+id/ll_comment_contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/line_color" />
+        </LinearLayout>
+    </ScrollView>
+
+    
+
+</RelativeLayout>

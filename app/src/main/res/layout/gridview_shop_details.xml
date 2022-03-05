@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_clothes_property"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/no_warn"
+        android:scaleType="fitXY"
+        android:src="@drawable/testtoux"
+        android:background="@drawable/grid_bg"
+        android:padding="1dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_clothes_property"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:background="@drawable/grid_bg"
+        android:gravity="center"
+        android:textColor="@color/tv_shop_tcbn"
+        android:textSize="@dimen/tv_size11" />
+
+</LinearLayout>

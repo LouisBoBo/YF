@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/bg_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-25dp">
+    <ImageView
+        android:id="@+id/root_view_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/search_ll"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white_white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:visibility="visible" >
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparenct" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_left_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/icon_fanhui_black"
+                    android:clickable="false"
+                    android:contentDescription="@string/no_warn" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_classfalcation_search_shape"
+                    android:gravity="left|center_vertical"
+                    android:hint=""
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:paddingLeft="33dp"
+                    android:paddingRight="6dp"
+                    android:singleLine="true"
+                    android:textColor="#3E3E3E"
+                    android:textColorHint="#A8A8A8"
+                    android:textCursorDrawable="@drawable/shape_cursor_commend_red"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/et_search_iv"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/et_search" />
+
+                <ImageView
+                    android:id="@+id/et_search_xx"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/xxxx"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#C5C5C5" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/historical_search_rootview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F9FFFFFF"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@drawable/horizontal_line" />
+                <!-- 历史搜索 -->
+
+                <LinearLayout
+                    android:id="@+id/historical_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/historical_search_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/icon_history_classfication" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/historical_search_icon"
+                            android:text="历史搜索"
+                            android:textColor="#7D7D7D"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/historical_search_delete_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:paddingLeft="20dp"
+                            android:src="@drawable/icon_del_classfication" />
+                    </RelativeLayout>
+
+                    <com.yssj.custom.view.FlowLayout
+                        android:id="@+id/historical_search_flowlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="visible" >
+                    </com.yssj.custom.view.FlowLayout>
+                </LinearLayout>
+
+                <!-- 热门搜索 -->
+
+                <LinearLayout
+                    android:id="@+id/hot_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/hot_search_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/icon_hot_classfication" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/hot_search_icon"
+                            android:text="热门搜索"
+                            android:textColor="#7D7D7D"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <com.yssj.custom.view.FlowLayout
+                        android:id="@+id/hot_search_flowlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="visible" >
+                    </com.yssj.custom.view.FlowLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ListView 
+              android:id="@+id/activity_search_classfication_tips_lv"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F9FFFFFF"
+              android:divider="#E5E5E5"
+              android:dividerHeight="0.5dp"
+              android:listSelector="#00000000"
+              android:scrollbars="none"
+              android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

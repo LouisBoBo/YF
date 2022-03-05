@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/ic_head"
+        layout="@layout/base_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_btn_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:visibility="gone"
+            android:src="@drawable/get_address_add" />
+
+        <Button
+            android:id="@+id/btn_add_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toRightOf="@id/img_icon"
+            android:background="@color/black"
+            android:clickable="false"
+            android:text="添加新地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size18" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_btn_add_address"
+        android:layout_below="@id/ic_head" >
+
+        <LinearLayout
+            android:id="@+id/ll_no_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/no_address_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="暂无收货地址"
+                android:textColor="@color/text1_color"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#DCDCDC"
+        android:dividerHeight="0.3dp"
+        android:layout_above="@id/rl_btn_add_address"
+        android:layout_below="@id/ic_head"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout>

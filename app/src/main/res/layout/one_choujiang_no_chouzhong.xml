@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin30">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="很遗憾!"
+            android:textColor="#FDCC21"
+            android:textSize="@dimen/tv_size18" />
+
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:paddingTop="@dimen/margin15"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/no_packet_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="只差一点点哦。再眼明手快些吧。"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/tv_size15" />
+
+    <TextView
+        android:id="@+id/tv_choujiang_count"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="您还有x次机会。"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/tv_size15" />
+
+    <Button
+        android:id="@+id/btn_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_withdrawal_yellow"
+        android:text="再抢一次"
+        android:textColor="#FD215A"
+        android:textSize="17sp" />
+
+
+</LinearLayout>

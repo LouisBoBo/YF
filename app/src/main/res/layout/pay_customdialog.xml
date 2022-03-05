@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:gravity="center"
+            android:text="@string/confirm_receipt"
+            android:textColor="@color/title_color"
+            android:textSize="20sp" />
+
+         <View
+        	android:layout_width="fill_parent" 
+            android:layout_height="0.3dp"
+            android:layout_marginTop="@dimen/margin12"
+            android:layout_marginBottom="@dimen/margin12"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin20"
+                android:text="295.00元"
+                android:textColor="@color/common_red"
+                android:textSize="@dimen/tv_size20"
+                android:visibility="gone" />
+
+            <com.yssj.custom.view.GridPasswordView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+            </com.yssj.custom.view.GridPasswordView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin30"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="112dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/payback_esc_apply_esc"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size18" />
+
+            <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="112dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/cancel_btn"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/cancel_btn"
+                android:background="@drawable/payback_esc_apply_ok"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size18" />
+
+            <!-- <Button -->
+            <!-- android:id="@+id/cancel_btn" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_marginBottom="8dp" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/custom_dialog_cancel_shape" -->
+            <!-- android:text="取消" -->
+            <!-- android:textColor="#000000" -->
+            <!-- android:textSize="20sp" /> -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/confirm_btn" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_marginBottom="8dp" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:layout_toRightOf="@id/cancel_btn" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/custom_dialog_shape" -->
+            <!-- android:text="确定" -->
+            <!-- android:textColor="#ffffff" -->
+            <!-- android:textSize="20sp" /> -->
+
+
+            <!--  -->
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

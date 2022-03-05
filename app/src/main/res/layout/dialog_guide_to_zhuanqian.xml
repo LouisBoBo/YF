@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_to_zhuanqian_icon" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin8"
+        android:layout_marginRight="@dimen/margin8"
+        android:background="@drawable/guide_to_zhuanqian_corner_bg"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin30"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="XX元购衣款已返，完成任务可提现。"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/tv_content_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="今日更新了xx个任务，共计xx元奖励。"
+                android:textColor="#3E3E3E"
+                android:layout_marginTop="@dimen/margin5"
+                android:textSize="@dimen/tv_size15" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginRight="@dimen/margin15"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:gravity="center_horizontal"
+                    android:text="小TIPS"
+                    android:textColor="#7D7D7D"
+                    android:textSize="@dimen/tv_size12" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginRight="@dimen/margin15"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:text="1、完成全部任务很重要哦，会奖励余额与提现现金。"
+                    android:textColor="#7D7D7D"
+                    android:textSize="@dimen/tv_size12" />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginRight="@dimen/margin15"
+                    android:gravity="left"
+                    android:text="2、0元购美衣需要每日完成全部任务才能申请保底提现哦。"
+                    android:textColor="#7D7D7D"
+                    android:textSize="@dimen/tv_size12" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:layout_marginRight="@dimen/margin15"
+                    android:gravity="left"
+                    android:text="3、记得每天完成全部任务。"
+                    android:textColor="#7D7D7D"
+                    android:textSize="@dimen/tv_size12" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <Button
+                android:id="@+id/btn_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_red_ok"
+                android:text="去做任务"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_red"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_red_ok"
+                android:text="去0元购衣"
+                android:textColor="#fFFFFF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/margin10"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_close_guide_to_zhuanqian" />
+
+
+</LinearLayout>

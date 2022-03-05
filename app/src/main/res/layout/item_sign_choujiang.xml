@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="34dp"
+    android:background="@drawable/qipao"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/withdrawal_head_iv"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="6dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparenct"
+        android:clickable="false"
+        android:src="@drawable/head_pic_04" />
+
+    <TextView
+        android:id="@+id/withdrawal_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/withdrawal_head_iv"
+        android:maxLines="1"
+        android:text="小***菇"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/withdrawal_awards_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:maxLines="1"
+        android:text="100.99"
+        android:textColor="#ea1446"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_danwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/withdrawal_awards_tv"
+        android:maxLines="1"
+        android:text="元额度111111111111111111"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tv_guide_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

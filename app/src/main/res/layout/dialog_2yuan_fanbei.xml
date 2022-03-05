@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="360dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_singn_dialog_shape"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:paddingLeft="35dp"
+                    android:src="@drawable/yue_x2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="分享成功!"
+                    android:textColor="#FF3B8D"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="您已获得24小时余额翻倍特权，24小时内您的余额会成为原来的2倍，可直接用于购物，24小时之后余额会变为原来的金额。"
+                    android:textColor="#919191"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/getYue"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/bg_red_ok"
+                        android:text="开启特权"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:layout_marginRight="18dp"
+                        android:id="@+id/bt"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/bg_tans_cancel"
+                        android:text="狠心放弃"
+                        android:textColor="#FF3B8D"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/congratulation" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_fanbeitime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/qiandao_daojishi"
+            android:gravity="center"
+            android:text="距离余额翻结束还剩：21时55分25秒"
+            android:textColor="#FEFEFE"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!-- bg_singn_dialog_shape -->
+
+</LinearLayout>

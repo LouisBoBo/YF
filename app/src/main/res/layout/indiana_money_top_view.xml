@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_evaluate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/margin"
+                android:text="抽奖规则"
+                android:textColor="@color/selector_black_pink_text"
+                android:textSize="@dimen/tv_size18" />
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:background="#dcdcdc" />
+
+            <RadioButton
+                android:id="@+id/rb_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/margin"
+                android:text="参与记录"
+                android:textColor="@color/selector_black_pink_text"
+                android:textSize="@dimen/tv_size18" />
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:background="#dcdcdc" />
+
+            <RadioButton
+                android:id="@+id/rb_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="@dimen/margin"
+                android:text="往期幸运星"
+                android:textColor="@color/selector_black_pink_text"
+                android:textSize="@dimen/tv_size18" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/shopcar_bn" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

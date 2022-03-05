@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp" >
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_circle_home_page" />
+
+        <include layout="@layout/base_head" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/margin"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.yssj.custom.view.RoundImageButton
+                android:id="@+id/img_user"
+                android:layout_width="80dp"
+                android:background="@color/transparenct" 
+				android:clickable="false"
+                android:layout_height="80dp" />
+            
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:background="#55000000"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_attention_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="关注  0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size16" 
+                android:layout_marginLeft="35dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_attention_divide" />
+
+            <TextView
+                android:id="@+id/tv_fans_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="粉丝  0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size16"
+                android:layout_marginRight="35dp"
+                 />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparenct"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:text="资料"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" 
+            android:background="@drawable/circle_info_circle"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparenct"
+            android:gravity="center"
+            android:text="动态"
+            android:layout_marginRight="35dp"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/circle_postlist_hengxian" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/circle_postlist_hengxian" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="35dp"
+            >
+        
+        <Button
+            android:id="@+id/btn_sendmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparenct"
+            android:drawableLeft="@drawable/circle_person_page"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/tv_size18"
+            android:text="发信息" />
+        
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_sendmessage_divide" />
+        
+          <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="35dp"
+            >
+
+        <Button
+            android:id="@+id/btn_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparenct"
+            android:drawableLeft="@drawable/circle_attention_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/tv_size18"
+            android:text="关注" />
+        
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

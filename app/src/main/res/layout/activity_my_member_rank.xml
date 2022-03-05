@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao" >
+
+    <LinearLayout
+        android:id="@+id/id_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <LinearLayout
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:gravity="center|left" >
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparenct" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_left_icon"
+                    android:layout_width="23dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/icon_fanhui_black"
+                    android:clickable="false"
+                    android:contentDescription="@string/no_warn" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparenct" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTitle_base"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="我的会员"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size20" />
+        </RelativeLayout>
+
+        <include layout="@layout/line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_fanzao"
+        android:orientation="vertical" >
+
+        <include layout="@layout/line" />
+
+        <TextView
+            android:id="@+id/my_member_rank_range_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/indiana_shape_shaidan"
+            android:gravity="center"
+            android:text="补充活力值"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_bottom"
+        android:layout_below="@id/id_top"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_fanzao"
+            android:orientation="vertical" >
+
+            <!--  -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/my_member_rank_img_user"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp" >
+
+                    <View
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/my_member_back_round" />
+
+                    <com.yssj.custom.view.RoundImageButton
+                        android:id="@+id/img_user_head"
+                        android:layout_width="57dp"
+                        android:layout_height="57dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/transparenct"
+                        android:clickable="false"/>
+
+                    <ImageView
+                        android:id="@+id/img_user_head_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/icon_vip_nor_s" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/my_member_rank_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/tv_size12" />
+
+                <TextView
+                    android:id="@+id/my_member_rank_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:text="活力值：0"
+                    android:textColor="#FECE5C"
+                    android:textSize="@dimen/tv_size14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member_nor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="3dp"
+                            android:drawableTop="@drawable/icon_vip_nor"
+                            android:gravity="center_horizontal"
+                            android:text="普通会员"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size12" />
+
+                        <TextView
+                            android:id="@+id/member_bro"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="3dp"
+                            android:drawableTop="@drawable/icon_vip_bronze"
+                            android:gravity="center_horizontal"
+                            android:text="青铜会员"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size12" />
+
+                        <TextView
+                            android:id="@+id/member_sil"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="3dp"
+                            android:drawableTop="@drawable/icon_vip_silver"
+                            android:gravity="center_horizontal"
+                            android:text="白银会员"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size12" />
+
+                        <TextView
+                            android:id="@+id/member_gold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="3dp"
+                            android:drawableTop="@drawable/icon_vip_gold"
+                            android:gravity="center_horizontal"
+                            android:text="黄金会员"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size13" />
+                    </LinearLayout>
+
+                    <!-- 会员等级进度条 -->
+
+                    <LinearLayout
+                        android:id="@+id/range_prgress_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+						<!-- 会员等级 活力值 标题 -->
+                        <TextView
+                            android:id="@+id/range_prgress_tv"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="活力值"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size10" />
+
+                        <FrameLayout 
+                            android:layout_width="match_parent"
+                       		android:layout_height="wrap_content"
+                       		android:layout_gravity="center_vertical">
+                           <ProgressBar
+					            android:id="@+id/range_prgress_pb"
+					            android:layout_gravity="center_vertical"
+					            style="?android:attr/progressBarStyleHorizontal"
+					            android:layout_width="match_parent"
+					            android:layout_height="4dp"
+					            android:max="100"
+					            android:progress="0"
+					            android:paddingLeft="3dp"
+					            android:paddingRight="3dp"
+					            android:progressDrawable="@drawable/my_member_rank_progressbar"/> 
+					            
+                           <LinearLayout
+                            android:id="@+id/range_prgress_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/range_prgress_point0"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/shape_point_empty" />
+                            <View 
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="1"/>
+
+                            <ImageView
+                                android:id="@+id/range_prgress_point1"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/shape_point_empty" />
+							<View 
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="1"/>
+                            <ImageView
+                                android:id="@+id/range_prgress_point2"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/shape_point_empty" />
+							<View 
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="1"/>
+                            <ImageView
+                                android:id="@+id/range_prgress_point3"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/shape_point_empty" />
+							<View 
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="1"/>
+                            <ImageView
+                                android:id="@+id/range_prgress_point4"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/shape_point_empty" />
+                        </LinearLayout>
+                            
+                        </FrameLayout>
+                          
+                    </LinearLayout>
+                    
+                     <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:id="@+id/range_prgress_tv0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size12"
+                            android:text=" "/>
+                        <View 
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="1.05"/>
+                        <TextView
+                            android:id="@+id/range_prgress_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size12"
+                            android:text=" "/>
+                        <View 
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="0.95"/>
+                        <TextView
+                            android:id="@+id/range_prgress_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size12"
+                            android:text=" "/>
+                        <View 
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="0.8"/>
+                        <TextView
+                            android:id="@+id/range_prgress_tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size12"
+                            android:text=" "/>
+                        <View 
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="0.85"/>
+                        <TextView
+                            android:id="@+id/range_prgress_tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/tv_size12"
+                            android:text=" "/>
+                      </LinearLayout>
+                        
+                     
+                </LinearLayout>
+                
+                
+            </LinearLayout>
+
+            <!-- 会员等级 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="会员权益"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/tv_size18" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_vip_rank" />
+            <!-- 活力值说明 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="1.什么是活力值？"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="活力值是进行“每日必做任务”的前提条件，每做一个必做任务，需要消耗1点活力值。活力值为0后，将不能再进行“每日必做任务”。"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="2.如何获得活力值？"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="活力值需要购买商品（夺宝除外）才能补充，商品订单实付金额=活力值，例如：实付100元商品将会获得100点成长值。"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="注：用户签收商品后，成长值才会到账，若是发生退货退款，退货退款商品奖励的成长值将会被扣除"
+                android:textColor="#A8A8A8"
+                android:textSize="@dimen/tv_size12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="3.什么是每日领券特权？"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="每日领券特权是指用户每日登录衣蝠后，将会获得相应的抵用券，抵用券直接发放到用户账户，可用于购买商品时抵扣商品售价。"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="4.什么是任务提现特权？"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="任务提现特权是指用户在每日任务中获得的现金提现的资格，只有“青铜”、“白银”、“黄金”资格的会员才可以提现任务的现金奖励喔~"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin30"
+>
+
+    <RelativeLayout
+        android:id="@+id/rl_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:paddingTop="@dimen/margin15"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="-10dp"
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="70.00元"
+        android:textColor="#FDCC21"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="成为会员才能发放到零钱。您还不是会员"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/tv_size16" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="成为会员才能发放到零钱。您还不是会员"
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        android:textSize="@dimen/tv_size16" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="成为会员才能发放到零钱。您还不是会员"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:textSize="@dimen/tv_size16" />
+
+    <LinearLayout
+        android:id="@+id/ll_count_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="09:55:01.2"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_shixiao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="后现金失效"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_withdrawal_yellow"
+
+        android:gravity="center"
+        android:text="成为会员"
+        android:textColor="#FD215A"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_withdrawal_white"
+
+        android:gravity="center"
+        android:text="继续提现"
+        android:textColor="#FD215A"
+        android:textSize="15sp" />
+
+</LinearLayout>

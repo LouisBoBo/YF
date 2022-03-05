@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="350dp"
+    android:background="@drawable/hongbao_mad" >
+
+    <TextView
+        android:id="@+id/open_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:gravity="center_horizontal"
+        android:text="哇喔~"
+        android:textColor="#FDE128"
+        android:textSize="@dimen/tv_size23"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/open_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/open_tv"
+        android:gravity="center_horizontal"
+        android:text="抽中了一个疯狂红包!"
+        android:textColor="#FDE128"
+        android:textSize="@dimen/tv_size23"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/open_tv2"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="点击拆红包可以获得随机提现额度"
+        android:textColor="#FDE5E5"
+        android:textSize="@dimen/tv_size14" />
+
+    <ImageView
+        android:id="@+id/open_red_packet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:src="@drawable/chai_mad" />
+
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+
+</RelativeLayout>

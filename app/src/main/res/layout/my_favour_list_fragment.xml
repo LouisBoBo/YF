@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mylike"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center" >
+
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+
+                    <ImageButton
+                        android:layout_width="13dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/u122"
+                        android:clickable="false"
+                        android:contentDescription="@string/no_warn" />
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTitle_mine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/tv_title_myfavor"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size20" />
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/tv_title_myfavor_edit"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size20" />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingRight="@dimen/margin"
+                    android:src="@drawable/img_myfavor_delete"
+                    android:visibility="gone" />
+
+                <!-- <ImageButton -->
+                <!-- android:id="@+id/img_delete" -->
+                <!-- android:layout_width="25dp" -->
+                <!-- android:layout_height="20dp" -->
+                <!-- android:layout_gravity="center_vertical" -->
+                <!-- android:layout_marginRight="15dp" -->
+                <!-- android:background="@drawable/u13" -->
+                <!-- android:contentDescription="@string/no_warn" -->
+                <!-- android:scaleType="fitCenter" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_all_count"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/margin25"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <TextView
+                    android:id="@+id/tv_out_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:text="失效"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- <com.yssj.custom.view.MyScrollView -->
+    <!-- android:id="@+id/lazy_scroll" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent"> -->
+
+    <FrameLayout
+        android:id="@+id/myfavour_list_fragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+    <!-- </com.yssj.custom.view.MyScrollView> -->
+
+    <LinearLayout
+        android:id="@+id/ll_handler_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:text="取消"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/pink_color"
+            android:text="删除"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

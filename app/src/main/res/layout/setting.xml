@@ -1,0 +1,286 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/set"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/base_head" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rel_my_data"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_my_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:drawableLeft="@drawable/person_info"
+                    android:drawablePadding="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text="个人资料"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <ImageView
+                    android:id="@+id/img_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="@color/transparenct"
+                    android:src="@drawable/gengduo" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" />
+
+            <RelativeLayout
+                android:id="@+id/rel_secure"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_secure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:drawableLeft="@drawable/safe_num"
+                    android:drawablePadding="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text="账号与安全"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="@color/transparenct"
+                    android:src="@drawable/gengduo" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" />
+
+            <RelativeLayout
+                android:id="@+id/rel_univsersal"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:drawableLeft="@drawable/universal"
+                    android:drawablePadding="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text="通用"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="@color/transparenct"
+                    android:src="@drawable/gengduo" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" />
+
+            <RelativeLayout
+                android:id="@+id/rel_about_us"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_about_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:drawableLeft="@drawable/about"
+                    android:drawablePadding="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text="关于"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="@color/transparenct"
+                    android:src="@drawable/gengduo" />
+            </RelativeLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" />
+
+            <RelativeLayout
+                android:id="@+id/rel_cheer_us"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_cheer_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:drawableLeft="@drawable/cheer_us"
+                    android:drawablePadding="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text="给衣蝠打分"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="@color/transparenct"
+                    android:src="@drawable/gengduo" />
+            </RelativeLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" />
+11
+              <RelativeLayout
+                   android:layout_marginLeft="@dimen/margin20"
+                        android:id="@+id/rel_help_center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white" >
+
+                        <ImageView
+                            android:id="@+id/img_help_logo"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/my_help" />
+
+                        <ImageView
+                            android:id="@+id/img_right_arrow4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/margin20"
+                           android:background="@color/transparenct"
+                    android:src="@drawable/gengduo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin20"
+                            android:layout_marginRight="@dimen/margin"
+                            android:layout_toLeftOf="@+id/img_right_arrow4"
+                            android:layout_toRightOf="@id/img_help_logo"
+                            android:text="帮助中心"
+                              android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+                    </RelativeLayout>
+            
+              <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" />
+            
+            <RelativeLayout
+                android:id="@+id/rel_follow_wx"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_follow_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:drawableLeft="@drawable/about"
+                    android:drawablePadding="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text="关注微信公众号"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:background="@color/transparenct"
+                    android:src="@drawable/gengduo" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" 
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:background="@drawable/u17"
+        android:text="退出当前账号"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size18" />
+
+</RelativeLayout>

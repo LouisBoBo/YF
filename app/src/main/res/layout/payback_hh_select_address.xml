@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/payback_hh_address_select_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+	<RadioGroup 
+	    android:id="@+id/rg_select_address"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:orientation="vertical">
+	    
+	    <RadioButton 
+	        android:id="@+id/rbt_old_address"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:button="@null"
+	        android:drawableLeft="@drawable/btn_pay_back_hh_select_address_selector"
+	        android:drawablePadding="15dp"
+	        android:layout_marginBottom="5dp"
+	        android:checked="true"
+	        android:textColor="@color/title_color"
+	        android:textSize="@dimen/tv_size18"
+	        android:text="原地址返回"/>
+	    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_marginTop="4dp"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginRight="20dp"
+	        android:background="@drawable/line"/>
+	    
+	    <RadioButton
+	        android:id="@+id/rbt_other_address"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:button="@null"
+	        android:drawableLeft="@drawable/btn_pay_back_hh_select_address_selector"
+	        android:drawablePadding="15dp"
+	        android:text="其他地址"
+	        android:textColor="@color/title_color"
+	        android:textSize="@dimen/tv_size18" />
+
+	</RadioGroup>    
+
+</LinearLayout>

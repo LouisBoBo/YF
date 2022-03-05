@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical" >
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="正确示范"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/horizontal_line" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="请选择浅色背景，将样衣挂拍或铺拍\n样衣图不低于6张分为："/>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <LinearLayout
+                    android:id="@+id/baseimg1"
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/baseimg2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:src="@drawable/zhengmian_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="正面特写"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/baseimg2"
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/baseimg1"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:src="@drawable/beimian_icon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="反面特写"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/baseimg3"
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_10"
+                    app:layout_constraintTop_toBottomOf="@id/baseimg1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/baseimg4">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:src="@drawable/mianliao_tx1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="面料特写"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/baseimg4"
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="@id/baseimg3"
+                    app:layout_constraintStart_toEndOf="@id/baseimg1"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:src="@drawable/mianliao_tx2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="面料特写"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/baseimg5"
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_10"
+                    app:layout_constraintTop_toBottomOf="@id/baseimg3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/baseimg6">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:src="@drawable/fuliao_tx1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="辅料特写"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/baseimg6"
+                    android:layout_width="150dp"
+                    android:layout_height="210dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="@id/baseimg5"
+                    app:layout_constraintStart_toEndOf="@id/baseimg1"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:src="@drawable/fuliao_tx2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="辅料特写"/>
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="请注意不要拍糊\n图片必须能让设计师完整了解样衣才能通过"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="如不合格，设计师会说明图片问题\n你需要修改不合格的部分再次上传"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

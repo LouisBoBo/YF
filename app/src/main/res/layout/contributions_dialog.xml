@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/to_login_dialog_back"
+        android:gravity="center_horizontal"
+        android:padding="40dp"
+        android:id="@+id/back"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请下载衣服云工厂APP"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:src="@drawable/download_icon"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:id="@+id/donwload"
+            android:text="立即下载"
+            android:background="@drawable/bg_choice_btn_checked"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

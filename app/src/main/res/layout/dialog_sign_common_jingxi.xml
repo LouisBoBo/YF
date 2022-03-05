@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qiandaoshuoming_dialog_back"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:text="任务完成！"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/tv_size16" />
+
+            <ImageView
+                android:id="@+id/icon_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconkaquanshuomclose" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="下单成功!"
+                android:textColor="#3C3C3C"
+                android:textSize="@dimen/tv_size16" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您本月现金奖励将全部翻倍，记得坚持签到领取更多现金喔~"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/tv_size12" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="此外，订单若发生退货/退款，每月惊喜将会失效，需重新完成任务"
+                android:textColor="@color/common_red"
+                android:textSize="@dimen/tv_size11" />
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp"
+                android:id="@+id/rl_twobt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/liebiao"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_tans_cancel"
+                    android:text="知道了"
+                    android:textColor="@color/common_red"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/gobuy2"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_red_ok"
+                    android:text="再逛逛"
+                    android:textColor="#fFFFFF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

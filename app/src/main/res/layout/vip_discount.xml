@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+	<View 
+	    android:layout_height="0.3dp"
+	    android:layout_width="match_parent"
+	    android:background="#b2b2b2"/>
+    
+	<EditText 
+	    android:id="@+id/et_vip_discount"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/margin"
+	    android:paddingRight="@dimen/margin"
+	    android:paddingTop="@dimen/margin"
+	    android:paddingBottom="@dimen/margin"
+	    android:textCursorDrawable="@null"
+	    android:textColorHint="#d1d1d1"
+	    android:layout_marginTop="30dp"
+	    android:textColor="#d1d1d1"
+	    android:background="#fff"
+	    android:textSize="@dimen/tv_size17"
+	    android:inputType="numberDecimal"
+	    android:hint="会员折扣"/>
+	
+	<EditText 
+	    android:id="@+id/et_vip_discount_explain"
+	    android:layout_height="45dp"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/margin"
+	    android:paddingRight="@dimen/margin"
+	    android:paddingTop="@dimen/margin"
+	    android:paddingBottom="@dimen/margin"
+	    android:textCursorDrawable="@null"
+	    android:textColorHint="#d1d1d1"
+	    android:layout_marginTop="20dp"
+	    android:textColor="#d1d1d1"
+	    android:background="#fff"
+	    android:textSize="@dimen/tv_size17"
+	    android:hint="会员折扣说明(限制15个字)"/>
+</LinearLayout>

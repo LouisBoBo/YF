@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_marginBottom="5dp"
+        android:id="@+id/iv_close"
+        android:layout_gravity="right"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:src="@drawable/free_icon_close" />
+
+    <FrameLayout
+        android:layout_below="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_hongbao_bg"
+            android:layout_width="300dp"
+            android:layout_height="341dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/free_ling_fight_fail_mpk" />
+
+        <TextView
+            android:id="@+id/tv_txk_countdown"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:textSize="13sp"
+            android:textColor="#FAB126"
+            android:layout_width="wrap_content"
+            android:text="00:20:10后失败"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/user_pic"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="21dp"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/user_pic"
+            android:text="Justin Grey"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/jion_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/user_pic"
+            android:singleLine="true"
+            android:text="加入时间：2015-09-08 15:23:30"
+            android:textColor="@color/text1_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="14dp"
+        android:id="@+id/l_money"
+        android:textColor="@color/pink_color"
+        android:textSize="27sp" 
+        android:text="15144.00"
+        android:layout_marginBottom="16dp"
+        />
+	
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="14dp"
+        android:background="@color/line_color"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="21dp"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:text="已提现：0.00元"
+        android:id="@+id/s_money"
+        android:textSize="14sp" 
+        android:textColor="@color/text1_color"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="33dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计佣金"
+				android:textColor="@color/text1_color" 
+				android:textSize="17sp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1930.00" 
+                android:textColor="@color/pink_color"
+                android:textSize="17sp"
+                android:layout_marginTop="19dp"
+                android:id="@+id/lj_money"  
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未结算佣金" 
+                android:textColor="@color/text1_color"
+                android:textSize="17sp"  
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1930.00" 
+                android:textColor="@color/pink_color"
+                android:textSize="17sp"  
+                android:layout_marginTop="19dp"
+                android:id="@+id/d_money"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <ImageView 
+		android:layout_width="match_parent"        
+        android:layout_height="0.3dp"
+        android:background="@color/line_color"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="21dp"
+        />
+    
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="35dp"
+	    android:layout_marginRight="35dp"
+	    android:textColor="@color/text1_color"
+	    android:layout_marginTop="13dp"
+	    android:textSize="16sp"
+	    android:id="@+id/hint"
+	    />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/line_color" />
+    
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:text="提现记录"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/league_log_selector"
+                android:textSize="17sp"
+                android:id="@+id/tx"
+                />
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="佣金记录"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/league_log_selector"
+                 android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:textSize="17sp"
+                android:id="@+id/yj"
+                />
+            
+        </LinearLayout>
+        
+        <ImageView 
+			android:layout_width="match_parent"
+			android:layout_height="0.3dp"
+			android:background="@color/line_color"            
+            />
+       
+</LinearLayout>

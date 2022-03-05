@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin25"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_begin_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/withdraw_pinkcolor_icon"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/img_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/withdraw_gray_line" />
+
+            <TextView
+                android:id="@+id/tv_handler_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/withdraw_graycolor_icon"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/img_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/withdraw_gray_line" />
+
+            <TextView
+                android:id="@+id/tv_end_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/withdraw_graycolor_icon"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <TextView
+                android:id="@+id/tv_begin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dp"
+                android:layout_marginRight="43dp"
+                android:text="提交到银行"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <TextView
+                android:id="@+id/tv_begin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到账"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_status"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:background="@drawable/zero_shop_item_postage"
+            android:gravity="center"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/tv_size15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin20"
+            android:text="提现金额:"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin20"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/tv_size18" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin20"
+            android:text="银行卡:"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+        <TextView
+            android:id="@+id/tv_bank_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin20"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin20"
+            android:text="提交时间:"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+        <TextView
+            android:id="@+id/tv_submit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin20"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin20"
+            android:text="当前状态:"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+        <TextView
+            android:id="@+id/tv_submit_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin20"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/tv_FailureCause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginTop="10dp"
+        android:text="失败原因失败原因失败原因失败原因失败原因失败原因失败"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18"
+        android:visibility="gone"
+         />
+
+    <Button
+         android:visibility="gone"
+        android:id="@+id/bt_re_submit"
+        android:textSize="@dimen/tv_size18"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#000000"
+        android:text="重新申请" />
+
+</LinearLayout>

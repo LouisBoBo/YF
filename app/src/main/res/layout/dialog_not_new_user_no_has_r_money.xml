@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_gravity="right"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginRight="@dimen/margin5"
+        android:src="@drawable/free_icon_close" />
+
+    <FrameLayout
+        android:layout_below="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_hongbao_bg"
+            android:layout_width="300dp"
+            android:layout_height="391dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/newestredhongbao_task_ninetymoney" />
+
+        <ImageView
+            android:id="@+id/iv_ling"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="106dp"
+            android:src="@drawable/newestredhongbao_ling" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

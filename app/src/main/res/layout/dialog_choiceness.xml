@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qiandaoshuoming_dialog_back"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="分享美衣"
+            android:textColor="#3e3e3e"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:id="@+id/icon_close"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/icon_close_cc"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="挑选喜欢的几款，分享到SHOW社区吧~如有好友购买，你可得20%现金奖励。"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <com.yssj.custom.view.HorizontalListView
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/no_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:divider="#00000000"
+        android:dividerHeight="5dp" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_edittext_message"
+        android:gravity="left"
+        android:hint="给卖家留言..."
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#C5C5C5"
+        android:textSize="@dimen/tv_size14" />
+
+    <Button
+        android:id="@+id/bt_sendmessage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_red_ok"
+        android:text="发布分享"
+        android:textColor="#fFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_tans_cancel"
+        android:text="退出浏览"
+        android:textColor="@color/common_red"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ll_bt"
+            android:text="同步到"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size15" />
+
+        <LinearLayout
+            android:id="@+id/ll_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <com.yssj.entity.MyToggleButton
+                android:id="@+id/weixin"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_weixin"
+                android:button="@null"
+                android:clickable="true"
+                android:singleLine="true"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="@dimen/tv_size14" />
+
+            <com.yssj.entity.MyToggleButton
+                android:id="@+id/qq"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_qq"
+                android:button="@null"
+                android:clickable="true"
+                android:singleLine="true"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="@dimen/tv_size14" />
+
+            <com.yssj.entity.MyToggleButton
+                android:id="@+id/weibo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/selector_weibo"
+                android:button="@null"
+                android:clickable="true"
+                android:singleLine="true"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

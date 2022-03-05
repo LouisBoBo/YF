@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="10dp" 
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="left" >
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="24dp"
+            android:background="@color/transparenct" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_left_icon"
+            android:layout_width="13dp"
+            android:layout_height="24dp"
+            android:background="@drawable/u122"
+            android:clickable="false"
+            android:contentDescription="@string/no_warn" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:background="@color/transparenct" />
+    </LinearLayout>
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/img_back" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:contentDescription="@string/not_connect" -->
+    <!-- android:padding="5dp" -->
+    <!-- android:paddingBottom="10dp" -->
+    <!-- android:paddingLeft="10dp" -->
+    <!-- android:paddingRight="10dp" -->
+    <!-- android:src="@drawable/back" /> -->
+
+    <RadioGroup
+        android:id="@+id/rg_orders"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_pay_orders"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="我的订单"
+              android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rb_sale_orders"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sale_order_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已卖商品"
+            android:textColor="@color/selector_orders_text"
+            android:textSize="@dimen/tv_size18" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/not_connect"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/search" />
+
+</RelativeLayout>

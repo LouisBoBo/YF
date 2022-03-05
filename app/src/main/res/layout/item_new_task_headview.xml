@@ -1,0 +1,719 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_daily_mission"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin"
+    android:layout_marginRight="@dimen/margin"
+    android:layout_marginTop="@dimen/margin20"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_daily_mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:src="@drawable/img_daily_mission" />
+    <!-- 上午分享美衣到朋友圈 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_morning_share_cloth"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#f8f8f8" >
+
+        <ImageView
+            android:id="@+id/img_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_morning_share_cloth" />
+
+        <TextView
+            android:id="@+id/tv_undo1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title1"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title1"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right1"
+            android:layout_toRightOf="@id/img_title1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上午分享美衣到朋友圈"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_yellow"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+50积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 下午分享美衣到朋友圈 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_noon_share_cloth"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#f8f8f8" >
+
+        <ImageView
+            android:id="@+id/img_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_noon_share_cloth" />
+
+        <TextView
+            android:id="@+id/tv_undo2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title2"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title2"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right2"
+            android:layout_toRightOf="@id/img_title2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下午分享美衣到朋友圈"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_orange"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+50积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 挑选5款商品加心加入店铺 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_add_shop2store"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#f8f8f8" >
+
+        <ImageView
+            android:id="@+id/img_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_add_shop2store" />
+
+        <TextView
+            android:id="@+id/tv_undo3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title3"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title3"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right3"
+            android:layout_toRightOf="@id/img_title3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="挑选5款商品点❤加入店铺"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_blue_light"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+50积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 购买0元购商品并分享 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_buy_0_shop"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#f8f8f8"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_buy_0_shop" />
+
+        <TextView
+            android:id="@+id/tv_undo4"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title4"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title4"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right4"
+            android:layout_toRightOf="@id/img_title4"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买0元购商品并分享"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_blue_dark"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+100积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 购买一件自己心仪的美衣 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_buy_nomal_shop"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#f8f8f8"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_buy_nomal_shop" />
+
+        <TextView
+            android:id="@+id/tv_undo5"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title5"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title5"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right5"
+            android:layout_toRightOf="@id/img_title5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买一件自己心仪的美衣"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_purple_light"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+300积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 更换店铺模板并分享 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_change_model"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#f8f8f8" >
+
+        <ImageView
+            android:id="@+id/img_title6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_change_model" />
+
+        <TextView
+            android:id="@+id/tv_undo6"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title6"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title6"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right6"
+            android:layout_toRightOf="@id/img_title6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更换店铺模板并分享"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_pink_light"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+50积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 发布新的店铺公告并分享 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_publish_new_announce"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#f8f8f8" >
+
+        <ImageView
+            android:id="@+id/img_title7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_publish_new_announce" />
+
+        <TextView
+            android:id="@+id/tv_undo7"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title7"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title7"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right7"
+            android:layout_toRightOf="@id/img_title7"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布新的店铺公告并分享"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_blue"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+50积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 更新店铺轮播图商品并分享 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_update_carousel"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#f8f8f8" >
+
+        <ImageView
+            android:id="@+id/img_title8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_update_carousel" />
+
+        <TextView
+            android:id="@+id/tv_undo8"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title8"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title8"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right8"
+            android:layout_toRightOf="@id/img_title8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新店铺轮播图商品并分享"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_yellow_dark"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+50积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 更新店铺店主最爱商品并分享 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_update_faver"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#f8f8f8" >
+
+        <ImageView
+            android:id="@+id/img_title9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_update_faver" />
+
+        <TextView
+            android:id="@+id/tv_undo9"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title9"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title9"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right9"
+            android:layout_toRightOf="@id/img_title9"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新店铺店主最爱商品并分享"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_purple"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+50积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 分享我的小店到朋友圈 -->
+
+    <RelativeLayout
+        android:id="@+id/rel_share_my_store"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#f8f8f8" >
+
+        <ImageView
+            android:id="@+id/img_title10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_share_my_store" />
+
+        <TextView
+            android:id="@+id/tv_undo10"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@+id/img_title10"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/img_title10"
+            android:background="@drawable/img_undo_red_point" />
+
+        <ImageView
+            android:id="@+id/img_right10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="#00000000"
+            android:src="@drawable/img_daily_mission_right_undo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_toLeftOf="@id/img_right10"
+            android:layout_toRightOf="@id/img_title10"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享我的小店到朋友圈"
+                android:textColor="#333333"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/oval_orange_light"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="3dp"
+                android:text="+50积分"
+                android:textColor="#fffffe"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_newer_mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="#00000000"
+        android:src="@drawable/img_newer_mission" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#f8f8f8" />
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_image_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/main_image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+        
+        <ImageView
+		    android:id="@+id/zhezhao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/zhezhaobttom" />
+        
+        <TextView
+            android:id="@+id/main_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="18dp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/tv_size14" />
+		    
+		    <ImageView
+            android:id="@+id/sanjiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/sanjiao" />
+		<RelativeLayout 
+        android:id="@+id/Match_contains_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        ></RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/subject_main_image_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/subject_main_image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:id="@+id/subject_main_tv_ll" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+	            android:id="@+id/subject_main_tv1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#FFFFFF"
+	            android:gravity="center_horizontal"
+	            android:text="穿出小清新，轻松撩男神!"
+	            android:textSize="@dimen/tv_size20" />
+        	<TextView
+	            android:id="@+id/subject_main_tv2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#FFFFFF"
+	            android:gravity="center_horizontal"
+	            android:layout_marginTop="10dp"
+	            android:text="【约会就要穿得美美哒~】"
+	            android:textSize="@dimen/tv_size14" />  
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/subject_image_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:src="@drawable/topic_label" />
+		 <ImageView
+            android:id="@+id/subject_sanjiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/sanjiao" />
+    </RelativeLayout>
+	
+    <com.yssj.custom.view.CustImageGalleryMatch
+        android:id="@+id/match_custom_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp" />
+
+    <View
+        android:id="@+id/id_divier"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f0f0f0"/> 
+
+</LinearLayout>

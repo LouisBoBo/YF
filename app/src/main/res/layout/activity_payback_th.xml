@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include layout="@layout/base_head" 
+        android:id="@+id/title"/>
+    
+    <Button
+        android:id="@+id/btn_submit_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:background="@drawable/payback_hh_submit_apply"
+        android:text="提交申请"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size16" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/title"
+        android:layout_above="@id/btn_submit_apply">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:background="@drawable/payback_hh_selectdown_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_apply_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center"
+                    android:text="申请服务"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <TextView
+                    android:id="@+id/et_apply_service"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_apply_service"
+                    android:background="@null"
+                    android:editable="false"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/margin"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingRight="35dp"
+                    android:paddingTop="@dimen/margin"
+                    android:singleLine="true"
+                    android:text="退货退款"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/title_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_select_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/et_apply_service"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:clickable="false"
+                    android:padding="@dimen/margin"
+                    android:src="@drawable/payback_hh_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:background="@drawable/payback_hh_selectdown_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_th_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center"
+                    android:text="退货原因"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <TextView
+                    android:id="@+id/et_th_reason"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_th_reason"
+                    android:background="@null"
+                    android:editable="false"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/margin"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingRight="35dp"
+                    android:paddingTop="@dimen/margin"
+                    android:singleLine="true"
+                    android:text="不喜欢"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/title_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_select_th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/et_th_reason"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:clickable="false"
+                    android:padding="@dimen/margin"
+                    android:src="@drawable/payback_hh_select" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:background="@drawable/payback_hh_selectdown_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_tk_je"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center"
+                    android:text="退款金额"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/et_tk_je"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_tk_je"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/margin"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingRight="35dp"
+                    android:paddingTop="@dimen/margin"
+                    android:singleLine="true"
+                    android:textColor="@color/pink_color"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <!-- <ImageView
+                    android:id="@+id/iv_select_tkje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/et_tk_je"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:clickable="false"
+                    android:padding="@dimen/margin"
+                    android:src="@drawable/payback_hh_select" /> -->
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:textSize="12sp" />
+            
+            <EditText
+                android:id="@+id/et_th_exlpain"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:background="@drawable/payback_hh_tksm_bg"
+                android:gravity="top"
+                android:hint="退款说明:最多200字"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginTop="30dp" >
+
+                <ImageView
+                    android:id="@+id/iv_upload_pz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/payback_add_pz" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_toRightOf="@id/iv_upload_pz"
+                    android:text="上传凭证（最多三张）"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size16" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

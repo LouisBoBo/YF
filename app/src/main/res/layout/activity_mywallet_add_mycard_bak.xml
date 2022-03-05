@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/base_head" />
+
+        <RelativeLayout
+            android:id="@+id/rel_support_bank_card"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:text="输入银行卡号"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_input_cardnum"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/margin"
+                android:background="@drawable/et_resetpassword_bn"
+                android:gravity="center_vertical"
+                android:hint="银行卡号"
+                android:inputType="number"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/u17"
+            android:text="下一步"
+            android:textColor="@color/white" />
+        
+        <TextView 
+            android:id="@+id/tv_scan_support_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/tv_size15"
+            android:text="查看支持的银行"/>
+    </LinearLayout>
+
+</ScrollView>

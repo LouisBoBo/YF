@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dlg_lay"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_singn_dialog_shape"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/errorContent"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+        android:text="请切换至正式版本，否则无法继续使用." />
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/rePut"
+            android:layout_width="90dp"
+            android:layout_height="32dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="取消"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Button
+             android:layout_height="32dp"
+            android:id="@+id/findPWD"
+            android:layout_marginLeft="10dp"
+            android:layout_width="90dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

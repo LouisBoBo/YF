@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4" >
+
+
+    <!-- 修改后 -->
+
+    <RelativeLayout
+        android:id="@+id/ll_all_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        android:background="@drawable/jinquan_bg" >
+
+        <TextView 
+            android:id="@+id/tv_to_use"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:text="使用"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/kaquan_shiyong_btn_gold_bg"/>
+        <ImageView
+            android:id="@+id/img_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/youhuiquan_default"
+            android:visibility="gone" />  
+        
+        <LinearLayout 
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="86dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+			      <TextView
+			           android:id="@+id/tv_rmb"
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="¥"
+			           android:textSize="17sp"
+			           android:layout_marginRight="4dp"
+			           android:textColor="#FFB745" /> 
+			       <TextView
+			           android:id="@+id/tv_cprice"
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="10"
+			           android:layout_marginRight="10dp"
+			           android:textColor="#FFB745"
+			           android:textSize="38sp" />
+					<TextView
+			           android:id="@+id/tv_yuan"
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:text="元"
+			           android:textSize="17sp"
+			           android:textColor="#FFB745" />
+            </LinearLayout>
+            
+           <TextView
+                android:id="@+id/tv_manshiyong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(满10.01元可使用)"
+                android:textColor="#FFB745"
+                android:textSize="11sp" />  
+            
+        </LinearLayout>
+        
+
+        <TextView
+            android:id="@+id/tv_time_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll"
+            android:layout_alignLeft="@id/ll"
+            android:text="距离金币失效还剩：23时59分59秒"
+            android:textColor="#A8A8A8"
+            android:textSize="11sp" />
+
+         <TextView
+            android:id="@+id/tv_begin_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_time_use"
+            android:layout_toRightOf="@id/tv_time_use"
+            android:text="  开始时间-"
+            android:textColor="#A8A8A8" 
+            android:textSize="11sp" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_time_use"
+            android:layout_toRightOf="@id/tv_begin_time"
+            android:text="过期时间"
+            android:textColor="#A8A8A8"
+            android:visibility="gone"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

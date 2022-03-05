@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/kaquanshuoming"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="13dp"
+                android:text="使用说明"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/icon_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:paddingTop="15dp"
+                android:src="@drawable/iconkaquanshuomclose" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:scrollbars="none"
+            android:dividerHeight="0dp"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            android:paddingRight="13dp" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- bg_singn_dialog_shape -->
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+
+    <LinearLayout
+        android:id="@+id/shaidan_uesername"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/left"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@id/left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="小明"
+            android:id="@+id/shaidan_comment_username1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF448E"
+            android:textSize="@dimen/tv_size13" />
+
+        <TextView
+            android:id="@+id/shaidan_comment_huifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复"
+            android:textColor="#A8A8A8"
+            android:textSize="@dimen/tv_size13" />
+
+        <TextView
+            android:text="小李"
+            android:id="@+id/shaidan_comment_username2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF448E"
+            android:textSize="@dimen/tv_size13" />
+          <TextView
+              android:text="激发节日哦vmmioiikmnikiikikioojiikkkddieexdd大学的登记i点点滴滴揭秘可得的"
+        android:id="@+id/shaidan_comment_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shaidan_uesername"
+        android:textColor="#3E3E3E"
+        android:textSize="@dimen/tv_size13" />
+    </LinearLayout>
+
+
+  
+
+</RelativeLayout>

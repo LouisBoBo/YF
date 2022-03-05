@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YF.iml" filepath="$PROJECT_DIR$/.idea/modules/YF.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibraryPullToRefresh/YF.LibraryPullToRefresh.iml" filepath="$PROJECT_DIR$/.idea/modules/LibraryPullToRefresh/YF.LibraryPullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestActivity/YF.TestActivity.iml" filepath="$PROJECT_DIR$/.idea/modules/TestActivity/YF.TestActivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/YF.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/YF.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib.permission/YF.lib.permission.iml" filepath="$PROJECT_DIR$/.idea/modules/lib.permission/YF.lib.permission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wheelsruflibrary/YF.wheelsruflibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/wheelsruflibrary/YF.wheelsruflibrary.iml" />
+    </modules>
+  </component>
+</project>

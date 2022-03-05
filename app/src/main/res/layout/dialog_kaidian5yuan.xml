@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="390dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_singn_dialog_shape"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:paddingLeft="35dp"
+                    android:src="@drawable/get_3_money" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="开店成功"
+                    android:textColor="#FF3B8D"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="5元现金奖励已存入您的余额"
+                    android:textColor="#919191"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="专属您的小店已开通,快去瞧瞧吧~"
+                    android:textColor="#919191"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:background="@drawable/bg_red_ok"
+                        android:id="@+id/goMineShop"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:text="去小店"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:background="@drawable/bg_tans_cancel"
+                        android:id="@+id/getYue"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="查余额"
+                        android:textSize="18sp"
+                        android:textColor="#FF3B8D"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/congratulation" />
+            
+            
+            <ImageView
+                android:id="@+id/icon_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_close"
+                android:layout_gravity="right"
+                />
+            
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!-- bg_singn_dialog_shape -->
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.yssj.custom.view.ScrollPagerListShouYe3
+            android:id="@+id/myView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0">
+
+            <RelativeLayout
+                android:id="@+id/refreshView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="-100dp"
+                android:background="#f0f0f0">
+
+                <ImageView
+                    android:id="@+id/refreshAnim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/header_loading"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lin_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/pull_to_refresh_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:textColor="#b2b2b2"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_arrow"
+                        android:layout_width="15dp"
+                        android:layout_height="40dp"
+                        android:background="#00000000" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/homepage3_top_img_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin25"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="会员专享"
+                            android:textColor="#FEE32D"
+                            android:textSize="21sp" />
+
+                        <TextView
+                            android:id="@+id/tv_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="199元购物券"
+                            android:textColor="#FEE32D"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#FEE32D"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已入账"
+                            android:textColor="#FEE32D"
+                            android:textSize="21sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:text="00:00:00分后过期"
+                        android:textColor="#FEE32D"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="@dimen/margin10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="以下商品用券"
+                            android:textColor="#FEE32D"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="免费领"
+                            android:textColor="#FEE32D"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 分类的头标题 -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.yssj.custom.view.MYshopTitleView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#ffffff" />
+
+            </FrameLayout>
+
+            <!-- 专题和搭配 -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/content_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff" />
+        </com.yssj.custom.view.ScrollPagerListShouYe3>
+    </LinearLayout>
+
+
+</RelativeLayout>

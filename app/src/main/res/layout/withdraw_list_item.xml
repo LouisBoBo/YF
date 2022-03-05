@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_height="wrap_content">
+        
+        <TextView 
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="中国银行**6802"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18"/>
+        
+        <TextView 
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin25"
+            android:text="-5.00"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/tv_size18"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin25"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        
+        <TextView 
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="2015-07-14"
+            android:textColor="@color/text1_color"
+            android:textSize="@dimen/tv_size15"/>
+        
+        <TextView 
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin25"
+            android:text="成功"
+            android:textColor="@color/text1_color"
+            android:textSize="@dimen/tv_size15"/>
+    </RelativeLayout>
+    
+
+</LinearLayout>

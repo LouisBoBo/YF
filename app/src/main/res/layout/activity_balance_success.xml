@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/white_fanzao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/base_head" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="32dp" >
+
+        <ImageView
+            android:id="@+id/icon_gril"
+            android:layout_width="63dp"
+            android:layout_height="92dp"
+            android:background="@drawable/icon_girl" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon_gril"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="已成功开启特权啦！"
+                android:textColor="#3e3e3e"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv1111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="亲，你已成功开启余额x3倍"
+                android:textColor="#7d7d7d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="特权，现在就去买买买吧。"
+                android:textColor="#7d7d7d"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_show_banlance"
+            android:layout_width="134dp"
+            android:layout_height="42dp"
+            android:background="@drawable/shape_corners_public_use"
+            android:gravity="center"
+            android:text="查余额"
+            android:textColor="#ff3f8b"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_buy_shop"
+            android:layout_width="134dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/indiana_shape_shaidan"
+            android:gravity="center"
+            android:text="买买买"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

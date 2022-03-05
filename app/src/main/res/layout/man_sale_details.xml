@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/xiaos"
+    android:orientation="vertical">
+    
+    <include layout="@layout/base_head" />
+	
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+<!--         android:background="@drawable/selector_category_bg" -->
+<!--         android:textColor="@color/selector_category_text" -->
+        <RadioButton
+            android:id="@+id/rb_daily_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/margin"
+            android:drawablePadding="5dp"
+            android:text="每日金额"
+            android:textColor="@color/selector_black_pink_text"
+            android:textSize="@dimen/tv_size18" />
+
+        <RadioButton
+            android:id="@+id/rb_daily_rebate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/margin"
+            android:text="每日奖金"
+            android:drawablePadding="5dp"
+            android:textColor="@color/selector_black_pink_text"
+            android:textSize="@dimen/tv_size18" />
+
+        <RadioButton
+            android:id="@+id/rb_daily_visitor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/margin"
+            android:text="每日访客"
+            android:drawablePadding="5dp"
+            android:textColor="@color/selector_black_pink_text"
+            android:textSize="@dimen/tv_size18" />
+    </RadioGroup>
+
+    <FrameLayout 
+        android:id="@+id/fragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/rg_group"></FrameLayout>
+</LinearLayout>

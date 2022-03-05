@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+    
+    <ToggleButton 
+        android:id="@+id/tv_tag"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:textColor="@color/text1_color"
+        android:textSize="@dimen/tv_size20"
+        android:gravity="center"
+        android:clickable="true"
+        android:button="@null"
+        android:focusable="false"
+        android:singleLine="true"
+        android:background="@drawable/et_resetpassword_bn"
+        android:text="吐槽"
+        android:layout_marginBottom="10dp"
+        />
+    
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="273dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin30">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="27.2元"
+        android:textColor="#FDCC21"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="恭喜成功领到27.2元现金。可提现至微信零钱。请注意查收。"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:text="恭喜成功领到27.2元现金。可提现至微信零钱。请注意查收。"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin20">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="197dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wx_daozhang_img" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:text="¥ 27.2"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_tx"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_withdrawal_yellow"
+        android:gravity="center"
+        android:text="继续提现"
+        android:textColor="#FD215A"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_bottom"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="注：因微信规定，不满1元的提现将在累积满1元后，一次入账您的微信零钱，请知悉并注意查收。"
+        android:textColor="#FDCC21"
+        android:textSize="10sp" />
+
+</LinearLayout>

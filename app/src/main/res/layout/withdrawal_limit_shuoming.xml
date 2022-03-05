@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:paddingBottom="@dimen/margin20"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="提现额度说明"
+            android:textColor="#FDCC21"
+            android:textSize="@dimen/tv_size18" />
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="#FD215A"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1、完成任务可得余额，余额能用来抽取1-50元的可提现奖金。每次抽取消耗10元余额。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2、可提现奖金可以直接通过钱包页的提现按钮，进行提现。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3、完成惊喜提现任务可直接得可提现的现金。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="4、单独购买美衣每消费1元获得一个衣豆。可用来抽取1-1000元不等的提现现金，每次消耗10个衣豆。抽中的提现额度在交易成功后即可提现。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="5、可通过完成每日赚钱任务，参加0元购美衣获得账户余额。购买美衣每消费1元获得1个衣豆。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="6、下单成功后，返还的余额及衣豆会冻结。订单交易成功后将会解冻。可用冻结的衣豆抽奖，抽中的提现额度在订单完结前被冻结。如发生退货退款，该提现额度将会扣除。"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tv_size14" />
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="7、衣蝠“疯狂新衣节”活动中，购买美衣获得的抽奖机会及中奖率翻倍哦。"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    android:textSize="@dimen/tv_size14" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_twobt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/liebiao"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_white"
+                android:text="知道了"
+                android:textColor="#FD215A"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/gobuy2"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_yellow"
+                android:text="抽取提现额度"
+                android:textColor="#FD215A"
+                android:textSize="16sp"
+                android:visibility="visible"/>
+            
+            <!-- 集赞奖励 使用-->
+            <Button
+                android:id="@+id/liebiao2"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_white"
+                android:text="知道了"
+                android:textColor="#FD215A"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+   <!-- <TextView
+        android:id="@+id/tv_zero_shop_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin12"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginTop="@dimen/margin5"
+        android:text="| 购买需抵扣2000积分 首次购买免积分"
+        android:textColor="@color/pink_color"
+        android:textSize="@dimen/tv_size16"
+        android:visibility="visible" /> -->
+        
+        <!--  <LinearLayout 
+            android:id="@+id/zero_shop_choice"
+             android:layout_width="match_parent"
+             android:layout_height="33dp"
+             android:orientation="horizontal"
+             android:layout_gravity="center_horizontal">
+             
+             <LinearLayout 
+                 android:id="@+id/zero_shop_item_meal"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal"
+                 android:gravity="center_horizontal">
+                 
+                 <TextView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="超值套餐"
+                     android:textSize="14sp"/>
+                 
+                 <ImageView 
+                     android:layout_width="14dp"
+                     android:layout_height="14dp"
+                     android:src="@drawable/icon_hot"/>
+             </LinearLayout>
+                        
+             <View 
+                 android:layout_width="1px"
+                 android:layout_height="19dp"
+                 android:background="#A8A8A8"
+                 android:layout_marginTop="0dp"/>
+             <TextView 
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="match_parent"
+                 android:text="超值单品"
+                 android:textSize="14sp"
+                 android:gravity="center_horizontal"/>
+         </LinearLayout> -->
+<!--         
+           <LinearLayout
+               android:layout_below="@+id/zero_shop_choice"
+               android:id="@+id/zero_shop_top"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#f0f0f0"
+                android:visibility="visible">
+              
+              <ImageView 
+                  android:layout_width="15dp"
+                  android:layout_height="15dp"
+                  android:src="@drawable/icon_notice"
+                  android:layout_marginLeft="10dp"/>
+              
+              <TextView 
+                  
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="购买需抵扣100积分    首次购买免积分"
+                  android:textColor="#FF3F8B"
+                  android:layout_marginLeft="4dp"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+   -->
+   <RelativeLayout 
+       android:id="@+id/zero_shop_item_single"
+       android:layout_below="@+id/zero_shop_choice"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp">
+       
+       <RelativeLayout 
+           android:id="@+id/rl_img"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       <ImageView 
+           android:id="@+id/img_zero_shop_product1"
+           android:layout_width="115dp"
+           android:layout_height="115dp"
+           
+          />
+        			<RelativeLayout 
+			      	           android:id="@+id/zero_shop_item_soldall1"
+			      	           android:layout_width="wrap_content"
+			      	           android:layout_height="wrap_content"
+			      	           android:layout_centerInParent="true"
+			      	           android:layout_marginTop="13dp"
+			      	            android:layout_marginLeft="8dp">
+					      	       <View 
+					      	           android:id="@+id/cover_1"
+					      	           android:layout_width="67dp"
+					      	           android:layout_height="67dp"
+					      	           android:background="@drawable/zero_shop_item_back"
+					      	           android:alpha="0.5"/>
+					      	       <TextView 
+					      	           android:id="@+id/zero_shop_item_soldout1"
+					      	          android:layout_marginTop="18dp"
+					      	          android:layout_centerHorizontal="true"
+					      	           android:layout_width="wrap_content"
+					      	           android:layout_height="wrap_content"
+					      	           
+					      	           android:text="抢完了"
+					      	           android:textSize="14sp"
+					      	           android:textColor="#ffffff"/>
+					      	       <TextView 
+					      	           android:layout_width="wrap_content"
+					      	           android:layout_height="wrap_content"
+					      	           android:text="SOLD OUT"
+					      	           android:textSize="8dp"
+					      	           android:textColor="#ffffff"
+					      	           android:layout_centerHorizontal="true"
+					      	           android:layout_below="@id/zero_shop_item_soldout1"/>
+       							 </RelativeLayout>
+       				</RelativeLayout>
+       
+      
+           
+           <TextView
+            android:id="@+id/tv_zero_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="#3E3E3E"
+            android:textSize="14sp"
+            android:lines="1"
+            android:layout_alignTop="@id/rl_img"
+            android:layout_toRightOf="@id/rl_img"
+            android:layout_marginLeft="20dp"
+            android:text="名字"/>
+           ///////////////////////////
+         <!--   <LinearLayout 
+               android:id="@+id/zero_shop_item_second"
+               android:layout_below="@id/tv_zero_product_name"
+               android:layout_toRightOf="@id/rl_img"
+               android:layout_marginLeft="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="6dp"> -->
+               
+               
+               <TextView
+            android:id="@+id/tv_zero_product_price_RMB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink_color"
+            android:layout_below="@id/tv_zero_product_name"
+            android:layout_toRightOf="@id/rl_img"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:visibility="visible"
+            android:text="¥" />
+               
+        <TextView
+            android:id="@+id/tv_zero_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink_color"
+            android:layout_toRightOf="@id/tv_zero_product_price_RMB"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/tv_zero_product_name"
+            android:textSize="19sp"
+            android:visibility="visible"
+            android:text="显价" />
+        
+        <TextView
+            android:id="@+id/tv_zero_price_outdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/tv_zero_product_price"
+        	android:layout_alignBottom="@id/tv_zero_product_price_RMB"
+            android:textColor="#C5C5C5"
+            android:textSize="10sp"
+            android:layout_marginLeft="3dp"
+            android:text="划价" />
+
+        
+        
+        <TextView
+            android:id="@+id/tv_zero_shop_postage"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+           android:layout_marginLeft="10dp"
+            
+            android:layout_toRightOf="@id/tv_zero_price_outdate"
+            android:layout_below="@id/tv_zero_product_name"
+            android:layout_marginTop="12dp"
+           android:background="@drawable/zero_shop_item_postage"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size10"
+          
+            
+            android:visibility="visible"
+           
+            android:text="邮费"/>
+        
+        <TextView
+            android:id="@+id/tv_zero_shop_postage_gone"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+           android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/margin15"
+             android:layout_toRightOf="@id/tv_zero_price_outdate"
+            android:layout_alignBottom="@id/tv_zero_product_price_RMB"
+           android:background="@drawable/zero_shop_item_postage_gone"
+            android:textColor="#C5C5C5"
+            android:textSize="@dimen/tv_size10"
+            
+            android:visibility="gone"
+            android:text="邮"/>
+        
+       
+           
+         
+           
+            <TextView
+                android:layout_below="@id/tv_zero_product_price_RMB"
+                android:layout_toRightOf="@id/rl_img"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+                android:id="@+id/tv_allowance_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#C5C5C5"
+                android:textSize="10dp"
+                android:text="仅剩" />
+            
+            <ProgressBar
+            android:id="@+id/pb_allowance_count_zong"
+            android:layout_below="@id/tv_allowance_count"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_toRightOf="@id/rl_img"
+            android:layout_marginLeft="20dp"
+            android:layout_width="115dp"
+            android:layout_height="7dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/zero_shop_progressbar"
+            android:visibility="visible" />
+            
+            <ProgressBar
+            android:id="@+id/pb_allowance_count_zong_gone"
+            android:layout_below="@id/tv_allowance_count"
+            style="?android:attr/progressBarStyleHorizontal"
+              android:layout_toRightOf="@id/rl_img"
+            android:layout_marginLeft="20dp"
+            android:layout_width="115dp"
+            android:layout_height="7dp"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/zero_shop_progressbar_gone"
+            android:visibility="gone" />
+            
+            
+            
+            <Button 
+                android:id="@+id/bt_zero_shop"
+                android:layout_width="86dp"
+                android:layout_height="29dp"
+                android:layout_alignBottom="@id/tv_purchase_num"
+                android:layout_toRightOf="@id/rl_img"
+                android:layout_marginLeft="20dp"
+                android:text="立即抢购"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible"
+                android:background="@drawable/zero_shop_item_btn"/>
+            
+             <Button 
+                android:id="@+id/bt_zero_shop_gone"
+                android:layout_width="86dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/rl_img"
+                android:layout_alignBottom="@id/tv_purchase_num"
+                android:layout_marginLeft="20dp"
+                android:text="立即抢购"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:background="@drawable/zero_shop_item_btn_gone"/>
+            
+           
+    
+        <TextView
+            android:id="@+id/tv_purchase_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:textSize="12sp"
+            android:layout_alignBottom="@id/rl_img"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:textColor="#7d7d7d"
+            
+            android:text="多少人在抢"/>
+      
+   </RelativeLayout>
+           
+            <View 
+	           android:layout_width="match_parent"
+	           android:layout_below="@id/zero_shop_item_single"
+	           android:layout_height="0.03dp"
+	           android:background="#E5E5E5"/>
+
+    <LinearLayout
+        android:id="@+id/container_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_zero_shop_product3"
+        android:layout_marginTop="@dimen/margin"
+        android:focusable="false"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_huisequyu"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_below="@id/container_item"
+        android:layout_marginTop="5dp"
+        android:background="@color/background_gray"
+        android:visibility="gone" />
+
+</RelativeLayout>

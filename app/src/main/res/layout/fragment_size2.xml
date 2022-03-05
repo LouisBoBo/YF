@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_shop_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="商品编号：A1085"
+        android:textColor="#3e3e3e"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_size"
+        android:layout_width="109dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/chimacankao" />
+
+    <TextView
+        android:id="@+id/size_hint_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="3dp"
+        android:text="温馨提示：手工测量平铺尺寸可能与实际尺寸相差1-3CM的误差，属于正常范围。"
+        android:textColor="#a8a8a8"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/meal_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:id="@+id/viewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_chimabiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/chimabiao"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_shopconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center|left"
+        android:textColor="@color/tv_shop_tcbn"
+        android:textSize="@dimen/tv_size14"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/size_tag_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_biaoqian"
+            android:layout_width="109dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shangpinbiaoqian" />
+
+        <LinearLayout
+            android:id="@+id/size_ll_frist_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/size_tag_item_long"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="@drawable/size_tag_back"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/pink_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/size_tag_item_short"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0"
+                android:background="@drawable/size_tag_back"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/pink_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <com.yssj.custom.view.MyGridView
+            android:id="@+id/size_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:listSelector="@null"
+            android:numColumns="4" >
+        </com.yssj.custom.view.MyGridView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/fuwushengming"
+            android:textColor="#7d7d7d"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

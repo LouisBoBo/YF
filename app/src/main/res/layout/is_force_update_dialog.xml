@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/force_update_dialog"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin30"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="衣蝠发新版啦~"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size18" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/margin15"
+            android:text="V3.3.7更新了以下内容："
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size15" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/margin10"
+            android:text="122222222222222222222222222222222222\nwr"
+            android:textColor="#7d7d7d"
+            android:textSize="@dimen/tv_size14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_back_white"
+                android:gravity="center"
+                android:text="稍后再说"
+                android:textColor="#ff3f8b"
+                android:textSize="@dimen/tv_size18" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_back_red"
+                android:gravity="center"
+                android:text="立即更新"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+        <LinearLayout 
+            android:gravity="center_vertical"
+            android:id="@+id/ll_notice"
+            android:layout_height="25dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal"
+            >
+            <ImageView 
+                android:background="@drawable/remind_nor"
+                android:id="@+id/iv_remind"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                />
+            <TextView 
+                android:layout_marginLeft="6dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="不再提醒"
+                android:textColor="#7d7d7d"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

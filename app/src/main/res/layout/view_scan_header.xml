@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#F0F0F0">
+ <ImageView
+     android:id="@+id/img_head"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:scaleType="centerCrop"
+     android:visibility="gone"/>
+
+ <LinearLayout
+     android:id="@+id/horizontal_title_ll"
+     android:layout_width="match_parent"
+     android:layout_height="45dp"
+     android:gravity="center"
+     android:background="#FFFFFF"
+     android:orientation="horizontal">
+
+  <TextView
+      android:id="@+id/create_is_new"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="最新"
+      android:textSize="15sp"
+      android:textColor="@color/pink_color" />
+
+  <TextView
+      android:id="@+id/create_is_hot"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="热销"
+      android:textSize="15sp"
+      android:textColor="#3E3E3E" />
+
+  <TextView
+      android:id="@+id/create_price_asc"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="价格↑"
+      android:textSize="15sp"
+      android:textColor="#3E3E3E" />
+
+  <TextView
+      android:id="@+id/create_price_desc"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="价格↓"
+      android:textSize="15sp"
+      android:textColor="#3E3E3E" />
+ </LinearLayout>
+
+
+</LinearLayout>
+

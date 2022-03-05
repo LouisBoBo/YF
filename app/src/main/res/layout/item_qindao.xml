@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip"
+    tools:context="com.yssj.ui.activity.infos.BalanceDoubleSuccessActivity" >
+
+    <RelativeLayout
+        android:id="@+id/item_root"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/fl_itemImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/buqian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/fenxianglingqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible" >
+            </ImageView>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/ItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fl_itemImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text=""
+            android:textColor="#BDB3B4"
+            android:textSize="12sp" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

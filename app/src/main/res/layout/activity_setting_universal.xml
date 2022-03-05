@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tongyong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/base_head" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rel_start_location_service"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin20" >
+
+                    <TextView
+                        android:id="@+id/tv_start_location_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="开启衣蝠位置服务"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/tv_start_location_service"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:text="根据您的位置信息，向您展示丰富资讯"
+                        android:textColor="#989898"
+                        android:textSize="@dimen/tv_size12" />
+                </RelativeLayout>
+
+                <ToggleButton
+                    android:id="@+id/sb_start_location"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/margin"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/ios7_btn"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+                <com.yssj.custom.view.SwitchButton
+                    android:id="@+id/sb_start_location2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/margin"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" />
+
+            <RelativeLayout
+                android:id="@+id/rel_clear_cache"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_cleaning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:gravity="center_vertical"
+                    android:paddingTop="15dp"
+                    android:text="清理缓存中 …"
+                    android:textColor="@color/btn_gray_normal"
+                    android:textSize="@dimen/tv_size20"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/pb_cleaning"
+                    style="@drawable/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iv_img4"
+                    android:text="清理图片缓存"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_clear_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_clear"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_toRightOf="@id/iv_img4"
+                    android:text="包括:图片、数据等"
+                    android:textColor="#989898"
+                    android:textSize="@dimen/tv_size12"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                android:background="@drawable/line" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

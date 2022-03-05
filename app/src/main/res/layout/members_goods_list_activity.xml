@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/jiuba"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+       <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center|left" >
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="24dp"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="13dp"
+                android:layout_height="24dp"
+                android:background="@drawable/u122"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+        
+       <TextView 
+           android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+           android:text="会员商品"
+           android:layout_centerInParent="true"
+           android:textSize="20sp"
+           android:textColor="@color/title_color"
+           />
+       
+    </RelativeLayout>
+	
+     <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/members_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrAnimationStyle="flip"
+        android:divider="@null"
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+    
+    
+    
+</LinearLayout>

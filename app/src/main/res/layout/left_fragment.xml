@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.yssj.custom.view.EditTextWithDel
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/login_margin"
+            android:background="@drawable/edit_bg"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin5"
+            android:gravity="center"
+            android:hint="搜索"
+            android:textColorHint="#9e9e9e"
+            android:textCursorDrawable="@null"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:orientation="vertical">
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

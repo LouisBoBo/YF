@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    
+    <com.yssj.custom.view.SlideShowView 
+		android:layout_width="match_parent"
+		android:layout_height="160dp"
+		android:id="@+id/pager"
+        ></com.yssj.custom.view.SlideShowView>
+    
+    <com.yssj.custom.view.MyHorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_title"
+        android:background="#fff"
+        ></com.yssj.custom.view.MyHorizontalScrollView>
+    <com.yssj.custom.view.MyHorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/title"
+        android:gravity="center_vertical"
+        android:background="#fff"
+        ></com.yssj.custom.view.MyHorizontalScrollView>
+    
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/data"
+           >
+           <com.yssj.custom.view.ItemView 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/left"
+               android:layout_weight="1"
+               />
+           <com.yssj.custom.view.ItemView  
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/right"
+               android:layout_weight="1"
+               android:layout_marginLeft="3dp"
+               />
+       </LinearLayout> 
+        
+
+</LinearLayout>

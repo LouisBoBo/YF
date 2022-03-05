@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_intergral_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginRight="10dp"
+        android:text="这是一个全新的app平台，"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_size14" />
+
+    <TextView
+        android:id="@+id/tv_add_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_type"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:text="2015-08-15    16:05:03"
+        android:textColor="#A8A8A8"
+        android:textSize="@dimen/tv_size12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@id/tv_add_time"
+        android:layout_marginBottom="8dp"
+        android:background="#dcdcdc" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_add_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin20"
+        android:text="+50"
+        android:textColor="@color/pink_color"
+        android:textSize="@dimen/tv_size19" />
+
+</RelativeLayout>

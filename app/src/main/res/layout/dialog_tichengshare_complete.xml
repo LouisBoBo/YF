@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_singn_dialog_shape"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/icon_jizan_success"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="分享成功！"
+            android:textColor="#3c3c3c"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="分享3个好友，拿到150元成功率"
+            android:textColor="#7d7d7d"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="高达98%"
+            android:textColor="#7d7d7d"
+            android:textSize="17sp" />
+
+
+        <Button
+            android:id="@+id/bt_right"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_red_ok"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:text="继续分享"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="50dp"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:background="@color/common_red" />
+
+            <TextView
+                android:id="@+id/tvtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/v1"
+                android:text="赚钱提示"
+                android:textColor="@color/common_red"
+                android:textSize="15sp" />
+
+
+            <View
+                android:id="@+id/v2"
+
+                android:layout_width="50dp"
+
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvtv"
+                android:background="@color/common_red" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="80%的人已完成今日全部任务"
+            android:textColor="#7d7d7d"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="领到20元奖励哦~"
+            android:textColor="#7d7d7d"
+            android:textSize="17sp" />
+
+
+        <Button
+            android:id="@+id/bt_zhuanqian"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_tans_cancel"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:text="我也要去赚赚赚"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/common_red"
+            android:textSize="17sp" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/margin15"
+        android:background="@drawable/icon_close_cc" />
+
+</FrameLayout>

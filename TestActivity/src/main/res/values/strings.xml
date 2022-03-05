@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">StickyListHeaders Sample</string>
+    <string name="empty">无数据</string>
+    <string name="clear">清空</string>
+    <string name="restore">恢复</string>
+
+</resources>

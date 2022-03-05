@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yssj.activity"
+
+
+    >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 加入在SDCard中创建与删除文件的权限 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 加入在SDCard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 加入拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission
+        android:name="android.permission.UPDATE_APP_OPS_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:name="com.yssj.YJApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="yssj"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:maxAspectRatio="2.5"
+        android:requestLegacyExternalStorage="true"
+        android:persistent="true"
+        android:resizeableActivity="true"
+        android:screenOrientation="portrait"
+        tools:replace="android:appComponentFactory">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+        <!--适配华为（huawei）刘海屏-->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <!--适配小米（xiaomi）刘海屏-->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.5" />
+
+
+        <activity
+            android:name="com.yssj.ui.activity.GuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashThemeOld"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="YunShangShiJi" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.circles.SweetFriendsDetails"
+            android:label="密友圈详情"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.circles.AllEvaluateActivity"
+            android:label="密友圈所有评论"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.circles.IssueTopicActivity"
+            android:label="发布话题"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.yssj.ui.activity.circles.AddTagsActivity"
+            android:label="添加标签"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.circles.CutImageActivity"
+            android:label="剪裁图片"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.OneBuySubmitShopActivty"
+            android:label="1元购提交订单"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.circles.IssueSweetFriendsActivity"
+            android:label="发布密友圈"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.yssj.ui.fragment.setting.SuccessBindPhoneActivity"
+            android:label="绑定手机成功"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.OneBuyChouJiangActivity"
+            android:label="新一元抽奖"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.ZhhuanPanTestActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.main.CrazyShopListActivity"
+            android:label="购物节标签列表"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.circles.IssueOutfitActivity"
+            android:label="发布穿搭"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.SnatchActivity"
+            android:label="夺宝记录"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.NewShopActivity"
+            android:label="新品专区"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.view.YiYuanJoinRecordActivity"
+            android:label="一元夺宝参与记录"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.yssj.ui.activity.PinTuanSnatchActivity"
+            android:label="拼团夺宝参与记录和往期揭晓"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.circles.FristClassActivity"
+            android:label="一级分类"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.vip.MyVipListActivity"
+            android:label="选择会员卡类型"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.yssj.ui.activity.vip.VipSubsidiesActivity"
+            android:label="会员打卡补贴激活"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.yssj.ui.activity.vip.VipGuideActivity"
+            android:label="引导开通会员卡"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.yssj.ui.activity.vip.VipVideoActivity"
+            android:label="会员打卡补贴激活"
+            android:screenOrientation="portrait"></activity>
+        <!-- <activity
+             android:name="com.yssj.ui.activity.circles.FristClassActivity"
+             android:label="一级分类"
+             android:screenOrientation="portrait" >
+         </activity>-->
+        <!--<activity
+            android:name="com.yssj.pubu.PullToRefreshSampleActivity"
+            android:screenOrientation="portrait" >
+        </activity>-->
+        <activity
+            android:name="com.yssj.ui.activity.circles.SecondClassActivity"
+            android:label="二级分类"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.picselect.PicSelectActivity"
+            android:label="二级分类"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity
+            android:name="com.yssj.ui.activity.picture.ImageBucketChooseActivity"
+            android:label="相册"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yssj.ui.activity.picture.ImageChooseActivity"
+            android:label="选择图片"
+            android:screenOrientation="portrait" >
+        </activity>-->
+        <activity
+            android:name="com.yssj.ui.activity.setting.BindPhoneActivity"
+            android:label="签到页面绑定手机"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.fragment.payback.SelledHelpActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.ShopCartNewNewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.infos.BalanceDoubleSuccessActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 购物车特卖提交订单 -->
+        <!--<activity
+            android:name="com.yssj.ui.activity.shopdetails.SubmitMultiShopSpecialActivty"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yssj.ui.activity.H5Activity"
+            android:screenOrientation="portrait" >
+        </activity>-->
+        <activity
+            android:name="com.yssj.ui.activity.H5Activity2"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity
+            android:name="com.yssj.ui.activity.shopdetails.MealPaymentMultiActivity"
+            android:screenOrientation="portrait" >
+        </activity>-->
+        <activity
+            android:name="com.yssj.ui.activity.ShowMyPicActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity
+            android:name="com.yssj.ui.activity.ShowIntimateImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>-->
+        <!-- 自己选 -->
+        <activity
+            android:name="com.yssj.ui.activity.ChoiceMyselfActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 夺宝购买 -->
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.SubmitDuobaoOrderActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.setting.BlankBackActivity"
+            android:label="空白页"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.MessageCenterActivity"
+            android:label="消息中心列表"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity
+            android:name="com.yssj.ui.activity.myshop.RedPacketsListActivity"
+            android:label="红包列表"
+            android:screenOrientation="portrait" >
+        </activity>-->
+        <activity
+            android:name="com.yssj.ui.activity.main.MoreSubjectActivity"
+            android:label="更多专题"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.MyPicActivity"
+            android:label="我的照片"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.MyLikeActivity"
+            android:label="设置我的喜好"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.CommonActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.HomePageThreeActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.infos.YJdetailActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.OldMyLikeActivity"-->
+        <!--android:label="设置我的喜好"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.shopdetails.RedPacketsPaymentActivity"-->
+        <!--android:label="红包支付平台"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.SendRedPacketsActivity"-->
+        <!--android:label="发红包"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.shopdetails.BaoYouSubmitOrderActivity"-->
+        <!--android:label="签到包邮商品立即购买&#45;&#45;确认下单"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.yssj.ui.fragment.mywallet.ViewSupportBankActivity"
+            android:label="查看银行列表"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.fragment.mywallet.WithDrawWeiXinExplainActivity"
+            android:label="绑定身份证"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.fragment.mywallet.WithDrawWeiXinExplainNameActivity"
+            android:label="提现输入姓名"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.fragment.mywallet.WithDrawWeiXinCheckActivity"
+            android:label="微信验证"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.RedPacketsActivity"-->
+        <!--android:label="语音红包"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.league.MyCardNumActivity"-->
+        <!--android:label="超级合伙人会员卡列表"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.setting.MemberCardDetailActivity"-->
+        <!--android:label="会员卡"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.yssj.ui.fragment.YaoQingFrendsActivity"
+            android:label="邀请好友"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.fragment.setting.PayPasswordActivity01"-->
+        <!--android:label="修改支付密码&#45;&#45;支付中"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.spl.SampleActivity"-->
+        <!--android:label="测试所用"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.MemberVerifyActivity"-->
+        <!--android:label="会员验证"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.shopdetails.MemberPaymentActivity"-->
+        <!--android:label="会员商品支付"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.shopdetails.MemberSubmitOrderActivity"-->
+        <!--android:label="会员商品提交订单"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.ModifyMineLikeActivity"-->
+        <!--android:label="修改我的喜好标签"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.setting.InformCircleActivity"-->
+        <!--android:label="举报帖子"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.league.BusinessAllianceRevenueActivity"-->
+        <!--android:label="收益统计"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.league.BizMemberDetailActivity"-->
+        <!--android:label="分销中心我的会员的会员"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.league.BizMemberActivity"-->
+        <!--android:label="分销中心我的会员"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.yssj.ui.activity.ShopCartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.HotSearchActivity"-->
+        <!--android:label="商圈热门搜索"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.AllEvaluateBusinessActivity"-->
+        <!--android:label="商圈全部评论"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.PublishEvaluateBusinessActivity"-->
+        <!--android:label="商圈发表评论"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.BizLabelChooseActivity"-->
+        <!--android:label="商圈评论标签"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.MembersGoodsListActivity"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.yssj.ui.activity.SetRefereeActivity"
+            android:label="填写推荐人"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ShowPigActivity"
+            android:label="猪动画"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.infos.IntergralDetailActivity"
+            android:label="积分明细"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.infos.ClothesBeanDetailActivity"
+            android:label="衣豆明细"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.setting.InviteFriendActivity"
+            android:label="我的里面 邀请好友"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.league.LeagueBusinessHomeActivity"-->
+        <!--android:label="联盟商家"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.league.LeagueLogActivity"-->
+        <!--android:label="联盟商家"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--&lt;!&ndash; 完善喜好 &ndash;&gt;-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.TaskMineLikeActivity"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--&lt;!&ndash; 店铺美衣 &ndash;&gt;-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ShopBeautyActivity"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!-- 平台介入申请界面 -->
+        <activity
+            android:name="com.yssj.ui.fragment.payback.ApplyPlatformActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 平台介入完成界面 -->
+        <activity
+            android:name="com.yssj.ui.fragment.payback.ApplyPlatformFinishActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 购物车新界面 -->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.ShopCartNewActivity"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!-- 购物车新新界面 -->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.ShopCartNewNewFragment"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!-- 购物车新界面 -->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.ShopCartCommonPager"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.yssj.ui.activity.ShopImageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.infos.UsefulCouponsActivity"
+            android:label="可用优惠券"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.chat.RoomActivity"-->
+        <!--android:label="我的喜爱"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.MainMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <!-- 分类 -->
+        <activity
+            android:name="com.yssj.ui.activity.classfication.ClassficationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <!-- 分类 搜索 -->
+        <activity
+            android:name="com.yssj.ui.activity.classfication.ClassficationSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <!-- 品牌 -->
+        <activity
+            android:name="com.yssj.ui.activity.classfication.ManufactureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <!--  -->
+        <activity
+            android:name="com.yssj.ui.activity.SuppAndClassActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.BizDetailActivity"-->
+        <!--android:label="@string/app_name"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan|stateHidden" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.BizTitleCheckActivity"-->
+        <!--android:label="@string/app_name"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan|stateHidden" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.league.UnionRegisterActivity"-->
+        <!--android:label="@string/app_name"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan|stateHidden" >-->
+
+        <!--
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        -->
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.league.UnionCategoryActivity"-->
+        <!--android:label="@string/app_name"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan|stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.yssj.ui.activity.league.VipDiscountActivity"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:windowSoftInputMode="adjustPan|stateHidden" />-->
+        <activity
+            android:name="com.yssj.ui.activity.LocateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            -->
+        </activity>
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.ShowImageActivity"-->
+        <!--android:label="@string/app_name"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan|stateHidden" >-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name="com.yssj.ui.activity.league.StatusInfoActivity"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/Theme.AppStartLoadTranslucent" />-->
+
+
+        <activity
+            android:name="com.yssj.ui.activity.MineLikeActivity"
+            android:label="我的喜爱"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.NewMealOneBuySubmitShopActivty"
+
+            android:label="新特卖提交订单"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.NewMealSubmitOrderActivity"
+            android:label="新特卖商品提交订单"
+            android:screenOrientation="portrait" />
+
+
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.LoginOrRegisterActivity"-->
+        <!--android:label="登录注册"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.logins.LoginRightNowActivity"
+            android:label="立即登录"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.MealShopDetailsActivity"
+            android:label="新特卖商品展示"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.logins.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.logins.PhoneRegisterActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.logins.OldUserLoginActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.logins.ForgetPassStepActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+
+        <!-- com.yssj.ui.activity.infos. -->
+        <activity
+            android:name="com.yssj.ui.activity.infos.MyInfoActivity"
+            android:label="我的信息"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.HelpCenterActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.HelpQuestionActivity"
+            android:label="热门问题详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.StatusInfoActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ShowShareActivity"
+            android:label="智能分享"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.PaymentSuccessActivity"
+            android:label="分享购买"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.OrderPaymentActivity"
+            android:label="订单收银台"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.MealPaymentActivity"
+            android:label="0元购收银台"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.NoShareActivity"
+            android:label="分享购买"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.OrderPaymentSuccessActivity"
+            android:label="支付完成选择分享"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.MyWalletActivity"
+            android:label="我的钱包"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.NewWalletActivity"
+            android:label="我的钱包"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.MyWalletCommonFragmentActivity"
+            android:label="我的钱包公用fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.FundListActivity"
+            android:label="我的资金流水"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.MyCardListActivity"
+            android:label="我的银行卡"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.integral.MyIntegralActivity"-->
+        <!--android:label="我的积分"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.integral.MyIntegralExplainActivity"-->
+        <!--android:label="我的积分说明"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.infos.MyCouponsActivity"
+            android:label="我的优惠券"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.MyPayPassActivity"
+            android:label="修改支付密码"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.SetMyPayPassActivity"
+            android:label="设置支付密码"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.myshop.ShopBeautifulActivity"-->
+        <!--android:label="店铺美衣"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.infos.MyFavorActivity"
+            android:label="我的最爱"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name="com.yssj.ui.fragment.orderinfo.ReturnShopMoneyActivity" -->
+        <!-- android:label="退换货" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name="com.yssj.ui.activity.infos.ThhActivity"
+            android:label="退换货"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.LogisticsInfoActivity"
+            android:label="物流信息"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.InputInviteCodeActivity"-->
+        <!--android:label="输入邀请码"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.infos.InviteCodeActivity"
+            android:label="邀请码"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.SubmitCodeStatusActivity"-->
+        <!--android:label="提交邀请码结果"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.payback.PayBackActivity"
+            android:label="退款/售后 "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.payback.PaybackCommonFragmentActivity"
+            android:label="退款/售后公用fragment "
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.shopdetails.ReturnShopDetailActivity"-->
+        <!--android:label="退款商品详情 " />-->
+        <activity
+            android:name="com.yssj.ui.activity.infos.MyFootPrintActivity"
+            android:label="我的足迹"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.EvaluateOrderActivity"
+            android:label="评价"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.EvaluateOrderNewActivity"
+            android:label="评价订单新"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.AppendEvaluateOrderNewActivity"
+            android:label="追加评价"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.DailySignActivity"-->
+        <!--android:label="签到"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.ManSaleActivity"-->
+        <!--android:label="销售管理"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.ManSaleDetailsActivity"-->
+        <!--android:label="销售管理详细"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.infos.FundDetailsActivity"
+            android:label="资金明细"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.RefundDetailActivity"
+            android:label="退款详情"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.WithdrawDetailsActivity"-->
+        <!--android:label="提现详情"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.setting.WelcomeActivity"
+            android:label="欢迎页"
+            android:screenOrientation="portrait" />
+
+        <!-- com.yssj.ui.activity.setting. -->
+        <activity
+            android:name="com.yssj.ui.activity.setting.SettingActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.FeedBackActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.UpdateNickNameActivity"
+            android:label="修改昵称" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.AboutUSActivity"
+            android:label="关于"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.AboutUSDetailActivity"
+            android:label="关于我们"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.infos.MyQrCodeActivity"
+            android:label="我的二维码"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.yssj.ui.fragment.orderinfo.ShareGroupChatActivity"
+            android:label="分享群聊"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.UserProtocolActivity"
+            android:label="用户协议"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.VersionInfoActivity"
+            android:label="版本信息"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.BindEmailActivity"
+            android:label="绑定邮箱"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.UniversalActivity"
+            android:label="通用"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.SettingCommonFragmentActivity"
+            android:label="公用设置fragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.PayPasswordActivity"
+            android:label="支付密码" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.AccountSecureActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.ResetPassActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.SelectAreaActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.SetDeliverAddressActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.ManMyDeliverAddr"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.ManaMyDeliverAddr"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.UpdateDeliverAddressActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.UpdateAreaActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <!-- com.yssj.ui.activity.myshop.我的店铺相关 -->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.myshop.MyShopActivity"-->
+        <!--android:label="我的店铺"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.myshop.EditSignActivity"
+            android:label="编辑广告" />
+        <activity
+            android:name="com.yssj.ui.activity.myshop.ChooseModelActivity"
+            android:label="选择店铺模板"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.myshop.Model1Activity"
+            android:label="模板1"
+            android:screenOrientation="portrait" />
+        <!-- com.yssj.ui.activity.main. -->
+        <activity
+            android:name="com.yssj.ui.activity.main.SeachNoticeActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.main.ForceLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.main.NewPThotsaleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.main.ForceLookMadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.main.HotSaleActivity"
+            android:label="热卖"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.yssj.ui.activity.ShopPageActivity"
+            android:label="单独的购物页"
+            android:screenOrientation="portrait" />
+        />
+
+
+        <activity
+            android:name="com.yssj.ui.activity.main.SearchResultActivity"
+            android:label="@string/title_activity_forget_pass_step"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.main.WordSearchResultActivity"
+            android:label="关键字查询结果"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.main.FilterConditionActivity"-->
+        <!--android:label="筛选条件"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/Theme.AppStartLoadTranslucent"-->
+        <!--android:windowSoftInputMode="adjustPan" />-->
+        <activity
+            android:name="com.yssj.ui.activity.main.FilterResultActivity"
+            android:label="筛选结果"
+            android:screenOrientation="portrait" />
+        <!-- com.yssj.ui.activity.integral. -->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.integral.IntegralMarketActivity"-->
+        <!--android:label="积分商城"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.integral.AddIntegralProdActivity"-->
+        <!--android:label="添加积分商品"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.yssj.ui.activity.integral.ChooseAddressActivity"
+            android:label="提交商品订单"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.integral.SubmitOrderActivity"
+            android:label="提交订单"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+
+        <!-- com.yssj.ui.activity.main. -->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.CircleDetailActivity"-->
+        <!--android:label="圈子详情"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.CircleDetailNewActivity"-->
+        <!--android:label="圈子详情"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.PostDetailNewActivity"-->
+        <!--android:label="帖子详情"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.ChooseTagActivity"-->
+        <!--android:label="圈子标签"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/Dialog" />-->
+        <activity
+            android:name="com.yssj.ui.activity.circles.CircleHomePageActivity"
+            android:label="个人主页"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.CircleFansListActivity"-->
+        <!--android:label="粉丝列表"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.CircleAttentionListActivity"-->
+        <!--android:label="关注列表"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.PublishTopicActivity"-->
+        <!--android:label="发表话题"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.CircleCommonFragmentActivity"-->
+        <!--android:label="圈子列表"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.CircleUserActivity"-->
+        <!--android:label="圈子成员"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.PostDetailActivity"-->
+        <!--android:label="评论列表"-->
+        <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.circles.CircleEssenceActivity"-->
+        <!--android:label="圈精品"-->
+        <!--android:screenOrientation="portrait" />-->
+
+        <!-- com.yssj.ui.activity.logins. -->
+        <activity
+            android:name="com.yssj.ui.activity.logins.ResetPassActivity"
+            android:label="重置密码"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.logins.FillCodeActivity"
+            android:label="输验证码"
+            android:screenOrientation="portrait" />
+        <!-- 商品详情 -->
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ShopDetailsActivity"
+            android:label="商品详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/ATranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ShopDetailsShareActivity"
+            android:label="商品详情分享"
+            android:screenOrientation="portrait"
+            android:theme="@style/ATranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <!-- 签到活动商品详情 -->
+        <!--
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ShopActiveDetailsActivity"
+            android:label="商品详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/ATranslucent"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        -->
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ShareDetailsActivity"
+            android:label="分享详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/ATranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.InvitingFriendsDetails"
+            android:label="邀请详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/ATranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.SweepImageActivity"
+            android:label="扫描二维码"
+            android:screenOrientation="portrait"
+            android:theme="@style/ATranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ShopDetailsIndianaActivity"
+            android:label="夺宝详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/ATranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ShopDetailsMoneyIndianaActivity"
+            android:label="额度夺宝详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/ATranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ShopDetailsGroupIndianaActivity"
+            android:label="拼团夺宝详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/ATranslucent"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <!-- 夺宝评价订单 -->
+        <activity android:name="com.yssj.ui.activity.shopdetails.ShaiDanActivity"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.SubmitOrderActivity"
+            android:label="提交订单"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.yssj.TestActivity"
+            android:label="测试界面"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.MealSubmitOrderActivity"
+            android:label="0元购提交订单"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.SubmitMultiShopActivty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.SubmitOnlyBuyShopActivty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.SubmitFreeBuyShopActivty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.ChooseMyDeliverAddr"
+            android:label="选择收货地址"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.fragment.orderinfo.OrderDetailsActivity"
+            android:label="订单详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.fragment.orderinfo.MySellOrderDetailsActivity"
+            android:label="订单详情"
+            android:screenOrientation="portrait" />
+        <!-- com.yssj.ui.activity.payback. -->
+
+        <activity
+            android:name="com.yssj.ui.fragment.MakeMoneySecret"
+            android:label="赚钱小秘籍" />
+        <activity
+            android:name="com.yssj.ui.activity.payback.PayBackDetailsActivity"
+            android:label="退款售后详情"
+            android:screenOrientation="portrait" />
+
+        <!-- 环信页面 -->
+        <!-- 聊天页面 -->
+        <activity
+            android:name="com.yssj.huanxin.activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 联系买家 -->
+        <activity
+            android:name="com.yssj.huanxin.activity.KeFuActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 自定义的alertdialog -->
+
+        <activity
+            android:name="com.yssj.huanxin.activity.ChatAllHistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.yssj.utils.OneBuyChouJiangActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.yssj.ui.activity.MyYJactivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+<!--        何波新加的界面-->
+        //样衣供款
+        <activity
+            android:name="com.yssj.ui.fragment.contributions.CommitContributionsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.yssj.ui.fragment.contributions.ScanEeamplesActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.yssj.ui.fragment.contributions.ContributionStatusActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.yssj.ui.fragment.contributions.DeliverGoodsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.yssj.ui.fragment.contributions.ContributionClassActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yssj.ui.fragment.contributions.ContributionClassTwoActivity"
+            android:screenOrientation="portrait"/>
+
+
+
+        <service android:name="com.yssj.service.GPSService" />
+        <service android:name="com.yssj.service.ApkDownloadService" />
+
+        <!-- 设置环信应用的正式appkey -->
+        <!--<meta-data-->
+        <!--android:name="EASEMOB_APPKEY"-->
+        <!--android:value="yssjsz#yssjchat" />-->
+
+
+        <!-- 设置环信应用的appkey   正式：yssjsz#yssjchat    测试：yssjsz#yssj-real-test-->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="yssjsz#yssjchat" />
+
+        <!--
+          	 设置环信应用的开发appkey 
+           <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="yssjsz#yifutest" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        -->
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55b98272e0f55a5357003dfc" />
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.yssj.activity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <!-- alipay sdk end -->
+
+        <activity
+            android:name="com.yssj.activity.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.PaymentActivity"
+            android:label="收银台"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yssj.ui.activity.setting.SignatureActivity"
+            android:label="个性签名"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.ImageActivity"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name="com.yssj.photoView.ImagePagerActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 晒单 -->
+        <activity
+            android:name="com.yssj.ui.activity.DisplayOrderDetialsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <!-- 搭配购详情 -->
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.MatchDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- 专题详情 -->
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.SpecialTopicDeatilsActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"></activity>
+        <!-- 搭配购属性选择 -->
+        <activity
+            android:name="com.yssj.ui.activity.shopdetails.MatchAttrActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- 金币详情 -->
+        <activity
+            android:name="com.yssj.ui.activity.infos.GoldCoinDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- 浏览搭配 -->
+        <activity
+            android:name="com.yssj.ui.activity.main.ForceLookMatchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- 活动商品列表 -->
+        <activity
+            android:name="com.yssj.ui.activity.main.SignActiveShopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- 拼团商品列表 -->
+        <activity
+            android:name="com.yssj.ui.activity.main.SignGroupShopActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- 夺宝专区 -->
+        <activity
+            android:name="com.yssj.ui.activity.main.IndianaListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- 我的会员 详情页 -->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.infos.MyMemberRankActivity"-->
+        <!--android:launchMode="singleTop"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!-- 拼团广场 -->
+        <!--<activity-->
+        <!--android:name="com.yssj.ui.activity.GroupsSquareActivity"-->
+        <!--android:launchMode="singleTop"-->
+        <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+
+        <!-- 新的拼团详情 -->
+        <activity
+            android:name="com.yssj.ui.activity.GroupsDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.yssj.ui.activity.OneBuyGroupsDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.yssj.ui.activity.VipShareGroupsDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.yssj.ui.activity.PointLikeRankingActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--好友提成奖励-->
+        <activity
+            android:name="com.yssj.ui.activity.FriendCommissionActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 好友密友列表 -->
+        <activity
+            android:name="com.yssj.ui.activity.MyFriendsAllListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- 你时尚我买单 免单资格说明页面 -->
+        <activity
+            android:name="com.yssj.ui.activity.BuyFreeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- 拼团夺宝 我的夺宝团 -->
+        <activity
+            android:name="com.yssj.ui.activity.IndianaGroupsDetActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 提现额度 -->
+        <activity
+            android:name="com.yssj.ui.activity.WithdrawalLimitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.yssj.ui.activity.SignDrawalLimitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- 引导付款 详情 -->
+        <activity
+            android:name="com.yssj.ui.activity.BootPayDetails"
+            android:screenOrientation="portrait"></activity>
+
+
+        <!--
+        <receiver android:name="net.sourceforge.simcpux.AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        -->
+
+
+        <!-- ###################添加UmengAppkey###################### -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55b98272e0f55a5357003dfc"></meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="3a0aad48b769802db6f40453f8280adc"></meta-data>
+
+        <!-- </>值来自开发者平台取得的AppKey -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="frnxdknCvBEdlRMGyf3FK3KZgtxQSuK3" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="18" />
+        <!-- 0.其他,1.应用宝,2.360,3.百度,4.豌豆荚,5.小米,6.华为,7.IOS,8.广点通,9.官网,10...11..12...13...14...15.广点通2..16.微信。。17.。微信2。。18.地推。。19.朋友圈 ，20.微信3,21.微信4,22.微信5 -->
+        <!-- <meta-data android:value="14" android:name="CHANNEL"/> -->
+        <meta-data
+            android:name="BDAPPID"
+            android:value="7108046" />
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="skN44uieI1qMQxPYFzfYcsXe" />
+
+
+
+
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Required 自定义用来收发消息的相关权限 -->
+    <permission
+        android:name="com.yssj.activity.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.yssj.activity.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+</manifest>

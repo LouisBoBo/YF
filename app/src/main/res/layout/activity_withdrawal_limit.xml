@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center">
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="提现额度"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size20" />
+
+        <TextView
+            android:id="@+id/explain_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="额度说明"
+            android:textColor="#7D7D7D"
+            android:textSize="@dimen/tv_size16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/horizontal_line" />
+    </RelativeLayout>
+
+    <!-- 获取衣豆 -->
+    <LinearLayout
+        android:id="@+id/id_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_fanzao"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c5c5c5" />
+
+        <TextView
+            android:id="@+id/to_obtion_yidou_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_back_red"
+            android:gravity="center"
+            android:text="获取余额"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_bottom"
+        android:layout_below="@id/ll_title"
+        android:background="#ffffff"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/scoll_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A377FF"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/scoll_top_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/withdrawal_main2"
+                android:orientation="vertical">
+
+                <!-- 总金额 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:background="@drawable/withdrawal_top_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sum_balance_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:gravity="center_horizontal"
+                            android:text="0.00"
+                            android:textColor="#FD052E"
+                            android:textSize="@dimen/tv_size23"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="总余额(元)"
+                            android:textColor="#FD052E"
+                            android:textSize="@dimen/tv_size14" />
+                    </LinearLayout>
+                    <!-- 提现额度额度 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/limit_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:gravity="center"
+                            android:text="0.00"
+                            android:textColor="#FD052E"
+                            android:textSize="@dimen/tv_size23"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="可提现(元)"
+                            android:textColor="#FD052E"
+                            android:textSize="@dimen/tv_size14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/to_withdrawal_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/btn_back_withdrwal"
+                            android:gravity="center"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="23dp"
+                            android:paddingRight="23dp"
+                            android:paddingTop="6dp"
+                            android:text="提现"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/tv_size16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <!-- 可用衣豆 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/used_yidou_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:background="@drawable/shape_yidou_view_bg"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="可用衣豆:0"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/tv_size12" />
+                    </LinearLayout>
+                    <!-- 冻结衣豆 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/un_used_yidou_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:background="@drawable/shape_yidou_view_bg"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="冻结衣豆:0"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/tv_size12" />
+                    </LinearLayout>
+                    <!-- 额度明细-->
+                    <LinearLayout
+                        android:id="@+id/limit_det_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_litmit_det_bg"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="7dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/limit_det_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginRight="3dp"
+                            android:gravity="center"
+                            android:text="额度明细"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/tv_size12" />
+
+                        <ImageView
+                            android:id="@+id/limit_det_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/icon_go_white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/crazy_remain_times_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="-30dp"
+                    android:layout_marginTop="73dp"
+                    android:text="0次疯狂抽奖机会"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp">
+
+                    <com.yssj.custom.view.LuckyPanView
+                        android:id="@+id/id_luckypan"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_centerInParent="true"
+                        android:padding="25dp" />
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:id="@+id/id_start_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/zhizhen2" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_litmit_jiangli_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/withdrawal_edu_bg2" />
+
+                <ListView
+                    android:id="@+id/list_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:layout_marginBottom="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/list_view2_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_litmit_jiangli_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/list_view2_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/withdrawal_yidou_bg" />
+
+                <ListView
+                    android:id="@+id/list_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:layout_marginBottom="10dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

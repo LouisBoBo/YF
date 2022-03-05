@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" >
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon_sign"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:alpha="0.3"
+                android:background="@drawable/u122"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="活动商品专区"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size20" />
+
+        <TextView
+            android:id="@+id/task_explain_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:text="任务说明"
+            android:gravity="center_vertical"
+            android:textColor="#7D7D7D"
+            android:textSize="@dimen/tv_size16"
+            android:visibility="visible" />
+         <View
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp" 
+	        android:background="@drawable/horizontal_line"
+	        android:layout_alignParentBottom="true"/>  
+        
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/ll_nodata"
+        layout="@layout/circle_nodata"
+        android:visibility="gone" />
+
+	<FrameLayout
+        android:id="@+id/r_list_view_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_title" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/r_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrScrollingWhileRefreshingEnabled="false"
+            ptr:ptrAnimationStyle="flip" />
+    </FrameLayout>
+    
+
+     <!-- <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/r_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="@null"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrListViewExtrasEnabled="false"
+        ptr:ptrMode="both"
+        ptr:ptrScrollingWhileRefreshingEnabled="true" /> -->
+	<ImageView
+        android:visibility="gone"
+	    android:id="@+id/fight_groups_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="10dp"
+	    android:src="@drawable/pintuan_go"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_head"/>
+    
+    <ImageView 
+        android:id="@+id/img_failed"
+        android:layout_height="45dp"
+        android:layout_width="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/pay_failed"/>
+
+    <TextView 
+        android:id="@+id/notice"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_failed"
+        android:layout_marginTop="34dp"
+        android:textColor="#222222"
+        android:text="抱歉！付款失败！"
+        android:textSize="@dimen/tv_size24"/>
+    
+    <Button 
+        android:id="@+id/btn_choose_other"
+        android:layout_height="36dp"
+        android:layout_width="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/notice"
+        android:text="选择其他方式付款"
+        android:textColor="#222222"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/count_bg"
+        android:layout_marginTop="@dimen/margin30"/>
+    
+</RelativeLayout>

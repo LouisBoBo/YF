@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qiandaoshuoming_dialog_back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:text="任务提示"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/tv_size18" />
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/iconkaquanshuomclose" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正在进行浏览搭配购6分钟任务，只有完成了该任务，才可以开始其他同类型任务哦~"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dojishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浏览剩余时间"
+            android:textColor="#3e3e3e"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_fenzhong"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_singn_fenzhong"
+            android:gravity="center"
+            android:text="05"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=":"
+            android:textColor="#3e3e3e"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_miao"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_singn_fenzhong"
+            android:gravity="center"
+            android:text="52"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gobuy1"
+        android:layout_width="243dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_red_ok"
+        android:text="去浏览美衣~"
+        android:textColor="#fFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</LinearLayout>

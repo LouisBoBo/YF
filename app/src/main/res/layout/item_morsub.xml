@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subject_main_image_rl"
+    android:layout_width="match_parent"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/subject_main_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/subject_main_tv_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/subject_main_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="穿出小清新，轻松撩男神!"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/tv_size20" />
+
+        <TextView
+            android:id="@+id/subject_main_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="【约会就要穿得美美哒~】"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/tv_size14" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_end"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject_main_image_iv"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" >
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="15dp"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#7d7d7d" />
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/v1"
+            android:text="The end"
+            android:textColor="#7d7d7d"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="15dp"
+            android:layout_height="0.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/end"
+            android:background="#7d7d7d" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qiandaoshuoming_dialog_back">
+
+    <RelativeLayout
+        android:layout_width="274dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/balance_dialog_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="244dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/icon_close_new"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/balance_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/balance_dialog_close"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="温馨提示"
+            android:textColor="#3e3e3e"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/balance_dialog_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/balance_dialog_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="9dp"
+            android:text="商品很抢手，过会可能就没有了。你可以继续支付。"
+            android:textColor="#7d7d7d"
+            android:textSize="12sp" />
+
+        <LinearLayout
+
+            android:layout_width="254dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/balance_dialog_tv1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/confrim"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_tans_cancel"
+                android:gravity="center"
+                android:text="查看订单"
+                android:textColor="#ff3f8b"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dismiss"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/bg_red_ok"
+                android:gravity="center"
+                android:text="继续付款"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

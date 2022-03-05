@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/diver"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/all_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:text="夏日穿衣搭配，你选择哪一种！"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+	
+        <Button
+            android:id="@+id/bt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_below="@id/all_title"
+	
+		
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_bg_toggle1"
+            android:gravity="center"
+        
+            android:textSize="@dimen/tv_size14"
+            android:textColor="@color/text1_color"
+            android:text="哈哈哈哈"
+             />
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bt_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin8"
+            android:drawableLeft="@drawable/img_comment_count"
+            android:drawablePadding="3dp"
+            android:textSize="10dp"
+            android:textColor="@color/text1_color"
+            android:text="135" />
+
+        <TextView
+            android:id="@+id/look_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bt_title"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/comment_count"
+            android:drawableLeft="@drawable/img_check_count"
+            android:drawablePadding="3dp"
+            android:textSize="10dp"
+            android:textColor="@color/text1_color"
+            android:text="50" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/louzhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.3dp"
+            android:background="@color/line_color" />
+
+        <com.yssj.custom.view.RoundImageButton
+            android:id="@+id/img_louzhu"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="18dp"
+            android:background="@null"
+             />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="26dp"
+            android:layout_toRightOf="@+id/img_louzhu"
+            android:text="張飛"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size16" />
+
+        <TextView
+            android:id="@+id/ceng_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/name"
+            android:layout_marginRight="@dimen/margin12"
+            android:text="樓主"
+            android:textColor="@color/text1_color"
+            android:textSize="@dimen/tv_size16" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ceng_name"
+            android:layout_marginRight="@dimen/margin12"
+            android:layout_marginTop="3dp"
+            android:text="55分鐘之前"
+            android:textColor="@color/text1_color"
+            android:textSize="@dimen/tv_size13" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_louzhu"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:text="真是牛逼啊"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size16" />
+
+        <TextView
+            android:id="@+id/rep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@drawable/img_btn_reply"
+            android:drawablePadding="3dp"
+            android:text="回复"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="6dp"
+            android:scaleType="centerCrop"
+             />
+
+        <TextView
+            android:id="@+id/image_rep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/image"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@drawable/img_btn_reply"
+            android:drawablePadding="3dp"
+            android:text="回复"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18"
+            android:visibility="gone" 
+             />
+    </RelativeLayout>
+
+</LinearLayout>

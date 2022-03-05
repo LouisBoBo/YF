@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/dian"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="#fff"
+        android:layout_marginTop="@dimen/margin5"
+        android:gravity="center_vertical" >
+
+        <ImageButton 
+            android:id="@+id/img_btn_back"
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="#00000000"
+            android:src="@drawable/back"/>
+        
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息盒子"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- <include layout="@layout/search_bar" /> -->
+
+    <include
+        android:id="@+id/rl_error_item"
+        layout="@layout/chat_neterror_item"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null" />
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#00000000"
+        android:text="暂无任何消息哦"
+        android:textColor="#989898"
+        android:textSize="@dimen/tv_size20" 
+        android:visibility="gone"/>
+
+</LinearLayout>

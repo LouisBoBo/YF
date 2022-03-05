@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="273dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qiandaoshuoming_dialog_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="ZARA制造商"
+            android:textColor="#3e3e3e"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_details_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:text="ZARA作为精准时尚的领导品牌，声名显赫，ZARA深受全球时尚青年的喜爱，设计师品牌的优异设计价格却更为低廉，简单来说就是让平民拥抱High Fashion"
+            android:textColor="#7d7d7d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dialog_details_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="衣蝠深入女装行业内部，找到国际一线女装品牌ZARA的代工厂，同样的品质，却有更优的价格"
+            android:textColor="#ff3f8b"
+            android:textSize="14sp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/dialog_details_know"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_back_red"
+            android:text="知道了"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

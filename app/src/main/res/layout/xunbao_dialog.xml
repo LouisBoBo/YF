@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="260dp"
+	android:layout_height="wrap_content"
+	android:paddingLeft="20dp"
+	android:paddingRight="20dp"
+	android:paddingTop="25dp"
+	android:paddingBottom="25dp"
+	android:layout_gravity="center_horizontal"
+	android:gravity="center_horizontal"
+	android:background="@drawable/xunbao_dialog_shape"
+	android:orientation="vertical">
+	<TextView
+	  android:id="@+id/tv_xunbao_content"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"  
+	  android:text="任务奖励就藏在商品里噢~"
+	  android:textSize="@dimen/tv_size14"
+	  android:textColor="#7d7d7d"
+	    />
+	<TextView 
+	  android:id="@+id/tv_xunbao"
+	  android:layout_width="220dp"
+	  android:layout_height="wrap_content"
+	  android:background="@drawable/sign_back"  
+	  android:gravity="center"
+	  android:layout_marginTop="20dp"
+	  android:padding="5dp"
+	  android:text="知道啦~"  
+	  android:textSize="@dimen/tv_size16"
+	  android:textColor="#ffffff"
+	    />
+	
+</LinearLayout>

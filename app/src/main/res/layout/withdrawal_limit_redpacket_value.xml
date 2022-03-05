@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:paddingBottom="@dimen/margin50"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:paddingTop="@dimen/margin15"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/red_packet_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#FDCC21"
+        android:textSize="@dimen/tv_size30" />
+    <TextView
+        android:id="@+id/red_packet_value_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#FEFEFE"
+        android:textSize="@dimen/tv_size14" />
+    <Button
+        android:id="@+id/btn_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/shape_withdrawal_yellow"
+        android:text="继续抽取可提现额度"
+        android:textColor="#FD215A"
+        android:textSize="17sp" />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_white"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/shape_withdrawal_white"
+        android:text="查看额度明细"
+        android:textColor="#FD215A"
+        android:textSize="17sp" />
+
+</LinearLayout>

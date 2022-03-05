@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <ScrollView
+        android:id="@+id/scroll_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin"
+                android:text="举报类型"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_about_sex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin20"
+                        android:layout_marginRight="@dimen/margin"
+                        android:text="色情"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <ImageView
+                        android:id="@+id/img_right_arrow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin20"
+                        android:background="@color/transparenct"
+                        android:src="@drawable/img_blue_right" 
+                        android:visibility="gone"/>
+                </RelativeLayout>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#f4f4f4"/>
+                <RelativeLayout
+                    android:id="@+id/rel_about_adv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin20"
+                        android:layout_marginRight="@dimen/margin"
+                        android:text="广告"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <ImageView
+                        android:id="@+id/img_right_arrow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin20"
+                        android:background="@color/transparenct"
+                        android:src="@drawable/img_blue_right"
+                         android:visibility="gone" />
+                </RelativeLayout>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#f4f4f4"/>
+                <RelativeLayout
+                    android:id="@+id/rel_about_repeat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin20"
+                        android:layout_marginRight="@dimen/margin"
+                        android:text="反动"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <ImageView
+                        android:id="@+id/img_right_arrow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin20"
+                        android:background="@color/transparenct"
+                        android:src="@drawable/img_blue_right"
+                         android:visibility="gone" />
+                </RelativeLayout>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#f4f4f4"/>
+                <RelativeLayout
+                    android:id="@+id/rel_about_violence"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin20"
+                        android:layout_marginRight="@dimen/margin"
+                        android:text="暴力"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <ImageView
+                        android:id="@+id/img_right_arrow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin20"
+                        android:background="@color/transparenct"
+                        android:src="@drawable/img_blue_right"
+                         android:visibility="gone" />
+                </RelativeLayout>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#f4f4f4"/>
+                <RelativeLayout
+                    android:id="@+id/rel_about_else"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin20"
+                        android:layout_marginRight="@dimen/margin"
+                        android:text="其他"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/tv_size18" />
+
+                    <ImageView
+                        android:id="@+id/img_right_arrow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin20"
+                        android:background="@color/transparenct"
+                        android:src="@drawable/img_blue_right"
+                         android:visibility="gone" />
+                </RelativeLayout>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#f4f4f4"/>
+
+
+                <Button
+                    android:id="@+id/btn_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_login_height"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/margin20"
+                    android:layout_marginRight="@dimen/margin20"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/u17"
+                    android:text="确认"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tv_size19" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin10"
+        android:background="#F0F0F0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/groups_date_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin8"
+            android:layout_marginRight="@dimen/margin8"
+            android:text="::"
+            android:textColor="#A8A8A8"
+            android:textSize="@dimen/tv_size12" />
+
+        <TextView
+            android:id="@+id/groups_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_toLeftOf="@id/groups_date_times"
+            android:text="年月日"
+            android:textColor="#A8A8A8"
+            android:textSize="@dimen/tv_size12" />
+
+        <TextView
+            android:id="@+id/groups_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:text="拼团发起人:"
+            android:textColor="#3E3E3E"
+            android:textSize="@dimen/tv_size14" />
+
+        <ImageView
+            android:id="@+id/groups_head_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin8"
+            android:layout_toRightOf="@id/groups_tv"
+            android:adjustViewBounds="true"
+            android:background="@color/transparenct"
+            android:clickable="false"
+            android:src="@drawable/head_pic_04" />
+
+        <ImageView
+            android:id="@+id/groups_head_tz_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/groups_tv"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:src="@drawable/icon_groups_tuanzhang"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/groups_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin8"
+            android:layout_toLeftOf="@id/groups_date"
+            android:layout_toRightOf="@id/groups_head_iv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#7D7D7D"
+            android:textSize="@dimen/tv_size14" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E5E5E5" />
+        <!--商品1-->
+        <RelativeLayout
+            android:id="@+id/groups_shop_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/margin15"
+            android:paddingRight="@dimen/margin10">
+
+            <ImageView
+                android:id="@+id/groups_shop_img_one"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/groups_shop_num_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/groups_shop_img_one"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginBottom="7dp"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text="×1"
+                android:textColor="#3E3E3E" />
+
+            <TextView
+                android:id="@+id/groups_shop_name_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/groups_shop_img_one"
+                android:layout_marginBottom="7dp"
+                android:layout_toLeftOf="@id/groups_shop_num_one"
+                android:layout_toRightOf="@id/groups_shop_img_one"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/tv_size14" />
+
+
+            <TextView
+                android:id="@+id/groups_shop_color_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groups_shop_name_one"
+                android:layout_toRightOf="@id/groups_shop_img_one"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text="颜色："
+                android:textColor="#A8A8A8" />
+
+            <TextView
+                android:id="@+id/groups_shop_size_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groups_shop_name_one"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_toRightOf="@id/groups_shop_color_one"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text="尺码："
+                android:textColor="#A8A8A8" />
+
+            <TextView
+                android:id="@+id/groups_shop_price_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/groups_shop_img_one"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_toRightOf="@id/groups_shop_img_one"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text="原价"
+                android:textColor="#a8a8a8"
+                android:textSize="@dimen/tv_size12" />
+
+            <TextView
+                android:id="@+id/groups_shop_ori_price_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/groups_shop_price_one"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_toRightOf="@id/groups_shop_price_one"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text="11111111"
+                android:textColor="#3e3e3e"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:id="@+id/tv_nopay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/groups_shop_num_one"
+                android:layout_alignParentRight="true"
+                android:text="未支付"
+                android:textColor="@color/common_red"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+        <!--商品2-->
+        <RelativeLayout
+            android:id="@+id/groups_shop_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/margin15"
+            android:paddingRight="@dimen/margin10">
+
+            <ImageView
+                android:id="@+id/groups_shop_img_two"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/groups_shop_num_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/groups_shop_img_two"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginBottom="7dp"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text="×1"
+                android:textColor="#3E3E3E" />
+
+            <TextView
+                android:id="@+id/groups_shop_name_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/groups_shop_img_two"
+                android:layout_marginBottom="7dp"
+                android:layout_toLeftOf="@id/groups_shop_num_two"
+                android:layout_toRightOf="@id/groups_shop_img_two"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/tv_size14" />
+
+
+            <TextView
+                android:id="@+id/groups_shop_color_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groups_shop_name_two"
+                android:layout_toRightOf="@id/groups_shop_img_two"
+                android:ellipsize="start"
+                android:text="颜色："
+                android:textColor="#A8A8A8"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/groups_shop_size_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groups_shop_name_two"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_toRightOf="@id/groups_shop_color_two"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text="尺码："
+                android:textColor="#A8A8A8" />
+
+            <TextView
+                android:id="@+id/groups_shop_price_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/groups_shop_img_two"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_toRightOf="@id/groups_shop_img_two"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text="原价"
+                android:textColor="#A8A8A8"
+                android:textSize="@dimen/tv_size12" />
+
+            <TextView
+                android:id="@+id/groups_shop_ori_price_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/groups_shop_price_two"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_toRightOf="@id/groups_shop_price_two"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:text="00000"
+                android:textColor="#3e3e3e"
+                android:textSize="@dimen/tv_size14" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin15"
+            android:background="#E5E5E5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_actual_pay"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginRight="@dimen/margin10"
+        android:gravity="right|center_vertical"
+        android:text="实付："
+        android:textColor="#3E3E3E"
+        android:textSize="@dimen/tv_size15"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

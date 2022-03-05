@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="emoji_utf_8">
+        <item>0xF0 0x9F 0x98 0x84</item>
+        <item>0xF0 0x9F 0x98 0x8A</item>
+        <item>0xF0 0x9F 0x98 0x83</item>
+        <item>0xE2 0x98 0xBA</item>
+        <item>0xF0 0x9F 0x98 0x89</item>
+        <item>0xF0 0x9F 0x98 0x8D</item>
+        <item>0xF0 0x9F 0x98 0x98</item>
+        <item>0xF0 0x9F 0x98 0x9A</item>
+        <item>0xF0 0x9F 0x98 0xB3</item>
+        <item>0xF0 0x9F 0x98 0x8C</item>
+        <item>0xF0 0x9F 0x98 0x81</item>
+        <item>0xF0 0x9F 0x98 0x9C</item>
+        <item>0xF0 0x9F 0x98 0x9D</item>
+        <item>0xF0 0x9F 0x98 0x92</item>
+        <item>0xF0 0x9F 0x98 0x8F</item>
+        <item>0xF0 0x9F 0x98 0x93</item>
+        <item>0xF0 0x9F 0x98 0x94</item>
+        <item>0xF0 0x9F 0x98 0x9E</item>
+        <item>0xF0 0x9F 0x98 0x96</item>
+        <item>0xF0 0x9F 0x98 0xA5</item>
+        <item>0xF0 0x9F 0x98 0xB0</item>
+        <item>0xF0 0x9F 0x98 0xA8</item>
+        <item>0xF0 0x9F 0x98 0xA3</item>
+        <item>0xF0 0x9F 0x98 0xA2</item>
+        <item>0xF0 0x9F 0x98 0xAD</item>
+        <item>0xF0 0x9F 0x98 0x82</item>
+        <item>0xF0 0x9F 0x98 0xB2</item>
+        <item>0xF0 0x9F 0x98 0xB1</item>
+        <item>0xF0 0x9F 0x98 0xA0</item>
+        <item>0xF0 0x9F 0x98 0xA1</item>
+        <item>0xF0 0x9F 0x98 0xAA</item>
+        <item>0xF0 0x9F 0x98 0xB7</item>
+        <item>0xF0 0x9F 0x91 0xBF</item>
+        <item>0xF0 0x9F 0x91 0xBD</item>
+        <item>0xF0 0x9F 0x92 0x9B</item>
+        <item>0xF0 0x9F 0x92 0x99</item>
+        <item>0xF0 0x9F 0x92 0x9C</item>
+        <item>0xF0 0x9F 0x92 0x97</item>
+        <item>0xF0 0x9F 0x92 0x9A</item>
+        <item>0xE2 0x9D 0xA4</item>
+        <item>0xF0 0x9F 0x92 0x94</item>
+        <item>0xF0 0x9F 0x92 0x93</item>
+        <item>0xF0 0x9F 0x92 0x98</item>
+        <item>0xE2 0x9C 0xA8</item>
+        <item>0xF0 0x9F 0x8C 0x9F</item>
+        <item>0xF0 0x9F 0x92 0xA2</item>
+        <item>0xE2 0x9D 0x95</item>
+        <item>0xE2 0x9D 0x94</item>
+        <item>0xF0 0x9F 0x92 0xA4</item>
+        <item>0xF0 0x9F 0x92 0xA8</item>
+        <item>0xF0 0x9F 0x92 0xA6</item>
+        <item>0xF0 0x9F 0x8E 0xB6</item>
+        <item>0xF0 0x9F 0x8E 0xB5</item>
+        <item>0xF0 0x9F 0x94 0xA5</item>
+        <item>0xF0 0x9F 0x92 0xA9</item>
+        <item>0xF0 0x9F 0x91 0x8D</item>
+        <item>0xF0 0x9F 0x91 0x8E</item>
+        <item>0xF0 0x9F 0x91 0x8C</item>
+        <item>0xF0 0x9F 0x91 0x8A</item>
+        <item>0xE2 0x9C 0x8A</item>
+        <item>0xE2 0x9C 0x8C</item>
+        <item>0xF0 0x9F 0x91 0x8B</item>
+        <item>0xE2 0x9C 0x8B</item>
+        <item>0xF0 0x9F 0x91 0x90</item>
+        <item>0xF0 0x9F 0x91 0x86</item>
+        <item>0xF0 0x9F 0x91 0x87</item>
+        <item>0xF0 0x9F 0x91 0x89</item>
+        <item>0xF0 0x9F 0x91 0x88</item>
+        <item>0xF0 0x9F 0x99 0x8C</item>
+        <item>0xF0 0x9F 0x99 0x8F</item>
+        <item>0xE2 0x98 0x9D</item>
+        <item>0xF0 0x9F 0x91 0x8F</item>
+        <item>0xF0 0x9F 0x92 0xAA</item>
+        <item>0xF0 0x9F 0x9A 0xB6</item>
+        <item>0xF0 0x9F 0x8F 0x83</item>
+        <item>0xF0 0x9F 0x91 0xAB</item>
+        <item>0xF0 0x9F 0x92 0x83</item>
+        <item>0xF0 0x9F 0x91 0xAF</item>
+        <item>0xF0 0x9F 0x99 0x86</item>
+        <item>0xF0 0x9F 0x99 0x85</item>
+        <item>0xF0 0x9F 0x92 0x81</item>
+        <item>0xF0 0x9F 0x99 0x87</item>
+        <item>0xF0 0x9F 0x92 0x8F</item>
+        <item>0xF0 0x9F 0x92 0x91</item>
+        <item>0xF0 0x9F 0x92 0x86</item>
+        <item>0xF0 0x9F 0x92 0x87</item>
+        <item>0xF0 0x9F 0x92 0x85</item>
+        <item>0xF0 0x9F 0x91 0xA6</item>
+        <item>0xF0 0x9F 0x91 0xA7</item>
+        <item>0xF0 0x9F 0x91 0xA9</item>
+        <item>0xF0 0x9F 0x91 0xA8</item>
+        <item>0xF0 0x9F 0x91 0xB6</item>
+        <item>0xF0 0x9F 0x91 0xB5</item>
+        <item>0xF0 0x9F 0x91 0xB4</item>
+        <item>0xF0 0x9F 0x91 0xB1</item>
+        <item>0xF0 0x9F 0x91 0xB2</item>
+        <item>0xF0 0x9F 0x91 0xB3</item>
+        <item>0xF0 0x9F 0x91 0xB7</item>
+        <item>0xF0 0x9F 0x91 0xAE</item>
+        <item>0xF0 0x9F 0x91 0xBC</item>
+        <item>0xF0 0x9F 0x91 0xB8</item>
+        <item>0xF0 0x9F 0x92 0x82</item>
+        <item>0xF0 0x9F 0x92 0x80</item>
+        <item>0xF0 0x9F 0x91 0xA3</item>
+        <item>0xF0 0x9F 0x92 0x8B</item>
+        <item>0xF0 0x9F 0x91 0x84</item>
+        <item>0xF0 0x9F 0x91 0x82</item>
+        <item>0xF0 0x9F 0x91 0x80</item>
+        <item>0xF0 0x9F 0x91 0x83</item>
+        <item>0xF0 0x9F 0x8E 0x8D</item>
+        <item>0xF0 0x9F 0x92 0x9D</item>
+        <item>0xF0 0x9F 0x8E 0x8E</item>
+        <item>0xF0 0x9F 0x8E 0x92</item>
+        <item>0xF0 0x9F 0x8E 0x93</item>
+        <item>0xF0 0x9F 0x8E 0x8F</item>
+        <item>0xF0 0x9F 0x8E 0x86</item>
+        <item>0xF0 0x9F 0x8E 0x87</item>
+        <item>0xF0 0x9F 0x8E 0x90</item>
+        <item>0xF0 0x9F 0x8E 0x91</item>
+        <item>0xF0 0x9F 0x8E 0x83</item>
+        <item>0xF0 0x9F 0x91 0xBB</item>
+        <item>0xF0 0x9F 0x8E 0x85</item>
+        <item>0xF0 0x9F 0x8E 0x84</item>
+        <item>0xF0 0x9F 0x8E 0x81</item>
+        <item>0xF0 0x9F 0x94 0x94</item>
+        <item>0xF0 0x9F 0x8E 0x89</item>
+        <item>0xF0 0x9F 0x8E 0x88</item>
+        <item>0xF0 0x9F 0x92 0xBF</item>
+        <item>0xF0 0x9F 0x93 0x80</item>
+        <item>0xF0 0x9F 0x93 0xB7</item>
+        <item>0xF0 0x9F 0x8E 0xA5</item>
+        <item>0xF0 0x9F 0x92 0xBB</item>
+        <item>0xF0 0x9F 0x93 0xBA</item>
+        <item>0xF0 0x9F 0x93 0xB1</item>
+        <item>0xF0 0x9F 0x93 0xA0</item>
+        <item>0xE2 0x98 0x8E</item>
+        <item>0xF0 0x9F 0x92 0xBD</item>
+        <item>0xF0 0x9F 0x93 0xBC</item>
+        <item>0xF0 0x9F 0x94 0x8A</item>
+        <item>0xF0 0x9F 0x93 0xA2</item>
+        <item>0xF0 0x9F 0x93 0xA3</item>
+        <item>0xF0 0x9F 0x93 0xBB</item>
+        <item>0xF0 0x9F 0x93 0xA1</item>
+        <item>0xE2 0x9E 0xBF</item>
+        <item>0xF0 0x9F 0x94 0x8D</item>
+        <item>0xF0 0x9F 0x94 0x93</item>
+        <item>0xF0 0x9F 0x94 0x92</item>
+        <item>0xF0 0x9F 0x94 0x91</item>
+        <item>0xE2 0x9C 0x82</item>
+        <item>0xF0 0x9F 0x94 0xA8</item>
+        <item>0xF0 0x9F 0x92 0xA1</item>
+        <item>0xF0 0x9F 0x93 0xB2</item>
+        <item>0xF0 0x9F 0x93 0xA9</item>
+        <item>0xF0 0x9F 0x93 0xAB</item>
+        <item>0xF0 0x9F 0x93 0xAE</item>
+        <item>0xF0 0x9F 0x9B 0x80</item>
+        <item>0xF0 0x9F 0x9A 0xBD</item>
+        <item>0xF0 0x9F 0x92 0xBA</item>
+        <item>0xF0 0x9F 0x92 0xB0</item>
+        <item>0xF0 0x9F 0x94 0xB1</item>
+        <item>0xF0 0x9F 0x9A 0xAC</item>
+        <item>0xF0 0x9F 0x92 0xA3</item>
+        <item>0xF0 0x9F 0x94 0xAB</item>
+        <item>0xF0 0x9F 0x92 0x8A</item>
+        <item>0xF0 0x9F 0x92 0x89</item>
+        <item>0xF0 0x9F 0x8F 0x88</item>
+        <item>0xF0 0x9F 0x8F 0x80</item>
+        <item>0xE2 0x9A 0xBD</item>
+        <item>0xE2 0x9A 0xBE</item>
+        <item>0xF0 0x9F 0x8E 0xBE</item>
+        <item>0xE2 0x9B 0xB3</item>
+        <item>0xF0 0x9F 0x8E 0xB1</item>
+        <item>0xF0 0x9F 0x8F 0x8A</item>
+        <item>0xF0 0x9F 0x8F 0x84</item>
+        <item>0xF0 0x9F 0x8E 0xBF</item>
+        <item>0xE2 0x99 0xA0</item>
+        <item>0xE2 0x99 0xA5</item>
+        <item>0xE2 0x99 0xA3</item>
+        <item>0xE2 0x99 0xA6</item>
+        <item>0xF0 0x9F 0x8F 0x86</item>
+        <item>0xF0 0x9F 0x91 0xBE</item>
+        <item>0xF0 0x9F 0x8E 0xAF</item>
+        <item>0xF0 0x9F 0x80 0x84</item>
+        <item>0xF0 0x9F 0x8E 0xAC</item>
+        <item>0xF0 0x9F 0x93 0x9D</item>
+        <item>0xF0 0x9F 0x93 0x96</item>
+        <item>0xF0 0x9F 0x8E 0xA8</item>
+        <item>0xF0 0x9F 0x8E 0xA4</item>
+        <item>0xF0 0x9F 0x8E 0xA7</item>
+        <item>0xF0 0x9F 0x8E 0xBA</item>
+        <item>0xF0 0x9F 0x8E 0xB7</item>
+        <item>0xF0 0x9F 0x8E 0xB8</item>
+        <item>0xE3 0x80 0xBD</item>
+        <item>0xF0 0x9F 0x91 0x9F</item>
+        <item>0xF0 0x9F 0x91 0xA1</item>
+        <item>0xF0 0x9F 0x91 0xA0</item>
+        <item>0xF0 0x9F 0x91 0xA2</item>
+        <item>0xF0 0x9F 0x91 0x95</item>
+        <item>0xF0 0x9F 0x91 0x94</item>
+        <item>0xF0 0x9F 0x91 0x97</item>
+        <item>0xF0 0x9F 0x91 0x98</item>
+        <item>0xF0 0x9F 0x91 0x99</item>
+        <item>0xF0 0x9F 0x8E 0x80</item>
+        <item>0xF0 0x9F 0x8E 0xA9</item>
+        <item>0xF0 0x9F 0x91 0x91</item>
+        <item>0xF0 0x9F 0x91 0x92</item>
+        <item>0xF0 0x9F 0x8C 0x82</item>
+        <item>0xF0 0x9F 0x92 0xBC</item>
+        <item>0xF0 0x9F 0x91 0x9C</item>
+        <item>0xF0 0x9F 0x92 0x84</item>
+        <item>0xF0 0x9F 0x92 0x8D</item>
+        <item>0xF0 0x9F 0x92 0x8E</item>
+        <item>0xE2 0x98 0x95</item>
+        <item>0xF0 0x9F 0x8D 0xB5</item>
+        <item>0xF0 0x9F 0x8D 0xBA</item>
+        <item>0xF0 0x9F 0x8D 0xBB</item>
+        <item>0xF0 0x9F 0x8D 0xB8</item>
+        <item>0xF0 0x9F 0x8D 0xB6</item>
+        <item>0xF0 0x9F 0x8D 0xB4</item>
+        <item>0xF0 0x9F 0x8D 0x94</item>
+        <item>0xF0 0x9F 0x8D 0x9F</item>
+        <item>0xF0 0x9F 0x8D 0x9D</item>
+        <item>0xF0 0x9F 0x8D 0x9B</item>
+        <item>0xF0 0x9F 0x8D 0xB1</item>
+        <item>0xF0 0x9F 0x8D 0xA3</item>
+        <item>0xF0 0x9F 0x8D 0x99</item>
+        <item>0xF0 0x9F 0x8D 0x98</item>
+        <item>0xF0 0x9F 0x8D 0x9A</item>
+        <item>0xF0 0x9F 0x8D 0x9C</item>
+        <item>0xF0 0x9F 0x8D 0xB2</item>
+        <item>0xF0 0x9F 0x8D 0x9E</item>
+        <item>0xF0 0x9F 0x8D 0xB3</item>
+        <item>0xF0 0x9F 0x8D 0xA2</item>
+        <item>0xF0 0x9F 0x8D 0xA1</item>
+        <item>0xF0 0x9F 0x8D 0xA6</item>
+        <item>0xF0 0x9F 0x8D 0xA7</item>
+        <item>0xF0 0x9F 0x8E 0x82</item>
+        <item>0xF0 0x9F 0x8D 0xB0</item>
+        <item>0xF0 0x9F 0x8D 0x8E</item>
+        <item>0xF0 0x9F 0x8D 0x8A</item>
+        <item>0xF0 0x9F 0x8D 0x89</item>
+        <item>0xF0 0x9F 0x8D 0x93</item>
+        <item>0xF0 0x9F 0x8D 0x86</item>
+        <item>0xF0 0x9F 0x8D 0x85</item>
+        <item>0xE2 0x98 0x80</item>
+        <item>0xE2 0x98 0x94</item>
+        <item>0xE2 0x98 0x81</item>
+        <item>0xE2 0x9B 0x84</item>
+        <item>0xF0 0x9F 0x8C 0x99</item>
+        <item>0xE2 0x9A 0xA1</item>
+        <item>0xF0 0x9F 0x8C 0x80</item>
+        <item>0xF0 0x9F 0x8C 0x8A</item>
+        <item>0xF0 0x9F 0x90 0xB1</item>
+        <item>0xF0 0x9F 0x90 0xB6</item>
+        <item>0xF0 0x9F 0x90 0xAD</item>
+        <item>0xF0 0x9F 0x90 0xB9</item>
+        <item>0xF0 0x9F 0x90 0xB0</item>
+        <item>0xF0 0x9F 0x90 0xBA</item>
+        <item>0xF0 0x9F 0x90 0xB8</item>
+        <item>0xF0 0x9F 0x90 0xAF</item>
+        <item>0xF0 0x9F 0x90 0xA8</item>
+        <item>0xF0 0x9F 0x90 0xBB</item>
+        <item>0xF0 0x9F 0x90 0xB7</item>
+        <item>0xF0 0x9F 0x90 0xAE</item>
+        <item>0xF0 0x9F 0x90 0x97</item>
+        <item>0xF0 0x9F 0x90 0xB5</item>
+        <item>0xF0 0x9F 0x90 0x92</item>
+        <item>0xF0 0x9F 0x90 0xB4</item>
+        <item>0xF0 0x9F 0x90 0x8E</item>
+        <item>0xF0 0x9F 0x90 0xAB</item>
+        <item>0xF0 0x9F 0x90 0x91</item>
+        <item>0xF0 0x9F 0x90 0x98</item>
+        <item>0xF0 0x9F 0x90 0x8D</item>
+        <item>0xF0 0x9F 0x90 0xA6</item>
+        <item>0xF0 0x9F 0x90 0xA4</item>
+        <item>0xF0 0x9F 0x90 0x94</item>
+        <item>0xF0 0x9F 0x90 0xA7</item>
+        <item>0xF0 0x9F 0x90 0x9B</item>
+        <item>0xF0 0x9F 0x90 0x99</item>
+        <item>0xF0 0x9F 0x90 0xA0</item>
+        <item>0xF0 0x9F 0x90 0x9F</item>
+        <item>0xF0 0x9F 0x90 0xB3</item>
+        <item>0xF0 0x9F 0x90 0xAC</item>
+        <item>0xF0 0x9F 0x92 0x90</item>
+        <item>0xF0 0x9F 0x8C 0xB8</item>
+        <item>0xF0 0x9F 0x8C 0xB7</item>
+        <item>0xF0 0x9F 0x8D 0x80</item>
+        <item>0xF0 0x9F 0x8C 0xB9</item>
+        <item>0xF0 0x9F 0x8C 0xBB</item>
+        <item>0xF0 0x9F 0x8C 0xBA</item>
+        <item>0xF0 0x9F 0x8D 0x81</item>
+        <item>0xF0 0x9F 0x8D 0x83</item>
+        <item>0xF0 0x9F 0x8D 0x82</item>
+        <item>0xF0 0x9F 0x8C 0xB4</item>
+        <item>0xF0 0x9F 0x8C 0xB5</item>
+        <item>0xF0 0x9F 0x8C 0xBE</item>
+        <item>0xF0 0x9F 0x90 0x9A</item>
+        <item>0x31 0xE2 0x83 0xA3</item>
+        <item>0x32 0xE2 0x83 0xA3</item>
+        <item>0x33 0xE2 0x83 0xA3</item>
+        <item>0x34 0xE2 0x83 0xA3</item>
+        <item>0x35 0xE2 0x83 0xA3</item>
+        <item>0x36 0xE2 0x83 0xA3</item>
+        <item>0x37 0xE2 0x83 0xA3</item>
+        <item>0x38 0xE2 0x83 0xA3</item>
+        <item>0x39 0xE2 0x83 0xA3</item>
+        <item>0x30 0xE2 0x83 0xA3</item>
+        <item>0x23 0xE2 0x83 0xA3</item>
+        <item>0xE2 0xAC 0x86</item>
+        <item>0xE2 0xAC 0x87</item>
+        <item>0xE2 0xAC 0x85</item>
+        <item>0xE2 0x9E 0xA1</item>
+        <item>0xE2 0x86 0x97</item>
+        <item>0xE2 0x86 0x96</item>
+        <item>0xE2 0x86 0x98</item>
+        <item>0xE2 0x86 0x99</item>
+        <item>0xE2 0x97 0x80</item>
+        <item>0xE2 0x96 0xB6</item>
+        <item>0xE2 0x8F 0xAA</item>
+        <item>0xE2 0x8F 0xA9</item>
+        <item>0xF0 0x9F 0x86 0x97</item>
+        <item>0xF0 0x9F 0x86 0x95</item>
+        <item>0xF0 0x9F 0x94 0x9D</item>
+        <item>0xF0 0x9F 0x86 0x99</item>
+        <item>0xF0 0x9F 0x86 0x92</item>
+        <item>0xF0 0x9F 0x8E 0xA6</item>
+        <item>0xF0 0x9F 0x88 0x81</item>
+        <item>0xF0 0x9F 0x93 0xB6</item>
+        <item>0xF0 0x9F 0x88 0xB5</item>
+        <item>0xF0 0x9F 0x88 0xB3</item>
+        <item>0xF0 0x9F 0x89 0x90</item>
+        <item>0xF0 0x9F 0x88 0xB9</item>
+        <item>0xF0 0x9F 0x88 0xAF</item>
+        <item>0xF0 0x9F 0x88 0xBA</item>
+        <item>0xF0 0x9F 0x88 0xB6</item>
+        <item>0xF0 0x9F 0x88 0x9A</item>
+        <item>0xF0 0x9F 0x88 0xB7</item>
+        <item>0xF0 0x9F 0x88 0xB8</item>
+        <item>0xF0 0x9F 0x88 0x82</item>
+        <item>0xF0 0x9F 0x9A 0xBB</item>
+        <item>0xF0 0x9F 0x9A 0xB9</item>
+        <item>0xF0 0x9F 0x9A 0xBA</item>
+        <item>0xF0 0x9F 0x9A 0xBC</item>
+        <item>0xF0 0x9F 0x9A 0xAD</item>
+        <item>0xF0 0x9F 0x85 0xBF</item>
+        <item>0xE2 0x99 0xBF</item>
+        <item>0xF0 0x9F 0x9A 0x87</item>
+        <item>0xF0 0x9F 0x9A 0xBE</item>
+        <item>0xE3 0x8A 0x99</item>
+        <item>0xE3 0x8A 0x97</item>
+        <item>0xF0 0x9F 0x94 0x9E</item>
+        <item>0xF0 0x9F 0x86 0x94</item>
+        <item>0xE2 0x9C 0xB3</item>
+        <item>0xE2 0x9C 0xB4</item>
+        <item>0xF0 0x9F 0x92 0x9F</item>
+        <item>0xF0 0x9F 0x86 0x9A</item>
+        <item>0xF0 0x9F 0x93 0xB3</item>
+        <item>0xF0 0x9F 0x93 0xB4</item>
+        <item>0xF0 0x9F 0x92 0xB9</item>
+        <item>0xF0 0x9F 0x92 0xB1</item>
+        <item>0xE2 0x99 0x88</item>
+        <item>0xE2 0x99 0x89</item>
+        <item>0xE2 0x99 0x8A</item>
+        <item>0xE2 0x99 0x8B</item>
+        <item>0xE2 0x99 0x8C</item>
+        <item>0xE2 0x99 0x8D</item>
+        <item>0xE2 0x99 0x8E</item>
+        <item>0xE2 0x99 0x8F</item>
+        <item>0xE2 0x99 0x90</item>
+        <item>0xE2 0x99 0x91</item>
+        <item>0xE2 0x99 0x92</item>
+        <item>0xE2 0x99 0x93</item>
+        <item>0xE2 0x9B 0x8E</item>
+        <item>0xF0 0x9F 0x94 0xAF</item>
+        <item>0xF0 0x9F 0x85 0xB0</item>
+        <item>0xF0 0x9F 0x85 0xB1</item>
+        <item>0xF0 0x9F 0x86 0x8E</item>
+        <item>0xF0 0x9F 0x85 0xBE</item>
+        <item>0xF0 0x9F 0x94 0xB2</item>
+        <item>0xF0 0x9F 0x94 0xB4</item>
+        <item>0xF0 0x9F 0x94 0xB3</item>
+        <item>0xF0 0x9F 0x95 0x9B</item>
+        <item>0xF0 0x9F 0x95 0x90</item>
+        <item>0xF0 0x9F 0x95 0x91</item>
+        <item>0xF0 0x9F 0x95 0x92</item>
+        <item>0xF0 0x9F 0x95 0x93</item>
+        <item>0xF0 0x9F 0x95 0x94</item>
+        <item>0xF0 0x9F 0x95 0x95</item>
+        <item>0xF0 0x9F 0x95 0x96</item>
+        <item>0xF0 0x9F 0x95 0x97</item>
+        <item>0xF0 0x9F 0x95 0x98</item>
+        <item>0xF0 0x9F 0x95 0x99</item>
+        <item>0xF0 0x9F 0x95 0x9A</item>
+        <item>0xE2 0xAD 0x95</item>
+        <item>0xE2 0x9D 0x8C</item>
+        <item>0xC2 0xA9</item>
+        <item>0xC2 0xAE</item>
+        <item>0xE2 0x84 0xA2</item>
+        <item>0xF0 0x9F 0x8F 0xA0</item>
+        <item>0xF0 0x9F 0x8F 0xAB</item>
+        <item>0xF0 0x9F 0x8F 0xA2</item>
+        <item>0xF0 0x9F 0x8F 0xA3</item>
+        <item>0xF0 0x9F 0x8F 0xA5</item>
+        <item>0xF0 0x9F 0x8F 0xA6</item>
+        <item>0xF0 0x9F 0x8F 0xAA</item>
+        <item>0xF0 0x9F 0x8F 0xA9</item>
+        <item>0xF0 0x9F 0x8F 0xA8</item>
+        <item>0xF0 0x9F 0x92 0x92</item>
+        <item>0xE2 0x9B 0xAA</item>
+        <item>0xF0 0x9F 0x8F 0xAC</item>
+        <item>0xF0 0x9F 0x8C 0x87</item>
+        <item>0xF0 0x9F 0x8C 0x86</item>
+        <item>0xF0 0x9F 0x8F 0xA7</item>
+        <item>0xF0 0x9F 0x8F 0xAF</item>
+        <item>0xF0 0x9F 0x8F 0xB0</item>
+        <item>0xE2 0x9B 0xBA</item>
+        <item>0xF0 0x9F 0x8F 0xAD</item>
+        <item>0xF0 0x9F 0x97 0xBC</item>
+        <item>0xF0 0x9F 0x97 0xBB</item>
+        <item>0xF0 0x9F 0x8C 0x84</item>
+        <item>0xF0 0x9F 0x8C 0x85</item>
+        <item>0xF0 0x9F 0x8C 0x83</item>
+        <item>0xF0 0x9F 0x97 0xBD</item>
+        <item>0xF0 0x9F 0x8C 0x88</item>
+        <item>0xF0 0x9F 0x8E 0xA1</item>
+        <item>0xE2 0x9B 0xB2</item>
+        <item>0xF0 0x9F 0x8E 0xA2</item>
+        <item>0xF0 0x9F 0x9A 0xA2</item>
+        <item>0xF0 0x9F 0x9A 0xA4</item>
+        <item>0xE2 0x9B 0xB5</item>
+        <item>0xE2 0x9C 0x88</item>
+        <item>0xF0 0x9F 0x9A 0x80</item>
+        <item>0xF0 0x9F 0x9A 0xB2</item>
+        <item>0xF0 0x9F 0x9A 0x99</item>
+        <item>0xF0 0x9F 0x9A 0x97</item>
+        <item>0xF0 0x9F 0x9A 0x95</item>
+        <item>0xF0 0x9F 0x9A 0x8C</item>
+        <item>0xF0 0x9F 0x9A 0x93</item>
+        <item>0xF0 0x9F 0x9A 0x92</item>
+        <item>0xF0 0x9F 0x9A 0x91</item>
+        <item>0xF0 0x9F 0x9A 0x9A</item>
+        <item>0xF0 0x9F 0x9A 0x83</item>
+        <item>0xF0 0x9F 0x9A 0x89</item>
+        <item>0xF0 0x9F 0x9A 0x84</item>
+        <item>0xF0 0x9F 0x9A 0x85</item>
+        <item>0xF0 0x9F 0x8E 0xAB</item>
+        <item>0xE2 0x9B 0xBD</item>
+        <item>0xF0 0x9F 0x9A 0xA5</item>
+        <item>0xE2 0x9A 0xA0</item>
+        <item>0xF0 0x9F 0x9A 0xA7</item>
+        <item>0xF0 0x9F 0x94 0xB0</item>
+        <item>0xF0 0x9F 0x8E 0xB0</item>
+        <item>0xF0 0x9F 0x9A 0x8F</item>
+        <item>0xF0 0x9F 0x92 0x88</item>
+        <item>0xE2 0x99 0xA8</item>
+        <item>0xF0 0x9F 0x8F 0x81</item>
+        <item>0xF0 0x9F 0x8E 0x8C</item>
+        <item>0xF0 0x9F 0x87 0xAF 0xF0 0x9F 0x87 0xB5</item>
+        <item>0xF0 0x9F 0x87 0xB0 0xF0 0x9F 0x87 0xB7</item>
+        <item>0xF0 0x9F 0x87 0xA8 0xF0 0x9F 0x87 0xB3</item>
+        <item>0xF0 0x9F 0x87 0xBA 0xF0 0x9F 0x87 0xB8</item>
+        <item>0xF0 0x9F 0x87 0xAB 0xF0 0x9F 0x87 0xB7</item>
+        <item>0xF0 0x9F 0x87 0xAA 0xF0 0x9F 0x87 0xB8</item>
+        <item>0xF0 0x9F 0x87 0xAE 0xF0 0x9F 0x87 0xB9</item>
+        <item>0xF0 0x9F 0x87 0xB7 0xF0 0x9F 0x87 0xBA</item>
+        <item>0xF0 0x9F 0x87 0xAC 0xF0 0x9F 0x87 0xA7</item>
+        <item>0xF0 0x9F 0x87 0xA9 0xF0 0x9F 0x87 0xAA</item>
+    </string-array>
+    <string-array name="emoji_file_name">
+        <item>zemoji_e415</item>
+        <item>zemoji_e056</item>
+        <item>zemoji_e057</item>
+        <item>zemoji_e414</item>
+        <item>zemoji_e405</item>
+        <item>zemoji_e106</item>
+        <item>zemoji_e418</item>
+        <item>zemoji_e417</item>
+        <item>zemoji_e40d</item>
+        <item>zemoji_e40a</item>
+        <item>zemoji_e404</item>
+        <item>zemoji_e105</item>
+        <item>zemoji_e409</item>
+        <item>zemoji_e40e</item>
+        <item>zemoji_e402</item>
+        <item>zemoji_e108</item>
+        <item>zemoji_e403</item>
+        <item>zemoji_e058</item>
+        <item>zemoji_e407</item>
+        <item>zemoji_e401</item>
+        <item>zemoji_e40f</item>
+        <item>zemoji_e40b</item>
+        <item>zemoji_e406</item>
+        <item>zemoji_e413</item>
+        <item>zemoji_e411</item>
+        <item>zemoji_e412</item>
+        <item>zemoji_e410</item>
+        <item>zemoji_e107</item>
+        <item>zemoji_e059</item>
+        <item>zemoji_e416</item>
+        <item>zemoji_e408</item>
+        <item>zemoji_e40c</item>
+        <item>zemoji_e11a</item>
+        <item>zemoji_e10c</item>
+        <item>zemoji_e32c</item>
+        <item>zemoji_e32a</item>
+        <item>zemoji_e32d</item>
+        <item>zemoji_e328</item>
+        <item>zemoji_e32b</item>
+        <item>zemoji_e022</item>
+        <item>zemoji_e023</item>
+        <item>zemoji_e327</item>
+        <item>zemoji_e329</item>
+        <item>zemoji_e32e</item>
+        <item>zemoji_e335</item>
+        <item>zemoji_e334</item>
+        <item>zemoji_e337</item>
+        <item>zemoji_e336</item>
+        <item>zemoji_e13c</item>
+        <item>zemoji_e330</item>
+        <item>zemoji_e331</item>
+        <item>zemoji_e326</item>
+        <item>zemoji_e03e</item>
+        <item>zemoji_e11d</item>
+        <item>zemoji_e05a</item>
+        <item>zemoji_e00e</item>
+        <item>zemoji_e421</item>
+        <item>zemoji_e420</item>
+        <item>zemoji_e00d</item>
+        <item>zemoji_e010</item>
+        <item>zemoji_e011</item>
+        <item>zemoji_e41e</item>
+        <item>zemoji_e012</item>
+        <item>zemoji_e422</item>
+        <item>zemoji_e22e</item>
+        <item>zemoji_e22f</item>
+        <item>zemoji_e231</item>
+        <item>zemoji_e230</item>
+        <item>zemoji_e427</item>
+        <item>zemoji_e41d</item>
+        <item>zemoji_e00f</item>
+        <item>zemoji_e41f</item>
+        <item>zemoji_e14c</item>
+        <item>zemoji_e201</item>
+        <item>zemoji_e115</item>
+        <item>zemoji_e428</item>
+        <item>zemoji_e51f</item>
+        <item>zemoji_e429</item>
+        <item>zemoji_e424</item>
+        <item>zemoji_e423</item>
+        <item>zemoji_e253</item>
+        <item>zemoji_e426</item>
+        <item>zemoji_e111</item>
+        <item>zemoji_e425</item>
+        <item>zemoji_e31e</item>
+        <item>zemoji_e31f</item>
+        <item>zemoji_e31d</item>
+        <item>zemoji_e001</item>
+        <item>zemoji_e002</item>
+        <item>zemoji_e005</item>
+        <item>zemoji_e004</item>
+        <item>zemoji_e51a</item>
+        <item>zemoji_e519</item>
+        <item>zemoji_e518</item>
+        <item>zemoji_e515</item>
+        <item>zemoji_e516</item>
+        <item>zemoji_e517</item>
+        <item>zemoji_e51b</item>
+        <item>zemoji_e152</item>
+        <item>zemoji_e04e</item>
+        <item>zemoji_e51c</item>
+        <item>zemoji_e51e</item>
+        <item>zemoji_e11c</item>
+        <item>zemoji_e536</item>
+        <item>zemoji_e003</item>
+        <item>zemoji_e41c</item>
+        <item>zemoji_e41b</item>
+        <item>zemoji_e419</item>
+        <item>zemoji_e41a</item>
+        <item>zemoji_e436</item>
+        <item>zemoji_e437</item>
+        <item>zemoji_e438</item>
+        <item>zemoji_e43a</item>
+        <item>zemoji_e439</item>
+        <item>zemoji_e43b</item>
+        <item>zemoji_e117</item>
+        <item>zemoji_e440</item>
+        <item>zemoji_e442</item>
+        <item>zemoji_e446</item>
+        <item>zemoji_e445</item>
+        <item>zemoji_e11b</item>
+        <item>zemoji_e448</item>
+        <item>zemoji_e033</item>
+        <item>zemoji_e112</item>
+        <item>zemoji_e325</item>
+        <item>zemoji_e312</item>
+        <item>zemoji_e310</item>
+        <item>zemoji_e126</item>
+        <item>zemoji_e127</item>
+        <item>zemoji_e008</item>
+        <item>zemoji_e03d</item>
+        <item>zemoji_e00c</item>
+        <item>zemoji_e12a</item>
+        <item>zemoji_e00a</item>
+        <item>zemoji_e00b</item>
+        <item>zemoji_e009</item>
+        <item>zemoji_e316</item>
+        <item>zemoji_e129</item>
+        <item>zemoji_e141</item>
+        <item>zemoji_e142</item>
+        <item>zemoji_e317</item>
+        <item>zemoji_e128</item>
+        <item>zemoji_e14b</item>
+        <item>zemoji_e211</item>
+        <item>zemoji_e114</item>
+        <item>zemoji_e145</item>
+        <item>zemoji_e144</item>
+        <item>zemoji_e03f</item>
+        <item>zemoji_e313</item>
+        <item>zemoji_e116</item>
+        <item>zemoji_e10f</item>
+        <item>zemoji_e104</item>
+        <item>zemoji_e103</item>
+        <item>zemoji_e101</item>
+        <item>zemoji_e102</item>
+        <item>zemoji_e13f</item>
+        <item>zemoji_e140</item>
+        <item>zemoji_e11f</item>
+        <item>zemoji_e12f</item>
+        <item>zemoji_e031</item>
+        <item>zemoji_e30e</item>
+        <item>zemoji_e311</item>
+        <item>zemoji_e113</item>
+        <item>zemoji_e30f</item>
+        <item>zemoji_e13b</item>
+        <item>zemoji_e42b</item>
+        <item>zemoji_e42a</item>
+        <item>zemoji_e018</item>
+        <item>zemoji_e016</item>
+        <item>zemoji_e015</item>
+        <item>zemoji_e014</item>
+        <item>zemoji_e42c</item>
+        <item>zemoji_e42d</item>
+        <item>zemoji_e017</item>
+        <item>zemoji_e013</item>
+        <item>zemoji_e20e</item>
+        <item>zemoji_e20c</item>
+        <item>zemoji_e20f</item>
+        <item>zemoji_e20d</item>
+        <item>zemoji_e131</item>
+        <item>zemoji_e12b</item>
+        <item>zemoji_e130</item>
+        <item>zemoji_e12d</item>
+        <item>zemoji_e324</item>
+        <item>zemoji_e301</item>
+        <item>zemoji_e148</item>
+        <item>zemoji_e502</item>
+        <item>zemoji_e03c</item>
+        <item>zemoji_e30a</item>
+        <item>zemoji_e042</item>
+        <item>zemoji_e040</item>
+        <item>zemoji_e041</item>
+        <item>zemoji_e12c</item>
+        <item>zemoji_e007</item>
+        <item>zemoji_e31a</item>
+        <item>zemoji_e13e</item>
+        <item>zemoji_e31b</item>
+        <item>zemoji_e006</item>
+        <item>zemoji_e302</item>
+        <item>zemoji_e319</item>
+        <item>zemoji_e321</item>
+        <item>zemoji_e322</item>
+        <item>zemoji_e314</item>
+        <item>zemoji_e503</item>
+        <item>zemoji_e10e</item>
+        <item>zemoji_e318</item>
+        <item>zemoji_e43c</item>
+        <item>zemoji_e11e</item>
+        <item>zemoji_e323</item>
+        <item>zemoji_e31c</item>
+        <item>zemoji_e034</item>
+        <item>zemoji_e035</item>
+        <item>zemoji_e045</item>
+        <item>zemoji_e338</item>
+        <item>zemoji_e047</item>
+        <item>zemoji_e30c</item>
+        <item>zemoji_e044</item>
+        <item>zemoji_e30b</item>
+        <item>zemoji_e043</item>
+        <item>zemoji_e120</item>
+        <item>zemoji_e33b</item>
+        <item>zemoji_e33f</item>
+        <item>zemoji_e341</item>
+        <item>zemoji_e34c</item>
+        <item>zemoji_e344</item>
+        <item>zemoji_e342</item>
+        <item>zemoji_e33d</item>
+        <item>zemoji_e33e</item>
+        <item>zemoji_e340</item>
+        <item>zemoji_e34d</item>
+        <item>zemoji_e339</item>
+        <item>zemoji_e147</item>
+        <item>zemoji_e343</item>
+        <item>zemoji_e33c</item>
+        <item>zemoji_e33a</item>
+        <item>zemoji_e43f</item>
+        <item>zemoji_e34b</item>
+        <item>zemoji_e046</item>
+        <item>zemoji_e345</item>
+        <item>zemoji_e346</item>
+        <item>zemoji_e348</item>
+        <item>zemoji_e347</item>
+        <item>zemoji_e34a</item>
+        <item>zemoji_e349</item>
+        <item>zemoji_e04a</item>
+        <item>zemoji_e04b</item>
+        <item>zemoji_e049</item>
+        <item>zemoji_e048</item>
+        <item>zemoji_e04c</item>
+        <item>zemoji_e13d</item>
+        <item>zemoji_e443</item>
+        <item>zemoji_e43e</item>
+        <item>zemoji_e04f</item>
+        <item>zemoji_e052</item>
+        <item>zemoji_e053</item>
+        <item>zemoji_e524</item>
+        <item>zemoji_e52c</item>
+        <item>zemoji_e52a</item>
+        <item>zemoji_e531</item>
+        <item>zemoji_e050</item>
+        <item>zemoji_e527</item>
+        <item>zemoji_e051</item>
+        <item>zemoji_e10b</item>
+        <item>zemoji_e52b</item>
+        <item>zemoji_e52f</item>
+        <item>zemoji_e109</item>
+        <item>zemoji_e528</item>
+        <item>zemoji_e01a</item>
+        <item>zemoji_e134</item>
+        <item>zemoji_e530</item>
+        <item>zemoji_e529</item>
+        <item>zemoji_e526</item>
+        <item>zemoji_e52d</item>
+        <item>zemoji_e521</item>
+        <item>zemoji_e523</item>
+        <item>zemoji_e52e</item>
+        <item>zemoji_e055</item>
+        <item>zemoji_e525</item>
+        <item>zemoji_e10a</item>
+        <item>zemoji_e522</item>
+        <item>zemoji_e019</item>
+        <item>zemoji_e054</item>
+        <item>zemoji_e520</item>
+        <item>zemoji_e306</item>
+        <item>zemoji_e030</item>
+        <item>zemoji_e304</item>
+        <item>zemoji_e110</item>
+        <item>zemoji_e032</item>
+        <item>zemoji_e305</item>
+        <item>zemoji_e303</item>
+        <item>zemoji_e118</item>
+        <item>zemoji_e447</item>
+        <item>zemoji_e119</item>
+        <item>zemoji_e307</item>
+        <item>zemoji_e308</item>
+        <item>zemoji_e444</item>
+        <item>zemoji_e441</item>
+        <item>zemoji_e21c</item>
+        <item>zemoji_e21d</item>
+        <item>zemoji_e21e</item>
+        <item>zemoji_e21f</item>
+        <item>zemoji_e220</item>
+        <item>zemoji_e221</item>
+        <item>zemoji_e222</item>
+        <item>zemoji_e223</item>
+        <item>zemoji_e224</item>
+        <item>zemoji_e225</item>
+        <item>zemoji_e210</item>
+        <item>zemoji_e232</item>
+        <item>zemoji_e233</item>
+        <item>zemoji_e235</item>
+        <item>zemoji_e234</item>
+        <item>zemoji_e236</item>
+        <item>zemoji_e237</item>
+        <item>zemoji_e238</item>
+        <item>zemoji_e239</item>
+        <item>zemoji_e23b</item>
+        <item>zemoji_e23a</item>
+        <item>zemoji_e23d</item>
+        <item>zemoji_e23c</item>
+        <item>zemoji_e24d</item>
+        <item>zemoji_e212</item>
+        <item>zemoji_e24c</item>
+        <item>zemoji_e213</item>
+        <item>zemoji_e214</item>
+        <item>zemoji_e507</item>
+        <item>zemoji_e203</item>
+        <item>zemoji_e20b</item>
+        <item>zemoji_e22a</item>
+        <item>zemoji_e22b</item>
+        <item>zemoji_e226</item>
+        <item>zemoji_e227</item>
+        <item>zemoji_e22c</item>
+        <item>zemoji_e22d</item>
+        <item>zemoji_e215</item>
+        <item>zemoji_e216</item>
+        <item>zemoji_e217</item>
+        <item>zemoji_e218</item>
+        <item>zemoji_e228</item>
+        <item>zemoji_e151</item>
+        <item>zemoji_e138</item>
+        <item>zemoji_e139</item>
+        <item>zemoji_e13a</item>
+        <item>zemoji_e208</item>
+        <item>zemoji_e14f</item>
+        <item>zemoji_e20a</item>
+        <item>zemoji_e434</item>
+        <item>zemoji_e309</item>
+        <item>zemoji_e315</item>
+        <item>zemoji_e30d</item>
+        <item>zemoji_e207</item>
+        <item>zemoji_e229</item>
+        <item>zemoji_e206</item>
+        <item>zemoji_e205</item>
+        <item>zemoji_e204</item>
+        <item>zemoji_e12e</item>
+        <item>zemoji_e250</item>
+        <item>zemoji_e251</item>
+        <item>zemoji_e14a</item>
+        <item>zemoji_e149</item>
+        <item>zemoji_e23f</item>
+        <item>zemoji_e240</item>
+        <item>zemoji_e241</item>
+        <item>zemoji_e242</item>
+        <item>zemoji_e243</item>
+        <item>zemoji_e244</item>
+        <item>zemoji_e245</item>
+        <item>zemoji_e246</item>
+        <item>zemoji_e247</item>
+        <item>zemoji_e248</item>
+        <item>zemoji_e249</item>
+        <item>zemoji_e24a</item>
+        <item>zemoji_e24b</item>
+        <item>zemoji_e23e</item>
+        <item>zemoji_e532</item>
+        <item>zemoji_e533</item>
+        <item>zemoji_e534</item>
+        <item>zemoji_e535</item>
+        <item>zemoji_e21a</item>
+        <item>zemoji_e219</item>
+        <item>zemoji_e21b</item>
+        <item>zemoji_e02f</item>
+        <item>zemoji_e024</item>
+        <item>zemoji_e025</item>
+        <item>zemoji_e026</item>
+        <item>zemoji_e027</item>
+        <item>zemoji_e028</item>
+        <item>zemoji_e029</item>
+        <item>zemoji_e02a</item>
+        <item>zemoji_e02b</item>
+        <item>zemoji_e02c</item>
+        <item>zemoji_e02d</item>
+        <item>zemoji_e02e</item>
+        <item>zemoji_e332</item>
+        <item>zemoji_e333</item>
+        <item>zemoji_e24e</item>
+        <item>zemoji_e24f</item>
+        <item>zemoji_e537</item>
+        <item>zemoji_e036</item>
+        <item>zemoji_e157</item>
+        <item>zemoji_e038</item>
+        <item>zemoji_e153</item>
+        <item>zemoji_e155</item>
+        <item>zemoji_e14d</item>
+        <item>zemoji_e156</item>
+        <item>zemoji_e501</item>
+        <item>zemoji_e158</item>
+        <item>zemoji_e43d</item>
+        <item>zemoji_e037</item>
+        <item>zemoji_e504</item>
+        <item>zemoji_e44a</item>
+        <item>zemoji_e146</item>
+        <item>zemoji_e154</item>
+        <item>zemoji_e505</item>
+        <item>zemoji_e506</item>
+        <item>zemoji_e122</item>
+        <item>zemoji_e508</item>
+        <item>zemoji_e509</item>
+        <item>zemoji_e03b</item>
+        <item>zemoji_e04d</item>
+        <item>zemoji_e449</item>
+        <item>zemoji_e44b</item>
+        <item>zemoji_e51d</item>
+        <item>zemoji_e44c</item>
+        <item>zemoji_e124</item>
+        <item>zemoji_e121</item>
+        <item>zemoji_e433</item>
+        <item>zemoji_e202</item>
+        <item>zemoji_e135</item>
+        <item>zemoji_e01c</item>
+        <item>zemoji_e01d</item>
+        <item>zemoji_e10d</item>
+        <item>zemoji_e136</item>
+        <item>zemoji_e42e</item>
+        <item>zemoji_e01b</item>
+        <item>zemoji_e15a</item>
+        <item>zemoji_e159</item>
+        <item>zemoji_e432</item>
+        <item>zemoji_e430</item>
+        <item>zemoji_e431</item>
+        <item>zemoji_e42f</item>
+        <item>zemoji_e01e</item>
+        <item>zemoji_e039</item>
+        <item>zemoji_e435</item>
+        <item>zemoji_e01f</item>
+        <item>zemoji_e125</item>
+        <item>zemoji_e03a</item>
+        <item>zemoji_e14e</item>
+        <item>zemoji_e252</item>
+        <item>zemoji_e137</item>
+        <item>zemoji_e209</item>
+        <item>zemoji_e133</item>
+        <item>zemoji_e150</item>
+        <item>zemoji_e320</item>
+        <item>zemoji_e123</item>
+        <item>zemoji_e132</item>
+        <item>zemoji_e143</item>
+        <item>zemoji_e50b</item>
+        <item>zemoji_e514</item>
+        <item>zemoji_e513</item>
+        <item>zemoji_e50c</item>
+        <item>zemoji_e50d</item>
+        <item>zemoji_e511</item>
+        <item>zemoji_e50f</item>
+        <item>zemoji_e512</item>
+        <item>zemoji_e510</item>
+        <item>zemoji_e50e</item>
+    </string-array>
+    <string-array name="emoji_sbunicode">
+        <item>E415</item>
+        <item>E056</item>
+        <item>E057</item>
+        <item>E414</item>
+        <item>E405</item>
+        <item>E106</item>
+        <item>E418</item>
+        <item>E417</item>
+        <item>E40D</item>
+        <item>E40A</item>
+        <item>E404</item>
+        <item>E105</item>
+        <item>E409</item>
+        <item>E40E</item>
+        <item>E402</item>
+        <item>E108</item>
+        <item>E403</item>
+        <item>E058</item>
+        <item>E407</item>
+        <item>E401</item>
+        <item>E40F</item>
+        <item>E40B</item>
+        <item>E406</item>
+        <item>E413</item>
+        <item>E411</item>
+        <item>E412</item>
+        <item>E410</item>
+        <item>E107</item>
+        <item>E059</item>
+        <item>E416</item>
+        <item>E408</item>
+        <item>E40C</item>
+        <item>E11A</item>
+        <item>E10C</item>
+        <item>E32C</item>
+        <item>E32A</item>
+        <item>E32D</item>
+        <item>E328</item>
+        <item>E32B</item>
+        <item>E022</item>
+        <item>E023</item>
+        <item>E327</item>
+        <item>E329</item>
+        <item>E32E</item>
+        <item>E335</item>
+        <item>E334</item>
+        <item>E337</item>
+        <item>E336</item>
+        <item>E13C</item>
+        <item>E330</item>
+        <item>E331</item>
+        <item>E326</item>
+        <item>E03E</item>
+        <item>E11D</item>
+        <item>E05A</item>
+        <item>E00E</item>
+        <item>E421</item>
+        <item>E420</item>
+        <item>E00D</item>
+        <item>E010</item>
+        <item>E011</item>
+        <item>E41E</item>
+        <item>E012</item>
+        <item>E422</item>
+        <item>E22E</item>
+        <item>E22F</item>
+        <item>E231</item>
+        <item>E230</item>
+        <item>E427</item>
+        <item>E41D</item>
+        <item>E00F</item>
+        <item>E41F</item>
+        <item>E14C</item>
+        <item>E201</item>
+        <item>E115</item>
+        <item>E428</item>
+        <item>E51F</item>
+        <item>E429</item>
+        <item>E424</item>
+        <item>E423</item>
+        <item>E253</item>
+        <item>E426</item>
+        <item>E111</item>
+        <item>E425</item>
+        <item>E31E</item>
+        <item>E31F</item>
+        <item>E31D</item>
+        <item>E001</item>
+        <item>E002</item>
+        <item>E005</item>
+        <item>E004</item>
+        <item>E51A</item>
+        <item>E519</item>
+        <item>E518</item>
+        <item>E515</item>
+        <item>E516</item>
+        <item>E517</item>
+        <item>E51B</item>
+        <item>E152</item>
+        <item>E04E</item>
+        <item>E51C</item>
+        <item>E51E</item>
+        <item>E11C</item>
+        <item>E536</item>
+        <item>E003</item>
+        <item>E41C</item>
+        <item>E41B</item>
+        <item>E419</item>
+        <item>E41A</item>
+        <item>E436</item>
+        <item>E437</item>
+        <item>E438</item>
+        <item>E43A</item>
+        <item>E439</item>
+        <item>E43B</item>
+        <item>E117</item>
+        <item>E440</item>
+        <item>E442</item>
+        <item>E446</item>
+        <item>E445</item>
+        <item>E11B</item>
+        <item>E448</item>
+        <item>E033</item>
+        <item>E112</item>
+        <item>E325</item>
+        <item>E312</item>
+        <item>E310</item>
+        <item>E126</item>
+        <item>E127</item>
+        <item>E008</item>
+        <item>E03D</item>
+        <item>E00C</item>
+        <item>E12A</item>
+        <item>E00A</item>
+        <item>E00B</item>
+        <item>E009</item>
+        <item>E316</item>
+        <item>E129</item>
+        <item>E141</item>
+        <item>E142</item>
+        <item>E317</item>
+        <item>E128</item>
+        <item>E14B</item>
+        <item>E211</item>
+        <item>E114</item>
+        <item>E145</item>
+        <item>E144</item>
+        <item>E03F</item>
+        <item>E313</item>
+        <item>E116</item>
+        <item>E10F</item>
+        <item>E104</item>
+        <item>E103</item>
+        <item>E101</item>
+        <item>E102</item>
+        <item>E13F</item>
+        <item>E140</item>
+        <item>E11F</item>
+        <item>E12F</item>
+        <item>E031</item>
+        <item>E30E</item>
+        <item>E311</item>
+        <item>E113</item>
+        <item>E30F</item>
+        <item>E13B</item>
+        <item>E42B</item>
+        <item>E42A</item>
+        <item>E018</item>
+        <item>E016</item>
+        <item>E015</item>
+        <item>E014</item>
+        <item>E42C</item>
+        <item>E42D</item>
+        <item>E017</item>
+        <item>E013</item>
+        <item>E20E</item>
+        <item>E20C</item>
+        <item>E20F</item>
+        <item>E20D</item>
+        <item>E131</item>
+        <item>E12B</item>
+        <item>E130</item>
+        <item>E12D</item>
+        <item>E324</item>
+        <item>E301</item>
+        <item>E148</item>
+        <item>E502</item>
+        <item>E03C</item>
+        <item>E30A</item>
+        <item>E042</item>
+        <item>E040</item>
+        <item>E041</item>
+        <item>E12C</item>
+        <item>E007</item>
+        <item>E31A</item>
+        <item>E13E</item>
+        <item>E31B</item>
+        <item>E006</item>
+        <item>E302</item>
+        <item>E319</item>
+        <item>E321</item>
+        <item>E322</item>
+        <item>E314</item>
+        <item>E503</item>
+        <item>E10E</item>
+        <item>E318</item>
+        <item>E43C</item>
+        <item>E11E</item>
+        <item>E323</item>
+        <item>E31C</item>
+        <item>E034</item>
+        <item>E035</item>
+        <item>E045</item>
+        <item>E338</item>
+        <item>E047</item>
+        <item>E30C</item>
+        <item>E044</item>
+        <item>E30B</item>
+        <item>E043</item>
+        <item>E120</item>
+        <item>E33B</item>
+        <item>E33F</item>
+        <item>E341</item>
+        <item>E34C</item>
+        <item>E344</item>
+        <item>E342</item>
+        <item>E33D</item>
+        <item>E33E</item>
+        <item>E340</item>
+        <item>E34D</item>
+        <item>E339</item>
+        <item>E147</item>
+        <item>E343</item>
+        <item>E33C</item>
+        <item>E33A</item>
+        <item>E43F</item>
+        <item>E34B</item>
+        <item>E046</item>
+        <item>E345</item>
+        <item>E346</item>
+        <item>E348</item>
+        <item>E347</item>
+        <item>E34A</item>
+        <item>E349</item>
+        <item>E04A</item>
+        <item>E04B</item>
+        <item>E049</item>
+        <item>E048</item>
+        <item>E04C</item>
+        <item>E13D</item>
+        <item>E443</item>
+        <item>E43E</item>
+        <item>E04F</item>
+        <item>E052</item>
+        <item>E053</item>
+        <item>E524</item>
+        <item>E52C</item>
+        <item>E52A</item>
+        <item>E531</item>
+        <item>E050</item>
+        <item>E527</item>
+        <item>E051</item>
+        <item>E10B</item>
+        <item>E52B</item>
+        <item>E52F</item>
+        <item>E109</item>
+        <item>E528</item>
+        <item>E01A</item>
+        <item>E134</item>
+        <item>E530</item>
+        <item>E529</item>
+        <item>E526</item>
+        <item>E52D</item>
+        <item>E521</item>
+        <item>E523</item>
+        <item>E52E</item>
+        <item>E055</item>
+        <item>E525</item>
+        <item>E10A</item>
+        <item>E522</item>
+        <item>E019</item>
+        <item>E054</item>
+        <item>E520</item>
+        <item>E306</item>
+        <item>E030</item>
+        <item>E304</item>
+        <item>E110</item>
+        <item>E032</item>
+        <item>E305</item>
+        <item>E303</item>
+        <item>E118</item>
+        <item>E447</item>
+        <item>E119</item>
+        <item>E307</item>
+        <item>E308</item>
+        <item>E444</item>
+        <item>E441</item>
+        <item>E21C</item>
+        <item>E21D</item>
+        <item>E21E</item>
+        <item>E21F</item>
+        <item>E220</item>
+        <item>E221</item>
+        <item>E222</item>
+        <item>E223</item>
+        <item>E224</item>
+        <item>E225</item>
+        <item>E210</item>
+        <item>E232</item>
+        <item>E233</item>
+        <item>E235</item>
+        <item>E234</item>
+        <item>E236</item>
+        <item>E237</item>
+        <item>E238</item>
+        <item>E239</item>
+        <item>E23B</item>
+        <item>E23A</item>
+        <item>E23D</item>
+        <item>E23C</item>
+        <item>E24D</item>
+        <item>E212</item>
+        <item>E24C</item>
+        <item>E213</item>
+        <item>E214</item>
+        <item>E507</item>
+        <item>E203</item>
+        <item>E20B</item>
+        <item>E22A</item>
+        <item>E22B</item>
+        <item>E226</item>
+        <item>E227</item>
+        <item>E22C</item>
+        <item>E22D</item>
+        <item>E215</item>
+        <item>E216</item>
+        <item>E217</item>
+        <item>E218</item>
+        <item>E228</item>
+        <item>E151</item>
+        <item>E138</item>
+        <item>E139</item>
+        <item>E13A</item>
+        <item>E208</item>
+        <item>E14F</item>
+        <item>E20A</item>
+        <item>E434</item>
+        <item>E309</item>
+        <item>E315</item>
+        <item>E30D</item>
+        <item>E207</item>
+        <item>E229</item>
+        <item>E206</item>
+        <item>E205</item>
+        <item>E204</item>
+        <item>E12E</item>
+        <item>E250</item>
+        <item>E251</item>
+        <item>E14A</item>
+        <item>E149</item>
+        <item>E23F</item>
+        <item>E240</item>
+        <item>E241</item>
+        <item>E242</item>
+        <item>E243</item>
+        <item>E244</item>
+        <item>E245</item>
+        <item>E246</item>
+        <item>E247</item>
+        <item>E248</item>
+        <item>E249</item>
+        <item>E24A</item>
+        <item>E24B</item>
+        <item>E23E</item>
+        <item>E532</item>
+        <item>E533</item>
+        <item>E534</item>
+        <item>E535</item>
+        <item>E21A</item>
+        <item>E219</item>
+        <item>E21B</item>
+        <item>E02F</item>
+        <item>E024</item>
+        <item>E025</item>
+        <item>E026</item>
+        <item>E027</item>
+        <item>E028</item>
+        <item>E029</item>
+        <item>E02A</item>
+        <item>E02B</item>
+        <item>E02C</item>
+        <item>E02D</item>
+        <item>E02E</item>
+        <item>E332</item>
+        <item>E333</item>
+        <item>E24E</item>
+        <item>E24F</item>
+        <item>E537</item>
+        <item>E036</item>
+        <item>E157</item>
+        <item>E038</item>
+        <item>E153</item>
+        <item>E155</item>
+        <item>E14D</item>
+        <item>E156</item>
+        <item>E501</item>
+        <item>E158</item>
+        <item>E43D</item>
+        <item>E037</item>
+        <item>E504</item>
+        <item>E44A</item>
+        <item>E146</item>
+        <item>E154</item>
+        <item>E505</item>
+        <item>E506</item>
+        <item>E122</item>
+        <item>E508</item>
+        <item>E509</item>
+        <item>E03B</item>
+        <item>E04D</item>
+        <item>E449</item>
+        <item>E44B</item>
+        <item>E51D</item>
+        <item>E44C</item>
+        <item>E124</item>
+        <item>E121</item>
+        <item>E433</item>
+        <item>E202</item>
+        <item>E135</item>
+        <item>E01C</item>
+        <item>E01D</item>
+        <item>E10D</item>
+        <item>E136</item>
+        <item>E42E</item>
+        <item>E01B</item>
+        <item>E15A</item>
+        <item>E159</item>
+        <item>E432</item>
+        <item>E430</item>
+        <item>E431</item>
+        <item>E42F</item>
+        <item>E01E</item>
+        <item>E039</item>
+        <item>E435</item>
+        <item>E01F</item>
+        <item>E125</item>
+        <item>E03A</item>
+        <item>E14E</item>
+        <item>E252</item>
+        <item>E137</item>
+        <item>E209</item>
+        <item>E133</item>
+        <item>E150</item>
+        <item>E320</item>
+        <item>E123</item>
+        <item>E132</item>
+        <item>E143</item>
+        <item>E50B</item>
+        <item>E514</item>
+        <item>E513</item>
+        <item>E50C</item>
+        <item>E50D</item>
+        <item>E511</item>
+        <item>E50F</item>
+        <item>E512</item>
+        <item>E510</item>
+        <item>E50E</item>
+    </string-array>
+
+</resources>

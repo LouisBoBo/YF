@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ansen.http:okhttpencapsulation:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/okhttpencapsulation-1.0.1.aar/9e8bc8a15e0fed7b6483aef65bc51f57/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/okhttpencapsulation-1.0.1.aar/9e8bc8a15e0fed7b6483aef65bc51f57/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/okhttpencapsulation-1.0.1.aar/9e8bc8a15e0fed7b6483aef65bc51f57/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ansen.http/okhttpencapsulation/1.0.1/6871d4da4e91a069ae7123cbb89aa75ee043a7e2/okhttpencapsulation-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

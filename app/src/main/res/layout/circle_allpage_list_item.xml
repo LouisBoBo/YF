@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_marginBottom="@dimen/margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <com.yssj.custom.view.RoundImageButton
+        android:id="@+id/rib_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:clickable="false"
+        android:background="@color/transparenct" 
+        android:layout_marginBottom="@dimen/margin15"
+        android:layout_marginLeft="@dimen/margin14"
+        android:layout_marginTop="@dimen/margin10"/>
+
+    <ImageButton
+        android:id="@+id/ibtn_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin12"
+        android:layout_marginRight="@dimen/margin20"
+        android:background="@color/transparenct" 
+        android:layout_marginBottom="8dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/margin20"
+        android:layout_marginLeft="@dimen/margin21"
+        android:layout_marginTop="@dimen/margin21"
+        android:layout_toLeftOf="@id/ibtn_join"
+        android:layout_toRightOf="@id/rib_img"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="衣+官方论坛"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin10"
+            android:singleLine="true"
+            android:textColor="@color/text1_color"
+            android:textSize="@dimen/tv_size15" /> 
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/fl_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/diyongquan_bg"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="86dp" >
+
+                    <TextView
+                        android:id="@+id/one_yuan_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/rmb_one"
+                        android:text="1"
+                        android:textColor="#ff3f8b"
+                        android:textSize="38sp" />
+
+                    <TextView
+                        android:id="@+id/rmb_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/one_yuan_bottom"
+                        android:layout_marginBottom="6dp"
+                        android:text="¥"
+                        android:textColor="#ff3f8b"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/diyong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/one_yuan_bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/one_yuan_bottom"
+                        android:text="元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wmk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rmb_one"
+                        android:layout_marginTop="4dp"
+                        android:text="无门槛、可叠加使用"
+                        android:textColor="#ff3f8b"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/diyong_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="40dp"
+                    android:text="数量"
+                    android:textColor="#ff3f8b"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <!-- 2 -->
+
+            <RelativeLayout
+                android:id="@+id/fl_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/diyongquan_bg"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="86dp" >
+
+                    <TextView
+                        android:id="@+id/two_yuan_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/rmb_two"
+                        android:text="2"
+                        android:textColor="#ff3f8b"
+                        android:textSize="38sp" />
+
+                    <TextView
+                        android:id="@+id/rmb_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/two_yuan_bottom"
+                        android:layout_marginBottom="6dp"
+                        android:text="¥"
+                        android:textColor="#ff3f8b"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/two_diyong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/two_yuan_bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/two_yuan_bottom"
+                        android:text="元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wmk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rmb_two"
+                        android:layout_marginTop="4dp"
+                        android:text="无门槛、可叠加使用"
+                        android:textColor="#ff3f8b"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/diyong_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="40dp"
+                    android:text="数量"
+                    android:textColor="#ff3f8b"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <!-- 5 -->
+
+            <RelativeLayout
+                android:id="@+id/fl_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/diyongquan_bg"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="86dp" >
+
+                    <TextView
+                        android:id="@+id/five_yuan_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/rmb_five"
+                        android:text="5"
+                        android:textColor="#ff3f8b"
+                        android:textSize="38sp" />
+
+                    <TextView
+                        android:id="@+id/rmb_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/five_yuan_bottom"
+                        android:layout_marginBottom="6dp"
+                        android:text="¥"
+                        android:textColor="#ff3f8b"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/five_diyong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/five_yuan_bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/five_yuan_bottom"
+                        android:text="元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wmk5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rmb_five"
+                        android:layout_marginTop="4dp"
+                        android:text="无门槛、可叠加使用"
+                        android:textColor="#ff3f8b"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/diyong_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="40dp"
+                    android:text="数量"
+                    android:textColor="#ff3f8b"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <!-- 10 -->
+
+            <RelativeLayout
+                android:id="@+id/fl_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/diyongquan_bg"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="86dp" >
+
+                    <TextView
+                        android:id="@+id/ten_yuan_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_toRightOf="@+id/rmb_ten"
+                        android:text="10"
+                        android:textColor="#ff3f8b"
+                        android:textSize="38sp" />
+
+                    <TextView
+                        android:id="@+id/rmb_ten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/ten_yuan_bottom"
+                        android:layout_marginBottom="6dp"
+                        android:text="¥"
+                        android:textColor="#ff3f8b"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/ten_diyong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/ten_yuan_bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/ten_yuan_bottom"
+                        android:text="元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wmk10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rmb_ten"
+                        android:layout_marginTop="4dp"
+                        android:text="无门槛、可叠加使用"
+                        android:textColor="#ff3f8b"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/diyong_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="40dp"
+                    android:text="数量"
+                    android:textColor="#ff3f8b"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <!-- 优惠券 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

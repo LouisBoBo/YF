@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="huise">#7d7d7d</color>
+    <color name="zero_shop_choice">#ff3f8b</color>
+    <color name="zero_shop_choice_other">#3E3E3E</color>
+    <color name="price">#A8A8A8</color>
+    <color name="gray_white">#C5C5C5</color>
+	<color name="white_white">#FFFFFF</color>    
+	<color name="dark">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#FF808080</color>
+<!-- 	<color name="white">#FFFFFFFF</color> -->
+	<color name="login_register_normal_color">#989898</color>
+	<color name="login_register_select_color">#666666</color>
+	<color name="text_color">#989898</color>
+	<color name="text1_color">#C5C5C5</color>
+	<color name="enough_useless_color">#8D8d8D</color>
+	<color name="useless_color">#9D9D9D</color>
+	<color name="shop_opinion_color">#bb0c52</color>
+	<color name="title_color">#222222</color>
+	<color name="red_new">#ff3f8c</color>
+	<color name="blue">#FF0000FF</color>
+	<color name="background_gray">#f4f4f4</color>
+<!-- 	<color name="black">#3E3E3E</color> -->
+	<color name="pink">#FFFFC0Cb</color>
+	<color name="red">#FFFF0000</color>
+	<color name="orange">#FFFF8D00</color>
+	<color name="yellow">#FFFFFF00</color>
+	<color name="green">#FF00FF00</color>
+	<color name="transparenct">#00000000</color>
+    <color name="actionbar_background">#0077d9</color>
+    <color name="activated_background_color">#00a7ff</color>
+    <color name="text_checked">#24b5ed</color>
+    <color name="text_unchecked">#b8b8b8</color>
+    <color name="tabhost_checked">#FF6600</color>
+    <color name="actionbar_bn">#65CB99</color>
+    <color name="reset_password_bn">#F0F0F0</color>
+    <color name="actionbar_bottom">#D9D9D9</color>
+    <color name="actionbar_un">#009966</color>
+    <color name="text_three_login">#3e3e3e</color>
+    <color name="text_hui">#666666</color>
+    <color name="time_count">#CCCCCC</color>
+    <color name="match_score">#d9e9fc</color>
+    <color name="shopcar_title">#EEEEEE</color>
+    <color name="shopcar_bn">#dcdcdc</color>
+    <color name="tv_pay">#FE4F00</color>
+    <color name="tv_npay">#990000</color>
+    <color name="jingxi_bg">#52C168</color>
+    <color name="tv_goods_color">#C1C1C1</color>
+    <color name="acbar_shopcart">#F9F9F9</color>
+    <color name="tv_remove">#5D636E</color>
+    <color name="tv_shop_color">#AFB0B6</color>
+    <color name="tv_shop_tcbn">#ff3f8b</color>
+    <color name="tv_ok_noclick">#FF94B8</color>
+    <color name="tv_ok_onclick">#FF00CC</color>
+    <color name="s_color">#9B969A</color>
+    <color name="tv_order">#FF6700</color>
+    <color name="tab_color">#009966</color>
+    <color name="payback_color">#898989</color>
+    <color name="pink_color">#FF3F8C</color>
+    <color name="line_color">#DCDCDC</color>
+    <color name="gray_color">#888888</color>
+     <color name="shopcart_title">#ff3f8b</color>
+    <color name="unclicked_color">#dcdcdc</color>
+   
+    <color name="car_rental_text_uncheck">#33393c</color>
+    <color name="bg_mohu_color">#aa000000</color>
+    
+    <drawable name="get_code_select">#c2c2c2</drawable>
+    <drawable name="get_code_normal">#000000</drawable>
+    
+    <color name="navpage">#FFE1E8EB</color>
+    <drawable name="image_holder_color">#ff676767</drawable>
+    
+    <drawable name="dot_dark">#ffffff</drawable>
+    <drawable name="dot_white">#123321</drawable>
+    
+    <color name="green_color">#299802</color>
+    
+    <color name="timeline_time_color">#989898</color>
+    
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="top_bar_normal_bg">#00acff</color>
+    <color name="gray_normal">#666667</color>
+    
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="error_item_color">#F6EBE6</color>
+    
+    <color name="common_red">#ff3f8b</color>
+    
+    <drawable name="cursor_drawable">#ff0000</drawable>
+    
+    <color name="f4f4f4">#f4f4f4</color>
+    <color name="all2">#222222</color>
+    <color name="sign_complete">#c5c5c5</color>
+    <color name="sign_miaoshu">#7d7d7d</color>
+    
+    <color name="f1">#f1f1f1</color>
+    <color name="oval_yellow">#ffdc66</color>
+    <color name="oval_orange">#ffcba6</color>
+    <color name="oval_blue_light">#79c2f7</color>
+    <color name="oval_blue_dark">#9f89d2</color>
+    <color name="oval_purple_light">#f484cc</color>
+    <color name="oval_pink_light">#ffc4ca</color>
+    <color name="oval_blue">#74d3e7</color>
+    <color name="oval_yellow_dark">#ffba62</color>
+    <color name="oval_purple">#ceabff</color>
+    <color name="oval_orange_light">#ff7147</color>
+    <color name="oval_red_light">#c45a80</color>
+</resources>

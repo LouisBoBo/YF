@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/base_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/head" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_buyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_buy_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="木子李"
+                    android:textSize="@dimen/tv_size14" />
+
+                <com.yssj.custom.view.RoundImageButton
+                    android:id="@+id/img_user_img_buy"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/tv_buy_nick_name"
+                    android:background="@color/transparenct" 
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_buy_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_user_img_buy"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/payback_tk_buy_bg" >
+
+                <TextView
+                    android:id="@+id/tv_send_apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="21dp"
+                    android:text="买家发起了申请"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <LinearLayout
+                    android:id="@+id/ll_goods_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_send_apply"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="21dp"
+                        android:text="发起了仅退款申请，货物状态 :"
+                        android:textSize="@dimen/tv_size14" />
+
+                    <TextView
+                        android:id="@+id/tv_send_goods_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="21dp"
+                        android:textSize="@dimen/tv_size14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_goods_status"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="@dimen/margin"
+                        android:text="原因:缺货，金额:6.90元，说明:买错了"
+                        android:textSize="@dimen/tv_size14" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_apply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:text="06-25 15:32"
+                android:textColor="@color/text1_color"
+                android:textSize="@dimen/tv_size12" />
+
+            <RelativeLayout
+                android:id="@+id/rl_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/margin"
+                android:gravity="center" >
+
+                <com.yssj.custom.view.RoundImageButton
+                    android:id="@+id/img_user_img_seller"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/transparenct" 
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/tv_sell_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/img_user_img_seller"
+                    android:text="衣蝠网系统"
+                    android:textSize="@dimen/tv_size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sell_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_user_img_seller"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/payback_tk_sell_bg" >
+
+                <TextView
+                    android:id="@+id/tv_send_apply_sell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="21dp"
+                    android:text="待卖家处理"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_send_apply_sell"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_remain_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="21dp"
+                        android:text="发起了仅退款申请，货物状态 :"
+                        android:textSize="@dimen/tv_size14" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_reply_time_sell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:text="06-25 15:32"
+                android:textColor="@color/text1_color"
+                android:textSize="@dimen/tv_size12" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/btn_update_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/payback_tk_bottom_white_bg"
+            android:text="修改申请"
+            android:textColor="@color/text1_color"
+            android:textSize="@dimen/tv_size14" />
+
+        <Button
+            android:id="@+id/btn_esc_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/payback_tk_bottom_white_bg"
+            android:text="撤销申请"
+            android:textColor="@color/text1_color"
+            android:textSize="@dimen/tv_size14" />
+
+        <Button
+            android:id="@+id/btn_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_weight="1"
+            android:background="@drawable/payback_tk_bottom_black_bg"
+            android:text="留言"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size14" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_farther"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@android:style/Theme.NoTitleBar" >
+
+    <ImageButton
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:src="@drawable/icon_fanhui_black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_back"
+        android:layout_alignTop="@id/img_back"
+        android:layout_centerHorizontal="true"
+        android:text="邀请有礼"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/img_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_back"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+         />
+
+    <!--
+         <com.yssj.custom.view.RoundImageButton
+        android:id="@+id/img_user_heard"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_biz_card_num" />
+    -->
+
+
+    <!-- 分享和保存 -->
+
+
+    <!-- 微信朋友圈 -->
+
+    <ImageButton
+        android:id="@+id/img_wx_friend_circle"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/tv_pengyouquan"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="52dp"
+        android:background="#00000000"
+        android:src="@drawable/friend_circle" />
+
+    <TextView
+        android:id="@+id/tv_pengyouquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="58dp"
+        android:layout_marginLeft="56dp"
+        android:gravity="center_horizontal"
+        android:text="朋友圈" />
+
+    <!-- QQ空间 -->
+
+    <ImageButton
+        android:id="@+id/img_qq_space"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/tv_qq_space"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="#00000000"
+        android:src="@drawable/qq_space" />
+
+    <TextView
+        android:id="@+id/tv_qq_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:gravity="center_horizontal"
+        android:text="QQ空间" />
+
+    <!-- 保存 -->
+
+    <ImageButton
+        android:id="@+id/img_save"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/tv_save"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="55dp"
+        android:background="#00000000"
+        android:src="@drawable/save_pic" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="58dp"
+        android:layout_marginRight="51dp"
+        android:gravity="center_horizontal"
+        android:text="保存图片"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_above="@id/img_qq_space"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="114dp"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/img_erweima"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.yssj.custom.view.RoundImageButton
+            android:id="@+id/img_user_heard"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

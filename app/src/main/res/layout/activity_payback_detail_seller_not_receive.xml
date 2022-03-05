@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/payback_order_info_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/apply_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="申请退货"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size18" />
+
+        <TextView
+            android:id="@+id/apply_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="订单金额"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size15" />
+
+        <TextView
+            android:id="@+id/apply_nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="订单号："
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size15" />
+
+        <TextView
+            android:id="@+id/apply_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="退货时间"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size15" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="商家拒绝签收"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" />
+
+    <TextView
+        android:id="@+id/apply_refuse_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/seller_not_get"
+        android:textColor="@color/text1_color"
+        android:textSize="@dimen/tv_size15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_connect_seller"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/payback_cancle_bg"
+            android:gravity="center"
+            android:text="申请平台介入"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size16" />
+    </LinearLayout>
+
+</LinearLayout>

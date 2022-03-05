@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin30">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/free_icon_close" />
+
+
+    <LinearLayout
+        android:paddingBottom="@dimen/margin25"
+        android:paddingTop="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/withdrawal_exp_dialog_red_new"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="温馨提示"
+            android:textColor="#FBFFA1"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="去赚钱小任务完成全部任务"
+            android:textColor="#FBFFA1"
+            android:textSize="@dimen/tv_size17" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="赠送发货卡免费发货哦"
+            android:textColor="#FBFFA1"
+            android:textSize="@dimen/tv_size17" />
+
+        <TextView
+            android:id="@+id/bt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/shape_withdrawal_yellow_new"
+            android:gravity="center"
+            android:text="去完成"
+            android:textColor="#AF1C35"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

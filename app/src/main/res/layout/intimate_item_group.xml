@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="86dp"
+        android:layout_height="86dp" >
+
+        <ImageView
+            android:id="@+id/image_zuhe_iv"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+       <LinearLayout
+           	android:id="@+id/more_tv"
+	        android:layout_width="86dp"
+		    android:layout_height="86dp"
+		    android:background="#F0F0F0"
+		    android:gravity="center"
+		    android:orientation="horizontal"
+		    android:visibility="gone">
+	        <TextView 
+	           android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center_vertical"
+		       android:textSize="12sp"
+		       android:textColor="#7D7D7D"
+		       android:text="更多\n推荐" />
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:background="@color/transparenct"
+	            android:adjustViewBounds="true"
+	            android:layout_marginLeft="6dp"
+	            android:src="@drawable/icon_select_style_class_go" />
+    	</LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/image_manfaccture_fl" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/sweet_mengceng"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/image_manfaccture_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+			android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:text="rerererererererr"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="12sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/image_price_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#7D7D7D"
+        android:text=""
+        android:textSize="@dimen/tv_size14" />
+
+
+	<LinearLayout
+		android:id="@+id/ll_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp"
+		android:layout_marginTop="6dp"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:visibility="gone">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/text_one_fengqiang_shape"
+			android:text="疯抢价"
+			android:textColor="@color/common_red"
+			android:textSize="12sp" />
+
+		<TextView
+			android:id="@+id/tv_one_price"
+			android:layout_marginLeft="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="1元"
+			android:textColor="@color/common_red"
+			android:textSize="12sp" />
+
+
+	</LinearLayout>
+
+
+</LinearLayout>

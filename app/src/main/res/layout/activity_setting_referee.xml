@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="vertical" >
+
+        <include layout="@layout/base_head" />
+
+        <RelativeLayout
+            android:id="@+id/rel_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/common_edittext_bg"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_referee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:hint="填写推荐人信息"
+                android:textColorHint="@color/text1_color"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size19" /> 
+
+        </RelativeLayout>
+       
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/btn_set_referee"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/u17"
+        android:text="下一步"
+        android:textColor="@color/white" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+        android:layout_height="wrap_content" 
+        android:layout_weight="2"/>
+        <Button
+        android:id="@+id/btn_next_step_setreferee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="270dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/btn_right_arrow_referee"
+        android:paddingRight="5dp"
+        android:text="跳过此项选择"
+        android:layout_weight="0.3"
+        android:textColor="@color/pink_color" />
+       
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>

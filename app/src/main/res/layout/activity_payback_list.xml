@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/tksh"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/payback_buyed_goods_bg_selected"
+            android:text="已买商品"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/payback_saled_goods_bg_normal"
+            android:text="已卖商品"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_pager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/btn_i_want_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/payback_i_want_apply"
+            android:gravity="center"
+            android:text="我要申请"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size16"  />
+        
+        <Button
+            android:id="@+id/btn_sale_help"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/payback_i_want_apply"
+            android:text="售后帮助"
+            android:gravity="center"
+            android:textColor="@color/white" 
+            android:textSize="@dimen/tv_size16" />
+    </LinearLayout>
+
+</LinearLayout>

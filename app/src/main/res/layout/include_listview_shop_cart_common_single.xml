@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="afterDescendants" >
+
+    <LinearLayout
+        android:id="@+id/three_shopcart_common_ll_invalid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#f0f0f0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="以下商品重新加入购物车才可以购买哦~"
+            android:textColor="#7d7d7d"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/three_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lay_listview_height"
+        android:layout_below="@id/three_shopcart_common_ll_invalid"
+        android:layout_marginTop="@dimen/margin5"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin"
+        android:paddingLeft="@dimen/margin5" >
+
+        <ImageView
+            android:id="@+id/three_img_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="@string/no_warn"
+            android:focusable="false"
+            android:padding="@dimen/margin10"
+            android:scaleType="fitXY" />
+        <RelativeLayout
+            android:layout_width="@dimen/img_goods_width"
+            android:layout_height="@dimen/img_goods_height"
+            android:layout_gravity="center_vertical"
+            android:background="#00000000" >
+
+            <ImageView
+                android:id="@+id/three_img_goods"
+                android:layout_width="@dimen/img_goods_width"
+                android:layout_height="@dimen/img_goods_height"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:contentDescription="@string/no_warn"
+                android:scaleType="centerInside"
+                android:src="@drawable/testtoux" />
+
+            <ImageView
+                android:id="@+id/three_img_goods_alpha"
+                android:layout_width="@dimen/img_goods_width"
+                android:layout_height="@dimen/img_goods_height"
+                android:layout_gravity="center_vertical"
+                android:background="#55cecece"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/three_shopcart_shixiao"
+                android:layout_width="@dimen/img_goods_width"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.5"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="失效"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three_l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin" >
+
+            <TextView
+                android:id="@+id/three_edit_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="12dp"
+                android:text="X"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/three_tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/three_edit_cart"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2015夏款欧美真丝镂"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size12" />
+
+            <RelativeLayout
+                android:id="@+id/three_size_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/three_tv_goods_name"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginsb5"
+                android:layout_marginTop="8dp" >
+
+                <TextView
+                    android:id="@+id/three_tv_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="颜色：黑白"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/tv_size13" />
+
+                <TextView
+                    android:id="@+id/three_tv_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/three_tv_color"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_toRightOf="@+id/three_tv_color"
+                    android:text="尺寸：XL"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/tv_size13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/three_price_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/three_tv_goods_name"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toLeftOf="@+id/three_btn_share" >
+
+                <TextView
+                    android:id="@+id/three_tv_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginsb5"
+                    android:text="￥195.00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size13" />
+
+                <TextView
+                    android:id="@+id/three_tv_item_nprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/three_tv_item_price"
+                    android:layout_toRightOf="@+id/three_tv_item_price"
+                    android:text="￥469.00"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/tv_size13" />
+
+                <TextView
+                    android:id="@+id/three_goods_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="X2"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/tv_size13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/three_ed_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/three_tv_goods_name"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/three_btn_reduce"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/marginsb5"
+                    android:background="@drawable/bg_btn_number_choose"
+                    android:clickable="true"
+                    android:contentDescription="@string/no_warn"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="一"
+                    android:textColor="@color/gray_color" />
+
+                <RelativeLayout
+                    android:id="@+id/three_ll_num"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/three_btn_reduce"
+                    android:layout_toRightOf="@+id/three_btn_reduce" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/gray_color" />
+
+                    <EditText
+                        android:id="@+id/three_tv_goods_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/tv_size13" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_color" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/three_btn_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/three_btn_reduce"
+                    android:layout_toRightOf="@+id/three_ll_num"
+                    android:background="@drawable/bg_btn_number_choose"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="十"
+                    android:textColor="@color/gray_color" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/three_btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_corners_public_use"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="重新加入"
+                android:textColor="#3e3e3e"
+                android:textSize="@dimen/tv_size13" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/three_lay" >
+
+        <TextView
+            android:id="@+id/three_tv_return_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="可使用抵用券￥23.6"
+            android:textColor="#7d7d7d"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/three_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/three_tv_discount_price"
+            android:text="总计 :"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size14" />
+
+        <TextView
+            android:id="@+id/three_tv_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="￥195.0"
+            android:textColor="#ff3f8b"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

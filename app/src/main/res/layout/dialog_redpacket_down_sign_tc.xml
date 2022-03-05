@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qiandaoshuoming_dialog_back"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/icon_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shopcart_icon_close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-20dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="天降千元红包雨"
+                android:textColor="#3E3E3E"
+                android:textSize="@dimen/tv_size16" />
+
+            <TextView
+                android:id="@+id/tv_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:text="1.点千元红包雨任务，开启翻倍抽奖特权。"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/tv_size14" />
+            <TextView
+                android:id="@+id/tv_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="2.付款后立即抽奖，本日共有1000个1000元红包大奖哦"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/tv_size14" />
+
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp"
+                android:id="@+id/rl_twobt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+<!--
+                <Button
+                    android:id="@+id/btn_white"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_tans_cancel"
+                    android:text="继续逛"
+                    android:textColor="@color/common_red"
+                    android:textSize="16sp" />-->
+
+                <Button
+                    android:id="@+id/btn_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bg_red_ok"
+                    android:text="立即开启特权"
+                    android:textColor="#fFFFFF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

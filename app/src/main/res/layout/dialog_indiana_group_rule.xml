@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qiandaoshuoming_dialog_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="274dp"
+        android:layout_height="350dp"
+        android:background="@drawable/qiandaoshuoming_dialog_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dialog_colse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/weixintixian_close_icon" />
+
+
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ttt"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_horizontal"
+            android:text="活动规则"
+            android:textColor="#3e3e3e"
+            android:textSize="17sp" />
+
+        <ScrollView
+            android:layout_below="@id/ttt"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/indiana_ll_container"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"></LinearLayout>
+        </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

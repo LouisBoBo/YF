@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/to_login_dialog_back"
+		android:gravity="center_horizontal"
+		android:padding="40dp"
+		android:id="@+id/back"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            />
+        
+        <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键注册只需5秒,购物更方便哦!"
+            android:textSize="19sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            />
+        
+        <Button 
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:id="@+id/register"
+            android:text="一键注册衣蝠"
+            android:background="@drawable/bg_square_choice_btn_checked"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+        <Button 
+            
+            android:singleLine="true"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:id="@+id/login"
+            android:text="使用已有衣蝠账号"
+            android:background="@drawable/bg_square_choice_btn_checked"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+        
+        
+    </LinearLayout>
+    
+    
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/not_connect"
+        android:src="@drawable/u0" />
+
+    <Button
+        android:id="@+id/btn_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        android:padding="@dimen/margin"
+        android:text="预览" />
+
+    <RadioGroup
+        android:id="@+id/rg_titles"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_my_shop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_category_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="@dimen/margin"
+            android:text="我的店铺"
+            android:textColor="@color/selector_category_text" />
+        <RadioButton
+            android:id="@+id/rb_my_custom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_category_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/margin"
+            android:text="客户管理"
+            android:textColor="@color/selector_category_text" />
+    </RadioGroup>
+
+</RelativeLayout>

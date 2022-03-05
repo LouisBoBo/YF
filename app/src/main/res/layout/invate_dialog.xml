@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparenct"
+        >
+       <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/invate_back"
+               />
+           
+           <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/invate_close"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            />
+        
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="衣蝠~会赚钱的女装APP"
+            android:textColor="#222222"
+            android:layout_marginTop="28dp"
+            android:textSize="18sp"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还等什么?快来下载吧!"
+            android:textColor="@color/text1_color"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="38dp"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请码"
+                 android:textColor="#222222"
+                 android:textSize="20sp"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AJ568"
+                android:id="@+id/invate_number"
+                android:textColor="@color/white"
+                android:background="#FFB7E1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/line_color"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            />
+        
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        >
+        
+        <ImageButton 
+			android:layout_width="wrap_content"            
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_wxin_share"
+            android:background="@null"
+            android:id="@+id/share_f"
+            android:layout_marginBottom="30dp"
+            />
+        <ImageButton 
+			android:layout_width="wrap_content"            
+            android:layout_height="wrap_content"
+            android:src="@drawable/weixin_share_friend"
+            android:background="@null"
+            android:id="@+id/share_p"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            />
+        
+    </LinearLayout>
+    <ImageView 
+		android:layout_width="match_parent"        
+        android:layout_height="wrap_content"
+        android:src="@drawable/invate_back_bottom"
+        android:scaleType="fitXY"
+        />
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" >
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="13dp"
+                android:layout_height="24dp"
+                android:background="@drawable/u122"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+         
+            <ImageButton	
+                android:visibility="gone"
+                android:id="@+id/imgbtn_left_icon_sign"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:alpha="0.3"
+                android:background="@drawable/u122"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/new_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="筛选结果"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size20" />
+
+        <!--
+        <HorizontalScrollView
+            android:id="@+id/hsv_containt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+              android:layout_marginLeft="@dimen/margin10"
+              android:layout_marginRight="@dimen/margin10"
+            android:layout_weight="1" >
+            <LinearLayout 
+                android:id="@+id/ll_containt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+        </HorizontalScrollView>
+        -->
+
+
+
+
+            <!--  如果是签到跳过来的 这个就显示-->
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/shop_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin8"
+            android:background="@null"
+            android:paddingRight="@dimen/margin"
+            android:scaleType="center"
+            android:src="@drawable/icon_gouwuche_black" />
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/img_btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin8"
+            android:background="@null"
+            android:paddingRight="@dimen/margin"
+            android:scaleType="center"
+            android:src="@drawable/mine_message_center"
+             />
+    </RelativeLayout>
+<LinearLayout 
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="40dp"
+    android:layout_width="match_parent"
+    >
+    <TextView 
+        android:textColor="#3e3e3e"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/create_price_desc"
+        android:text="价格↓"
+        />
+     <TextView 
+           android:textColor="#3e3e3e"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/create_price_asc"
+        android:text="价格↑"
+        />
+      <TextView 
+            android:textColor="#3e3e3e"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/create_is_new"
+        android:text="时间"
+        />
+</LinearLayout>
+    <include
+        android:id="@+id/ll_nodata"
+        layout="@layout/circle_nodata"
+        android:visibility="gone" />
+    
+    
+        <RelativeLayout
+            android:id="@+id/rl_yuefanbei"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/black" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/haisheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="亲，在这里随意逛5分钟就可以得到2元现金哦~"
+                android:textColor="#CBC9C9" />
+
+
+            <LinearLayout
+                android:id="@+id/lv_kaiqifanbei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/daojishi_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/liulanTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4:50 "
+                    android:textColor="#FFE718" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/r_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrAnimationStyle="flip" />
+    </FrameLayout>
+
+</LinearLayout>

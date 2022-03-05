@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_exchange"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="兑换" />
+
+    <com.yssj.custom.view.StickyScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btn_exchange"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/img_pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tv_describe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/img_pic"
+                    android:gravity="center_horizontal"
+                    android:text="描述描述描述描述" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:tag="sticky" >
+
+                <RadioButton
+                    android:id="@+id/rb_details"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_category_bg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="@dimen/margin"
+                    android:text="详情"
+                    android:textColor="@color/selector_category_text" />
+
+                <RadioButton
+                    android:id="@+id/rb_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_category_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/margin"
+                    android:text="尺寸"
+                    android:textColor="@color/selector_category_text" />
+
+                <RadioButton
+                    android:id="@+id/rb_evaluate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_category_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/margin"
+                    android:text="评价"
+                    android:textColor="@color/selector_category_text" />
+            </RadioGroup>
+
+            <include layout="@layout/line" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.yssj.custom.view.StickyScrollView>
+
+</RelativeLayout>

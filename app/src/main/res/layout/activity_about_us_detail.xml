@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/root"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <RelativeLayout
+        android:id="@+id/rel_identify_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin22"
+        android:layout_marginRight="@dimen/margin22"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/et_resetpassword_bn"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left|right"
+            android:lineSpacingExtra="10dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="       衣蝠网是深圳市云商世纪电子商务有限公司运营的时尚电商平台，通过直接打通供应链，对接设计师原创力量，致力于成为移动电商时代最棒的女性设计电商平台之一。为广大女性消费者带来物美价廉的美与时尚的生活方式。应用宝官方发布渠道：应用宝 http://android.myapp.com/"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel_welcome_page"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin24"
+            android:layout_marginRight="@dimen/margin"
+            android:text="欢迎页"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size16" />
+
+        <ImageView
+            android:id="@+id/img_right_arrow4"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin20"
+            android:background="@color/transparenct"
+            android:src="@drawable/gengduo" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/rel_version_info"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin24"
+            android:layout_marginRight="@dimen/margin"
+            android:text="版本信息"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size16" />
+
+        <ImageView
+            android:id="@+id/img_right_arrow2"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin20"
+            android:background="@color/transparenct"
+            android:src="@drawable/gengduo" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+</LinearLayout>

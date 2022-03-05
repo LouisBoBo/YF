@@ -1,0 +1,59 @@
+{{if(!!it&&it.length>0){}}
+	{{for(var i=0;i<it.length;i++){}}
+	<div class="goodsitemWrap">
+		<div class="goodsitem" data-shop_code="{{=it[i].shop_code}}">
+			<table>
+				<tr>
+					<td valign="top" class="goodsimg">
+						<div class="relative">
+							{{if(it[i].is_new==1){}}
+							<span class="isNewTag"></span>
+							{{}}}
+							<a onclick="toGoodsDetail(this)" data-shop_code="{{=it[i].shop_code}}" data-shop_name="{{=it[i].shop_name}}">
+								<img class="fadeIn" src="{{=youpai_url+imgUrl(it[i].shop_code)+it[i].def_pic}}!280" width="78">
+							</a>
+						</div>
+						
+					</td>
+					<td valign="top">
+						<div class="fs16" onclick="toGoodsDetail(this)" data-shop_code="{{=it[i].shop_code}}" data-shop_name="{{=it[i].shop_name}}">
+							<span>{{=shopName(it[i].shop_name)}}</span>
+						</div>
+						<div class="clearfix">
+							<div>
+								<span class="red">￥{{=minusNumber(it[i].shop_se_price, it[i].kickback)}}</span>
+							</div>
+						</div>
+						{{if(!!it[i].content){}}
+						<div>
+							<p class="gray">{{=it[i].content}}</p>
+						</div>
+						{{}}}
+						{{if(!!it[i].shop_pic){}}
+						<div class="container-fluid" onclick="toGoodsDetail(this)" data-shop_code="{{=it[i].shop_code}}" data-shop_name="{{=it[i].shop_name}}">
+							<div class="row">
+								{{var four_picArr=it[i].shop_pic.split(",");for(var j=0;j<four_picArr.length;j++){}}
+									{{if(four_picArr[j].indexOf("revea_")>-1||four_picArr[j].indexOf("detail_")>-1||four_picArr[j].indexOf("real_")>-1){}}
+										<div class="col-xs-4">
+											<div class="squareDiv"><img src="{{=(youpai_url+imgUrl(it[i].shop_code)+four_picArr[j]+'!280')}}" width="100%"></div>
+										</div>
+									{{}}}
+								{{}}}
+							</div>
+						</div>
+						{{}}}
+						<div class="clearifx">
+							<div>
+								<span class="gray">上新时间 {{=(new Date(it[i].add_time)).format("yyyy-MM-dd hh:mm:ss")}}</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+	</div>
+	{{}}}
+{{}else{}}
+	
+{{}}}

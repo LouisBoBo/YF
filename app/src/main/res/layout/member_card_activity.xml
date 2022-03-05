@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <LinearLayout
+        android:id="@+id/ll_member_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin15"
+        android:layout_marginRight="@dimen/margin15"
+        android:layout_marginTop="@dimen/margin15"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/margin10" >
+
+        <TextView 
+            android:id="@+id/tv_card_number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="卡号："
+            android:textColor="@color/title_color"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"/>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/title_color"/>
+        
+        <TextView 
+            android:id="@+id/tv_activation_code"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin30"
+            android:text="激活码："
+            android:textColor="@color/title_color"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"/>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/title_color"/>
+          <TextView 
+              android:id="@+id/tv_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin30"
+            android:text="会员有效期至："
+            android:textColor="@color/pink_color"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

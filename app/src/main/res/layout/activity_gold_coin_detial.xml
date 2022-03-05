@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao"
+    android:orientation="vertical" >
+   <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:gravity="center|left" >
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparenct" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_left_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:background="@drawable/icon_fanhui_black"
+                    android:clickable="false"
+                    android:contentDescription="@string/no_warn" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparenct" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTitle_base"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="金币"
+                android:textColor="#3e3e3e"
+                android:textSize="@dimen/tv_size20" />
+
+            <RelativeLayout
+                android:id="@+id/rel_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:gravity="center" >
+
+
+                <Button
+                    android:id="@+id/img_right_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/transparenct"
+                    android:text="积分明细"
+                    android:textColor="#818181"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_most_right_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/img_right_icon"
+                    android:contentDescription="@string/no_warn"
+                    android:padding="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+	<View
+	   android:layout_width="match_parent" 
+	   android:layout_height="0.3dp"
+	   android:background="#f0f0f0"/>
+	<ImageView 
+	   android:layout_width="wrap_content" 
+	   android:layout_height="wrap_content"
+	   android:src="@drawable/icon_jinbi_mingxi"
+	   android:adjustViewBounds="true"
+	   android:layout_marginTop="30dp"
+	   android:layout_gravity="center_horizontal"
+	   android:layout_marginBottom="10dp"/>
+	<TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:text="当前金币(个)"
+       android:textColor="#3E3E3E"
+       android:layout_gravity="center_horizontal"
+       android:textSize="@dimen/tv_size14"/>
+	<TextView 
+	       android:id="@+id/gold_coin_count_tv"
+	       android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="0"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_gravity="center_horizontal"
+           android:textColor="@color/pink_color"
+           android:textSize="@dimen/tv_size34" />
+	<TextView 
+	       android:id="@+id/gold_coin_time_tv"
+	       android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="距离金币失效还剩:00时00分00秒"
+           android:layout_gravity="center_horizontal"
+           android:textColor="@color/pink_color"
+           android:layout_marginBottom="20dp"
+           android:textSize="@dimen/tv_size14" />
+	<TextView 
+	       android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="金币使用规则："
+           android:textColor="#3E3E3E"
+           android:layout_margin="10dp"
+           android:textSize="@dimen/tv_size14" />
+	<TextView 
+	       android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="1.金币使用不限最低使用数量，一个金币就可开始抵用。最高每单可使用600金币。"
+           android:textColor="#7d7d7d"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginBottom="5dp"
+           android:textSize="@dimen/tv_size14" />
+	<TextView 
+	       android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="2.100金币=1元。"
+           android:textColor="#7d7d7d"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginBottom="5dp"
+           android:textSize="@dimen/tv_size14" />
+	<TextView 
+	       android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="3.金币为积分签到任务完成后奖励，有效期为24小时，金币失效后积分会恢复为原有数额。"
+           android:textColor="#7d7d7d"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginBottom="5dp"
+           android:textSize="@dimen/tv_size14" />
+	<Button
+           android:id="@+id/tv_ln"
+           android:layout_width="match_parent"
+           android:layout_height="42dp"
+           android:layout_marginLeft="@dimen/margin10"
+           android:layout_marginRight="@dimen/margin10"
+           android:layout_marginTop="25dp"
+           android:background="@drawable/btn_back_red"
+           android:text="立即使用金币"
+           android:textColor="@color/white"
+           android:textSize="@dimen/tv_size18" />
+	
+</LinearLayout>

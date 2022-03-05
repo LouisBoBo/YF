@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin18"
+    android:paddingRight="@dimen/margin18"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/result_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_groups_fail" />
+
+        <TextView
+            android:id="@+id/result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="很遗憾，拼团未成功！"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin30"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/groups_resule_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="很遗憾，你的拼团未能在时效内达到拼团人数，本次拼团未能成功。拼团费会在5-7个工作日内原路退回至付款账号。下次加油吧。"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/tv_size14"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_hongbao_bg"
+            android:layout_width="287dp"
+            android:layout_height="391dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/newestredhongbao_getnewuser_ninetymoney" />
+
+        <ImageView
+            android:id="@+id/iv_ling"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="95dp"
+            android:src="@drawable/newestredhongbao_kai" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/icon_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/margin10"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_close_groups" />
+
+
+</LinearLayout>

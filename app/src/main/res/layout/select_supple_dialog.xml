@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="378dp"
+    android:background="@drawable/xunbao_dialog_shape"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_supple_et"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_weight="7"
+            android:background="@drawable/shape_corners_public_gray"
+            android:gravity="center_vertical"
+            android:hint="请输入品牌"
+            android:paddingLeft="10dp"
+            android:textColor="#3E3E3E"
+            android:textColorHint="#A8A8A8"
+            android:maxLength="15"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_select_ok"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/sweet_shape_send"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/supple_flowlayout_sl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" >
+            <com.yssj.custom.view.FlowLayout
+                android:id="@+id/supple_flowlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="visible" >
+            </com.yssj.custom.view.FlowLayout>
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/supple_tips_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F9FFFFFF"
+            android:divider="#E5E5E5"
+            android:dividerHeight="0.5dp"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:id="@+id/no_supple_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/no_supple_tv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="直接添加品牌"
+                android:textColor="#FF3F8B"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E5E5E5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="没有相关品牌"
+                android:textColor="#7D7D7D"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E5E5E5" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tixian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_head" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bottom_btn_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/line" />
+
+            <Button
+                android:id="@+id/btn_next_step"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_login_height"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/margin15"
+                android:layout_marginRight="@dimen/margin15"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_back_red"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_btn_view">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rel_add_bank_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin30"
+                            android:layout_marginTop="@dimen/margin30"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_my_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:includeFontPadding="false"
+                                android:text="我的余额"
+                                android:textColor="#7D7D7D"
+                                android:textSize="@dimen/tv_size15" />
+
+                            <TextView
+                                android:id="@+id/tv_sum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="1dp"
+                                android:includeFontPadding="false"
+                                android:textColor="#ff3f8b"
+                                android:textSize="@dimen/tv_size34"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin30"
+                            android:layout_marginTop="@dimen/margin30"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!--android:text="冻结余额"-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:includeFontPadding="false"
+                                android:text="可提现现金"
+                                android:textColor="#7D7D7D"
+                                android:textSize="@dimen/tv_size15" />
+
+                            <TextView
+                                android:id="@+id/my_money_ice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="1dp"
+                                android:includeFontPadding="false"
+                                android:textColor="#ff3f8b"
+                                android:textSize="@dimen/tv_size34"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin30"
+                            android:layout_marginTop="@dimen/margin30"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_marginBottom="@dimen/dp_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:includeFontPadding="false"
+                                android:text="可提现佣金"
+                                android:textColor="@color/common_red"
+                                android:textSize="@dimen/tv_size15" />
+
+                            <TextView
+                                android:id="@+id/tv_ketixian_shouyi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="1dp"
+                                android:text="0"
+                                android:includeFontPadding="false"
+                                android:textColor="#ff3f8b"
+                                android:textSize="@dimen/tv_size34"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_my_money_withdraw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="提现额度:"
+                            android:textColor="#3E3E3E"
+                            android:textSize="@dimen/tv_size15" />
+
+                        <TextView
+                            android:id="@+id/tv_sum_withdraw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#ff3f8b"
+                            android:textSize="@dimen/tv_size15" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="15dp"
+                        android:background="#E5E5E5" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_my_money_ice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="提现冻结:"
+                            android:textColor="#3E3E3E"
+                            android:textSize="@dimen/tv_size15" />
+
+                        <TextView
+                            android:id="@+id/tv_sum_ice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="#ff3f8b"
+                            android:textSize="@dimen/tv_size15" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/tv_fouce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin15"
+                    android:layout_marginLeft="@dimen/margin25"
+                    android:layout_marginTop="@dimen/margin25"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="请输入提现金额"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size18"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text="请输入提现金额"
+                    android:textColor="#7D7D7D"
+                    android:textSize="@dimen/tv_size14" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line" />
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/et_with_drawal_sum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入需要提现的金额"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/margin12"
+                        android:paddingLeft="@dimen/margin12"
+                        android:textColor="#3e3e3e"
+                        android:textColorHint="#a8a8a8"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/tv_minimum"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#7D7D7D"
+                    android:textSize="@dimen/tv_size14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/rg_select_limit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rb_30"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:layout_marginRight="@dimen/margin15"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/bank_weixin_selector"
+                            android:gravity="center_vertical"
+                            android:text="30元"
+                            android:textColor="#3E3E3E"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@drawable/line" />
+
+                        <RadioButton
+                            android:id="@+id/rb_50"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:layout_marginRight="@dimen/margin15"
+                            android:background="@color/transparent"
+                            android:button="@null"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/bank_weixin_selector"
+                            android:gravity="center_vertical"
+                            android:text="50元"
+                            android:textColor="#C5C5C5"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@drawable/line" />
+
+                        <RadioButton
+                            android:id="@+id/rb_100"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:layout_marginRight="@dimen/margin15"
+                            android:background="@color/transparent"
+                            android:button="@null"
+                            android:drawablePadding="15dp"
+                            android:drawableRight="@drawable/bank_weixin_selector"
+                            android:gravity="center_vertical"
+                            android:text="100元"
+                            android:textColor="#C5C5C5"
+                            android:textSize="13sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="@dimen/margin15"
+                    android:gravity="center_vertical"
+                    android:text="请选择提现方式"
+                    android:textColor="#7D7D7D"
+                    android:textSize="@dimen/tv_size14" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@drawable/line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/rg_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rb_weixin"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:layout_marginRight="@dimen/margin15"
+                            android:background="@color/transparent"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/icon_withdraw_wechat"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@drawable/bank_weixin_selector"
+                            android:gravity="center_vertical"
+                            android:text="微信"
+                            android:textColor="#7d7d7d"
+                            android:textSize="@dimen/tv_size14" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@drawable/line" />
+
+                        <RadioButton
+                            android:visibility="gone"
+                            android:id="@+id/rb_bank_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="@dimen/margin15"
+                            android:layout_marginRight="@dimen/margin15"
+                            android:background="@color/transparent"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/icon_withdraw_visacard"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@drawable/bank_weixin_selector"
+                            android:gravity="center_vertical"
+                            android:text="银行卡"
+                            android:textColor="#7d7d7d"
+                            android:textSize="@dimen/tv_size14" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/tv_last_bank_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="45dp"
+                        android:gravity="center_vertical"
+                        android:text="招行6221***6562"
+                        android:textColor="#a8a8a8"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="@drawable/line" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <!--
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="分享"
+        android:gravity="center" />
+    <TextView 
+        android:id="@+id/tv_name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@id/btn_share"
+        android:layout_centerVertical="true"/>
+    -->
+
+  <include 
+      android:id="@+id/ll_title"
+     layout="@layout/base_head"
+      />
+    
+    <TextView 
+        android:id="@+id/tv_auto_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="将自动分享"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/tv_size18"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_title"
+        android:layout_marginTop="@dimen/margin10"
+        />
+
+    <ImageView
+        android:id="@+id/iv_thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/img_smile" />
+
+    <TextView
+        android:id="@+id/tv_thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_thanks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginLeft="@dimen/margin10"
+        android:text="@string/share_thanks"
+        android:textColor="@color/pink_color"
+        android:textSize="@dimen/tv_size18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_thanks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="只要再轻轻点一下"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_size16" />
+
+    <TextView
+        android:id="@+id/tv_return_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_thanks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="25元大洋就挣到啦"
+        android:textColor="@color/pink_color"
+        android:textSize="@dimen/tv_size18" />
+
+    <RadioGroup
+        android:id="@+id/rg_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/tv_return_money"
+        android:layout_marginTop="70dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_qq_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_qq_share"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:button="@null" />
+        <RadioButton
+            android:id="@+id/rb_wxin_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@drawable/bg_wxin_share"
+            android:button="@null" />
+        
+        <RadioButton
+            android:id="@+id/rb_sina_share"
+            android:layout_width="wrap_content"
+             android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_sina_share"
+            android:button="@null" />
+
+    </RadioGroup>
+
+</RelativeLayout>

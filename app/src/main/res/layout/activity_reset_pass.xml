@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/vertical_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:gravity="center|left"
+        android:text="验证成功，请输入新密码并妥善保管："
+        android:textColor="@color/gray_normal"
+        android:textSize="@dimen/tv_size15" />
+	<RelativeLayout 
+	  	    android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height">
+		    <EditText
+		        android:id="@+id/et_input_pwd"
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/et_login_height"
+		        android:background="@color/white"
+		        android:hint="设置6~16位英文、数字字符"
+		        android:inputType="textPassword"
+		        android:maxLength="16"
+		        android:paddingLeft="20dp"
+		        android:textColor="@color/black"
+		        android:textColorHint="#a8a8a8"
+		        android:textCursorDrawable="@null"
+		        android:textSize="@dimen/tv_size18" />
+		    <ImageView 
+		  	    android:id="@+id/et_input_pwd_xx"
+	            android:layout_width="50dp"
+	            android:layout_height="match_parent"  
+		  	    android:src="@drawable/xxxx"
+		  	    android:layout_alignParentRight="true"
+		  	    android:scaleType="center"
+		  	    android:visibility="gone"
+		  	    android:layout_centerVertical="true"/>
+		</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/vertical_line" />
+	<RelativeLayout 
+	  	    android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height">
+	    <EditText
+	        android:id="@+id/et_reset_pwd"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/et_login_height"
+	        android:background="@color/white"
+	        android:hint="请再次确认新密码"
+	        android:inputType="textPassword"
+	        android:maxLength="16"
+	        android:paddingLeft="20dp"
+	        android:textColor="@color/black"
+	        android:textColorHint="#a8a8a8"
+	        android:textCursorDrawable="@null"
+	        android:textSize="@dimen/tv_size18" />
+	    <ImageView 
+		  	    android:id="@+id/et_reset_pwd_xx"
+	            android:layout_width="50dp"
+	            android:layout_height="match_parent"  
+		  	    android:src="@drawable/xxxx"
+		  	    android:layout_alignParentRight="true"
+		  	    android:scaleType="center"
+		  	    android:visibility="gone"
+		  	    android:layout_centerVertical="true"/>
+		</RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_finish_set"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/btn_back_red"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/tv_finish_set"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size18" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:gravity="center|left"
+        android:text="@string/tv_set_show"
+        android:textColor="@color/text_hui"
+        android:textSize="@dimen/tv_size15" />
+
+</LinearLayout>

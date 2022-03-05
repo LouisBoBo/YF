@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/force_update_dialog"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/margin30"
+            android:text="这么好的宝贝，确定不要了吗？"
+            android:textColor="#949494"
+            android:textSize="@dimen/tv_size18" />
+
+        <View 
+            android:layout_height="0.3dp"
+            android:layout_width="match_parent"
+            android:background="#989898"
+            android:layout_marginTop="@dimen/margin40"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我再想想"
+                android:background="#00000000"
+                android:textColor="#acacac"
+                android:textSize="@dimen/tv_size18" />
+
+            <View 
+                android:layout_height="match_parent"
+                android:layout_width="0.3dp"
+                android:background="#989898"/>
+            
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确认"
+                android:background="#00000000"
+                android:textColor="#ff3f8b"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

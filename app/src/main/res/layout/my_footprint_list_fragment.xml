@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myfoot"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+                <ImageButton
+                    android:layout_width="13dp"
+                    android:layout_height="24dp"
+                    android:clickable="false"
+                    android:background="@drawable/u122"
+                    android:contentDescription="@string/no_warn" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTitle_mine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size20"
+                android:text="我的足迹"
+                 />
+
+            <Button
+                android:id="@+id/btn_eidt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:text="编辑"
+                android:textColor="@color/title_color"
+                android:textSize="20sp"
+                android:background="@color/transparenct"
+                android:contentDescription="@string/no_warn"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_all_count"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:text="全部分类"
+            android:gravity="center_vertical"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+
+        <Button
+            android:id="@+id/btn_sx"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/transparenct"
+            android:text="失效"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/myfootprint_list_fragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_handler_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/btn_cancle"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:text="取消"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/margin10"
+            android:textColor="@color/white"
+            android:background="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/pink_color"
+            android:text="删除"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

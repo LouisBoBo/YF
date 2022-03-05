@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.yssj.custom.view.ScaleImageView
+            android:id="@+id/news_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@null" />
+
+        <ImageButton
+            android:id="@+id/iv_set_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_favor_top"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_favor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:button="@drawable/myfavor_info_checkbox_selected"
+            android:clickable="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_out_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/img_out_time"
+            android:gravity="center"
+            android:text="失效"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size20"
+            android:visibility="gone" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_image_bottom"
+            android:orientation="vertical"
+            android:padding="@dimen/margin" >
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="@dimen/marginsbs2"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size12" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginsb5"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tv_size12" />
+
+                <TextView
+                    android:id="@+id/nickback"
+                    android:layout_width="36dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/kickback_white"
+                    android:gravity="center"
+                    android:text="19.9元"
+                    android:textColor="#FF3F8B"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/nickback"
+                    android:background="@drawable/kickback_fan" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_shopcar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/img_shopcar_default" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_love_star"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:layout_toLeftOf="@id/iv_shopcar"
+                    android:src="@drawable/img_love_star_default"
+                   />
+
+                <ImageView
+                    android:id="@+id/iv_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:layout_toLeftOf="@id/iv_love_star"
+                    android:src="@drawable/img_favor_star"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_supply_name"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_gray"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Honesy 制造商供应"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/white_fanzao"
+                android:orientation="vertical" >
+
+				<TextView
+					android:id="@+id/new_sub"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="6dp"
+					android:layout_marginRight="6dp"
+					android:layout_marginTop="5dp"
+					android:background="#ffffffff"
+					android:singleLine="true"
+					android:ellipsize="start"
+					android:text="优衣库"
+					android:visibility="gone"
+					android:textColor="#3E3E3E"
+					android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/news_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffffff"
+                    android:singleLine="true"
+                    android:ellipsize="start"
+                    android:text="￥hello"
+                    android:textColor="#7d7d7d"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#ffffffff" >
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:background="#ffffffff"
+                        android:text="￥245.00"
+                        android:textColor="@color/red"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_price_paint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@id/tv_price"
+                        android:background="#ffffffff"
+                        android:text="￥245.0"
+                        android:textColor="#a8a8a8"
+                        android:textSize="9sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/nickback"
+                        android:layout_width="36dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/bian_small"
+                        android:gravity="center"
+                        android:text="19.9元"
+                        android:textColor="#FF3F8B"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/nickback"
+                        android:background="@drawable/di_small"
+                        android:visibility="gone" />
+                    <TextView
+	                    android:id="@+id/tv_save"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="15dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerVertical="true"
+	                    android:gravity="center"
+	                    android:text="立省19.9元"
+	                    android:textColor="#fb3b3b"
+	                    android:textSize="11sp"
+	                    android:visibility="gone" />
+                </RelativeLayout>
+                <TextView
+	                android:id="@+id/tv_no_discount_price"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="6dp"
+	                android:layout_marginRight="6dp"
+	                android:layout_marginTop="-4dp"
+	                android:layout_marginBottom="7dp"
+	                android:background="#ffffffff"
+	                android:text="专柜价¥"
+	                android:textColor="#a8a8a8"
+	                android:textSize="10sp" 
+	                android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

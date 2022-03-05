@@ -1,0 +1,358 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rel_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="我的店"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:gravity="center|right"
+            android:text="卖家已发货"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#dbdbdb" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/container_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+   
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginRight="@dimen/margin"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:gravity="center|left"
+            android:text="共1件商品"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_zprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="￥：710.00"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_Contact_seller"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="联系卖家"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_Cancel_Order"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="取消订单"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_Payment"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="付款"
+            android:textSize="13sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tv_Remind_shipments"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="提醒发货"
+            android:textSize="13sp" />
+    </LinearLayout>
+    
+    
+     <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tv_Extend_Receipt"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="延长收货"
+            android:textSize="13sp" />
+         <TextView
+            android:id="@+id/tv_See_Logistics"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="查看物流"
+            android:textSize="13sp" />
+          <TextView
+            android:id="@+id/tv_Confirm_receipt"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="确认收货"
+            android:textSize="13sp" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/lay4"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tv_Delete_Orders"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="删除订单"
+            android:textSize="13sp" />
+         <TextView
+            android:id="@+id/tv_Evaluation_Order"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="评价订单"
+            android:visibility="visible"
+            android:textSize="13sp" />
+         
+    </LinearLayout>
+    
+       <LinearLayout
+        android:id="@+id/lay5"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tv_Refund"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="退款中"
+            android:textSize="13sp" />
+       
+         
+    </LinearLayout>
+    
+       
+     <LinearLayout
+        android:id="@+id/lay6"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:visibility="visible"
+            android:text="已完结"
+            android:textSize="13sp" />
+         <TextView
+            android:id="@+id/tv_deleteorders"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="删除订单"
+            android:textSize="13sp" />
+       
+         
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/lay7"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+       
+         <TextView
+            android:id="@+id/tvExtend_Receipt"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="延长收货"
+            android:textSize="13sp" />
+         
+            <TextView
+            android:id="@+id/tv_Confirm_receipt1"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="确认收货"
+            android:textSize="13sp" />
+       
+         
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/lay9"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+       
+         <TextView
+            android:id="@+id/tv_CancelOrder"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/bn_select_orders"
+            android:gravity="center"
+            android:text="取消订单"
+            android:textSize="13sp" />
+       
+         
+    </LinearLayout>
+    
+     
+
+</LinearLayout>

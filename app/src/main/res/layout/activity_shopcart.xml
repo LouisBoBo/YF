@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <!-- 底部支付 -->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f4f4f4"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_allchoose"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:drawableLeft="@drawable/icon_dapeigou_normal"
+            android:drawablePadding="3dp"
+            android:gravity="center|left"
+            android:text="@string/tv_choose_all"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size15" />
+
+        <LinearLayout
+            android:id="@+id/lay_cartpay"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.3"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/tv_price"
+                android:textColor="#ff3f8b"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:id="@+id/tv_no_freight"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                android:text="为您节省￥0.0"
+                android:textColor="@color/gray_normal"
+                android:textSize="@dimen/tv_size12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_goto_pay"
+            android:layout_width="142dp"
+            android:layout_height="match_parent"
+            android:background="#c5c5c5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结算"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_above="@+id/lay_bottom"
+        android:background="@drawable/vertical_line" />
+
+    <!-- 全部随便逛逛 -->
+
+    <include
+        android:id="@+id/layout_nodata_shopcar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_nodata_shopcart"
+        android:visibility="gone" />
+
+    <!-- 全部列表 -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listview_shopcart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lay_bottom"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:listSelector="@null"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrListViewExtrasEnabled="false"
+        ptr:ptrMode="both"
+        ptr:ptrScrollingWhileRefreshingEnabled="true" />
+
+</RelativeLayout>

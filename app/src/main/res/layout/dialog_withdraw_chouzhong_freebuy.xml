@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin30">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="27.2元"
+        android:textColor="#FDCC21"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="恭喜成功领到27.2元现金。可提现至微信零钱。请注意查收。"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_center_img"
+        android:layout_width="240dp"
+        android:layout_height="278dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin28"
+        android:adjustViewBounds="true"
+         />
+
+
+    <TextView
+        android:id="@+id/bt_vip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape_withdrawal_yellow"
+        android:gravity="center"
+        android:text="立即领取"
+        android:textColor="#FD215A"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

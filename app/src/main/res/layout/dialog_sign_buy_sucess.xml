@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_singn_dialog_shape"
+        android:orientation="vertical"
+        android:padding="@dimen/margin20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="购买成功"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品总价:"
+                android:textColor="#8f8f8f"
+                android:textSize="@dimen/tv_size13" />
+
+            <TextView
+                android:id="@+id/tv_vip_price"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="¥:199"
+                android:textColor="#8f8f8f"
+                android:textSize="@dimen/tv_size13" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_djk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="道具卡抵扣"
+                android:textColor="#8f8f8f"
+                android:textSize="@dimen/tv_size13" />
+
+            <TextView
+                android:id="@+id/tv_djk_jian"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="¥:199"
+                android:textColor="#8f8f8f"
+                android:textSize="@dimen/tv_size13" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10">
+
+            <TextView
+                android:id="@+id/tv_vip_txdk_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员提现:"
+                android:textColor="#8f8f8f"
+                android:textSize="@dimen/tv_size13" />
+
+            <TextView
+                android:id="@+id/tv_vip_tx_jian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="¥:199"
+                android:textColor="#8f8f8f"
+                android:textSize="@dimen/tv_size13" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10">
+
+            <TextView
+                android:id="@+id/tv_new_user_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新人优惠:"
+                android:textColor="#8f8f8f"
+                android:textSize="@dimen/tv_size13" />
+
+            <TextView
+                android:id="@+id/tv_new_user_jian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="¥:199"
+                android:textColor="#8f8f8f"
+                android:textSize="@dimen/tv_size13" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实付款:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size15" />
+
+            <TextView
+                android:id="@+id/tv_pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="¥:199"
+                android:textColor="@color/red"
+                android:textSize="@dimen/tv_size15" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_first_zuanshi_bot_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_zuanshi_bot_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜您成为钻石会员，尊享四大特权"
+                android:textColor="#7a7a7a"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_zuanshi_bot_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:text="恭喜您成为钻石会员，尊享四大特权"
+                android:textColor="#7a7a7a"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_zuanshi_bot_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:text="恭喜您成为钻石会员，尊享四大特权"
+                android:textColor="#7a7a7a"
+                android:textSize="@dimen/sp_14" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:text="恭喜您成为钻石会员，尊享四大特权"
+            android:textColor="#7a7a7a"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_bot_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/mpk_pay_suc_str"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_red_ok"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="我知道了"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

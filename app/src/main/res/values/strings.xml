@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">衣蝠</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">菜单</string>
+    <string name="guide_page">引导页</string>
+    <string name="no_warn">"  "</string>
+    <string name="title_activity_main">云商世纪</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">购物车</string>
+    <string name="tab1_text">小店</string>
+    <string name="tab2_text">购物</string>
+    <string name="tab3_text">蜜友圈</string>
+    <string name="border_top">1</string>
+    <string name="border_bottom">10</string>
+     <string name="image_url">Image Url</string>
+    <string name="tab4_text">特卖</string>
+    <string name="tab4_text2">赚钱</string>
+    <string name="tab5_text">我的</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="tv_title">衣 +</string>
+    <string name="tv_title1">个人中心</string>
+    <string name="tv_title2">我</string>
+    <string name="tv_title_myfootprint">我的足迹</string>
+    <string name="tv_title_myfavor_edit">编辑</string>
+    <string name="tv_title_myfavor">我的最爱</string>
+    <string name="tv_title_payback">退款售后</string>
+    <string name="tv_title_paybacking">退款中</string>
+    <string name="tv_login">登录</string>
+    <string name="tv_regster">注册</string>
+    <string name="tv_fpwd">忘记密码</string>
+    <string name="tv_input_pwd">请输入密码</string>
+    <string name="tv_phone_email">手机号/邮箱</string>
+    <string name="tv_login_three">使用第三方账号登录,3秒完成注册</string>
+    <string name="tv_regster_three">第三方账号注册</string>
+    <string name="tv_phone">输入手机号</string>
+    <string name="tv_email">输入验证码</string>
+    <string name="tv_nickname">输入昵称</string>
+    <string name="tv_retry">重发</string>
+    <string name="tv_ipwd">输入密码</string>
+    <string name="tv_set_ipwd">设置密码</string>
+    <string name="tv_agreen">*注册即代表同意</string>
+    <string name="tv_protocol">《衣蝠服务协议》</string>
+    <string name="tv_rgfinish">完成注册</string>
+    <string name="tv_erg">邮箱注册</string>
+    <string name="tv_phreg">手机注册</string>
+    <string name="tv_authcode">没有收到验证码？使用第三方账号一键登录</string>
+    <string name="tv_abc">abc</string>
+    <string name="tv_acode">获取验证码</string>
+    <string name="tv_getpwdtitle">找回密码</string>
+    <string name="tv_emild">输入邮箱号</string>
+    <string name="title_activity_forget_pass_step">返回</string>
+    <string name="find_pwd">使用已注册的邮箱或手机号找回密码</string>
+    <string name="altersuccess">恭喜您！密码修改成功，请牢记您的新密码哦～</string>
+    <string name="input_auto">请输入手机号/邮箱地址</string>
+    <string name="tv_commit">提交</string>
+    <string name="tv_minute">验证码2分钟有效</string>
+    <string name="tv_ret_pwd">请重新输入密码</string>
+    <string name="tv_finish_set">完成修改</string>
+    <string name="tv_set_show">输入你的新密码以完成修改</string>
+    <string name="wait">请稍等.....</string>
+    <string name="tv_my_foot"><Data><![CDATA[<big><font color="#ffffff">%1$s</font></big><br>我的足迹]]></Data></string>
+    <string name="tv_my_favour"><Data><![CDATA[<big><font color="#ffffff">%1$s</font></big><br>我的最爱]]></Data></string>
+    <string name="tv_my_shop"><Data><![CDATA[<big><font color="#ffffff">%1$s</font></big><br>店铺美衣]]></Data></string>
+    <!-- <string name="tv_serverce_timOnBuyEntryDataData><![CDATA[<big><font color="#ff814d">人工服务  </font></big>周一至周日：9:00-22:00]OnBuyEntryDataData></string> -->
+    <string name="tv_serverce_time"><Data><![CDATA[人工服务 周一至周日：9:00-22:00]]></Data></string>
+    <string name="tv_price_num"><Data><![CDATA[<br>x<font color="#ff814d">%1$s</font>]]></Data></string>
+    <string name="tv_choose_all">全选</string>
+    <string name="tv_pay_money">去结算(0)</string>
+    <string name="tv_price">合计：0元</string>
+    <string name="tv_no_freight">不含运费</string>
+    <string name="tv_etgoods">编辑</string>
+    <string name="tv_dcprice">手机专享价</string>
+    <string name="tv_delete">删除</string>
+    <string name="tv_shop_cart">购物车</string>
+    <string name="tv_edit_all">编辑全部</string>
+    <string name="tv_remove_shou">移到收藏夹</string>
+    <string name="tv_ok">确定</string>
+    <string name="tv_shop_size">尺码</string>
+    <string name="tv_shop_color">颜色</string>
+    <string name="tv_shop_number">数量</string>
+    <string name="total_account"><Data><![CDATA[共%1$s件商品，合计¥<big><font color="#ff814d">%2$s</font></big>]]></Data></string>
+    <!-- 连接错误，异常 -->
+    <string name="unknow_error">未知错误</string>
+    <string name="not_connect">网络开小差啦，请检查一下网络</string>
+    <string name="server_is_busy">系统繁忙，请稍后再试</string>
+    <string name="parse_error">数据解析异常</string>
+    <string name="timeout">访问超时</string>
+    <string name="conect_timeout">连接已超时，请重试</string>
+    <string name="unknow">未知</string>
+    <string name="empty_result">异常：空数据</string>
+    <string name="confirm_upgr">确定升级</string>
+    <string name="cancel_upgr">下次再说</string>
+    <string name="prompt">提示</string>
+    <string name="loading">加载中…</string>
+    <string name="no_more_data">已经加载完全部</string>
+    <string name="more">更多</string>
+    <string name="no_data">暂无数据</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="title_activity_status_info_activity1">StatusInfoActivity1</string>
+    <string name="ss">异常</string>
+    <string name="ee">延长收货提交失败，请重试</string>
+    <string name="fh">提醒发货提交失败，请重试</string>
+    <string name="app_tip">提示</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="share_code">分享二维码给好友</string>
+    <string name="payback_success">退款成功</string>
+    <string name="payback_close">退款关闭</string>
+    <string name="payback_desc">如需要求衣蝠介入,登录衣蝠账号</string>
+    <string name="payback_seller">卖家ID: </string>
+    <string name="payback_seller_name">姓名: </string>
+    <string name="payback_category">退款类型: </string>
+    <string name="payback_state">退款状态: </string>
+    <string name="payback_sum">退款金额: </string>
+    <string name="payback_reason">退款原因: </string>
+    <string name="payback_explain">退款说明: </string>
+    <string name="payback_num">退款编号: </string>
+    <string name="payback_apply_date">申请时间: </string>
+    <string name="payback_close_reason">关闭原因: </string>
+    <string name="payback_close_date">关闭时间: </string>
+    <string name="payback_shop_name">店铺名称: </string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="message_face">[表情]</string>
+    <string name="crop_image_save">保存</string>
+    <string name="crop_image_cancel">取消</string>
+    <string name="crop_image_turn_left">向左转</string>
+    <string name="crop_image_turn_right">向右转</string>
+    <string name="camera_not_found">未找到合适的相机</string>
+    <string name="ablum_not_found">未找到合适的相册</string>
+    <string name="crop_image_faild">无法裁剪图片</string>
+    <string name="camera_pciture_faild">无法获取相机图片</string>
+    <string name="album_picture_faild">无法获取相册图片</string>
+    <string name="default_select">默认选择</string>
+
+    <!-- 消息 -->
+    <string name="message_picture">[图片]</string>
+    <string name="message_voice">[语音]</string>
+    <string name="message_location">[位置]</string>
+    <string name="message_dynamic_face">[动态表情]</string>
+    <string name="chat_input">你想说什么？</string>
+    <string name="identify_code">120000</string>
+    <string name="no_more_messages">没有更多的消息了</string>
+    <string name="failed_to_load_data">加载数据失败，请检查网络或稍后重试</string>
+    <string name="Send_the_following_pictures">发送以下图片？</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="voice">声音</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="is_down_please_wait">正在下载视频请稍候</string>
+    <string name="Download_the_pictures">下载图片: 0%</string>
+    <string name="Download_the_pictures_new">下载图片:</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+    <string name="send_fail">发送消息失败,</string>
+    <string name="connect_failuer_toast">请检查网络或稍候重试</string>
+    <string name="Have_downloaded">已下载</string>
+    <string name="Did_not_download">未下载</string>
+    <string name="downwaiting">正在下载文件请稍后</string>
+    <string name="Failed_to_download_file">下载文件失败:</string>
+    <string name="Into_the_blacklist">移入到黑名单？</string>
+    <string name="resend">重发</string>
+    <string name="confirm_resend">确认重发该信息？</string>
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+    <string name="not_download">未下载:</string>
+    <string name="error_send_not_in_the_group">你已经不在此群了</string>
+    <string name="error_send_invalid_content">你发送了不合法的消息内容</string>
+    <string name="button_send">发送</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="attach_video_call">视频通话</string>
+    <string name="attach_voice_call">语音电话</string>
+    <string name="attach_file">文件</string>
+    <string name="attach_video">视频</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_picture">图片</string>
+    
+    <string name="attach_take_pic">拍照</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="unable_to_get_loaction">无法获取到您的位置信息!</string>
+    <string name="not_connect_to_server">尚未连接至服务器，请稍后重试</string>
+    <string name="sd_card_does_not_exist">SD卡不存在，不能拍照</string>
+    <string name="cant_find_pictures">找不到图片</string>
+    <string name="File_does_not_exist">文件不存在</string>
+    <string name="The_file_is_not_greater_than_10_m">文件不能大于10M</string>
+    
+    <string name="Whether_to_empty_all_chats">是否清空所有聊天记录</string>
+    <string name="gorup_not_found">找不到这个群组</string>
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+    
+    <string name="Is_moved_into_blacklist">正在移入黑名单...</string>
+    <string name="Move_into_blacklist_success">移入黑名单成功</string>
+    <string name="Move_into_blacklist_failure">移入黑名单失败</string>
+    
+    <string name="you_are_group">你被群创建者从此群中移除</string>
+    <string name="the_current_group">当前群聊已被群创建者解散</string>
+    
+    <string name="Video_footage">拍摄录像</string>
+    
+    <string name="call_duration">通话时长</string>
+    <string name="Refused">已拒绝</string>
+    <string name="The_other_party_has_refused_to">对方已拒绝</string>
+    <string name="The_other_is_not_online">对方不在线</string>
+    <string name="The_other_is_on_the_phone">对方正在通话中</string>
+    <string name="The_other_party_did_not_answer">对方未接听</string>
+    <string name="did_not_answer">未接听</string>
+    <string name="Has_been_cancelled">已取消</string>
+    <string name="mute">静音</string>
+    <string name="Hands_free">免提</string>
+    <string name="hang_up">挂断</string>
+    <string name="answer">接听</string>
+    
+    <string name="Are_connected_to_each_other">正在连接对方...</string>
+    <string name="no_share">今天的分享次数已经全部使用了哦，本单会直接结算现金红包给您，祝您购物愉快。</string>
+    <string name="Is_not_yet_connected_to_the_server">尚未连接至服务器</string>
+    <string name="have_connected_with">已经和对方建立连接，等待对方接受...</string>
+    <string name="In_the_call">通话中...</string>
+    <string name="The_other_party_refused_to_accept">对方拒绝接受！...</string>
+    <string name="Connection_failure">连接建立失败！...</string>
+    <string name="The_other_party_is_not_online">对方不在线，请稍后再拨...</string>
+    <string name="The_other_is_on_the_phone_please">对方正在通话中，请稍后再拨</string>
+    <string name="The_other_is_hang_up">对方已经挂断</string>
+    <string name="The_other_party_did_not_answer_new">对方未接听</string>
+    <string name="confirm_receipt">确认收货</string>
+    <string name="direct_call">Direct</string>
+    <string name="relay_call">Relay</string>
+    <string name="share_thanks">亲爱的,接下来自动进入分享流程</string>
+    <string name="seller_not_get">拒绝理由:亲一律不接受到付件的哦,如果亲有疑问可以拨打客服电话或申请平台介入~</string>
+    <string name="hanging_up">正在挂断..</string>
+    <string name="temporary_does_not">暂不支持大于10M的视频！</string>
+    <string name="recording_video">录制视频</string>
+    
+    <string name="The_video_to_start">录像开始</string>
+    
+    <string name="Whether_to_send">是否发送？</string>
+    <string name="Open_the_equipment_failure">打开设备失败!</string>
+    <string name="session">会话</string>
+    <string name="Cant_chat_with_yourself">不能和自己聊天</string>
+    <string name="delete_conversation_messages">删除会话和消息</string>
+    <string name="delete_conversation">删除会话</string>
+    
+    
+    <string name="ptr_refreshing">正在刷新...</string>
+    <string name="ptr_pull_to_refresh">下拉刷新 &#8230;</string>
+    <string name="ptr_release_to_refresh">释放刷新&#8230;</string>
+  	<string name="ptr_last_updated">Updated: %1$s</string>
+
+  	
+  	 <string name="tv_supp_reply"><Data><![CDATA[<font color="#ff3f8b">[卖家回复]</font>%s]]></Data></string>
+  	 
+  	 <string name="tv_add_judge"><Data><![CDATA[<font color="#000000">[追加评价]</font>%s]]></Data></string>
+  	 
+  	  <string name="chat_tv_content"><Data><![CDATA[¥   %1$s<font color="#ff3f8b">&nbsp;&nbsp;返现：%2$s元</font>]]></Data></string>
+  	  
+  	  <string name="tv_kick_back"><Data><![CDATA[<big><font color="#ffffff">%1$s</font></big><br>返现]]></Data></string>
+  	  
+  	<!--   <string name="app_name">DateSelector</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>-->
+    <string name="str_turn_back">取消</string>
+    <string name="str_forward">前进</string> 
+  	  
+    <string name="kick_back">可提现的%s元的现金红包在等着您</string>
+    
+    <string name="share_kickback"><Data><![CDATA[恭喜获得<br><big><font color="#ff814d">¥%1$s</font></big>]]></Data></string>
+    
+    <string name="tv_invite_code"><Data><![CDATA[获得现金红包<font color="#ff3f8b">100</font>元]]></Data></string>
+    
+    <string name="tv_invite_code_notice"><Data><![CDATA[分享自己的邀请码给朋友能赢取<big><font color="#fd426d">100</font></big>元大礼包哦~]]></Data></string>
+    <string name="tv_free_postage_price"><Data><![CDATA[邮费<big><font color="#ff3f8c">%s</font></big>.0]]></Data></string>
+    <string name="tv_package_kind_price"><Data><![CDATA[<big><font color="#ff3f8c">%s元</font></big>]]></Data></string>
+    
+    
+    <string name="d_money"><Data><![CDATA[冻结佣金:<font color="#ff3f8c">%s</font>元]]></Data></string>
+    <string name="t_money"><Data><![CDATA[可提现佣金:<font color="#ff3f8c">%s</font>元]]></Data></string>
+    <string name="s_money"><Data><![CDATA[已提现：<font color="#ff3f8c">%s</font>元]]></Data></string>
+    <string name="h_count"><Data><![CDATA[<font color="#ff3f8c">%s</font>个伙伴]]></Data></string>
+    <string name="d_count"><Data><![CDATA[<font color="#ff3f8c">%s</font>张订单]]></Data></string>
+    <string name="sucess_money"><Data><![CDATA[成功提现：<font color="#ff3f8c">%s</font>元]]></Data></string>
+    <string name="league_log_hint"><Data><![CDATA[买家确认收货后，立即获得合伙人分红。每月可提现一次]]></Data></string>
+    
+    <string name="tv_mail_fee"><Data><![CDATA[邮费<font color="#ff3f8c">¥%s</font>]]></Data></string>
+    
+    <string name="tv_th_notice"><Data><![CDATA[卖家已同意退货退款申请，请拨打<font color="#ff3f8c">400-888-4224</font>客服电话询问卖家收货地址]]></Data></string>
+    
+    <string name="tv_useable_integ"><Data><![CDATA[可用%1$s衣蝠积分抵<font color="#ff3f8c">¥%2$s</font>]]></Data></string>
+     <string name="tv_useable_integ_new"><Data><![CDATA[<font color="#ff3f8c">%2$s</font>]]></Data></string>
+    
+    <string name="delete">删除</string>
+    <string name="forward">转发</string>
+    <string name="delete_message">删除消息</string>
+    <string name="copy_message">复制消息</string>
+    <string name="delete_video">删除视频</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="question">亲，写点评价吧</string>
+    
+    <string name="shaidan_goods">获得商品：%1$s</string>
+    <string name="shaidan_qihao">期号期号：%1$s</string>
+    <string name="shaidan_luck_number">幸运号码：%1$s</string>
+    <string name="shaidan_canyu_count">本期参与：%1$s人次</string>
+    <string name="shaidan_otime">揭晓时间：%1$s</string>
+    
+    <string name="register_name_digits">
+
+      ._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ
+
+    </string>
+    
+    <string name="xiangguanshangpin">相关商品</string>
+    <string name="shouqi">收起</string>
+    <string name="zhankai">展开</string>
+    <string name="match">搭配</string>
+    <string name="share">分享</string>
+    <string name="match_shopping">搭配购</string>
+    <string name="lijijiesuan">立即结算</string>
+    <string name="match_save1">%1$s件商品共¥%2$s</string>
+    <string name="match_save2">,搭配购为你节省¥%1$s</string>
+    <string name="share_fashion">分享时尚赚零花钱</string>
+    <string name="share_tomorrow">明日签到赢壕礼</string>
+    <string name="make_groups">立即参团</string>
+    <string name="vip_quanyi_replace">replace</string>
+
+
+
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+    
+</resources>

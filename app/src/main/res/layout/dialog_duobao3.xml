@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="273dp"
+        android:layout_height="350dp" >
+
+        <LinearLayout
+            android:layout_width="273dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/qiandaoshuoming_dialog_back"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:background="@drawable/baoyoutou3"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="35dp"
+                android:src="@drawable/no_buqianka_min" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="您已参与成功~"
+                android:textColor="@color/common_red" />
+
+            <TextView
+                android:id="@+id/haoma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="您的参入号码为：00000000000"
+                android:textColor="#A0A0A0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="请期待系统为您揭晓~"
+                android:textColor="#A0A0A0"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/chakan"
+                    android:layout_width="110dp"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/bg_red_ok"
+                    android:text="去查看"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/zhidaole"
+                    android:layout_width="110dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/bg_tans_cancel"
+                    android:text="知道了"
+                    android:textColor="@color/common_red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- bg_singn_dialog_shape -->
+
+</LinearLayout>

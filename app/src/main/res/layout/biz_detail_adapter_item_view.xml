@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <com.yssj.custom.view.RoundImageButton
+            android:id="@+id/user_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="21dp"
+            android:background="@null" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/user_pic" >
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="爱国者导弹"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/user_rating"
+                style="@style/MyStarRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:rating="3.5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/user_rating"
+                android:text="2015-10-10"
+                android:textColor="#666666" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/pre_selected"
+                android:text="112"
+                android:textColor="#666666"
+                 />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:textColor="#666666"
+        android:textSize="20sp" 
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+	
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="#666666" />
+    
+    
+</LinearLayout>

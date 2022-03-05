@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center">
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+
+            <ImageView
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="会员免费领"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size20" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@drawable/horizontal_line" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/img_shop_pic"
+            android:layout_width="@dimen/img_goods_width"
+            android:layout_height="@dimen/img_goods_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/testtoux" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/tv_status"
+                android:lineSpacingExtra="3dp"
+                android:singleLine="true"
+                android:text="商品名称"
+                android:textColor="@color/title_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin10"
+                android:text="分享中"
+                android:textColor="@color/pink_color"
+                android:textSize="@dimen/tv_size15" />
+
+
+            <RelativeLayout
+                android:id="@+id/goods_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_product_name"
+                android:layout_alignLeft="@+id/tv_product_name"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/tv_product_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginsb5"
+                    android:layout_marginTop="13dp"
+                    android:text="颜色 ：黑白"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/tv_size13" />
+
+                <TextView
+                    android:id="@+id/tv_product_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/tv_product_color"
+                    android:text="尺寸 ：XL"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/tv_size13" />
+
+
+                <TextView
+                    android:id="@+id/tv_shop_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="10dp"
+                    android:text="x1"
+                    android:textColor="@android:color/darker_gray" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goods_ly"
+                android:layout_alignLeft="@+id/tv_product_name"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_text_yuanjia"
+                    android:text="原价"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size12" />
+
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_text_yuanjia"
+                    android:text="￥195.00"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_price"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="实付:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size15" />
+
+                <TextView
+                    android:id="@+id/tv_shifu_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0"
+                    android:textColor="@color/common_red"
+                    android:textSize="@dimen/tv_size15" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/horizontal_line" />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="再分享"
+            android:textColor="@color/black"
+            android:textSize="18.5sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_share_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="2"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="件美衣到微信群，即可免费领本商品"
+            android:textColor="@color/black"
+            android:textSize="18.5sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_share1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/margin40"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_singn_button_left_shape_mix"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="分享其他微信群"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:gravity="center_horizontal"
+        android:text="群友点击绑定成为您下级，消费即得10%奖励金"
+        android:textColor="#7c7a7c"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_share2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/margin40"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_singn_button_left_shape_mix"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="分享自己的微信群"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:gravity="center_horizontal"
+        android:text="定期推荐新款唤醒群友，消费即得10%奖励金"
+        android:textColor="#7c7a7c"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

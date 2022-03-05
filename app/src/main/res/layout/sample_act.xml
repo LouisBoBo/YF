@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0" >
+
+    <com.yssj.custom.plaview.MultiColumnListView
+        xmlns:pla="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        pla:plaColumnNumber="2"
+        pla:plaLandscapeColumnNumber="2" >
+    </com.yssj.custom.plaview.MultiColumnListView>
+
+</merge>

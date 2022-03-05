@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/invite_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:gravity="center|left" >
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="23dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle_base"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="邀请好友"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size20" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/invite_rl_title"
+        layout="@layout/line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_ll"
+        android:layout_below="@id/title_line"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/invite_tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="25dp"
+                android:text="邀请好友成功后，好友将成为你的粉丝，粉丝从赚钱任务提现多少钱（好友做任务后未提现，你的奖励也将暂时冻结在“账户明细—返现”中），你也将获得同样的奖励（每位粉丝最高5元）。邀请好友越多，获得的奖励也就越多，上不封顶哦~"
+                android:textColor="#3e3e3e"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="25dp"
+                android:background="#fef4e4"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_head_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="16"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.yssj.custom.view.RoundImageButton
+                        android:id="@+id/img_user_pic"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@color/transparenct"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="windy"
+                        android:textColor="#3e3e3e"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/view_line1"
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/ll_head_pic"
+                    android:layout_weight="0"
+                    android:background="#c5c5c5" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_money"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/view_line1"
+                    android:layout_weight="25" >
+
+                    <TextView
+                        android:id="@+id/tv_get_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="0元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="累计粉丝奖励"
+                        android:textColor="#3e3e3e"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/view_line2"
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/ll_money"
+                    android:layout_weight="0"
+                    android:background="#c5c5c5" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_fans"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/view_line2"
+                    android:layout_weight="25" >
+
+                    <TextView
+                        android:id="@+id/tv_fans_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="0人"
+                        android:textColor="#ff3f8b"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="粉丝人数"
+                        android:textColor="#3e3e3e"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="奖励动态"
+                    android:textColor="#3e3e3e"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp" >
+
+                    <com.yssj.custom.view.RoundImageButton
+                        android:id="@+id/img_dummy1"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@color/transparenct"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_dummy1"
+                        android:text="小***菇  获得奖励"
+                        android:textColor="#7d7d7d"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="48.5元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/title_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp" >
+
+                    <com.yssj.custom.view.RoundImageButton
+                        android:id="@+id/img_dummy2"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@color/transparenct"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_dummy2"
+                        android:text="小***菇  获得奖励"
+                        android:textColor="#7d7d7d"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="48.5元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@id/title_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp" >
+
+                    <com.yssj.custom.view.RoundImageButton
+                        android:id="@+id/img_dummy3"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@color/transparenct"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_dummy3"
+                        android:text="小***菇  获得奖励"
+                        android:textColor="#7d7d7d"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="48.5元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp" >
+
+                    <com.yssj.custom.view.RoundImageButton
+                        android:id="@+id/img_dummy4"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@color/transparenct"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_dummy4"
+                        android:text="小***菇  获得奖励"
+                        android:textColor="#7d7d7d"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="48.5元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e5e5e5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp" >
+
+                    <com.yssj.custom.view.RoundImageButton
+                        android:id="@+id/img_dummy5"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@color/transparenct"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/tv_name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_dummy5"
+                        android:text="小***菇  获得奖励"
+                        android:textColor="#7d7d7d"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="48.5元"
+                        android:textColor="#ff3f8b"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/line" />
+
+        <TextView
+            android:id="@+id/tv_invite"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/btn_back_red"
+            android:gravity="center"
+            android:text="邀请好友"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

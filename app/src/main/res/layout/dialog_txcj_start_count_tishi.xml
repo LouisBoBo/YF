@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:paddingBottom="@dimen/margin30"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:paddingLeft="@dimen/margin15"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:gravity="center_horizontal"
+        android:text="温馨提示"
+        android:textColor="#FDCC21"
+        android:textSize="@dimen/tv_size19"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="10次机会10次机会10次机会10次机会10次机会10次机会"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/tv_size16" />
+
+    <TextView
+        android:id="@+id/tv_tx"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_withdrawal_yellow"
+        android:gravity="center"
+        android:text="马上提现"
+        android:textColor="#FD215A"
+        android:textSize="15sp" />
+
+</LinearLayout>

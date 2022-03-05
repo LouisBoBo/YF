@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="360dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_singn_dialog_shape"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:paddingLeft="35dp"
+                    android:src="@drawable/get_2_money" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="分享成功"
+                    android:textColor="#FF3B8D"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="2元现金已存入您的余额,可以提现哦~"
+                    android:textColor="#919191"
+                    android:textSize="13sp" />
+
+                  <TextView
+                      android:padding="5dp"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginRight="25dp"
+                   android:background="@drawable/xianjingjiangli_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   	android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#F98AB4"
+                    android:text="坚持分享美衣，好友购买再得10%现金奖励，轻松月赚千元零花钱哦"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/getYue"
+                        android:background="@drawable/bg_red_ok"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:text="去查看"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:background="@drawable/bg_tans_cancel"
+                        android:id="@+id/bt"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="知道了"
+                        android:textSize="18sp"
+                        android:textColor="#FF3B8D"
+                         />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/congratulation" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!-- bg_singn_dialog_shape -->
+
+</LinearLayout>

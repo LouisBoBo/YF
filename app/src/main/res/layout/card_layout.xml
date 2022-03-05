@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    
+	<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginBottom="-5dp">
+       <ImageView
+           android:id="@+id/icon_select"
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:layout_marginRight="5dp"
+           android:layout_centerVertical="true"
+           android:scaleType="fitXY"
+           android:src="@drawable/icon_jinxuan_normal" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="不再自动弹出"
+           android:layout_toRightOf="@id/icon_select"
+           android:layout_centerVertical="true"
+           android:textColor="#7D7D7D"
+           android:textSize="14sp" />
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="#FFFFFF"
+	        android:layout_centerInParent="true"
+	        android:text="精选推荐"
+	        android:textColor="#3E3E3E"
+	        android:textSize="18sp" />
+	    
+	    <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_jingxuan_close"/>
+	</RelativeLayout>
+	<RelativeLayout 
+		   android:layout_width="match_parent"
+           android:layout_height="match_parent">
+    <com.yssj.ui.fragment.cardselect.CardSlidePanel
+        android:id="@+id/image_slide_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card:yOffsetStep="26dp">
+       
+		
+        <com.yssj.ui.fragment.cardselect.CardItemView
+            android:id="@+id/top_carditem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.yssj.ui.fragment.cardselect.CardItemView
+            android:id="@+id/top_carditem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.yssj.ui.fragment.cardselect.CardItemView
+            android:id="@+id/top_carditem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.yssj.ui.fragment.cardselect.CardItemView
+            android:id="@+id/top_carditem4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.yssj.ui.fragment.cardselect.CardSlidePanel>
+           
+          <LinearLayout
+            android:id="@+id/card_bottom_layout"  
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+ 			<Button
+                android:id="@+id/card_left_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:background="@drawable/icon_reback_jingxuan_dis" />
+            <Button
+                android:id="@+id/card_left_btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/icon_jingxuan_dislike" />
+            <Button
+                android:id="@+id/card_right_btn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_jingxuan_like" />
+             <Button
+                android:id="@+id/card_right_reback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_reback_jingxuan_dis" />
+        </LinearLayout>   
+		</RelativeLayout> 
+
+</LinearLayout>

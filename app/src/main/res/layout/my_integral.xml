@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_integer_bg" />
+        
+
+         <TextView
+            android:id="@+id/tv_my_intergral_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin53"
+            android:paddingLeft="@dimen/margin28"
+            android:paddingTop="@dimen/margin20"
+            android:background="@drawable/myinteger_pink_sum"
+            android:text="总积分"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size19" />
+
+        <TextView
+            android:id="@+id/tv_my_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin95"
+            android:layout_centerHorizontal="true"
+            android:text="0.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size40" /> 
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_month_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_month_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:background="@drawable/integer_number_bg"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginTop="2dp"
+                android:text="近一月进账"
+                android:textSize="@dimen/tv_size16"
+                android:textColor="@color/text1_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_sign_daily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sigin_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/transparenct"
+                android:text="签到"
+                android:textColor="@color/pink_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_month_expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_month_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/integer_number_bg"
+                android:layout_marginRight="@dimen/margin10"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginTop="2dp"
+                android:text="近一月支出"
+                android:textColor="@color/text1_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+        
+        <ListView 
+            android:id="@+id/lv_info"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+        </ListView>
+
+       
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_itegral_market"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/u17"
+        android:text="积分商城"
+        android:textColor="@color/white" />
+
+</LinearLayout>

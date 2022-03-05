@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_getpwd" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/vertical_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:gravity="center|left"
+        android:text="@string/altersuccess"
+        android:textColor="@color/gray_normal"
+        android:textSize="@dimen/tv_size15" />
+
+    <Button
+        android:id="@+id/btn_login_rightnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="立即登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size18" />
+
+</LinearLayout>

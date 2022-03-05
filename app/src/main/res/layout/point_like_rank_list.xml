@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/ranking_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ranking_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="4"
+            android:textColor="#FF3F8B"
+            android:textSize="16sp"
+            android:visibility="gone" />
+        <!-- 排名 名次 显示数字或者是图标 -->
+
+        <ImageView
+            android:id="@+id/ranking_iv"
+            android:layout_width="22dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jiangzhuang_01"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ranking_head_iv"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ranking_ll"
+        android:adjustViewBounds="true"
+        android:background="@color/transparenct"
+        android:clickable="false"
+        android:src="@drawable/head_pic_04" />
+
+    <TextView
+        android:id="@+id/tv_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="8dp"
+        android:text="个赞"
+        android:textColor="#FF3F8B"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ranking_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@id/tv_zan"
+        android:maxLines="1"
+        android:text="112"
+        android:textColor="#FF3F8B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ranking_ninckname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ranking_head_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/ranking_head_iv"
+        android:layout_toLeftOf="@id/ranking_number"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="昵称"
+        android:textColor="#3E3E3E"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ranking_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ranking_head_iv"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ranking_head_iv"
+        android:maxLines="1"
+        android:text="深圳"
+        android:textColor="#7D7D7D"
+        android:textSize="12sp" />
+
+
+
+</RelativeLayout>

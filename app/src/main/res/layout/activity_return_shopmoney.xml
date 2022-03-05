@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ray0"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_height="80dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_return_shopmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_launcher"
+               	android:gravity="center"
+                android:text="退货退款" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已收到货，需要退还已收到的货物" />
+        </LinearLayout>
+        
+        <ImageView 
+            android:id="@+id/img_arrow"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/no_warn"
+            android:src="@drawable/arrow_down"
+            
+            />
+    </RelativeLayout>
+    <include layout="@layout/line"/>
+    
+    <RelativeLayout
+        android:id="@+id/ray1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_height="80dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_return_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_launcher"
+               	android:gravity="center"
+                android:text="仅退款" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未收到货或已收到货 无需退款" />
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down"
+            android:contentDescription="@string/no_warn"
+            />
+    </RelativeLayout>
+    
+        <include layout="@layout/line"/>
+    <RelativeLayout
+        android:id="@+id/ray2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_height="80dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_change_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_launcher"
+               	android:gravity="center"
+                android:text="换货" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对已收到的货物不满意， 联系买家协商换货" />
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down"
+            android:contentDescription="@string/no_warn"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

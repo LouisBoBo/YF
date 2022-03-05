@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin"
+        android:text="积分赚取方式"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size20" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginBottom="@dimen/margin15"
+        android:text="1.每日签到"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin25"
+            android:drawableLeft="@drawable/myintegral_dot_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin20"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin25"
+            android:text="5-10-15-25-50-100-200（签到中断，重头开始）"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin20"
+        android:text="2.做任务（新用户）"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginRight="@dimen/margin20"
+        android:drawableLeft="@drawable/myintegral_dot_bg"
+        android:drawablePadding="@dimen/margin15"
+        android:text="完善注册信息  50"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin25"
+            android:drawableLeft="@drawable/myintegral_dot_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin20"
+            android:text="设置个人头像为自拍  50"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size18" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginRight="@dimen/margin20"
+        android:drawableLeft="@drawable/myintegral_dot_bg"
+        android:drawablePadding="@dimen/margin15"
+        android:text="认证手机号  50"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginRight="@dimen/margin20"
+        android:drawableLeft="@drawable/myintegral_dot_bg"
+        android:drawablePadding="@dimen/margin15"
+        android:text="认证邮箱  50"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" />
+
+   
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginRight="@dimen/margin20"
+        android:drawableLeft="@drawable/myintegral_dot_bg"
+        android:drawablePadding="@dimen/margin15"
+        android:text="打分鼓励我们  50"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" />
+
+</LinearLayout>

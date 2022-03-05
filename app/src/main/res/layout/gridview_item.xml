@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <com.yssj.entity.MyToggleButton
+        android:id="@+id/gridview_item_button"
+        android:layout_width="60dip"
+        android:layout_height="32dip"
+        android:clickable="true"
+        android:textSize="@dimen/tv_size12"
+        android:button="@null"
+        android:background="@drawable/selector_category_bg"
+        android:textColor="@color/selector_category_text"/>
+
+</LinearLayout>

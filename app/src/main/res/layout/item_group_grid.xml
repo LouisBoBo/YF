@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        >
+
+        <com.yssj.custom.view.RoundImageButton
+            android:id="@+id/item_group_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparenct"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/item_group_shop_name"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_public_line_circle_ff3f8b"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="谁要\niphone733333"
+            android:textColor="#ff3f8b"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/item_group_host"
+            android:layout_width="32dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_group_host" />
+    </RelativeLayout>
+    <TextView
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/item_group_user_name"
+        android:textColor="#7d7d7d"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:text="Tracy"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

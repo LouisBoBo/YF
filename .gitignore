@@ -1,0 +1,9 @@
+# Project exclude paths
+/.gradle/
+/app/build/
+/app/build/intermediates/classes/debug/
+/build/
+/LibraryPullToRefresh/build/
+/LibraryPullToRefresh/build/intermediates/classes/debug/
+/TestActivity/build/
+/TestActivity/build/intermediates/classes/debug/

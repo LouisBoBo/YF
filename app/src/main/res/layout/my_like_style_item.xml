@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv"
+        android:scaleType="center"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:src="@drawable/wodexihao_fengge_rixi" />
+
+    <CheckBox
+        android:layout_marginLeft="50dp"
+        android:visibility="visible"
+        android:id="@+id/item_cb"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/wodexihao_fengge_icon_weixuanzhong"
+        android:button="@null"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>

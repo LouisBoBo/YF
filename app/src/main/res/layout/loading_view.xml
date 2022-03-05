@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="85dp"
+    android:layout_height="85dp"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/loading_bg"
+    android:orientation="vertical">
+
+
+    <ProgressBar
+        android:id="@+id/pb_load"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_round_new" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/tv_load_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请稍后"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+</LinearLayout>

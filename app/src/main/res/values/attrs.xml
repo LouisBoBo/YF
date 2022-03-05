@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="RatingBarView">
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starCount" format="integer" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starFill" format="reference" />
+    </declare-styleable>
+    
+       <declare-styleable name="gridPasswordView">
+
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSize" format="dimension" />
+
+        <attr name="lineColor" format="color" />
+        <attr name="gridColor" format="color" />
+        <attr name="lineWidth" format="dimension" />
+
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordTransformation" format="string" />
+
+        <attr name="passwordType" format="enum">
+            <enum name="numberPassword" value="0" />
+            <enum name="textPassword" value="1" />
+            <enum name="textVisiblePassword" value="2" />
+            <enum name="textWebPassword" value="3" />
+        </attr>
+
+    </declare-styleable>
+     <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+    </declare-styleable>
+    
+ 	<declare-styleable name="card">
+        <attr name="itemMarginTop" format="dimension" />
+        <attr name="bottomMarginTop" format="dimension" />
+        <attr name="yOffsetStep" format="dimension" />
+        <attr name="widthHeightRate" format="float" />
+    </declare-styleable>
+    
+ 	 <declare-styleable name="FolderTextView">
+        <attr name="foldText" format="string"/>
+        <attr name="unFoldText" format="string"/>
+        <attr name="foldLine" format="integer"/>
+        <attr name="tailTextColor" format="color"/>
+        <attr name="canFoldAgain" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="BannerLayout">
+        <attr name="interval" format="integer" />
+        <attr name="showIndicator"  format="boolean"/>
+        <attr name="orientation"  format="integer" />
+        <attr name="autoPlaying" format="boolean"/>
+        <attr name="itemSpace" format="integer"/>
+        <attr name="centerScale" format="float"/>
+        <attr name="moveSpeed" format="float"/>
+    </declare-styleable>
+
+
+    <!-- 自定义星期 View -->
+    <declare-styleable name="WeekView">
+        <attr name="wv_textColor" format="color|reference"/>
+        <attr name="wv_textSize" format="dimension|reference"/>
+    </declare-styleable>
+
+    <!-- 自定义日历 View -->
+    <declare-styleable name="CalendarView">
+        <!--文字颜色-->
+        <attr name="cv_textColor" format="color|reference"/>
+        <attr name="cv_can_sign_textColor" format="color|reference"/>
+
+
+
+        <attr name="cv_sign_Background" format="reference"/>
+        <attr name="cv_not_sign_Background" format="reference"/>
+
+
+
+        <attr name="cv_textSize" format="dimension|reference"/>
+        <attr name="cv_selectTextSize" format="dimension|reference"/>
+
+
+
+        <attr name="cv_dateFormatPattern" format="string|reference"/>
+        <attr name="cv_isChangeDateStatus" format="boolean|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="progressColor" format="color"/>
+        <attr name="progressDescColor" format="color"/>
+        <attr name="progressRadius" format="dimension"/>
+        <attr name="max" format="integer"/>
+        <attr name="progress" format="integer"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="progressDesc" format="string"/>
+        <attr name="isShowDesc" format="boolean"/>
+    </declare-styleable>
+
+</resources>

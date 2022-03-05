@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/base_head" />
+
+        <RelativeLayout
+            android:id="@+id/rel_bank_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/common_edittext_bg"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:gravity="center_vertical"
+                android:text="银行"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <EditText
+                android:id="@+id/et_bank_name"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/tv_bank_name"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请选择开户行"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_bank_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/common_edittext_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_bank_num"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:gravity="center_vertical"
+                android:text="卡号"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <EditText
+                android:id="@+id/et_bank_num"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/tv_bank_num"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="输入银行卡号"
+                android:inputType="number"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:textColor="@color/title_color"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_person_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/common_edittext_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:gravity="center_vertical"
+                android:text="持卡人"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <EditText
+                android:id="@+id/et_person_name"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/tv_person_name"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="银行卡姓名"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/title_color"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_identity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/common_edittext_bg"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_identity"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:gravity="center_vertical"
+                android:text="身份证"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <EditText
+                android:id="@+id/et_identity"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/tv_identity"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="持卡人对应身份证号"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/title_color"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_identify_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin18"
+            android:gravity="center_vertical"
+            android:text="身份信息严格加密处理，仅用于银行验证"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/tv_size14"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rel_phone_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/common_edittext_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv__phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:gravity="center_vertical"
+                android:text="手机号"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <EditText
+                android:id="@+id/et__phone_num"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/tv__phone_num"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="银行预留手机号"
+                android:inputType="phone"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:textColor="@color/title_color"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_province"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin15"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:background="@drawable/common_edittext_bg"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_province"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:gravity="center_vertical"
+                android:text="收款人省市"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <TextView
+                android:id="@+id/et_province"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/tv_province"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textColor="#bdbdbd"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <!--  <RelativeLayout
+            android:id="@+id/rel_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginBottom="@dimen/margin15"
+            android:background="@drawable/common_edittext_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin" 
+                android:layout_marginRight="@dimen/margin"
+                android:gravity="center_vertical"
+                android:text="收款人邮箱"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/tv_email"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        
+         <RelativeLayout
+            android:id="@+id/rel_branch_bank_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginBottom="@dimen/margin15"
+            android:background="@drawable/common_edittext_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_branch_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin" 
+                android:layout_marginRight="@dimen/margin"
+                android:gravity="center_vertical"
+                android:text="支行名称"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+
+            <EditText
+                android:id="@+id/et_branch_bank_name"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@id/tv_branch_bank_name"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+        </RelativeLayout> -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="仅支持借记卡"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/tv_size15" />
+
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_login_height"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/u17"
+            android:text="下一步"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_scan_support_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="查看支持的银行"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/tv_size15" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/white_fanzao"
+    android:layout_width="274dp"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_marginLeft="244dp"
+        android:id="@+id/balance_dialog_close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon_close_new" />
+
+    <TextView
+        android:id="@+id/balance_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance_dialog_close"
+        android:layout_centerHorizontal="true"
+        android:text="什么是余额X3倍特权？"
+        android:textColor="#3e3e3e"
+        android:textSize="15sp" />
+
+    <TextView
+           android:layout_marginLeft="15dp"
+        android:id="@+id/balance_dialog_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance_dialog_title"
+        android:text="亲,余额3倍是指在开店成功后24小时之内余额"
+        android:textColor="#7d7d7d"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/balance_dialog_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance_dialog_tv1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="为原来余额的3倍,可直接用于购物,24小时之后"
+        android:textColor="#7d7d7d"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/balance_dialog_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance_dialog_tv2"
+        android:layout_marginLeft="15dp"
+        android:text="余额变为原来的金额"
+        android:textColor="#7d7d7d"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+          android:id="@+id/balance_dialog_start"
+        android:layout_width="254dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/balance_dialog_tv3"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/indiana_shape_shaidan"
+        android:gravity="center"
+        android:text="开启余额x3倍特权"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

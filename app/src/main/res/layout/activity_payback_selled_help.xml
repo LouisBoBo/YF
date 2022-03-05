@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/root"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/base_head" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/payback_selled_help_worktime_bg"
+            android:gravity="center"
+            android:text="客服工作时间:周一至日9:00-22:00法定假日除外。"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/tv_size15" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="售前人工咨询"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="商品挑选、购买、活动咨询、会员账号注册、账户信息维护等咨询"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size14" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_unsell_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/payback_selled_help_kf_bg"
+                android:gravity="center"
+                android:text="售前\n客服"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="售后人工咨询"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="退款、退货、交易完成评价、维权投诉等各种售后类问题咨询服务"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size14" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_selled_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/payback_selled_help_kf_bg"
+                android:gravity="center"
+                android:text="售后\n客服"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投诉建议"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="提供维权投诉，以及意见建议反馈的服务"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size14" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_complaint_advice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/payback_selled_help_kf_bg"
+                android:gravity="center"
+                android:text="投诉\n建议"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="智能自助服务"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/tv_size20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="7x24在线，无需等待，即问即答，全年无休 "
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size14" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_service_self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/payback_selled_help_kf_bg"
+                android:gravity="center"
+                android:text="自助\n服务"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_call_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/payback_selled_help_call_bj"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_call_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:src="@drawable/payback_selled_help_call_icon" />
+
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_call_icon"
+                android:background="@null"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="客服电话:400-1199-783"
+                android:textColor="@color/title_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

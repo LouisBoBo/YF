@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin15" >
+
+        <ImageView
+            android:id="@+id/img_pro_pic"
+            android:layout_width="@dimen/img_goods_width1"
+            android:layout_height="@dimen/img_goods_height1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/testtoux" />
+
+        <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/img_pro_pic"
+            android:layout_marginRight="@dimen/margin_left"
+            android:gravity="right"
+            android:text="x1"
+            android:textColor="@color/gray_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_alignTop="@+id/img_pro_pic"
+            android:layout_marginTop="-3dp"
+            android:layout_toLeftOf="@id/tv_sum"
+            android:layout_toRightOf="@id/img_pro_pic"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_pro_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2015夏款欧美真丝镂空"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size16" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginsb5"
+                android:background="@drawable/shop_meal_color"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:text="超值套餐"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginsb5"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_pro_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="￥195.00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size13" />
+
+                <TextView
+                    android:id="@+id/tv_pro_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:gravity="center|left"
+                    android:text="￥469.00"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/tv_size13"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--
+         <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin10"
+        android:background="@color/white" />
+    -->
+
+</LinearLayout>

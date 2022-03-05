@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dlg_lay"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:src="@drawable/img_dialog_login"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button 
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:gravity="center"
+        android:padding="@dimen/margin5"
+        android:layout_marginTop="50dp"
+         android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:textSize="@dimen/tv_size20"
+        android:background="@color/pink_color"
+        android:textColor="@color/white"
+        />
+    <Button 
+        android:id="@+id/btn_log"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_marginBottom="@dimen/margin20"
+        android:text="登录"
+        android:gravity="center"
+        android:padding="@dimen/margin5"
+        android:textSize="@dimen/tv_size20"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        />
+   
+
+</LinearLayout>

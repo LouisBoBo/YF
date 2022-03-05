@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/match_nav_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="22dp"
+    android:background="@drawable/bg_label_2"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/match_nav_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/white_white"
+        android:textSize="@dimen/tv_size12"
+        android:singleLine="true"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:layout_marginLeft="6dp" />
+
+    <ImageView
+        android:id="@+id/icon_img_cart"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/shoping" />
+</LinearLayout>

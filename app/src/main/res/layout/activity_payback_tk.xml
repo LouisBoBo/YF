@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/base_head" />
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin" >
+
+        <Button
+            android:id="@+id/btn_submit_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/payback_hh_submit_apply"
+            android:gravity="center"
+            android:padding="@dimen/margin"
+            android:text="提交申请"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/vertical_line" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel_bottom"
+        android:layout_below="@+id/top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/payback_hh_selectdown_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_apply_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center"
+                    android:text="申请服务"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size19" />
+
+                <TextView
+                    android:id="@+id/et_apply_service"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_apply_service"
+                    android:background="@null"
+                    android:editable="false"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/margin"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingRight="35dp"
+                    android:paddingTop="@dimen/margin"
+                    android:singleLine="true"
+                    android:text="仅退款"
+                    android:textColor="@color/title_color"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/iv_select_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/et_apply_service"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:clickable="false"
+                    android:padding="@dimen/margin"
+                    android:src="@drawable/payback_hh_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/payback_hh_selectdown_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_wl_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center"
+                    android:text="物流状态"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size19" />
+
+                <TextView
+                    android:id="@+id/et_wl_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_wl_status"
+                    android:background="@null"
+                    android:editable="false"
+                    android:gravity="center_vertical"
+                    android:hint="选择物流状态"
+                    android:paddingBottom="@dimen/margin"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingRight="35dp"
+                    android:paddingTop="@dimen/margin"
+                    android:singleLine="true"
+                    android:textColor="@color/title_color"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/iv_select_wl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/et_wl_status"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:clickable="false"
+                    android:padding="@dimen/margin"
+                    android:src="@drawable/payback_hh_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin15"
+                android:background="@drawable/payback_hh_selectdown_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_tk_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center"
+                    android:text="退款金额"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size19" />
+
+                <EditText
+                    android:id="@+id/et_tk_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_tk_amount"
+                    android:background="@null"
+                    android:editable="false"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/margin"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingRight="35dp"
+                    android:paddingTop="@dimen/margin"
+                    android:singleLine="true"
+                    android:textColor="@color/pink_color"
+                    android:textColorHint="#bdbdbd"
+                    android:textCursorDrawable="@null"
+                    android:textSize="19sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:textColor="@color/text1_color"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_tk_exlpain"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@drawable/payback_hh_tksm_bg"
+                android:gravity="top"
+                android:hint="退款说明:最多200字"
+                android:padding="@dimen/margin"
+                android:paddingLeft="5dp"
+                android:textColor="@color/title_color"
+                android:textColorHint="#bdbdbd"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rel_add_pic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin20"
+                android:layout_marginRight="@dimen/margin20"
+                android:layout_marginTop="30dp" >
+
+                <ImageView
+                    android:id="@+id/iv_upload_pz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/payback_add_pz" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_toRightOf="@id/iv_upload_pz"
+                    android:text="上传凭证（最多三张）"
+                    android:textColor="@color/text1_color"
+                    android:textSize="@dimen/tv_size16" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

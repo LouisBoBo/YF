@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white" >
+
+   <ImageView
+            android:id="@+id/img_zero_shop_product_son"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin18"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+             />
+
+
+
+        <TextView
+            android:id="@+id/tv_zero_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img_zero_shop_product_son"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="2"
+            android:text="Promise秋冬新款韩版背带牛仔裤"
+            android:textColor="@color/title_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_zero_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_zero_product_name"
+            android:layout_below="@+id/tv_zero_product_name"
+            android:layout_marginTop="20dp"
+            android:text="￥9.9"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/tv_size16" />
+
+
+        <TextView
+            android:id="@+id/tv_zero_price_outdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_zero_product_price"
+            android:layout_below="@+id/tv_zero_product_price"
+            android:layout_marginTop="20dp"
+            android:text="￥128"
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/tv_size15" />
+
+        <TextView
+            android:id="@+id/tv_purchase_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_zero_price_outdate"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/tv_zero_price_outdate"
+            android:text="1230人在抢"
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/tv_size15" />
+
+</RelativeLayout>

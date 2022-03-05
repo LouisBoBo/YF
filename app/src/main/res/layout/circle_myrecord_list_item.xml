@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin"
+    android:background="@color/white" >
+
+    <com.yssj.custom.view.RoundImageButton
+        android:id="@+id/rib_img"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:layout_marginBottom="@dimen/margin15"
+        android:background="@color/transparenct" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"/>
+
+<!--     <ImageButton -->
+<!--         android:id="@+id/imgbtn_choose" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:layout_marginLeft="@dimen/margin" -->
+<!--         android:background="@color/transparenct" -->
+<!--         android:src="@drawable/tvchooseno_normal" /> -->
+    <CheckBox
+        android:id="@+id/imgbtn_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin10"
+        android:button="@drawable/checkbox_checked_style"
+        android:focusable="false"  />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/margin15"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/ibtn_join"
+        android:layout_toRightOf="@id/rib_img"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_bg"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_marginBottom="@dimen/margin"
+            android:padding="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_alignTop="@+id/img_goods"
+                android:layout_toRightOf="@id/img_goods"
+                android:textColor="@color/text1_color"
+                android:textSize="@dimen/tv_size16" />
+
+            <ImageView
+                android:id="@+id/img_goods"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

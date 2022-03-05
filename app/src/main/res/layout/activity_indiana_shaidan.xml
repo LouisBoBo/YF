@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/root"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <!--
+         <EditText
+        android:id="@+id/indiana_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="亲~发表一下你的获奖感言吧..."
+        android:textColor="#cecece"
+        android:textSize="14sp" />
+    -->
+
+    <EditText
+        android:id="@+id/indiana_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/evaluate_content_bg"
+        android:cursorVisible="true"
+        android:gravity="top"
+        android:hint="亲~发表一下你的获奖感言吧..."
+        android:padding="5dp"
+        android:textColor="@color/title_color"
+        android:textColorHint="#a8a8a8"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/tv_size14" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/indiana_add_picture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon_shagnchuan" />
+
+        <TextView
+            android:id="@+id/indiana_tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="上传图片晒单哦~"
+            android:textColor="#cecece"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/indiana_ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/indiana_tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/indiana_shape_shaidan"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

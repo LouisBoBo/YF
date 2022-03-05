@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="抽提现提示"
+            android:textColor="#FDCC21"
+            android:textSize="@dimen/tv_size18" />
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+    <TextView
+        android:paddingLeft="@dimen/margin20"
+        android:paddingRight="@dimen/margin20"
+        android:id="@+id/yidou_wran_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="是否使用10个衣豆进行抽奖？"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/tv_size14" />
+    <LinearLayout
+        android:id="@+id/select_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="23dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/icon_select_withdrawal"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/withdrawal_select" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下次不再弹窗直接抽提现"
+            android:layout_gravity="center_vertical"
+            android:textColor="#AE0531"
+            android:textSize="@dimen/tv_size12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="#FD215A"
+        android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_twobt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_white"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_white"
+                android:text="我再想想"
+                android:textColor="#FD215A"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_yellow"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_yellow"
+                android:text="确定"
+                android:textColor="#FD215A"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <!-- 衣豆提示 只有一个按钮   -->
+            <Button
+                android:id="@+id/btn_yellow_2"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_withdrawal_yellow"
+                android:text="确定"
+                android:textColor="#FD215A"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/container_shop_sign"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <Button 
+        android:id="@+id/btn_edit_sign"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@id/container_shop_sign"
+        android:layout_alignRight="@id/container_shop_sign"
+        android:background="#00000000"
+        android:padding="@dimen/margin"
+        android:text="编辑"/>
+    <LinearLayout 
+        android:id="@+id/container_shop_recommend"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/container_shop_sign"
+        android:orientation="vertical"/>
+    <Button 
+        android:id="@+id/btn_edit_recommend"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@id/container_shop_recommend"
+        android:layout_alignRight="@id/container_shop_recommend"
+        android:background="#00000000"
+        android:padding="@dimen/margin"
+        android:text="编辑"/>
+    <LinearLayout 
+        android:id="@+id/container_shop_best_sell"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/container_shop_recommend"
+        android:orientation="vertical"/>
+    <Button 
+        android:id="@+id/btn_edit_best_sell"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@id/container_shop_best_sell"
+        android:layout_alignRight="@id/container_shop_best_sell"
+        android:background="#00000000"
+        android:padding="@dimen/margin"
+        android:text="编辑"/>
+
+</RelativeLayout>

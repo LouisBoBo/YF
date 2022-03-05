@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_stat"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/selector_black_pink_text"
+            android:textSize="@dimen/tv_size15" />
+
+        <RadioButton
+            android:id="@+id/rb_obligation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待付款"
+            android:textColor="@color/selector_black_pink_text"
+            android:textSize="@dimen/tv_size15" />
+
+        <RadioButton
+            android:id="@+id/rb_deliver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待发货"
+            android:textColor="@color/selector_black_pink_text"
+            android:textSize="@dimen/tv_size15" />
+
+        <RadioButton
+            android:id="@+id/rb_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待收货"
+            android:textColor="@color/selector_black_pink_text"
+            android:textSize="@dimen/tv_size15" />
+
+        <RadioButton
+            android:id="@+id/rb_judge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待评价"
+            android:textColor="@color/selector_black_pink_text"
+            android:textSize="@dimen/tv_size15" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rg_stat" >
+    </FrameLayout>
+
+</RelativeLayout>

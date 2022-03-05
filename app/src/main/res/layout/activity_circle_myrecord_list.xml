@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_head" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparenct"
+            android:gravity="center"
+            android:text="发帖记录"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size18" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/vertical_line"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparenct"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="收藏记录"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/tv_size18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/horizontal_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_choice_all"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp" >
+
+            <ImageButton
+                android:id="@+id/imgbtn_choice_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin"
+                android:background="@color/white"
+                android:clickable="false"
+                android:src="@drawable/tvchooseno_normal" />
+
+            <TextView
+                android:id="@+id/tv_ischoose_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_toRightOf="@id/imgbtn_choice_all"
+                android:text="全选"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size18" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/u17"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_size18" />
+    </RelativeLayout>
+
+</LinearLayout>

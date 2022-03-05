@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/background_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/iv_img_header"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin25"
+
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/tv_member_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin27"
+        android:textColor="@color/pink_color"
+        android:textSize="@dimen/tv_size12"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tv_member_money2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin27"
+        android:textColor="@color/pink_color"
+        android:textSize="@dimen/tv_size12" />
+
+    <LinearLayout
+        android:id="@+id/ll_member_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_member_money"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin12"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_member_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/pink_color"
+            android:textSize="@dimen/tv_size12"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_member_chengyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个成员"
+            android:textColor="@color/tv_goods_color"
+            android:textSize="@dimen/tv_size12"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin25"
+        android:layout_toLeftOf="@id/tv_member_money2"
+        android:layout_toRightOf="@id/iv_img_header"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方清秋"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_size16" 
+                />
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:text="(Justin Grey)"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/tv_size14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_add_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginLeft="@dimen/margin"
+                android:singleLine="true"
+                android:text="2015-10-24 14:44:31"
+                android:textColor="@color/text1_color"
+                android:textSize="@dimen/tv_size12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_member_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_member_adress"
+                android:drawablePadding="1dp"
+                android:text="深圳市南山区"
+                android:textColor="@color/text1_color"
+                android:textSize="@dimen/tv_size12" />
+
+            <TextView
+                android:id="@+id/tv_member_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:drawableLeft="@drawable/img_member_phone"
+                android:drawablePadding="1dp"
+                android:text="134-185-30658"
+                android:textColor="@color/text1_color"
+                android:textSize="@dimen/tv_size12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

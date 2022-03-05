@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yssj.custom.view.CustSwipBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rrr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_default">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"></se.emilsjolander.stickylistheaders.StickyListHeadersListView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ray_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|left">
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="24dp"
+                    android:background="@color/transparenct" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_left_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_fanhui"
+                    android:clickable="false"
+                    android:contentDescription="@string/no_warn" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:background="@color/transparenct" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/no_warn"
+                    android:src="@drawable/icon_gouwuche" />
+
+                <TextView
+                    android:id="@+id/tv_cart_count"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignLeft="@id/img_cart"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/red_point_bg"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_size8"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_fenx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/img_cart"
+                    android:contentDescription="@string/no_warn"
+                    android:src="@drawable/icon_fenxiang" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_record"
+                    android:layout_width="65dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_public_all_f9243d"
+                    android:contentDescription="@string/no_warn"
+                    android:gravity="center"
+                    android:text="抽奖记录"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_old_show"
+                    android:layout_width="65dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/shape_public_all_f9243d"
+                    android:contentDescription="@string/no_warn"
+                    android:gravity="center"
+                    android:text="往期揭晓"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_my_take"
+                    android:layout_width="65dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/shape_public_all_f9243d"
+                    android:contentDescription="@string/no_warn"
+                    android:gravity="center"
+                    android:text="我的参与"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ray_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/ll_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.3dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:minWidth="140dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="#cecece" />
+
+                <RelativeLayout
+                    android:id="@+id/lin_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_lx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/no_warn"
+                        android:src="@drawable/icon_lianxikefu" />
+
+                    <TextView
+                        android:id="@+id/tv_lx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/img_lx"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="3dp"
+                        android:text="联系客服"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/tv_size11" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/indiana_details_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ff3f8c"
+                    android:gravity="center"
+                    android:text="立即参与"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/tv_size17" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/to_duobao"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/indiana_group_rule"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/group_rule"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</com.yssj.custom.view.CustSwipBackLayout>

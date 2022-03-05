@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/ic_head"
+        layout="@layout/base_head" />
+
+    <LinearLayout
+        android:id="@+id/lin_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ic_head"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" >
+    </LinearLayout>
+
+    <!-- <Button -->
+    <!-- android:id="@+id/btn_save" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_margin="@dimen/margin" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="保存" -->
+    <!-- android:visibility="gone" /> -->
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_login_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/u17"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_save"
+        android:layout_below="@id/lin_container"
+        android:background="@color/white"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/tv_size18" >
+    </ListView>
+
+</RelativeLayout>

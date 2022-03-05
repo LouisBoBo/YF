@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:showAsAction="always"
+        android:icon="@drawable/ico_more">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:title="查看资料"/>
+            <item
+                android:id="@+id/clear"
+                android:title="清空聊天记录"/>
+            <item
+                android:visible="false"
+                android:id="@+id/location"
+                android:title="隐藏我的位置"/>
+            <item
+                android:id="@+id/blacklist"
+                android:title="加黑名单"/>
+            <item
+                android:id="@+id/report"
+                android:title="举报"/>
+        </menu>
+    </item>
+
+</menu>

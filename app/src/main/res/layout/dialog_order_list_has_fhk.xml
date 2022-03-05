@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/free_icon_close" />
+
+    <LinearLayout
+        android:paddingLeft="@dimen/margin20"
+        android:paddingRight="@dimen/margin20"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_close"
+        android:background="@drawable/withdrawal_exp_dialog_red"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin20"
+            android:text="温馨提示"
+            android:textColor="#FBFFA1"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin18"
+            android:text="本次免费领未领到哦"
+            android:textColor="#FBFFA1"
+            android:textSize="15dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin15"
+            android:text="您可以使用发货卡免费发货"
+            android:textColor="#FBFFA1"
+            android:textSize="15dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin20"
+            android:text="该商品需要3张发货卡即可发货"
+            android:textColor="#FBFFA1"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin15"
+            android:text="您已有1张和还差2张"
+            android:textColor="#FBFFA1"
+            android:textSize="15dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_jia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin30"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin30">
+
+            <ImageView
+                android:id="@+id/iv_jia1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_fa" />
+
+            <ImageView
+                android:id="@+id/iv_jia2"
+
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_fa" />
+
+            <ImageView
+                android:id="@+id/iv_jia3"
+
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_fa" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/bt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="@dimen/margin25"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:background="@drawable/continue_ling_delivergoods" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/bt2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:background="@drawable/direct_ling_become_member" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

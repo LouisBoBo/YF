@@ -1,0 +1,326 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yssj.ui.activity.MainFragment">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c2c2c2" />
+
+        <RadioGroup
+            android:id="@+id/main_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/tab_one"
+                style="@style/TabStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/main_shop_selector"
+                android:text="首页"
+                android:textSize="9sp" />
+
+            <RadioButton
+                android:id="@+id/tab_two"
+                style="@style/TabStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/classfication_selector"
+                android:text="分类"
+                android:textSize="9sp" />
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/tab_three"-->
+<!--                style="@style/TabStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                android:drawableTop="@drawable/frends_selector"-->
+<!--                android:text="密友圈"-->
+
+<!--                />-->
+
+            <RadioButton
+                android:id="@+id/tab_three"
+                style="@style/TabStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:drawableTop="@drawable/frends_selector"
+                android:layout_gravity="center"
+                android:visibility="visible"
+
+                />
+            <!-- android:text="@string/tab3_text" -->
+            <!-- android:drawableTop="@drawable/betuy_cire_selector" -->
+
+            <!--  <RadioButton
+                 android:id="@+id/tab_three2"
+                 style="@style/TabStyle"
+                 android:layout_width="0dp"
+                 android:layout_height="45dp"
+                 android:layout_gravity="center"
+                 android:background="@drawable/icon_qiandao_pre"
+                 android:visibility="gone" /> -->
+
+            <RadioButton
+                android:id="@+id/tab_four"
+                style="@style/TabStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/dapei_title_selector"
+                android:text="@string/action_example"
+                android:textSize="9sp"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/tab_five"
+                style="@style/TabStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/mine_info_selector"
+                android:text="@string/tab5_text"
+                android:textSize="9sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingTop="3dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff">
+
+                <TextView
+                    android:id="@+id/undo_view1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/zero_shop_view"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:visibility="gone"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_tab3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@drawable/show_options_text"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/undo_view4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/zero_shop_view"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00ffffff">
+
+                <TextView
+                    android:id="@+id/undo_view5"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/myinfo_view"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--	<ImageView
+            android:id="@+id/tab_three_nor"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/show_nor"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"/>-->
+    <!-- 密友圈发布话题和穿搭 -->
+    <ImageView
+        android:id="@+id/intimate_fabu_btn_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/show_pre"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/intimate_fabu_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/intimate_fabu_bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-25dp"
+            android:scaleType="fitXY" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCFFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/intimate_fabu_root_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/intimate_fabu_btn_iv_cancle"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="23dp"
+                android:layout_marginBottom="65dp"
+                android:src="@drawable/intimate_fabu_icon_close" />
+
+            <LinearLayout
+                android:id="@+id/intimate_fabu_btn_ll_chuanda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/intimate_fabu_btn_iv_cancle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/intimate_fabu_btn_iv_chuanda"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/intimate_icon_chuanda" />
+
+                <TextView
+                    android:id="@+id/intimate_fabu_btn_tv_chuanda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="穿搭"
+                    android:textColor="#3E3E3E"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/intimate_fabu_btn_ll_huati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/intimate_fabu_btn_ll_chuanda"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="30dp" />
+
+                <ImageView
+                    android:id="@+id/intimate_fabu_btn_iv_huati"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/intimate_icon_huati" />
+
+                <TextView
+                    android:id="@+id/intimate_fabu_btn_tv_huati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="话题"
+                    android:textColor="#3E3E3E"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

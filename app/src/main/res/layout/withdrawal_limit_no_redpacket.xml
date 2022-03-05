@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/withdrawal_exp_dialog_red"
+    android:paddingBottom="@dimen/margin50"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/margin15"
+            android:paddingRight="@dimen/margin15"
+            android:paddingLeft="@dimen/margin15"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_withdrawal_close" />
+    </RelativeLayout>
+     <ImageView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="20dp"
+    	android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_weizhongjiang"/>
+    <TextView
+        android:id="@+id/no_packet_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="呀，糟糕，\n没抓住红包溜走了"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/tv_size19" />
+    <Button
+        android:id="@+id/btn_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/shape_withdrawal_yellow"
+        android:text="再抽一次"
+        android:textColor="#FD215A"
+        android:textSize="17sp" />
+    <Button
+        android:id="@+id/btn_white"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/shape_withdrawal_white"
+        android:text="暂时离开"
+        android:textColor="#FD215A"
+        android:textSize="17sp" />
+
+</LinearLayout>

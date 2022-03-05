@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fanzao" >
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" >
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_left_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/icon_fanhui_black"
+                android:clickable="false"
+                android:contentDescription="@string/no_warn" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparenct" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="活动详情"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/horizontal_line" />
+    </RelativeLayout>
+
+    <!-- 去免单 -->
+
+    <LinearLayout
+        android:id="@+id/id_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_fanzao"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c5c5c5" />
+
+        <TextView
+            android:id="@+id/buy_free_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_back_red"
+            android:gravity="center"
+            android:text="获取抽奖机会"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_bottom"
+        android:layout_below="@id/ll_title"
+        android:background="#AA07F6"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fc03de"
+            android:orientation="vertical" >
+
+            <!-- ！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！ -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:orientation="vertical" >
+
+                <!-- 剩余一次资格 -->
+
+                <TextView
+                    android:id="@+id/buy_free_qualifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/qualification"
+                    android:gravity="center"
+                    android:text="剩余1次资格"
+                    android:textColor="#fc0034"
+                    android:textSize="@dimen/tv_size23"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+                <!-- 或者资格已经使用 -->
+
+                <LinearLayout
+                    android:id="@+id/buy_free_qualifications_used"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="18dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/buy_free_qualifications_used_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:text="资格已使用"
+                        android:textColor="#7D7D7D"
+                        android:textSize="@dimen/tv_size20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/buy_free_used_order_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="订单："
+                        android:textColor="#7D7D7D"
+                        android:textSize="@dimen/tv_size14" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- ！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！ -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/line_free_quali" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动说明"
+                    android:textColor="#F2DAFD"
+                    android:textSize="@dimen/tv_size18"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/line_free_quali" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bu_free_exp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="1.疯狂新衣节下单支付成功立即获得额度抽奖机会，抽奖次数为平日的两倍。"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-10dp"
+                android:text="例如：平日购买100元商品赠送衣豆可以抽奖10次，疯狂新衣节购买100元商品将可获赠20次抽奖机会。"
+                android:textColor="#fff400"
+                android:textSize="@dimen/tv_size12" />
+
+            <TextView
+                android:id="@+id/bu_free_exp2_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="2.疯狂新衣节当天使用抽奖次数抽奖的中奖率100%，衣豆抽奖为正常中奖概率。"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bu_free_exp2_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="3.疯狂新衣节使用抽奖机会抽奖获得的提现额度将到订单完结(不可退款退货)才可解冻至可提现额度。"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/bu_free_exp3_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="4.如果订单期间发生退款，疯狂新衣节当天所获得的所有冻结额度将会被扣除。"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bu_free_exp3_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="5.疯狂新衣节获得的抽奖机会务必全部使用完，23:59以后将会自动取消当日所有订单获赠的抽奖机会。"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14"
+                android:visibility="visible" />
+             <TextView
+                android:id="@+id/bu_free_exp6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="6."
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/buy_free_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_qualification_bottom"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bu_free_exp4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="4.本次活动名额有限，所以请及时选购心仪美衣下单，以免浪费免单资格；"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bu_free_exp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="5.退货退款处理：用户在使用免单资格后，发生退货退款，默认已使用该免单资格，将不再重新赠送；"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="6.本次活动解释权归衣蝠所有。"
+                android:textColor="#F2DAFD"
+                android:textSize="@dimen/tv_size14"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_qualification_bottom"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

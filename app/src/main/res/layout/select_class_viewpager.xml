@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/frist_class_contain"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <!--
+    <ScrollView
+        android:layout_width="0dp"
+	    android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/select_class_dialog_back"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/second_class_contain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+    -->
+
+    <ListView
+        android:id="@+id/second_class_contain"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="#e5e5e5"
+        android:dividerHeight="0.6dp"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:background="@drawable/select_class_dialog_back" />
+
+</LinearLayout>

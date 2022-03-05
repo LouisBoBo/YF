@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin10"
+    android:paddingRight="@dimen/margin10">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_groups_success" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="开团成功！"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin30"
+        android:layout_marginLeft="@dimen/margin25"
+        android:layout_marginRight="@dimen/margin25"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <!--        <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/need_people_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="还差"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/tv_size15"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/need_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/need_people_tv1"
+                        android:layout_toRightOf="@id/need_people_tv1"
+                        android:text="0"
+                        android:textColor="#FF3F8B"
+                        android:textSize="@dimen/tv_size20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/need_people_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/need_people_tv1"
+                        android:layout_toRightOf="@id/need_people"
+                        android:text="人，赶紧邀请好友来参团吧！"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/tv_size15"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>-->
+        <TextView
+            android:id="@+id/need_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还差0人，赶紧邀请好友来参团吧！开团与参团都无需付款，拼团成功后记得要在规定时间内完成付款哦。"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/tv_size15"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_wxin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_wxin_circle_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/invite_icon_weixin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="微信好友"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_size12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wxin_circle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_wxin_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/invite_icon_pengyouquan"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="微信群"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_size12" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_guid_mpk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_hongbao_bg"
+            android:layout_width="270dp"
+            android:layout_height="303dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fight_free_fight_mpk" />
+
+        <TextView
+            android:id="@+id/tv_txk_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="115dp"
+            android:text="00:20:10后失败"
+            android:textColor="#FAB126"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_close"
+            android:background="@drawable/withdrawal_exp_dialog_red"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin20"
+                android:text="温馨提示"
+                android:textColor="#FBFFA1"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin15"
+                android:paddingLeft="@dimen/margin20"
+                android:paddingRight="@dimen/margin20"
+                android:text="您的拼团订单，可以预存会员后"
+                android:textColor="#FBFFA1"
+                android:textSize="15dp" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin15"
+                android:paddingLeft="@dimen/margin20"
+                android:paddingRight="@dimen/margin20"
+                android:text="直接免拼发货哦。"
+                android:textColor="#FBFFA1"
+                android:textSize="15dp" />
+
+
+            <ImageView
+                android:id="@+id/tv_go_vip"
+                android:layout_width="218dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin25"
+                android:layout_marginTop="@dimen/margin20"
+                android:background="@drawable/fightting_become_member" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="@dimen/margin10"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_close_groups" />
+
+
+</LinearLayout>

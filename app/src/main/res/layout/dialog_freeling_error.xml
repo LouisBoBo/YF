@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_marginBottom="5dp"
+        android:id="@+id/iv_close"
+        android:layout_gravity="right"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:src="@drawable/free_icon_close" />
+
+    <FrameLayout
+        android:layout_below="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_tosign"
+            android:layout_width="300dp"
+            android:scaleType="centerCrop"
+            android:layout_height="282dp"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#C5C5C5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:gravity="center_horizontal"
+        android:text="累计佣金"
+        android:textColor="@color/common_red"
+        android:textSize="@dimen/tv_size16" />
+
+    <TextView
+        android:id="@+id/tv_all_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        android:gravity="center_horizontal"
+        android:text="0.0"
+        android:textColor="@color/common_red"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        android:gravity="center_horizontal"
+        android:text="仅限皇冠会员提现"
+        android:textColor="@color/common_red"
+        android:textSize="15sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_qingling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="（非会员1日后收益清0）"
+        android:textColor="@color/red"
+        android:textSize="@dimen/tv_size16" />
+
+
+    <TextView
+        android:id="@+id/tv_to_tixian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/margin15"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_red_ok"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="去提现"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15"
+        android:gravity="center_horizontal"
+        android:text="佣金可一次提现到微信零钱，不受打卡进度限制"
+        android:textColor="@color/common_red"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_fans_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_fans_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝数0人"
+                android:textColor="#ff3f8b"
+                android:textSize="@dimen/tv_size18" />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:src="@drawable/wen_gray"
+                android:layout_height="17dp" />
+            dp
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/common_red" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_friend_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="#ff3f8b"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人"
+                    android:textColor="#ff3f8b"
+                    android:textSize="@dimen/tv_size15" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="粉丝佣金明细"
+                android:textColor="#ff3f8b"
+                android:textSize="@dimen/tv_size18" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="亲，暂时没有相关数据哦"
+        android:textColor="#666666"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/title_function_bg" -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/postdetail_pop_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/create_louzhu_layout"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/is_lou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/postdetail_pop_line" />
+
+        <LinearLayout
+            android:id="@+id/create_collect_post_layout"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="11dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="6dp"
+                android:text="收藏帖子"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+         <View 
+              android:layout_width="100dp"
+              android:layout_weight="0.1"
+            android:layout_height="0.5dp"
+            android:background="@drawable/postdetail_pop_line" />
+        
+         <LinearLayout
+            android:id="@+id/create_inform_layout"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:gravity="center" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="11dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="6dp"
+                android:text="举报该帖"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

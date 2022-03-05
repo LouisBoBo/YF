@@ -1,0 +1,119 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Library-PullToRefresh:
+* LICENSE
+* pom.xml
+From YJApp_v1:
+* ant.properties
+* custom_rules.xml
+* debug.keystore
+* ic_launcher-web.png
+* proguard-project.txt
+* proguard.cfg
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In Library-PullToRefresh:
+* AndroidManifest.xml => LibraryPullToRefresh\src\main\AndroidManifest.xml
+* assets\ => LibraryPullToRefresh\src\main\assets
+* res\ => LibraryPullToRefresh\src\main\res\
+* src\ => LibraryPullToRefresh\src\main\java\
+In TestActivity:
+* AndroidManifest.xml => TestActivity\src\main\AndroidManifest.xml
+* assets\ => TestActivity\src\main\assets
+* res\ => TestActivity\src\main\res\
+* src\ => TestActivity\src\main\java\
+In YJApp_v1:
+* AndroidManifest.xml => YJApp_v1\src\main\AndroidManifest.xml
+* assets\ => YJApp_v1\src\main\assets\
+* libs\alipaysdk.jar => YJApp_v1\libs\alipaysdk.jar
+* libs\alipaysecsdk.jar => YJApp_v1\libs\alipaysecsdk.jar
+* libs\alipayutdid.jar => YJApp_v1\libs\alipayutdid.jar
+* libs\android-support-multidex.jar => YJApp_v1\libs\android-support-multidex.jar
+* libs\AndroidViewAnimations-1.1.3.jar => YJApp_v1\libs\AndroidViewAnimations-1.1.3.jar
+* libs\apache-commons-lang.jar => YJApp_v1\libs\apache-commons-lang.jar
+* libs\arm64-v8a\libBase64zzq.so => YJApp_v1\src\main\jniLibs\arm64-v8a\libBase64zzq.so
+* libs\arm64-v8a\libeasemob_jni.so => YJApp_v1\src\main\jniLibs\arm64-v8a\libeasemob_jni.so
+* libs\arm64-v8a\libeasemobservice.so => YJApp_v1\src\main\jniLibs\arm64-v8a\libeasemobservice.so
+* libs\arm64-v8a\liblocSDK6a.so => YJApp_v1\src\main\jniLibs\arm64-v8a\liblocSDK6a.so
+* libs\armeabi-v7a\libBase64zzq.so => YJApp_v1\src\main\jniLibs\armeabi-v7a\libBase64zzq.so
+* libs\armeabi-v7a\libcocklogic.so => YJApp_v1\src\main\jniLibs\armeabi-v7a\libcocklogic.so
+* libs\armeabi-v7a\libtnet-2.0.17.2-agoo.so => YJApp_v1\src\main\jniLibs\armeabi-v7a\libtnet-2.0.17.2-agoo.so
+* libs\armeabi\libBase64zzq.so => YJApp_v1\src\main\jniLibs\armeabi\libBase64zzq.so
+* libs\armeabi\libcocklogic.so => YJApp_v1\src\main\jniLibs\armeabi\libcocklogic.so
+* libs\armeabi\libeasemob_jni.so => YJApp_v1\src\main\jniLibs\armeabi\libeasemob_jni.so
+* libs\armeabi\libeasemobservice.so => YJApp_v1\src\main\jniLibs\armeabi\libeasemobservice.so
+* libs\armeabi\liblocSDK6a.so => YJApp_v1\src\main\jniLibs\armeabi\liblocSDK6a.so
+* libs\armeabi\libtnet-2.0.17.2-agoo.so => YJApp_v1\src\main\jniLibs\armeabi\libtnet-2.0.17.2-agoo.so
+* libs\com.umeng.message.lib_v2.5.0.jar => YJApp_v1\libs\com.umeng.message.lib_v2.5.0.jar
+* libs\core.jar => YJApp_v1\libs\core.jar
+* libs\easemobchat_2.2.7.jar => YJApp_v1\libs\easemobchat_2.2.7.jar
+* libs\fastjson-1.1.41.jar => YJApp_v1\libs\fastjson-1.1.41.jar
+* libs\httpmime-4.1.2.jar => YJApp_v1\libs\httpmime-4.1.2.jar
+* libs\nineoldandroids-2.4.0.jar => YJApp_v1\libs\nineoldandroids-2.4.0.jar
+* libs\picasso-2.5.2.jar => YJApp_v1\libs\picasso-2.5.2.jar
+* libs\rebound-0.3.8.jar => YJApp_v1\libs\rebound-0.3.8.jar
+* libs\SocialSDK_QQZone_1.jar => YJApp_v1\libs\SocialSDK_QQZone_1.jar
+* libs\SocialSDK_QQZone_2.jar => YJApp_v1\libs\SocialSDK_QQZone_2.jar
+* libs\SocialSDK_QQZone_3.jar => YJApp_v1\libs\SocialSDK_QQZone_3.jar
+* libs\SocialSDK_Sina.jar => YJApp_v1\libs\SocialSDK_Sina.jar
+* libs\SocialSDK_WeiXin_1.jar => YJApp_v1\libs\SocialSDK_WeiXin_1.jar
+* libs\SocialSDK_WeiXin_2.jar => YJApp_v1\libs\SocialSDK_WeiXin_2.jar
+* libs\umeng_social_sdk.jar => YJApp_v1\libs\umeng_social_sdk.jar
+* libs\x86\libBase64zzq.so => YJApp_v1\src\main\jniLibs\x86\libBase64zzq.so
+* libs\x86\libcocklogic.so => YJApp_v1\src\main\jniLibs\x86\libcocklogic.so
+* libs\x86\libeasemob_jni.so => YJApp_v1\src\main\jniLibs\x86\libeasemob_jni.so
+* libs\x86\libeasemobservice.so => YJApp_v1\src\main\jniLibs\x86\libeasemobservice.so
+* libs\x86\liblocSDK6a.so => YJApp_v1\src\main\jniLibs\x86\liblocSDK6a.so
+* libs\x86\libtnet-2.0.17.2-agoo.so => YJApp_v1\src\main\jniLibs\x86\libtnet-2.0.17.2-agoo.so
+* libs\x86_64\libBase64zzq.so => YJApp_v1\src\main\jniLibs\x86_64\libBase64zzq.so
+* libs\x86_64\libeasemobservice.so => YJApp_v1\src\main\jniLibs\x86_64\libeasemobservice.so
+* libs\x86_64\liblocSDK6a.so => YJApp_v1\src\main\jniLibs\x86_64\liblocSDK6a.so
+* res\ => YJApp_v1\src\main\res\
+* src\ => YJApp_v1\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

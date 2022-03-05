@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/back" 
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="商家详情"
+            android:textColor="@color/black"
+            android:textSize="21sp" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:layout_weight="1"
+			    android:gravity="center"
+			    >
+            <TextView
+                android:id="@+id/two_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="美丽"
+                android:textColor="@color/two_title_txt_select"
+                android:textSize="18sp" 
+                 android:drawableRight="@drawable/two_title_selector"
+                 android:drawablePadding="6dp"
+                />
+			</LinearLayout>
+	
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:layout_weight="1"
+			    android:gravity="center"
+			    >
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="全城"
+                android:textColor="@color/two_title_txt_select"
+                android:textSize="18sp" 
+                 android:drawableRight="@drawable/two_title_selector"
+                 android:drawablePadding="6dp"
+                />
+			</LinearLayout>
+            <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:layout_weight="1"
+			    android:gravity="center"
+			    >
+            <TextView
+                android:id="@+id/asc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="排序"
+                android:textColor="@color/two_title_txt_select"
+                android:textSize="18sp" 
+                android:drawableRight="@drawable/two_title_selector"
+                android:drawablePadding="6dp"
+                />
+			</LinearLayout>
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:divider="@null"
+            ptr:ptrAnimationStyle="flip" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+	
+        	<TextView
+                    android:id="@+id/bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000000" 
+                    android:clickable="true"
+                    android:layout_marginTop="50dp"
+                    android:visibility="gone"
+                    />
+        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp" >
+
+            <RelativeLayout
+                android:id="@+id/title_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:layout_marginBottom="150dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal" >
+
+                    <ListView
+                        android:id="@+id/list1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:divider="@null" >
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/list2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:divider="@null" >
+                    </ListView>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/up_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@null"
+                    android:scaleType="center"
+                    android:src="@drawable/biz_title_up" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

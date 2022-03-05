@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white_white" >
+
+        <TextView
+            android:id="@+id/back_step_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="上一步"
+            android:textColor="#3E3E3E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/finish_step_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="完成"
+            android:textColor="#C5C5C5"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_shop"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white_white" >
+
+        <TextView
+            android:id="@+id/tv_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="从商品库添加商品"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size14" />
+
+        <ImageView
+            android:id="@+id/img_right_arrow0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin14"
+            android:background="@color/transparenct"
+            android:src="@drawable/gengduo" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_toLeftOf="@id/img_right_arrow0"
+            android:layout_toRightOf="@id/tv_shop"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size14"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_supple"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/white_white" >
+
+        <TextView
+            android:id="@+id/tv_supple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="品牌(必填)"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size14" />
+
+        <ImageView
+            android:id="@+id/img_right_arrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin14"
+            android:background="@color/transparenct"
+            android:src="@drawable/gengduo" />
+
+        <TextView
+            android:id="@+id/tv_supple_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_toLeftOf="@id/img_right_arrow1"
+            android:layout_toRightOf="@id/tv_supple"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size14"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E5E5E5" />
+
+    <RelativeLayout
+        android:id="@+id/rel_classfication"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/white_white" >
+
+        <TextView
+            android:id="@+id/tv_classfication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="风格类目(必填)"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size14" />
+
+        <ImageView
+            android:id="@+id/img_right_arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin14"
+            android:background="@color/transparenct"
+            android:src="@drawable/gengduo" />
+
+        <TextView
+            android:id="@+id/tv_classfication_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:layout_toLeftOf="@id/img_right_arrow2"
+            android:layout_toRightOf="@id/tv_classfication"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="#3e3e3e"
+            android:textSize="@dimen/tv_size14"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

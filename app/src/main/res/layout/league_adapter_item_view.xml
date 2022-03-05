@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="90dp"
+	    android:id="@+id/content"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="23dp"
+	        android:layout_marginLeft="20dp"
+	        android:textSize="16sp"
+	        android:text="浦发银行储蓄卡"
+	        android:textColor="@color/black"
+	        android:id="@+id/title"
+	        />
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="23dp"
+	        android:text="2015-12-15"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginLeft="20dp"
+	        android:id="@+id/time"
+	        android:textColor="@color/text1_color"
+	        />
+	    
+	    <TextView 
+	        
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	        android:layout_marginTop="23dp"
+	        android:layout_marginRight="24dp"
+	        android:layout_alignParentRight="true"
+	        android:text="-5"
+	        android:textColor="@color/pink_color"
+	        android:textSize="17sp"
+	        android:id="@+id/money"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="23dp"
+	        android:text="成功"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginRight="24dp"
+	        android:textColor="@color/text1_color"
+	        android:textSize="16sp"
+	        android:layout_alignParentRight="true"
+	        android:id="@+id/sucess_status"
+	        />
+	    
+	    
+	</RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/line_color"
+        />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bai"
+        android:visibility="gone"
+        />
+    
+    
+    
+</LinearLayout>

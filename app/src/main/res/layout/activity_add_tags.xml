@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/issue_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white_fanzao" >
+
+        <TextView
+            android:id="@+id/issue_tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="取消"
+            android:textColor="#3e3e3e"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="添加标签"
+            android:textColor="#3e3e3e"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/issue_tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="下一步"
+            android:textColor="#ff3f8b"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/issue_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_fanzao"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/issue_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="点击图片可以添加标签"
+            android:textColor="#ff3f8b"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/issue_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="最多可添加4个标签喔"
+            android:textColor="#3e3e3e"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/issue_tv_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="点击标签可以自由移动哦"
+            android:textColor="#ff3f8b"
+            android:textSize="14sp"
+            android:visibility="gone" />
+           <TextView
+               android:visibility="gone"
+            android:id="@+id/issue_tv_move2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="点击图片可继续添加标签"
+            android:textColor="#3e3e3e"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/issue_ll_bottom"
+        android:layout_below="@id/issue_rl_top"
+        android:background="#000000" >
+
+        <ImageView
+            android:id="@+id/issue_iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/issue_tv_tags"
+            android:layout_width="104dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/issue_tag"
+            android:gravity="center"
+            android:text="这是什么品牌"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/issue_rl_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

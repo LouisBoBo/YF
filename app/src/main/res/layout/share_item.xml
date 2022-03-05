@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/show_share_bg" >
+
+    <RelativeLayout 
+        android:id="@+id/rel_bar"
+        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#00000000">
+        
+        <TextView 
+            android:id="@+id/tv_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#222222"
+            android:textSize="@dimen/tv_size18"
+            android:text="分享"/>
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/img_notice"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/rel_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/img_show_notice"/>
+    
+    <TextView
+        android:id="@+id/tv_kickback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:layout_below="@id/img_notice"
+        android:gravity="center_horizontal|top"
+        android:paddingTop="@dimen/margin12"
+        android:text="1234555"
+        android:textColor="#645f63"
+        android:textSize="@dimen/tv_size25"
+        android:background="@drawable/img_money_bag"/>
+    
+   
+    
+    <RadioGroup 
+        android:id="@+id/rg_choose_platform"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/rb_qq"
+            android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:background="@drawable/qzone_selector"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+        <RadioButton 
+            android:id="@+id/rb_wx"
+            android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/wx_selector"
+            android:layout_weight="1"/>
+    </RadioGroup>
+    
+    <ImageView 
+        android:id="@+id/img_countdown"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/rg_choose_platform"
+        android:layout_marginBottom="@dimen/margin10"
+        android:background="@drawable/count_down3"/>
+
+</RelativeLayout>
